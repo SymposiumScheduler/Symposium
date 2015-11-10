@@ -2,11 +2,11 @@ package symposium.model;
 
 
 public class VenueTime {
-    public final RangeLine TIME;
+    public final Range TIME;
     public final Venue VENUE;
     private Panel assignedPanel;
 
-    public VenueTime(RangeLine time, Venue venue) {
+    public VenueTime(Range time, Venue venue) {
         this.TIME = time;
         this.VENUE = venue;
         this.assignedPanel = null;
@@ -21,5 +21,4 @@ public class VenueTime {
     public Panel getAssignedPanel(){
         return this.assignedPanel;
     }
-
 }

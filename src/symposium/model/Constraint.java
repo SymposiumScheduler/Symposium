@@ -9,7 +9,7 @@ public abstract class Constraint {
      * @param priority enum determining whether constraint is required, important, or desirable.
      * @param p the Panel that the constraint is part of.
      */
-    public Constraint(short int priority, Panel p){
+    public Constraint(short int priority, Panel p){  //Refering to ScheduleData globally?
         PRIORITY = priority;
         panel = p;
     }
@@ -21,7 +21,23 @@ public abstract class Constraint {
 }
 
 class VenueConstraint extends Constraint {
+    Venue venue;
+    @Override
+    public Constraint(short int priority, Panel p, Venue v) {
+        PRIORITY = priority;
+        panel = p;
+        venue = v;
+    }
     
+    @Override
+    public boolean isConstraintViolated(VenueTime venueTime) {
+        if (venueTime.getAssignedPanel != venue) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
 class SizeConstraint extends Constraint {}
 class PairedPanalelistConstraint extends Constraint {}
@@ -87,6 +103,38 @@ class DurationConstraint extends TimeConstraint {
     
 }
 
-abstract class NoOverlapConstraint extends Constraint {}
-class PanelistConstraint extends NoOverlapConstraint {}
-class CategoryConstraint extends NoOverlapConstraint {}
+abstract class NoOverlapConstraint extends Constraint {
+    @Override
+    public boolean isConstraintViolated(VenueTime venueTime) {
+        if doesOverlap(venueTime) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
+    private boolean doesOverlap(VenueTime venueTime);
+}
+class PanelistConstraint extends NoOverlapConstraint {
+    @Override
+    private boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
+        if ScheduleData.isAssigned(venueTime, panel.PANELIST) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
+            return true
+        }
+        else {
+            return false
+        }
+    }
+}
+class CategoryConstraint extends NoOverlapConstraint {
+    @Override
+    private boolean doesOverlap(VenueTime venueTime) {
+        if ScheduleData.isAssigned(venueTime, panel.CATEGORY) { //A variant of the above function, written to check category instead of panelists
+            return true
+        }
+        else {
+            return false
+        }
+    }
+}

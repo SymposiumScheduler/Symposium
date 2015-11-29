@@ -1,7 +1,7 @@
 package symposium.model;
 
 public abstract class Constraint {
-    public short int final PRIORITY;
+    public short final PRIORITY;
     Panel panel;
     /**
      * Constructs constraint.
@@ -9,7 +9,7 @@ public abstract class Constraint {
      * @param priority enum determining whether constraint is required, important, or desirable.
      * @param p the Panel that the constraint is part of.
      */
-    public Constraint(short int priority, Panel p){  //Refering to ScheduleData globally?
+    public Constraint(short priority, Panel p){  //Refering to ScheduleData globally?
         PRIORITY = priority;
         panel = p;
     }
@@ -38,7 +38,7 @@ class VenueConstraint extends Constraint {
      * @param v The venue the panel must appear in.
      */
     @Override
-    public VenueConstraint(short int priority, Panel p, Venue v) {
+    public VenueConstraint(short priority, Panel p, Venue v) {
         PRIORITY = priority;
         panel = p;
         venue = v;
@@ -66,14 +66,14 @@ class VenueConstraint extends Constraint {
 }
 class SizeConstraint extends Constraint {
 
-    short int minSize;
+    short minSize;
 
     /**
      *
      * @param mSize The minimum size necessary for the panel to fit.
      */
     @Override
-    public SizeConstraint(short int priority, Panel p, short int mSize) {
+    public SizeConstraint(short priority, Panel p, short mSize) {
         PRIORITY = priority;
         panel = p;
         minSize = mSize;
@@ -138,7 +138,7 @@ class NewPanelistConstraint extends TimeConstraint { //Ask team members
     private boolean checkTime() {
         Range time = venueTime.getTime(); // Implement in VenueTime later
         Range monday = new TimeRange(0, 1440); // Assuming Joey's current parser, change if implementation changes
-        short int newMoreThanTwo = 0;
+        short newMoreThanTwo = 0;
         for (for i = 0; i < panel.PANELIST.size(); i++) {
             if panel.PANELIST[i].contains('new') {  // built on assumption that the PANELIST array in panel contains the substring
                 newMoreThanTwo++;

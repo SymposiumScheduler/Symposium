@@ -1,10 +1,15 @@
+package symposium;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import symposium.model.TimeRange;
 import symposium.model.Venue;
-//package symposium.model;
+import symposium.model.VenueTime;
+import symposium.model.TimeRangeSeries;
+
+
 import java.awt.*;
 import java.io.FileReader;
 import java.io.IOException;
@@ -137,10 +142,10 @@ public class Parser {
     static void output(List<Venue> venues, List<Panel> panels){
         System.out.println("Venue Availability:");
         for (Venue venue : venues){
-            System.out.println("\t" + venue.name + ": ");
-            List<VenueTime> freeTimes = venue.freeTimes;
+            System.out.println("\t" + venue.NAME + ": ");
+            List<VenueTime> freeTimes = venue.getFreeVenueTimes();
             for (VenueTime times : freeTimes){
-                System.out.println("\t\t" + times.start + " - " + times.end);
+                System.out.println("\t\t" + times.TIME.getStart() + " - " + times.TIME.getEnd());
             }
         }
         System.out.println("");

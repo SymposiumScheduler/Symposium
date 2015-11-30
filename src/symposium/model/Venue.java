@@ -16,7 +16,7 @@ public class Venue {
     public Venue(String name, int size, Collection<TimeRange> timeRanges) {
         this.NAME = name;
         this.SIZE = size;
-	
+
         this.freeVenueTimes = new ArrayList<VenueTime>();
 
         if(timeRanges != null) {

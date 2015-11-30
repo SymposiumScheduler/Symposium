@@ -2,9 +2,14 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import symposium.model.TimeRange;
+import symposium.model.Venue;
+//package symposium.model;
+import java.awt.*;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
 
 public class Parser {
     public static void main(String[] args) {

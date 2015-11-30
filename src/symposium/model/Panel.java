@@ -1,3 +1,9 @@
+package symposium.model;
+
+import symposium.model.Range;
+import symposium.model.TimeRangeSeries;
+import symposium.model.VenueTime;
+
 import java.util.*;
 
 public class Panel implements Comparable<Panel>{
@@ -6,8 +12,8 @@ public class Panel implements Comparable<Panel>{
     Range availability;
     List<String> panelists = new ArrayList<String>();
     List<String> constraints = new ArrayList<String>();
-    VenueTime assignedVenueTime;
-    int difficulty;
+    VenueTime assignedVenueTime = null;
+    int difficulty = 0;
     String category;
 
     public Panel(String name, Map<String, TimeRangeSeries> panelists, String category, List<String> constraints){
@@ -49,9 +55,6 @@ public class Panel implements Comparable<Panel>{
         return difficulty;
     }
 
-    public void setDifficulty(){
-        //TODO
-    }
 
     public VenueTime getVenueTime(){
         return assignedVenueTime;

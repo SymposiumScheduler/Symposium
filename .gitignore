@@ -1,0 +1,5 @@
+# .idea should be in repo except for workspace.xml because it stores personal settings
+# see : https://www.jetbrains.com/idea/help/project.html
+.idea/workspace.xml
+
+out

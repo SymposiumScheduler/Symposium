@@ -4,21 +4,16 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import symposium.model.TimeRange;
-import symposium.model.Venue;
-import symposium.model.VenueTime;
-import symposium.model.TimeRangeSeries;
-
-
-import java.awt.*;
+import symposium.model.*;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
+import symposium.model.Panel;
 
 public class Parser {
     public static void main(String[] args) {
-        List<Panel> panels = new ArrayList<Panel>();
+        List<symposium.model.Panel> panels = new ArrayList<Panel>();
         List<Venue> venues = new ArrayList<Venue>();
         JSONParser parser = new JSONParser();
         try {
@@ -35,8 +30,8 @@ public class Parser {
             for (Object o : json_venues) {
                 JSONObject item = (JSONObject) o;
                 String venue_name = (String) item.get("name");
-                int venue_size = (int)(long) item.get("size");
-                sizes.put(venue_name, venue_size);
+                String venue_size = (String) item.get("size");
+                sizes.put(venue_name, Integer.valueOf(venue_size));
             }
 
 
@@ -46,15 +41,7 @@ public class Parser {
                 JSONObject item = (JSONObject) o;
                 String venue_name = (String) item.get("name");
                 String venue_time = (String) item.get("time");
-                ///////////////////////////////////////////
-                //String[] time_components = venue_time.split(", ");
-                //String date = time_components[0];
-                //String day = time_components[1];
-                //String[] hours = time_components[2].split("-");
-                int abs_start = 0;
-                int abs_end = 0;
-                ///////////////////////////////
-                TimeRange timeRange = new TimeRange(abs_start, abs_end); //timeRange of current slot, change to venue_time
+                TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(venue_time);
                 List<TimeRange> timeRanges; //list of all timeRanges for this venue
                 if (ranges.containsKey(venue_name)) {
                     timeRanges = ranges.get(venue_name);
@@ -81,15 +68,8 @@ public class Parser {
                 List<TimeRange> panelist_times = new ArrayList<TimeRange>();
                 for (Object time_slot : json_times) {
                     String panelist_time = (String) time_slot;
-                    ///////////////
-                    //String[] time_components = panelist_time.split(", ");
-                    //String date = time_components[0];
-                    //String day = time_components[1];
-                    //String[] hours = time_components[2].split("-");
-                    int abs_start = 0;
-                    int abs_end = 0;
-                    ////////////////
-                    panelist_times.add(new TimeRange(abs_start, abs_end)); //panelist_time
+                    TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(panelist_time);
+                    panelist_times.add(timeRange); //panelist_time
                 }
                 if (noob){
                     panelists.put("n_" + panelist_name, panelist_times);
@@ -120,7 +100,7 @@ public class Parser {
                     String constraint = (String) k;
                     constraints.add(constraint);
                 }
-
+                //public Panel(String name, Map<String, TimeRangeSeries> panelists, String category, List<String> constraints){
                 panels.add(new Panel(panel_name, people_involved, category, constraints));
                 //TODO set panel constraints
                 //TODO if a panel has a certain minimum size or any venue limits, set its locked value to true
@@ -151,8 +131,8 @@ public class Parser {
         System.out.println("");
         System.out.println("Panel Availability:");
         for (Panel panel : panels){
-            System.out.println("\t" + panel.name + ": ");
-            for (TimeRange range : panel.availability){
+            System.out.println("\t" + panel.getName() + ": ");
+            for (TimeRange range : panel.getAvailability()){
                 System.out.println("\t\t" + range.START + " - " + range.END);
             }
         }

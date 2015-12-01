@@ -64,6 +64,14 @@ public class Panel implements Comparable<Panel>{
         this.assignedVenueTime = venueTime;
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public Range getAvailability(){
+        return availability;
+    }
+
     @Override
     public int compareTo(Panel that) {
         return this.difficulty - that.difficulty;

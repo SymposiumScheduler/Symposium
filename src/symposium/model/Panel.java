@@ -12,8 +12,8 @@ public class Panel implements Comparable<Panel>{
     Range availability;
     List<String> panelists = new ArrayList<String>();
     List<String> constraints = new ArrayList<String>();
-    VenueTime assignedVenueTime = null;
-    int difficulty = 0;
+    VenueTime assignedVenueTime;
+    int difficulty;
     String category;
 
     public Panel(String name, Map<String, TimeRangeSeries> panelists, String category, List<String> constraints){

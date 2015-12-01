@@ -23,52 +23,113 @@ public class PanelTest {
         String newCategory = "newCategory";
         List<String> constraints = new ArrayList<String>();
         constraints.add("New");
-        Map<String, TimeRangeSeries> panalists = new HashMap<String, TimeRangeSeries>();
+        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
 
-        Panel panel = new Panel(panelName, panalists, newCategory, constraints);
+        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
 
 
         assertTrue(panel.name.equals(panelName));
         assertTrue(panel.category.equals(newCategory));
         assertTrue(panel.constraints.get(0).equals("New"));
-        assertTrue(panel.getDifficulty() == 0);
-        panel.setDifficulty(3);
-        assertTrue(panel.getDifficulty() == 3);
-        assertTrue(panel.getVenueTime() == null);
+
+        //  assertTrue(panel.getDifficulty() == 0);
+        // panel.setDifficulty(3);
+        // assertTrue(panel.getDifficulty() == 3);
+       // assertTrue(panel.getVenueTime() == null);
 
 
         // I don't know what the hell to test next given the panel class is not compatible with anything
 
     }
 
-    /**
-     *
-     * General rule for testing no need to test setters and getters if they don't have any logic in them
-     *
-     * @Test
+
+    @Test
     public void testSetDifficulty() throws Exception {
+
+        String panelName = "NewPanel";
+        String newCategory = "newCategory";
+        List<String> constraints = new ArrayList<String>();
+        constraints.add("New");
+        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+
+        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        panel.setDifficulty(2);
+
+        assertTrue(panel.difficulty == 2);
 
 
     }
 
      @Test
      public void testGetDifficulty() throws Exception {
-     // Method not implemented
+
+         String panelName = "NewPanel";
+         String newCategory = "newCategory";
+         List<String> constraints = new ArrayList<String>();
+         constraints.add("New");
+         Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+
+         Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+         panel.setDifficulty(2);
+
+         assertTrue(panel.getDifficulty() == 2);
 
      }
-
-
-     @Test
 
 
      @Test
      public void testSetVenueTime() throws Exception {
 
+         String panelName = "NewPanel";
+         String newCategory = "newCategory";
+         List<String> constraints = new ArrayList<String>();
+         constraints.add("New");
+         Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+
+         Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+         List<TimeRange> ranges = new ArrayList<>(3);
+         ranges.add(new TimeRange(10,20));
+         ranges.add(new TimeRange(30,40));
+         ranges.add(new TimeRange(50,60));
+
+         Venue venue = new Venue("NewVenue", 5, ranges);
+
+         VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
+
+         panel.setVenueTime(vt);
+
+         assertTrue(panel.assignedVenueTime.equals(vt));
+
      }
 
-     *
-     * @throws Exception
-     */
+    @Test
+    public void testGetVenueTime() throws Exception {
+
+        String panelName = "NewPanel";
+        String newCategory = "newCategory";
+        List<String> constraints = new ArrayList<String>();
+        constraints.add("New");
+        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+
+        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        List<TimeRange> ranges = new ArrayList<>(3);
+        ranges.add(new TimeRange(10,20));
+        ranges.add(new TimeRange(30,40));
+        ranges.add(new TimeRange(50,60));
+
+        Venue venue = new Venue("NewVenue", 5, ranges);
+
+        VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
+
+        panel.setVenueTime(vt);
+
+        assertTrue(panel.getVenueTime().equals(vt));
+
+    }
 
 
     @Test

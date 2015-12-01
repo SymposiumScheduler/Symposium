@@ -60,21 +60,67 @@ public class VenueTimeTest {
         Panel panel = new Panel(panelName, panalists, newCategory, constraints);
 
         VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
-        vt.assignPanel(panel);
 
+
+        assertFalse(vt.getAssignedPanel().equals(panel));
+        assertFalse(vt.isAssigned());
+        vt.assignPanel(panel);
         assertTrue(vt.getAssignedPanel().equals(panel));
         assertTrue(vt.isAssigned());
 
 
     }
 
-//    @Test
-//    public void testIsAssigned() throws Exception {
+    @Test
+    public void testIsAssigned() throws Exception {
 
-//    }
+        List<TimeRange> ranges = new ArrayList<>(3);
+        ranges.add(new TimeRange(10,20));
+        ranges.add(new TimeRange(30,40));
+        ranges.add(new TimeRange(50,60));
 
-//    @Test
- //   public void testGetAssignedPanel() throws Exception {
+        Venue venue = new Venue("NewVenue", 5, ranges);
 
-//    }
+        String panelName = "NewPanel";
+        String newCategory = "newCategory";
+        List<String> constraints = new ArrayList<String>();
+        constraints.add("New");
+        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+
+        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
+
+        assertFalse(vt.isAssigned());
+        vt.assignPanel(panel);
+        assertTrue(vt.isAssigned());
+
+
+    }
+
+    @Test
+    public void testGetAssignedPanel() throws Exception {
+
+        List<TimeRange> ranges = new ArrayList<>(3);
+        ranges.add(new TimeRange(10,20));
+        ranges.add(new TimeRange(30,40));
+        ranges.add(new TimeRange(50,60));
+
+        Venue venue = new Venue("NewVenue", 5, ranges);
+
+        String panelName = "NewPanel";
+        String newCategory = "newCategory";
+        List<String> constraints = new ArrayList<String>();
+        constraints.add("New");
+        Map<String, TimeRangeSeries> panalists = new HashMap<String, TimeRangeSeries>();
+
+        Panel panel = new Panel(panelName, panalists, newCategory, constraints);
+
+        VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
+
+        assertFalse(vt.getAssignedPanel().equals(panel));
+        vt.assignPanel(panel);
+        assertTrue(vt.getAssignedPanel().equals(panel));
+
+    }
 }

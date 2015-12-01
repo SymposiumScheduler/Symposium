@@ -1,35 +1,33 @@
 package symposium.model;
 
-import symposium.model.Range;
-import symposium.model.TimeRangeSeries;
-import symposium.model.VenueTime;
 
 import java.util.*;
 
 public class Panel implements Comparable<Panel>{
-    String name;
+    public final String NAME;
     boolean Lock = false;
-    Range availability;
-    List<String> panelists = new ArrayList<String>();
-    List<String> constraints = new ArrayList<String>();
+    public final Range AVAILABILITY;
+    public final  List<String> PANELISTS = new ArrayList<String>();
+    public final  List<String> CONSTRAINTS;
     VenueTime assignedVenueTime;
     int difficulty;
-    String category;
+    public final List<String> CATEGORIES = new ArrayList<String>() ;
 
-    public Panel(String name, Map<String, TimeRangeSeries> panelists, String category, List<String> constraints){
-        this.name = name;
-        this.category = category;
-        this.constraints = constraints;
-
+    public Panel(String NAME, List<String> panelists, Range availability, String category, List<String> constraints){
+        this.NAME = NAME;
+        this.CATEGORIES.add(category);
+        this.CONSTRAINTS = constraints;
+        this.AVAILABILITY = availability;
+/*
         int new_count = 0;
         List<TimeRangeSeries> times = new ArrayList<TimeRangeSeries>(){};
-        for (String panelist : panelists.keySet()){
+        for (String panelist : PANELISTS.keySet()){
             if (panelist.contains("n_")){
                 panelist.replace("n_","");
                 new_count += 1;
             }
-            this.panelists.add(panelist);
-            times.add(panelists.get(panelist));
+            this.PANELISTS.add(panelist);
+            times.add(PANELISTS.get(panelist));
         }
         if (new_count >= 2){
             constraints.add("new");
@@ -41,7 +39,7 @@ public class Panel implements Comparable<Panel>{
             start = start.intersect(times.get(i+1));
         }
         this.availability = start;
-
+        */
         //TODO set lock based on ...?
 
     }
@@ -65,11 +63,11 @@ public class Panel implements Comparable<Panel>{
     }
 
     public String getName(){
-        return name;
+        return NAME;
     }
 
     public Range getAvailability(){
-        return availability;
+        return AVAILABILITY;
     }
 
     @Override

@@ -10,7 +10,7 @@ public class ScheduleData {
     private final Comparator<Panel> panelTimeComparator = new Comparator<Panel>() {
         @Override
         public int compare(Panel firstPanel, Panel secondPanel) {
-            return firstPanel.getAssignedVenueTime().TIME.compareTo(secondPanel.getAssignedVenueTime().TIME);
+            return firstPanel.getVenueTime().TIME.compareTo(secondPanel.getVenueTime().TIME);
         }
     };
 

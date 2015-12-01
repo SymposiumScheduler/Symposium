@@ -17,7 +17,7 @@ public class Parser {
         List<Venue> venues = new ArrayList<Venue>();
         JSONParser parser = new JSONParser();
         try {
-            Object obj = parser.parse(new FileReader("C:/Users/Joey/Dropbox/data.txt"));
+            Object obj = parser.parse(new FileReader("data.txt"));
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray json_venues = (JSONArray) jsonObject.get("Venues");
             JSONArray json_venue_times = (JSONArray) jsonObject.get("Venue-Times");
@@ -30,7 +30,7 @@ public class Parser {
             for (Object o : json_venues) {
                 JSONObject item = (JSONObject) o;
                 String venue_name = (String) item.get("name");
-                String venue_size = (String) item.get("size");
+                String venue_size = item.get("size").toString();
                 sizes.put(venue_name, Integer.valueOf(venue_size));
             }
 
@@ -41,6 +41,7 @@ public class Parser {
                 JSONObject item = (JSONObject) o;
                 String venue_name = (String) item.get("name");
                 String venue_time = (String) item.get("time");
+                System.out.println(venue_time);
                 TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(venue_time);
                 List<TimeRange> timeRanges; //list of all timeRanges for this venue
                 if (ranges.containsKey(venue_name)) {

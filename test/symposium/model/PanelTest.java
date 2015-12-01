@@ -28,9 +28,9 @@ public class PanelTest {
         Panel panel = new Panel(panelName, panelist, newCategory, constraints);
 
 
-        assertTrue(panel.name.equals(panelName));
-        assertTrue(panel.category.equals(newCategory));
-        assertTrue(panel.constraints.get(0).equals("New"));
+        assertTrue(panel.NAME.equals(panelName));
+        assertTrue(panel.CATEGORIES.get(0).equals(newCategory));
+        assertTrue(panel.CONSTRAINTS.get(0).equals("New"));
 
         //  assertTrue(panel.getDifficulty() == 0);
         // panel.setDifficulty(3);

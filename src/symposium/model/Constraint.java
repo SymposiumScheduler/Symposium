@@ -3,7 +3,7 @@ package symposium.model;
 public abstract class Constraint {
     public short final PRIORITY;
     Panel panel;
-    Map<VenueTime, Boolean> cache = new Map<VenueTime, Boolean>;
+    Map<VenueTime, boolean> cache = new Map<VenueTime, boolean>;
 
     /**
      * Constructs constraint.

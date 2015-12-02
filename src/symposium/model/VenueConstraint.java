@@ -14,11 +14,6 @@ class VenueConstraint extends Constraint {
         venue = v;
     }
 
-    @Override
-    public boolean checkViolationCache() {
-        return isConstraintViolated(panel.getVenueTime());
-    }
-
     /**
      * Dependencies: (Additionally) venueTime.getAssignedPanel method
      * @param venueTime

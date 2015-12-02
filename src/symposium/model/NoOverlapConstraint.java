@@ -2,11 +2,6 @@ package symposium.model;
 
 abstract class NoOverlapConstraint extends Constraint {
 
-    @Override
-    public boolean checkViolationCache() {
-        return isConstraintViolated(panel.getVenueTime());
-    }
-
     /**
      * Dependencies: (Additionally) doesOvelap method
      * @param venueTime The time being checked by doesOverlap

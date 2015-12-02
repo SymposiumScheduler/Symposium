@@ -2,11 +2,6 @@ package symposium.model;
 
 abstract class TimeConstraint extends Constraint {
 
-    @Override
-    public boolean checkViolationCache() {
-        return isConstraintViolated(panel.getVenueTime());
-    }
-
     /**
      * Dependencies: checkTime method
      * @param venueTime

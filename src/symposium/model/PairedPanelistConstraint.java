@@ -2,11 +2,11 @@ package symposium.model;
 
 class PairedPanelistConstraint extends Constraint {
 
-    @Override
-    public boolean checkViolationCache() {
-        return isConstraintViolated(panel.getVenueTime());
-    }
-
+    /**
+     * Dependencies: ScheduleData class, ScheduleData.timesAssignedTogetherDay method, VenueTime class
+     * @param venueTime
+     * @return boolean; returns true if two panelists appear together twice or more in a day, false if otherwise
+     */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated = false;

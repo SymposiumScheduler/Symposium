@@ -15,11 +15,6 @@ class SizeConstraint extends Constraint {
         minSize = mSize;
     }
 
-    @Override
-    public boolean checkViolationCache(){
-        return isConstraintViolated(panel.getVenueTime());
-    }
-
     /**
      * Dependencies: (Additionally) venueTime.VENUE.SIZE variable
      * @param venueTime

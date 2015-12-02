@@ -4,7 +4,7 @@ abstract class NoOverlapConstraint extends Constraint {
 
     @Override
     public boolean checkViolationCache() {
-        return isConstraintViolated(panel.getAssigneVenueTime());
+        return isConstraintViolated(panel.getVenueTime());
     }
 
     /**

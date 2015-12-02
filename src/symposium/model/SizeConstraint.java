@@ -17,7 +17,7 @@ class SizeConstraint extends Constraint {
 
     @Override
     public boolean checkViolationCache(){
-        return isConstraintViolated(panel.getAssignedVenueTime());
+        return isConstraintViolated(panel.getVenueTime());
     }
 
     /**

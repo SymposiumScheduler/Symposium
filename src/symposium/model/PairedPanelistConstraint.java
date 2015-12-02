@@ -4,7 +4,7 @@ class PairedPanelistConstraint extends Constraint {
 
     @Override
     public boolean checkViolationCache() {
-
+        return isConstraintViolated(panel.getVenueTime());
     }
 
     @Override

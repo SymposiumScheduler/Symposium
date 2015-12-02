@@ -22,11 +22,14 @@ class SizeConstraint extends Constraint {
      */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
+        boolean violated;
         if venueTime.VENUE.SIZE >= minSize {
-            return false;
+            violated = false;
         }
         else {
-            return true;
+            violated = true;
         }
+        cache.put(venueTime, violated);
+        return violated;
     }
 }

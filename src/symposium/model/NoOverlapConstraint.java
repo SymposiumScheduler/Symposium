@@ -9,12 +9,15 @@ abstract class NoOverlapConstraint extends Constraint {
      */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
+        boolean violated;
         if doesOverlap(venueTime) {
-            return true
+            violated = true;
         }
         else {
-            return false
+            violated = false;
         }
+        cache.put(venueTime, violated);
+        return violated;
     }
 
     private boolean doesOverlap(VenueTime venueTime);

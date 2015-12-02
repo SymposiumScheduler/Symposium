@@ -17,6 +17,7 @@ class PairedPanelistConstraint extends Constraint {
                 }
             }
         }
+        cache.put(venueTime, violated);
         return violated;
     }
 }

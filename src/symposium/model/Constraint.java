@@ -48,7 +48,6 @@ public abstract class Constraint {
         venueTime = panel.getVenueTime();
         if (cache.get(venueTime) == null) {
             boolean violated = isConstraintViolated(venueTime);
-            cache.put(venueTime, violated);
             return violated;
         } else {
             return cache.get(venueTime);

@@ -87,24 +87,31 @@ public class Parser {
                 String panel_name = (String) item.get("name");
                 JSONArray panel_panelists = (JSONArray) item.get("panelists");
                 JSONArray json_constraints = (JSONArray) item.get("constraints");
-                String category = (String) item.get("category");
+                String categories = (String) item.get("categories");
 
-                Map<String, TimeRangeSeries> people_involved = new HashMap<String, TimeRangeSeries>();
+                List<String> names = new ArrayList<String>();
+                List<Range> availability = new ArrayList<Range>();
                 for (Object panelist : panel_panelists) {
                     String name = (String) panelist;
+                    names.add(name);
                     Collection<TimeRange> times = panelists.get(name);
-                    people_involved.put(name, new TimeRangeSeries(times));
+                    availability.add(new TimeRangeSeries(times));
+                }
+                Range intersection = availability.get(0).intersect(availability);
+
+                List<String> categoryList = new ArrayList<String>();
+                for (String category : categories.split(",")){
+                    categoryList.add(category);
                 }
 
                 List<String> constraints = new ArrayList<String>();
+                //TODO set panel constraints
                 for (Object k : json_constraints) {
                     String constraint = (String) k;
                     constraints.add(constraint);
                 }
-                //public Panel(String name, Map<String, TimeRangeSeries> panelists, String category, List<String> constraints){
-                panels.add(new Panel(panel_name, people_involved, category, constraints));
-                //TODO set panel constraints
-                //TODO if a panel has a certain minimum size or any venue limits, set its locked value to true
+
+                panels.add(new Panel(panel_name, names, intersection, categoryList, constraints));
             }
 
 

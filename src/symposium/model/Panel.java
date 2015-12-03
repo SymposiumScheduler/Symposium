@@ -5,19 +5,22 @@ import java.util.*;
 
 public class Panel implements Comparable<Panel>{
     public final String NAME;
-    boolean Lock = false;
     public final Range AVAILABILITY;
     public final List<String> PANELISTS;
     public final List<String> CONSTRAINTS;
-    VenueTime assignedVenueTime;
-    int difficulty;
     public final List<String> CATEGORIES;
 
-    public Panel(String name, List<String> panelists, Range availability, List<String> category, List<String> constraints){
+    public final boolean LOCKED;
+
+    private VenueTime assignedVenueTime;
+    private int difficulty;
+
+    public Panel(String name, List<String> panelists, Range availability, List<String> categories, List<String> constraints){
         this.NAME = name;
-        this.CATEGORIES = category;
+        this.CATEGORIES = categories;
         this.AVAILABILITY = availability;
 
+        // TODO : better way to pass new panelists
         List<String> people = new ArrayList<String>();
         int new_count = 0;
         for (String panelist : panelists){
@@ -35,6 +38,7 @@ public class Panel implements Comparable<Panel>{
         this.CONSTRAINTS = constraints;
 
         //TODO set locked if minimum size is smaller than some number
+        this.LOCKED = false;
     }
 
     public void setDifficulty(int difficulty) {
@@ -45,7 +49,6 @@ public class Panel implements Comparable<Panel>{
     public int getDifficulty(){
         return difficulty;
     }
-
 
     public VenueTime getVenueTime(){
         return assignedVenueTime;

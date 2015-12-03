@@ -9,12 +9,6 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by yousef-alsber on 11/30/15.
- *
- *  Panel(String name, List<String> panelists, Range availability, List<String> category, List<String> constraints)
- */
-
 public class PanelTest {
 
 

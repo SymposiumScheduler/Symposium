@@ -7,10 +7,8 @@ class VenueConstraint extends Constraint {
      * Dependencies: (Additionally) Venue class
      * @param v The venue the panel must appear in.
      */
-    @Override
     public VenueConstraint(short priority, Panel p, Venue v) {
-        PRIORITY = priority;
-        panel = p;
+        super(priority, p);
         venue = v;
     }
 
@@ -22,7 +20,7 @@ class VenueConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated;
-        if (venueTime.getAssignedPanel() != venue) {
+        if (venueTime.VENUE != venue) {
             violated = true;
         }
         else {

@@ -2,6 +2,9 @@ package symposium.model;
 
 abstract class NoOverlapConstraint extends Constraint {
 
+    public NoOverlapConstraint(short priority, Panel p) {
+        super(priority, p);
+    }
     /**
      * Dependencies: (Additionally) doesOvelap method
      * @param venueTime The time being checked by doesOverlap
@@ -10,7 +13,7 @@ abstract class NoOverlapConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated;
-        if doesOverlap(venueTime) {
+        if (doesOverlap(venueTime)) {
             violated = true;
         }
         else {
@@ -20,5 +23,7 @@ abstract class NoOverlapConstraint extends Constraint {
         return violated;
     }
 
-    private boolean doesOverlap(VenueTime venueTime);
+    private boolean doesOverlap(VenueTime venueTime) {
+        throw new UnsupportedOperationException();
+    }
 }

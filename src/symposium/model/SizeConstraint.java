@@ -8,10 +8,8 @@ class SizeConstraint extends Constraint {
      *
      * @param mSize The minimum size necessary for the panel to fit.
      */
-    @Override
     public SizeConstraint(short priority, Panel p, short mSize) {
-        PRIORITY = priority;
-        panel = p;
+        super(priority, p);
         minSize = mSize;
     }
 
@@ -23,7 +21,7 @@ class SizeConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated;
-        if venueTime.VENUE.SIZE >= minSize {
+        if (venueTime.VENUE.SIZE >= minSize) {
             violated = false;
         }
         else {

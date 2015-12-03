@@ -1,9 +1,11 @@
 package symposium.model;
 
+import java.util.Map;
+
 public abstract class Constraint {
-    public short final PRIORITY;
-    Panel panel;
-    Map<VenueTime, boolean> cache = new Map<VenueTime, boolean>;
+    public final short PRIORITY;
+    public final Panel PANEL;
+    Map<VenueTime, Boolean> cache = new Map<VenueTime, Boolean>;
 
     /**
      * Constructs constraint.
@@ -13,8 +15,8 @@ public abstract class Constraint {
      * @param p        the Panel that the constraint is part of.
      */
     public Constraint(short priority, Panel p) {  //Refering to ScheduleData globally?
-        PRIORITY = priority;
-        panel = p;
+        this.PRIORITY = priority;
+        this.PANEL = p;
     }
 
     /**
@@ -38,14 +40,14 @@ public abstract class Constraint {
 
     /**
      * Checks cache to see if bool stored for particular venue time for this constraint
-     * If not stored, runs isConstraintViolated on panel's current venueTime
+     * If not stored, runs isConstraintViolated on PANEL's current venueTime
      * If stored, returns the cached bool.
-     * Dependencies: isConstraintViolated method, VenueTime class, panel.getVenueTime method
+     * Dependencies: isConstraintViolated method, VenueTime class, PANEL.getVenueTime method
      *
      * @return True if constraint is violated at current venueTime, false otherwise.
      */
     public boolean checkViolationCache() {
-        venueTime = panel.getVenueTime();
+        VenueTime venueTime = PANEL.getVenueTime();
         if (cache.get(venueTime) == null) {
             boolean violated = isConstraintViolated(venueTime);
             return violated;
@@ -60,7 +62,9 @@ public abstract class Constraint {
      * @param venueTime
      * @return True if costraint is violated at prospective venueTime, false otherwise.
      */
-    public boolean isConstraintViolated(VenueTime venueTime);
+    public boolean isConstraintViolated(VenueTime venueTime) {
+        throw new UnsupportedOperationException();
+    }
 
     /**
      * Removes the cached bool for the specified venueTime.

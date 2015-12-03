@@ -11,8 +11,8 @@ class NewPanelistConstraint extends TimeConstraint { //Ask team members
         Range time = venueTime.getTime(); // Implement in VenueTime later
         Range monday = new TimeRange(0, 1440); // Assuming Joey's current parser, change if implementation changes
         short newMoreThanTwo = 0;
-        for (for i = 0; i < panel.PANELIST.size(); i++) {
-            if panel.PANELIST[i].contains('new') {  // built on assumption that the PANELIST array in panel contains the substring
+        for (int i = 0; i < panel.PANELIST.size(); i++) {
+            if(panel.PANELIST[i].contains('new')) {  // built on assumption that the PANELIST array in panel contains the substring
                 newMoreThanTwo++;
             }
         }

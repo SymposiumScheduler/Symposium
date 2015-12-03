@@ -2,6 +2,9 @@ package symposium.model;
 
 class PanelistConstraint extends NoOverlapConstraint {
 
+    public PanelistConstraint(short priority, Panel p) {
+        super(priority,p);
+    }
     /**
      * There's a (potential) logic error in the way this CURRENTLY works with checkViolationCache,
      * in that panelists will be assigned to the current venueTime
@@ -12,11 +15,11 @@ class PanelistConstraint extends NoOverlapConstraint {
      */
     @Override
     private boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
-        if ScheduleData.isAssigned(venueTime, panel.PANELIST) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
-            return true
+        if( ScheduleData.INSTANCE.isAssignedPanelists(venueTime, PANEL.PANELISTS)) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
+            return true;
         }
         else {
-            return false
+            return false;
         }
     }
 }

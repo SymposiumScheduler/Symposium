@@ -2,6 +2,9 @@ package symposium.model;
 
 class CategoryConstraint extends NoOverlapConstraint {
 
+    public CategoryConstraint(short priority, Panel p) {
+        super(priority, p);
+    }
     /**
      * Dependencies: ScheduleData class, ScheduleData.isAssigned method, Panel.CATEGORY variable
      * @param venueTime The venueTime to check the Category against.
@@ -9,11 +12,11 @@ class CategoryConstraint extends NoOverlapConstraint {
      */
     @Override
     private boolean doesOverlap(VenueTime venueTime) {
-        if ScheduleData.isAssigned(venueTime, panel.CATEGORY) { //A variant of the above function, written to check category instead of panelists
-            return true
+        if (ScheduleData.INSTANCE.isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
+            return true;
         }
         else {
-            return false
+            return false;
         }
     }
 }

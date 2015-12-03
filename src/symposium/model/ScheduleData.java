@@ -5,6 +5,9 @@ import java.util.*;
 
 
 public class ScheduleData {
+    // TODO : implement singleton
+    public static ScheduleData INSTANCE;
+
     public final List<Venue> VENUES;
 
     private final Comparator<Panel> panelTimeComparator = new Comparator<Panel>() {
@@ -91,5 +94,12 @@ public class ScheduleData {
                 panelistAssigned.get(category).remove(panel);
             }
         }
+    }
+
+    public boolean isAssignedPanelists(VenueTime vt, List<String> panelists) {
+        throw new UnsupportedOperationException();
+    }
+    public boolean isAssignedCategories(VenueTime vt, List<String> categories) {
+        throw new UnsupportedOperationException();
     }
 }

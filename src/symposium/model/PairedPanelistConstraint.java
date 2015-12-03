@@ -1,7 +1,9 @@
 package symposium.model;
 
 class PairedPanelistConstraint extends Constraint {
-
+    public PairedPanelistConstraint(short priority, Panel p) {
+        super(priority,p);
+    }
     /**
      * Dependencies: ScheduleData class, ScheduleData.timesAssignedTogetherDay method, VenueTime class
      * @param venueTime
@@ -10,9 +12,11 @@ class PairedPanelistConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated = false;
-        for (i = 0; i < panel.PANELIST.size(); i++) {
-            for (j = 0; j < panel.PANELIST.size(); j++) {
-                if (ScheduleData.timesAssignedTogetherDay(venueTime, panel.PANELIST[i], panel.PANELIST) >= 2)  && (i != j) {  //Another function that will be written later in scheduleData
+
+        for (int i = 0; i < PANEL.PANELISTS.size(); i++) {
+            for (int j = 0; j < PANEL.PANELISTS.size(); j++) {
+                if ((ScheduleData.INSTANCE.timesAssignedTogetherDay(venueTime, PANEL.PANELISTS.get(i)
+                        , PANEL.PANELISTS) >= 2)  && (i != j)) {  //Another function that will be written later in scheduleData
                     violated = true;
                 }
             }

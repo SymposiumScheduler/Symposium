@@ -1,7 +1,12 @@
 package symposium.model;
 
+import java.sql.Time;
+
 abstract class TimeConstraint extends Constraint {
 
+    public TimeConstraint(short priority, Panel p) {
+        super(priority,p);
+    }
     /**
      * Dependencies: checkTime method
      * @param venueTime
@@ -10,7 +15,7 @@ abstract class TimeConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated;
-        if checkTime(venueTime) {
+        if (checkTime(venueTime)) {
             violated = false;
         }
         else {
@@ -20,5 +25,7 @@ abstract class TimeConstraint extends Constraint {
         return violated;
     }
 
-    private boolean checkTime();
+    private boolean checkTime(VenueTime vt) {
+        throw new UnsupportedOperationException();
+    }
 }

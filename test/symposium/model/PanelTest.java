@@ -11,6 +11,8 @@ import static org.junit.Assert.*;
 
 /**
  * Created by yousef-alsber on 11/30/15.
+ *
+ *  Panel(String name, List<String> panelists, Range availability, List<String> category, List<String> constraints)
  */
 
 public class PanelTest {
@@ -20,17 +22,29 @@ public class PanelTest {
     public void testConstructor() throws Exception {
 
         String panelName = "NewPanel";
-        String newCategory = "newCategory";
+        List<String> newCategory = new ArrayList<String>();
+        newCategory.add("newCategory");
+
         List<String> constraints = new ArrayList<String>();
         constraints.add("New");
-        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+        List<String> panelists = new ArrayList<String>();
+        panelists.add("Joey");
+        panelists.add("Yousef");
 
-        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        Range range = new TimeRange(10, 20);
+
+        Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
 
 
         assertTrue(panel.NAME.equals(panelName));
-        assertTrue(panel.CATEGORIES.get(0).equals(newCategory));
+        assertTrue(panel.PANELISTS.get(0).equals("Joey"));
+        assertTrue(panel.AVAILABILITY.equals(range));
+        assertTrue(panel.CATEGORIES.get(0).equals("newCategory"));
         assertTrue(panel.CONSTRAINTS.get(0).equals("New"));
+
+
+
 
         //  assertTrue(panel.getDifficulty() == 0);
         // panel.setDifficulty(3);
@@ -47,12 +61,19 @@ public class PanelTest {
     public void testSetDifficulty() throws Exception {
 
         String panelName = "NewPanel";
-        String newCategory = "newCategory";
+        List<String> newCategory = new ArrayList<String>();
+        newCategory.add("newCategory");
+
         List<String> constraints = new ArrayList<String>();
         constraints.add("New");
-        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+        List<String> panelists = new ArrayList<String>();
+        panelists.add("Joey");
+        panelists.add("Yousef");
 
-        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        Range range = new TimeRange(10, 20);
+
+        Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
 
         panel.setDifficulty(2);
 
@@ -65,12 +86,19 @@ public class PanelTest {
      public void testGetDifficulty() throws Exception {
 
          String panelName = "NewPanel";
-         String newCategory = "newCategory";
+         List<String> newCategory = new ArrayList<String>();
+         newCategory.add("newCategory");
+
          List<String> constraints = new ArrayList<String>();
          constraints.add("New");
-         Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+         List<String> panelists = new ArrayList<String>();
+         panelists.add("Joey");
+         panelists.add("Yousef");
 
-         Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+         Range range = new TimeRange(10, 20);
+
+         Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
 
          panel.setDifficulty(2);
 
@@ -83,12 +111,20 @@ public class PanelTest {
      public void testSetVenueTime() throws Exception {
 
          String panelName = "NewPanel";
-         String newCategory = "newCategory";
+         List<String> newCategory = new ArrayList<String>();
+         newCategory.add("newCategory");
+
          List<String> constraints = new ArrayList<String>();
          constraints.add("New");
-         Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+         List<String> panelists = new ArrayList<String>();
+         panelists.add("Joey");
+         panelists.add("Yousef");
 
-         Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+         Range range = new TimeRange(10, 20);
+
+         Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
+
 
          List<TimeRange> ranges = new ArrayList<>(3);
          ranges.add(new TimeRange(10,20));
@@ -109,12 +145,20 @@ public class PanelTest {
     public void testGetVenueTime() throws Exception {
 
         String panelName = "NewPanel";
-        String newCategory = "newCategory";
+        List<String> newCategory = new ArrayList<String>();
+        newCategory.add("newCategory");
+
         List<String> constraints = new ArrayList<String>();
         constraints.add("New");
-        Map<String, TimeRangeSeries> panelist = new HashMap<String, TimeRangeSeries>();
+        List<String> panelists = new ArrayList<String>();
+        panelists.add("Joey");
+        panelists.add("Yousef");
 
-        Panel panel = new Panel(panelName, panelist, newCategory, constraints);
+
+        Range range = new TimeRange(10, 20);
+
+        Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
+
 
         List<TimeRange> ranges = new ArrayList<>(3);
         ranges.add(new TimeRange(10,20));

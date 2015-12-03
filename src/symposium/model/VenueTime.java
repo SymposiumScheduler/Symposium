@@ -13,12 +13,17 @@ public class VenueTime {
     }
 
     public void assignPanel(Panel panel){
+
         this.assignedPanel = panel;
     }
+
     public boolean isAssigned() {
+
         return (assignedPanel != null);
     }
+
     public Panel getAssignedPanel(){
+
         return this.assignedPanel;
     }
 }

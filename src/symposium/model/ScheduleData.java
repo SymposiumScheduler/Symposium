@@ -5,8 +5,8 @@ import java.util.*;
 
 
 public class ScheduleData {
-    // TODO : implement singleton
-    public static ScheduleData INSTANCE;
+    // singleton : see init() and instance()
+    private static ScheduleData instance;
 
     public final List<Venue> VENUES;
 
@@ -96,6 +96,7 @@ public class ScheduleData {
         }
     }
 
+
     public boolean isAssignedPanelists(VenueTime vt, List<String> panelists) {
         throw new UnsupportedOperationException();
     }
@@ -105,5 +106,14 @@ public class ScheduleData {
 
     public int timesAssignedTogetherDay(VenueTime vt, String p1, String p2) {
         throw new UnsupportedOperationException();
+    }
+
+    public static void init(List<Venue> venues, List<Panel> panels){
+        if(instance == null) {
+            instance = new ScheduleData(venues, panels);
+        }
+    }
+    public static ScheduleData instance() {
+        return ScheduleData.instance;
     }
 }

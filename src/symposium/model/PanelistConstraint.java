@@ -15,7 +15,7 @@ class PanelistConstraint extends NoOverlapConstraint {
      */
     @Override
     boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
-        if( ScheduleData.INSTANCE.isAssignedPanelists(venueTime, PANEL.PANELISTS)) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
+        if( ScheduleData.instance().isAssignedPanelists(venueTime, PANEL.PANELISTS)) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
             return true;
         }
         else {

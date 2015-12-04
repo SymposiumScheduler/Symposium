@@ -12,10 +12,9 @@ class PairedPanelistConstraint extends Constraint {
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated = false;
-
         for (int i = 0; i < PANEL.PANELISTS.size(); i++) {
             for (int j = 0; j < PANEL.PANELISTS.size(); j++) {
-                if ((ScheduleData.INSTANCE.timesAssignedTogetherDay(venueTime, PANEL.PANELISTS.get(i)
+                if ((ScheduleData.instance().timesAssignedTogetherDay(venueTime, PANEL.PANELISTS.get(i)
                         , PANEL.PANELISTS.get(j)) >= 2)  && (i != j)) {  //Another function that will be written later in scheduleData
                     violated = true;
                 }

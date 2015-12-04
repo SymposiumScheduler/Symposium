@@ -11,7 +11,7 @@ class CategoryConstraint extends NoOverlapConstraint {
      * @return If any other panel with the same category is scheduled at the same time as venueTime, return true.  Otherwise, return false.
      */
     @Override
-    private boolean doesOverlap(VenueTime venueTime) {
+    boolean doesOverlap(VenueTime venueTime) {
         if (ScheduleData.INSTANCE.isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
             return true;
         }

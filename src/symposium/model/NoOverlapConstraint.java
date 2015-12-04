@@ -23,7 +23,5 @@ abstract class NoOverlapConstraint extends Constraint {
         return violated;
     }
 
-    private boolean doesOverlap(VenueTime venueTime) {
-        throw new UnsupportedOperationException();
-    }
+    abstract boolean doesOverlap(VenueTime venueTime);
 }

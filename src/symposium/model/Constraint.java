@@ -1,11 +1,12 @@
 package symposium.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Constraint {
     public final short PRIORITY;
     public final Panel PANEL;
-    Map<VenueTime, Boolean> cache = new Map<VenueTime, Boolean>;
+    Map<VenueTime, Boolean> cache = new HashMap<VenueTime, Boolean>();
 
     /**
      * Constructs constraint.
@@ -62,9 +63,7 @@ public abstract class Constraint {
      * @param venueTime
      * @return True if costraint is violated at prospective venueTime, false otherwise.
      */
-    public boolean isConstraintViolated(VenueTime venueTime) {
-        throw new UnsupportedOperationException();
-    }
+    public abstract boolean isConstraintViolated(VenueTime venueTime);
 
     /**
      * Removes the cached bool for the specified venueTime.
@@ -78,6 +77,6 @@ public abstract class Constraint {
      * Clears the entire cache, starts anew.
      */
     public void clearCache() {
-        cache = new Map<VenueTime, Boolean>;
+        cache = new HashMap<VenueTime, Boolean>();
     }
 }

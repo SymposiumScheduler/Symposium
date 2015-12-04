@@ -102,4 +102,8 @@ public class ScheduleData {
     public boolean isAssignedCategories(VenueTime vt, List<String> categories) {
         throw new UnsupportedOperationException();
     }
+
+    public int timesAssignedTogetherDay(VenueTime vt, String p1, String p2) {
+        throw new UnsupportedOperationException();
+    }
 }

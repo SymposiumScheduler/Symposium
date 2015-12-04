@@ -25,7 +25,5 @@ abstract class TimeConstraint extends Constraint {
         return violated;
     }
 
-    private boolean checkTime(VenueTime vt) {
-        throw new UnsupportedOperationException();
-    }
+    abstract boolean checkTime(VenueTime vt);
 }

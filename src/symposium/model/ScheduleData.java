@@ -98,14 +98,55 @@ public class ScheduleData {
 
 
     public boolean isAssignedPanelists(VenueTime vt, List<String> panelists) {
-        throw new UnsupportedOperationException();
+        boolean panelistOverlap = false;
+        for (int i = 0; i < panelists.size(); i++) {
+            String panelist = panelists.get(i);
+            List<Panel> p = this.panelistAssigned.get(panelist);
+            if (this.panelistAssigned.get(panelist) != null) {
+                for (int j = 0; j < p.size(); j++) {
+                    if(p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
+                        panelistOverlap = true;
+                        break;
+                    }
+                }
+            }
+        }
+        return panelistOverlap;
     }
     public boolean isAssignedCategories(VenueTime vt, List<String> categories) {
-        throw new UnsupportedOperationException();
+        boolean categoryOverlap = false;
+        for (int i = 0; i < categories.size(); i++) {
+            String category = categories.get(i);
+            List<Panel> p = this.categoryAssigned.get(category);
+            if (this.categoryAssigned.get(category) != null) {
+                for (int j = 0; j < p.size(); j++) {
+                    if(p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME))
+                    categoryOverlap = true;
+                    break;
+                }
+            }
+        }
+        return categoryOverlap;
     }
 
     public int timesAssignedTogetherDay(VenueTime vt, String p1, String p2) {
-        throw new UnsupportedOperationException();
+        int assigned = 0;
+        int start = (vt.TIME.getStart() / 1440)*1440; //Division Should be floor
+        int end = start + 1440;
+        Range day = new TimeRange(start, end);
+        List<Panel> appears1 = panelistAssigned.get(p1);
+        List<Panel> appears2 = panelistAssigned.get(p2);
+        for (int i = 0; i < appears1.size(); i++){
+            for (int j = 0; j < appears2.size(); j++) {
+                if (appears1.get(i) == appears2.get(j)) {
+                    Panel appear = appears1.get(i);
+                    if (appear.getVenueTime().TIME.doesIntersect(day)){
+                        assigned++;
+                    }
+                }
+            }
+        }
+        return assigned;
     }
 
     public static void init(List<Venue> venues, List<Panel> panels){

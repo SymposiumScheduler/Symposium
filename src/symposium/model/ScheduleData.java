@@ -104,9 +104,11 @@ public class ScheduleData {
             List<Panel> p = this.panelistAssigned.get(panelist);
             if (this.panelistAssigned.get(panelist) != null) {
                 for (int j = 0; j < p.size(); j++) {
-                    if(p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
-                        panelistOverlap = true;
-                        break;
+                    if (p.get(j).getVenueTime() != null) {
+                        if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
+                            panelistOverlap = true;
+                            break;
+                        }
                     }
                 }
             }
@@ -120,9 +122,12 @@ public class ScheduleData {
             List<Panel> p = this.categoryAssigned.get(category);
             if (this.categoryAssigned.get(category) != null) {
                 for (int j = 0; j < p.size(); j++) {
-                    if(p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME))
-                    categoryOverlap = true;
-                    break;
+                    if(p.get(j).getVenueTime() != null) {
+                        if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
+                            categoryOverlap = true;
+                            break;
+                        }
+                    }
                 }
             }
         }
@@ -140,8 +145,10 @@ public class ScheduleData {
             for (int j = 0; j < appears2.size(); j++) {
                 if (appears1.get(i) == appears2.get(j)) {
                     Panel appear = appears1.get(i);
-                    if (appear.getVenueTime().TIME.doesIntersect(day)){
-                        assigned++;
+                    if (appear.getVenueTime() != null) {
+                        if (appear.getVenueTime().TIME.doesIntersect(day)) {
+                            assigned++;
+                        }
                     }
                 }
             }

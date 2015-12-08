@@ -1,15 +1,13 @@
 package symposium.model;
 
-
 import java.util.*;
 
 public class Panel implements Comparable<Panel>{
     public final String NAME;
     public final Range AVAILABILITY;
     public final List<String> PANELISTS;
-    public final List<String> CONSTRAINTS;
+    public final List<Constraint> CONSTRAINTS;
     public final List<String> CATEGORIES;
-
     public final boolean LOCKED;
 
     private VenueTime assignedVenueTime;
@@ -35,9 +33,8 @@ public class Panel implements Comparable<Panel>{
         }
 
         this.PANELISTS = people;
-        this.CONSTRAINTS = constraints;
-
-        //TODO set locked if minimum size is smaller than some number
+        this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraints);
+        //TODO set locked if minimum size is larger  than some number
         this.LOCKED = false;
     }
 

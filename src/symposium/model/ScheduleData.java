@@ -24,8 +24,8 @@ public class ScheduleData {
     /**
      * sortedSets because duplication is not allowed in these collections.
      */
-    private final SortedSet<Panel> assignedPanels;
-    private final SortedSet<Panel> freePanels;
+    private final List<Panel> assignedPanels;
+    private final List<Panel> freePanels;
 
     /**
      * @param venues
@@ -34,8 +34,8 @@ public class ScheduleData {
     public ScheduleData(List<Venue> venues, List<Panel> panels) {
         this.VENUES = Collections.unmodifiableList(venues);
 
-        this.freePanels = new TreeSet<>(panels);
-        this.assignedPanels = new TreeSet<>();
+        this.freePanels = new ArrayList<>(panels);
+        this.assignedPanels = new ArrayList<>();
 
         this.categoryAssigned = new HashMap<>();
         this.panelistAssigned = new HashMap<>();
@@ -57,7 +57,7 @@ public class ScheduleData {
                     panelistAssigned.put(panelist, new ArrayList<>());
                 }
                 panelistAssigned.get(panelist).add(panel);
-                Collections.sort( categoryAssigned.get(panelist), panelTimeComparator);
+                Collections.sort( panelistAssigned.get(panelist), panelTimeComparator);
             }
 
             // update category map
@@ -156,11 +156,27 @@ public class ScheduleData {
         return assigned;
     }
 
+    public void assignPanelToVenueTime(Panel p, VenueTime vt) {
+        p.setVenueTime(vt);
+        vt.assignPanel(p);
+
+        vt.VENUE.changeToAssigned(vt);
+        this.changeToAssigned(p);
+    }
+
+    public List<Panel> getFreePanels() {
+        return this.freePanels;
+    }
+    public List<Panel> getAssignedPanels() {
+        return this.assignedPanels;
+    }
+
     public static void init(List<Venue> venues, List<Panel> panels){
         if(instance == null) {
             instance = new ScheduleData(venues, panels);
         }
     }
+
     public static ScheduleData instance() {
         return ScheduleData.instance;
     }

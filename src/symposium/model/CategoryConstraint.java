@@ -1,6 +1,6 @@
 package symposium.model;
 
-class CategoryConstraint extends NoOverlapConstraint {
+public class CategoryConstraint extends NoOverlapConstraint {
 
     public CategoryConstraint(short priority, Panel p) {
         super(priority, p);

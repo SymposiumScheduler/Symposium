@@ -1,6 +1,6 @@
 package symposium.model;
 
-class SizeConstraint extends Constraint {
+public class SizeConstraint extends Constraint {
 
     short minSize;
 

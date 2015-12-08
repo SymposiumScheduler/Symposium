@@ -1,6 +1,8 @@
 package symposium.model;
 
 
+import sun.util.resources.cldr.fr.TimeZoneNames_fr;
+
 public class VenueTime {
     public final Range TIME;
     public final Venue VENUE;
@@ -26,4 +28,9 @@ public class VenueTime {
 
         return this.assignedPanel;
     }
+
+    public String toString() {
+        return VENUE.NAME + " " + TimeFormat.absoluteToNormal(TIME);
+    }
 }
+

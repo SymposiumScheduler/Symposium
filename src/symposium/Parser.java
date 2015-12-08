@@ -5,6 +5,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import symposium.model.*;
+
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -12,12 +14,12 @@ import java.util.List;
 import symposium.model.Panel;
 
 public class Parser {
-    public static void main(String[] args) {
+    public static void initScheduleData(String inputFile) {
         List<symposium.model.Panel> panels = new ArrayList<Panel>();
         List<Venue> venues = new ArrayList<Venue>();
         JSONParser parser = new JSONParser();
         try {
-            Object obj = parser.parse(new FileReader("data.txt"));
+            Object obj = parser.parse(new FileReader(inputFile));
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray json_venues = (JSONArray) jsonObject.get("Venues");
             JSONArray json_venue_times = (JSONArray) jsonObject.get("Venue-Times");
@@ -41,7 +43,6 @@ public class Parser {
                 JSONObject item = (JSONObject) o;
                 String venue_name = (String) item.get("name");
                 String venue_time = (String) item.get("time");
-                System.out.println(venue_time);
                 TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(venue_time);
                 List<TimeRange> timeRanges; //list of all timeRanges for this venue
                 if (ranges.containsKey(venue_name)) {
@@ -87,7 +88,7 @@ public class Parser {
                 String panel_name = (String) item.get("name");
                 JSONArray panel_panelists = (JSONArray) item.get("panelists");
                 JSONArray json_constraints = (JSONArray) item.get("constraints");
-                String categories = (String) item.get("categories");
+                String categories = (String) item.get("category");
 
                 List<String> names = new ArrayList<String>();
                 List<Range> availability = new ArrayList<Range>();
@@ -97,7 +98,11 @@ public class Parser {
                     Collection<TimeRange> times = panelists.get(name);
                     availability.add(new TimeRangeSeries(times));
                 }
-                Range intersection = availability.get(0).intersect(availability);
+                Range intersection = null;
+                if(availability.size() > 0) {
+                    intersection = availability.get(0).intersect(availability);
+                }
+
 
                 List<String> categoryList = new ArrayList<String>();
                 for (String category : categories.split(",")){
@@ -115,7 +120,8 @@ public class Parser {
             }
 
 
-            output(venues, panels);
+
+            ScheduleData.init(venues, panels);
         }
         catch (IOException e) {
             e.printStackTrace();

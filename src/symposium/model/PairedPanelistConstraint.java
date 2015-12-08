@@ -1,6 +1,6 @@
 package symposium.model;
 
-class PairedPanelistConstraint extends Constraint {
+public class PairedPanelistConstraint extends Constraint {
     public PairedPanelistConstraint(short priority, Panel p) {
         super(priority,p);
     }

@@ -1,6 +1,6 @@
 package symposium.model;
 
-class VenueConstraint extends Constraint {
+public class VenueConstraint extends Constraint {
     Venue venue;
 
     /**

@@ -3,7 +3,7 @@ package symposium.model;
 /**
  * Constraint class; its presence in a panel means that the slot it takes up should be short.
  */
-class DurationConstraint extends TimeConstraint {
+public class DurationConstraint extends TimeConstraint {
 
     public DurationConstraint(short priority, Panel p) {
         super(priority, p);

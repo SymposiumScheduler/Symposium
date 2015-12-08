@@ -88,2149 +88,2149 @@
 "Venue-Times": [
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Friday, 08:30-09:30"
+		"time": "4, 08:30-09:30"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Eaton-Humanities-150",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Eaton-Humanities-1B50",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Math-100",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "Visual-Arts-Complex-1B20",
-		"time": "Friday, 09:00-10:20"
+		"time": "4, 09:00-10:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Friday, 09:30-10:50"
+		"time": "4, 09:30-10:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Friday, 10:30-11:50"
+		"time": "4, 10:30-11:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Friday, 10:30-11:50"
+		"time": "4, 10:30-11:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Friday, 10:30-11:50"
+		"time": "4, 10:30-11:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "Eaton-Humanities-150",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "Fleming-155",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Friday, 11:00-12:20"
+		"time": "4, 11:00-12:20"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Friday, 11:30-13:20"
+		"time": "4, 11:30-13:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Friday, 12:00-12:50"
+		"time": "4, 12:00-12:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Friday, 12:00-13:20"
+		"time": "4, 12:00-13:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Friday, 12:30-13:20"
+		"time": "4, 12:30-13:20"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "Eaton-Humanities-150",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "Hale-270",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Friday, 13:00-14:20"
+		"time": "4, 13:00-14:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Friday, 13:30-14:20"
+		"time": "4, 13:30-14:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Friday, 14:00-14:20"
+		"time": "4, 14:00-14:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Friday, 14:30-15:20"
+		"time": "4, 14:30-15:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Friday, 16:00-18:00"
+		"time": "4, 16:00-18:00"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Monday, 08:30-09:00"
+		"time": "0, 08:30-09:00"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Monday, 09:00-10:20"
+		"time": "0, 09:00-10:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Monday, 11:30-12:20"
+		"time": "0, 11:30-12:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Monday, 12:30-13:50"
+		"time": "0, 12:30-13:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Monday, 13:00-14:20"
+		"time": "0, 13:00-14:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Monday, 13:00-14:20"
+		"time": "0, 13:00-14:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Monday, 13:00-14:20"
+		"time": "0, 13:00-14:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Monday, 13:00-14:20"
+		"time": "0, 13:00-14:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Monday, 13:00-14:20"
+		"time": "0, 13:00-14:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Monday, 14:00-15:20"
+		"time": "0, 14:00-15:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Monday, 14:30-15:50"
+		"time": "0, 14:30-15:50"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Monday, 15:00-15:30"
+		"time": "0, 15:00-15:30"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "Chemistry-140",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "Visual-Arts-Complex-1B20",
-		"time": "Monday, 15:00-16:20"
+		"time": "0, 15:00-16:20"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Monday, 15:00-17:30"
+		"time": "0, 15:00-17:30"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Monday, 16:00-18:00"
+		"time": "0, 16:00-18:00"
 	},
 	{
 		"name": "Visual-Arts-Complex-1B20",
-		"time": "Monday, 16:30-17:30"
+		"time": "0, 16:30-17:30"
 	},
 	{
 		"name": "Chemistry-140",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "Duane-Physics-G1B30",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "Hellems-252",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "UMC-Gallery",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Monday, 16:30-17:50"
+		"time": "0, 16:30-17:50"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Monday, 18:30-19:00"
+		"time": "0, 18:30-19:00"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Sunday, 15:00-17:00"
+		"time": "6, 15:00-17:00"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Thursday, 08:30-09:00"
+		"time": "3, 08:30-09:00"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Thursday, 09:30-10:50"
+		"time": "3, 09:30-10:50"
 	},
 	{
 		"name": "Boulder-High-School",
-		"time": "Thursday, 09:45-11:05"
+		"time": "3, 09:45-11:05"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Thursday, 11:00-11:50"
+		"time": "3, 11:00-11:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Thursday, 11:00-12:20"
+		"time": "3, 11:00-12:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Thursday, 12:30-13:50"
+		"time": "3, 12:30-13:50"
 	},
 	{
 		"name": "Boulder-High-School",
-		"time": "Thursday, 13:30-14:50"
+		"time": "3, 13:30-14:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Thursday, 14:00-14:50"
+		"time": "3, 14:00-14:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Thursday, 14:00-15:20"
+		"time": "3, 14:00-15:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 14:00-15:20"
+		"time": "3, 14:00-15:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 14:00-15:20"
+		"time": "3, 14:00-15:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Thursday, 14:00-15:20"
+		"time": "3, 14:00-15:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 14:00-15:20"
+		"time": "3, 14:00-15:20"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 15:30-16:50"
+		"time": "3, 15:30-16:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Thursday, 16:00-18:00"
+		"time": "3, 16:00-18:00"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Thursday, 17:00-17:50"
+		"time": "3, 17:00-17:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Thursday, 17:00-18:20"
+		"time": "3, 17:00-18:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Thursday, 17:00-18:20"
+		"time": "3, 17:00-18:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Thursday, 17:00-18:20"
+		"time": "3, 17:00-18:20"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Thursday, 18:00-19:00"
+		"time": "3, 18:00-19:00"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Tuesday, 08:30-09:00"
+		"time": "1, 08:30-09:00"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Tuesday, 09:30-10:50"
+		"time": "1, 09:30-10:50"
 	},
 	{
 		"name": "Visual-Arts-Complex-1B20",
-		"time": "Tuesday, 11:00-11:50"
+		"time": "1, 11:00-11:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Tuesday, 11:00-12:20"
+		"time": "1, 11:00-12:20"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Tuesday, 12:30-13:50"
+		"time": "1, 12:30-13:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Tuesday, 14:00-15:20"
+		"time": "1, 14:00-15:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 14:00-15:20"
+		"time": "1, 14:00-15:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 14:00-15:20"
+		"time": "1, 14:00-15:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Tuesday, 14:00-15:20"
+		"time": "1, 14:00-15:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Tuesday, 14:00-15:20"
+		"time": "1, 14:00-15:20"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Tuesday, 15:00-15:30"
+		"time": "1, 15:00-15:30"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "Eaton-Humanities-1B50",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "Math-100",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Tuesday, 15:30-16:50"
+		"time": "1, 15:30-16:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Tuesday, 16:00-17:45"
+		"time": "1, 16:00-17:45"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Tuesday, 17:00-17:50"
+		"time": "1, 17:00-17:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Tuesday, 17:00-18:20"
+		"time": "1, 17:00-18:20"
 	},
 	{
 		"name": "KGNU-88-5-FM-1390-AM",
-		"time": "Tuesday, 18:00-19:00"
+		"time": "1, 18:00-19:00"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Tuesday, 20:00-22:00"
+		"time": "1, 20:00-22:00"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 08:30-09:50"
+		"time": "2, 08:30-09:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Wednesday, 09:00-10:20"
+		"time": "2, 09:00-10:20"
 	},
 	{
 		"name": "Boulder-High-School",
-		"time": "Wednesday, 09:00-10:40"
+		"time": "2, 09:00-10:40"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 10:00-11:20"
+		"time": "2, 10:00-11:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 10:30-11:20"
+		"time": "2, 10:30-11:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 10:30-11:50"
+		"time": "2, 10:30-11:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Wednesday, 11:00-12:20"
+		"time": "2, 11:00-12:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Wednesday, 11:00-12:20"
+		"time": "2, 11:00-12:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Wednesday, 11:00-12:20"
+		"time": "2, 11:00-12:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Wednesday, 11:00-12:20"
+		"time": "2, 11:00-12:20"
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
-		"time": "Wednesday, 11:00-12:20"
+		"time": "2, 11:00-12:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 11:30-12:50"
+		"time": "2, 11:30-12:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 11:30-12:50"
+		"time": "2, 11:30-12:50"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 12:00-13:20"
+		"time": "2, 12:00-13:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Wednesday, 12:30-13:20"
+		"time": "2, 12:30-13:20"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Wednesday, 13:00-14:20"
+		"time": "2, 13:00-14:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 13:00-14:20"
+		"time": "2, 13:00-14:20"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Wednesday, 13:00-14:20"
+		"time": "2, 13:00-14:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Wednesday, 13:00-14:20"
+		"time": "2, 13:00-14:20"
 	},
 	{
 		"name": "Boulder-High-School",
-		"time": "Wednesday, 13:05-14:25"
+		"time": "2, 13:05-14:25"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 13:30-14:20"
+		"time": "2, 13:30-14:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 13:30-14:50"
+		"time": "2, 13:30-14:50"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Wednesday, 14:00-15:20"
+		"time": "2, 14:00-15:20"
 	},
 	{
 		"name": "Chemistry-140",
-		"time": "Wednesday, 14:30-15:50"
+		"time": "2, 14:30-15:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Wednesday, 14:30-15:50"
+		"time": "2, 14:30-15:50"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Wednesday, 15:00-16:20"
+		"time": "2, 15:00-16:20"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 15:00-16:20"
+		"time": "2, 15:00-16:20"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 15:00-16:20"
+		"time": "2, 15:00-16:20"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 15:00-16:20"
+		"time": "2, 15:00-16:20"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Wednesday, 15:00-16:20"
+		"time": "2, 15:00-16:20"
 	},
 	{
 		"name": "Muenzinger-Auditorium",
-		"time": "Wednesday, 15:00-17:30"
+		"time": "2, 15:00-17:30"
 	},
 	{
 		"name": "Chemistry-140",
-		"time": "Wednesday, 16:00-17:20"
+		"time": "2, 16:00-17:20"
 	},
 	{
 		"name": "Macky-Auditorium",
-		"time": "Wednesday, 16:00-18:00"
+		"time": "2, 16:00-18:00"
 	},
 	{
 		"name": "Old-Main-Chapel",
-		"time": "Wednesday, 16:30-17:20"
+		"time": "2, 16:30-17:20"
 	},
 	{
 		"name": "ATLAS-Black-Box",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	},
 	{
 		"name": "Hale-270",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	},
 	{
 		"name": "UMC-235",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	},
 	{
 		"name": "UMC-Center-Ballroom",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	},
 	{
 		"name": "UMC-East-Ballroom",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	},
 	{
 		"name": "UMC-West-Ballroom",
-		"time": "Wednesday, 16:30-17:50"
+		"time": "2, 16:30-17:50"
 	}
 ],
 "Panelists": [
 	{
 		"name": "Gordon Adams",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Margot Adler",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Avi Agababa",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Shihana Alazzaz",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Suhad Babaa",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Bijoux Barbosa",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Monika Bauerlein",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "David Bender",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Guy Benson",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Stacie Nevadomski Berdan",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Charlie Bisharat",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Patrick Boel",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Lillian Boutt&eacute;",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Janet Breslin-Smith",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Andrew Butcher",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Henry Butler",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Stuart Butler",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Mama C",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Sasha Cagen",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Joe Cirincione",
 		"times": [
-			"Monday, 12:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"0, 12:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Kevin Conger",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Judith Curry",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Christopher Douglas",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Bob Dreyfuss",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Lou Dubose",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Tina Dupuy",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Robert Egger",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Tanya Boutt&eacute; Ellsworth",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Gabriela Enrigue",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Roger W. Ferguson , Jr.",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Sandra Fluke",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Joel Gallant",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Robert A. George",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Dan Gillmor",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Tom Gold",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Brad Goode",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Gooding",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Francesca Grifo",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Arthur Grim",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "David Groenfeldt",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Dave Grusin",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Don Grusin",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Ross Haenfler",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Carrie Hessler-Radelet",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Ellie Boldman Hill",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Linda HIlton",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Tori Hogan",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Sarah Holewinski",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Mary V. Hughes",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Andy Ihnatko Respondent",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Vasti Jackson",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Steve James",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Richard H. Jones",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Robert G. Kaufman",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Daisy Khan",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Neil King , Jr.",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Kevin Kling",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Maggie Koerth-Baker",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Abraham Laboriel",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Jeff LIeberman",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Peter Lighte",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Trey Lyons",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Shadia Marhaban",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Jeanne Marrazzo",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Jurek Martin",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Tamsin Maxwell",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Terrence McNally",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Judith Morrison",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Joaquin Mu&ntilde;oz",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Clare Muireann Murphy",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "William Nack",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Derek Nash",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Ana Navarro",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Daniel Odescalchi",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Vivian Onano",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Tina Packer",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Jay M. Parker",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Cheryl Polk",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Abby Rapoport",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Judithe Registre",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Alicia Robb",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "John Roderick",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Josh Rogin",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Paul Romaine",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Steve Sauer",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Melissa Wilson Sayres",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Stuart Schoffman",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Howard Schultz",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Tammy S. Schultz",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Kathleen Sebelius",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Jenny Seham",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Limor Shiponi",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Seth Shostak",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Sarah Shourd",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Ricardo Silveira",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Maggie Duncan Simbeye",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Jon Sinton",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-12:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-12:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Jim Smith",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Michael Stoff",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "James Tanabe",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Michelle Thaller",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Dovie Thomason",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "John Tirman",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Sanho Tree",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Jim Walsh",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Ernie Watts",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 20:00-23:59",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 20:00-23:59",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Don Weingust",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	},
 	{
 		"name": "Liz Weir",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "G. Willow Wilson",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Isaiah (Ike) Wilson , III",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "no"
 	},
 	{
 		"name": "Elle Helmer Woods",
 		"times": [
-			"Sunday, 08:00-20:00",
-			"Monday, 08:00-20:00",
-			"Tuesday, 08:00-20:00",
-			"Wednesday, 08:00-20:00",
-			"Thursday, 08:00-20:00",
-			"Friday, 08:00-20:00"
+			"6, 08:00-20:00",
+			"0, 08:00-20:00",
+			"1, 08:00-20:00",
+			"2, 08:00-20:00",
+			"3, 08:00-20:00",
+			"4, 08:00-20:00"
 		],
 		"new": "yes"
 	}
@@ -2248,7 +2248,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(4):2",
 			"Venue(Muenzinger-Auditorium):1",
-			"Time(Sunday;15:00):1",
+			"Time(6;15:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"
@@ -2415,7 +2415,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Monday;11:30):1",
+			"Time(0;11:30):1",
 			"Availability:1"
 		],
 		"category": "HC"
@@ -2749,7 +2749,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Monday;16:00):1",
+			"Time(0;16:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"
@@ -3678,7 +3678,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Tuesday;16:00):1",
+			"Time(1;16:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"
@@ -3763,7 +3763,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Tuesday;20:00):1",
+			"Time(1;20:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"
@@ -4468,7 +4468,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Wednesday;16:00):1",
+			"Time(2;16:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"
@@ -5283,7 +5283,7 @@
 			"Min-Panels(1):1",
 			"Minimum-Capacity(7):2",
 			"Venue(Macky-Auditorium):1",
-			"Time(Thursday;16:00):1",
+			"Time(3;16:00):1",
 			"Availability:1"
 		],
 		"category": "Arts"

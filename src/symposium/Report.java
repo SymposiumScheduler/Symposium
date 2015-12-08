@@ -25,7 +25,7 @@ public class Report {
         // print final schedule
         // count and print violations
         for (Panel p : ScheduleData.instance().getAssignedPanels()) {
-            lastSchedule += p.NAME + " Scheduled in " + p.getVenueTime() + "\n";
+            lastSchedule += p.NAME + "\n\t" + p.getVenueTime() + "\n";
         }
     }
     public String toString() {
@@ -35,6 +35,7 @@ public class Report {
         }
         return result;
     }
+
     public void cannotSchedule(Panel p, String msg) {
         unschedulablePanels.add(p);
         unschedulablePanelMessages.add(msg);

@@ -30,7 +30,7 @@ public class VenueTime {
     }
 
     public String toString() {
-        return VENUE.NAME + " " + TimeFormat.absoluteToNormal(TIME);
+        return "Venue: "+ VENUE.NAME + ", Time: " + TimeFormat.absoluteToNormal(TIME);
     }
 }
 

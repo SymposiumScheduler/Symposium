@@ -65,6 +65,15 @@ public abstract class Constraint {
      */
     public abstract boolean isConstraintViolated(VenueTime venueTime);
 
+    public boolean isConstraintViolated() {
+        if (PANEL.getVenueTime() == null) {
+            return false;
+        }
+        else {
+            return this.isConstraintViolated(PANEL.getVenueTime());
+        }
+    }
+
     /**
      * Removes the cached bool for the specified venueTime.
      * @param venueTime

@@ -2,9 +2,7 @@ package symposium.model;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -14,7 +12,7 @@ public class VenueConstraintTest {
     public void testConstructor() throws Exception {
         short priority = 1;
 
-        String name = 'new';
+        String name = "new";
         List<String> panelists = new ArrayList<>(3);
         panelists.add("Trey Lyons");
         panelists.add("Jurek Martin");
@@ -38,7 +36,7 @@ public class VenueConstraintTest {
 
         Panel p = new Panel(name, panelists, range, category, constraints);
 
-        Venue v = new Venue("North Building", 4);
+        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
 
         Constraint vC = new VenueConstraint(priority, p, v);
         assert(vC.PRIORITY == 1);
@@ -48,7 +46,7 @@ public class VenueConstraintTest {
     public void test_isConstraintViolated_true() throws Exception {
         short priority = 1;
 
-        String name = 'new';
+        String name = "new";
         List<String> panelists = new ArrayList<>(3);
         panelists.add("Trey Lyons");
         panelists.add("Jurek Martin");
@@ -72,20 +70,20 @@ public class VenueConstraintTest {
 
         Panel p = new Panel(name, panelists, range, category, constraints);
 
-        Venue v = new Venue("North Building", 4);
+        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
 
-        Venue v2 = new Venue ("South Building", 4);
+        Venue v2 = new Venue ("South Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5)));
 
         Constraint vC = new VenueConstraint(priority, p, v);
 
-        assertTrue(vC.isConstraintViolated(v2.getVenueTime()));
+        assertTrue(vC.isConstraintViolated(v2.getFreeVenueTimes().get(0)));
     }
 
     @Test
     public void test_isConstraintViolated_false() throws Exception {
         short priority = 1;
 
-        String name = 'new';
+        String name = "new";
         List<String> panelists = new ArrayList<>(3);
         panelists.add("Trey Lyons");
         panelists.add("Jurek Martin");
@@ -109,11 +107,11 @@ public class VenueConstraintTest {
 
         Panel p = new Panel(name, panelists, range, category, constraints);
 
-        Venue v = new Venue("North Building", 4);
+        Venue v = new Venue("North Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5)));
 
         Constraint vC = new VenueConstraint(priority, p, v);
 
-        assertFalse(vC.isConstraintViolated(v.getVenueTime()));
+        assertFalse(vC.isConstraintViolated(v.getFreeVenueTimes().get(0)));
     }
 
 }

@@ -30,7 +30,6 @@ public class Scheduler {
     }
 
     public Report makeSchedule() {
-        new Report();
-        report.cannotSchedule(panel, msg);
+        throw new UnsupportedOperationException();
     }
 }

@@ -71,8 +71,7 @@ public class PanelTest {
 
         panel.setDifficulty(2);
 
-        assertTrue(panel.difficulty == 2);
-
+        assertTrue(panel.getDifficulty() == 2);
 
     }
 
@@ -131,7 +130,7 @@ public class PanelTest {
 
          panel.setVenueTime(vt);
 
-         assertTrue(panel.assignedVenueTime.equals(vt));
+         assertTrue(panel.getVenueTime().equals(vt));
 
      }
 

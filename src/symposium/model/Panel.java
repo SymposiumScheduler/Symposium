@@ -13,19 +13,12 @@ public class Panel implements Comparable<Panel>{
     private VenueTime assignedVenueTime;
     private int difficulty;
 
-    public Panel(String name, List<String> panelists, Range availability, List<String> categories, List<String> constraints){
+    public Panel(String name, List<String> panelists, Range availability, List<String> categories, List<String> constraintsStrs){
         this.NAME = name;
         this.CATEGORIES = categories;
         this.AVAILABILITY = availability;
-
-        // TODO : better way to pass new panelists
-        List<String> people = new ArrayList<String>();
-        int new_count = 0;
-        for (String panelist : panelists){
-            people.add(panelist);
-        }
-        this.PANELISTS = people;
-        this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraints);
+        this.PANELISTS = panelists;
+        this.CONSTRAINTS =  ConstraintFactory.buildConstraints(this, constraintsStrs);;
         //TODO set locked if minimum size is larger than some number
         this.LOCKED = false;
     }

@@ -124,10 +124,7 @@ public class Parser {
                 }
                 panels.add(new Panel(panel_name, names, intersection, categoryList, constraints));
             }
-
-
-
-            ScheduleData.init(venues, panels);
+            ScheduleData.init(venues, panels, 4); // FIXME, TODO, VERY_IMPORTANT : 4 should be changed to the number of days in the whole space
         }
         catch (IOException e) {
             e.printStackTrace();

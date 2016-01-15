@@ -9,7 +9,7 @@ public class ScheduleData {
     private static ScheduleData instance;
 
     public final List<Venue> VENUES;
-
+    public final int NUMBER_OF_DAYS;
     private final Comparator<Panel> panelTimeComparator = new Comparator<Panel>() {
         @Override
         public int compare(Panel firstPanel, Panel secondPanel) {
@@ -31,7 +31,7 @@ public class ScheduleData {
      * @param venues
      * @param panels
      */
-    public ScheduleData(List<Venue> venues, List<Panel> panels) {
+    public ScheduleData(List<Venue> venues, List<Panel> panels, int numberOfDays) {
         this.VENUES = Collections.unmodifiableList(venues);
 
         this.freePanels = new ArrayList<>(panels);
@@ -39,6 +39,8 @@ public class ScheduleData {
 
         this.categoryAssigned = new HashMap<>();
         this.panelistAssigned = new HashMap<>();
+
+        this.NUMBER_OF_DAYS = numberOfDays;
     }
 
     /**
@@ -175,9 +177,9 @@ public class ScheduleData {
         getFreePanels().remove(p);
     }
 
-    public static void init(List<Venue> venues, List<Panel> panels){
+    public static void init(List<Venue> venues, List<Panel> panels, int noOfDays){
         if(instance == null) {
-            instance = new ScheduleData(venues, panels);
+            instance = new ScheduleData(venues, panels, noOfDays);
         }
     }
 

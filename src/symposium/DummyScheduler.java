@@ -7,6 +7,7 @@ import symposium.model.Venue;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.zip.Deflater;
 
 public class DummyScheduler {
     private Report report;
@@ -58,4 +59,11 @@ public class DummyScheduler {
         //
         return report;
     }
+}
+
+abstract class DetermineDifficulity {
+        public static int evalDefficulity(Panel panel) {
+            int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData
+            return 0;
+        }
 }

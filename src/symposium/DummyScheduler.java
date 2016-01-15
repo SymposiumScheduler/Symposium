@@ -3,6 +3,7 @@ package symposium;
 import symposium.model.Panel;
 import symposium.model.ScheduleData;
 import symposium.model.Venue;
+import symposium.model.VenueTime;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -54,11 +55,8 @@ public class DummyScheduler {
         //
         Report.INSTANCE.finishReport();
     }
-}
 
-abstract class DetermineDifficulity {
-        public static int evalDefficulity(Panel panel) {
-            int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData
-            return 0;
-        }
+    public VenueTime returnFirstLegalVenueTime() {
+
+    }
 }

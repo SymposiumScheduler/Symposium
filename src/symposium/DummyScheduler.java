@@ -57,6 +57,7 @@ public class DummyScheduler {
     }
 
     public VenueTime returnFirstLegalVenueTime() {
+        return null;
 
     }
 }

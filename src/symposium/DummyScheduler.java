@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.zip.Deflater;
 
 public class DummyScheduler {
-    private Report report;
-
     public DummyScheduler() {
     }
 
@@ -41,12 +39,11 @@ public class DummyScheduler {
                 return;
             }
         }
-        this.report.cannotSchedule(panel, "no available venue times");
-        ScheduleData.instance().getFreePanels().remove(panel); // TODO : better way to not schedule panel again
+        Report.INSTANCE.cannotSchedule(panel, "no available venue times");
+        ScheduleData.instance().cannotSchedule(panel);
     }
 
-    public Report makeSchedule() {
-        this.report = new Report();
+    public void makeSchedule() {
         // init difficulity
         determineDifficulity();
         // go through panels and schedule
@@ -55,9 +52,7 @@ public class DummyScheduler {
             this.schedule(pnlCollection.get(0));
         }
         //
-        report.finishReport();
-        //
-        return report;
+        Report.INSTANCE.finishReport();
     }
 }
 

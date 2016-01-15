@@ -8,8 +8,8 @@ public class Main {
         Parser.initScheduleData(INPUT_FILE);
         // Schedule data is initiated
         DummyScheduler bs = new DummyScheduler();
-        Report report = bs.makeSchedule();
+        bs.makeSchedule();
         // Print report
-        System.out.print(report.toString());
+        System.out.print(Report.INSTANCE);
     }
 }

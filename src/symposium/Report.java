@@ -8,11 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 // TODO : better implementation for this.
 public class Report {
+    public static final Report INSTANCE = new Report();
+
     private final List<Panel> unschedulablePanels;
     private final List<String> unschedulablePanelMessages;
     private String lastSchedule;
 
-    public Report(){
+    private Report(){
         unschedulablePanels = new ArrayList<Panel>();
         unschedulablePanelMessages = new ArrayList<String>();
         lastSchedule = "";
@@ -39,5 +41,11 @@ public class Report {
     public void cannotSchedule(Panel p, String msg) {
         unschedulablePanels.add(p);
         unschedulablePanelMessages.add(msg);
+    }
+
+    public void reset() {
+        this.unschedulablePanelMessages.clear();
+        this.unschedulablePanels.clear();
+
     }
 }

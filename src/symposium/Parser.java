@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
 import symposium.model.Panel;
 
@@ -62,10 +63,10 @@ public class Parser {
 
             //System.out.println("Setting up panelists...");
             Map<String, List<TimeRange>> panelists = new HashMap<String, List<TimeRange>>();
+            List<String> new_panelists = new ArrayList<String>();
             for (Object o : json_panelists) {
                 JSONObject item = (JSONObject) o;
                 String panelist_name = (String) item.get("name");
-                Boolean noob = (item.get("new") == "yes");
                 JSONArray json_times = (JSONArray) item.get("times");
                 List<TimeRange> panelist_times = new ArrayList<TimeRange>();
                 for (Object time_slot : json_times) {
@@ -73,8 +74,8 @@ public class Parser {
                     TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(panelist_time);
                     panelist_times.add(timeRange); //panelist_time
                 }
-                if (noob){
-                    panelists.put("n_" + panelist_name, panelist_times);
+                if (item.get("new") == "yes"){
+                    new_panelists.add(panelist_name);
                 }
                 else {
                     panelists.put(panelist_name, panelist_times);
@@ -89,6 +90,7 @@ public class Parser {
                 JSONArray panel_panelists = (JSONArray) item.get("panelists");
                 JSONArray json_constraints = (JSONArray) item.get("constraints");
                 String categories = (String) item.get("category");
+                int new_count = 0;
 
                 List<String> names = new ArrayList<String>();
                 List<Range> availability = new ArrayList<Range>();
@@ -97,12 +99,14 @@ public class Parser {
                     names.add(name);
                     Collection<TimeRange> times = panelists.get(name);
                     availability.add(new TimeRangeSeries(times));
+                    if (new_panelists.contains(name)){
+                        new_count += 1;
+                    }
                 }
                 Range intersection = null;
                 if(availability.size() > 0) {
                     intersection = availability.get(0).intersect(availability);
                 }
-
 
                 List<String> categoryList = new ArrayList<String>();
                 for (String category : categories.split(",")){
@@ -115,7 +119,9 @@ public class Parser {
                     String constraint = (String) k;
                     constraints.add(constraint);
                 }
-
+                if (new_count > 1){
+                    constraints.add("New-Panelist");
+                }
                 panels.add(new Panel(panel_name, names, intersection, categoryList, constraints));
             }
 

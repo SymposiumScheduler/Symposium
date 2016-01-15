@@ -22,19 +22,11 @@ public class Panel implements Comparable<Panel>{
         List<String> people = new ArrayList<String>();
         int new_count = 0;
         for (String panelist : panelists){
-            if (panelist.contains("n_")){
-                panelist.replace("n_","");
-                new_count += 1;
-            }
             people.add(panelist);
         }
-        if (new_count >= 2){
-            constraints.add("new");
-        }
-
         this.PANELISTS = people;
         this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraints);
-        //TODO set locked if minimum size is larger  than some number
+        //TODO set locked if minimum size is larger than some number
         this.LOCKED = false;
     }
 

@@ -170,6 +170,7 @@ public class ScheduleData {
     public List<Panel> getAssignedPanels() {
         return this.assignedPanels;
     }
+    public List<Panel> getPanelistAssignedPanels(String panelist) { return this.panelistAssigned.get(panelist);}
     public void cannotSchedule(Panel p) {
         getFreePanels().remove(p);
     }

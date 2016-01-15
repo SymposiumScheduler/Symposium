@@ -32,5 +32,9 @@ public class VenueTime {
     public String toString() {
         return "Venue: "+ VENUE.NAME + ", Time: " + TimeFormat.absoluteToNormal(TIME);
     }
+
+    public int getDay() {
+        return TimeFormat.getNumberOfDay(TIME.getStart());
+    }
 }
 

@@ -109,7 +109,7 @@ public final class TimeFormat {
         return day * (24 * 60) + hours * 60 + minutes;
     }
 
-    private static int getNumberOfDay(int timePoint) {
+    public static int getNumberOfDay(int timePoint) {
         return timePoint / (24 * 60);
     }
 

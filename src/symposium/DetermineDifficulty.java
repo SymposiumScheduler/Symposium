@@ -2,6 +2,8 @@ package symposium;
 
 import symposium.model.Panel;
 import symposium.model.ScheduleData;
+import symposium.model.Range;
+import symposium.model.TimeRange;
 
 import java.util.Iterator;
 
@@ -41,7 +43,7 @@ abstract class DetermineDifficulty {
 
     public int availabilityDifficulty(Panel panel){
         Range range = panel.getAvailability();
-        Iterator<Range> rangeIterator = range.iterator();
+        Iterator<TimeRange> rangeIterator = range.iterator();
         TimeRange timeRange = rangeIterator.next();
         int total = 0;
         while (rangeIterator.hasNext()){

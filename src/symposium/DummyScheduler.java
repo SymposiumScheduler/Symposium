@@ -11,22 +11,9 @@ import java.util.List;
 import java.util.zip.Deflater;
 
 public class DummyScheduler {
-    public DummyScheduler() {
-    }
+    public DummyScheduler() {}
 
     private void determineDifficulity() {
-        /**
-         * Difficulty is determined by :
-         *     W
-         * 1 :   : overlap and length of availability
-         * 2 :   : panelists overlap
-         * 3 :   :min size of venue
-         * 4 : H :locked
-         * 5 :   :number and priority of constraint
-         * 6?:   :category overlap
-         */
-
-        //
         Collection<Panel> freePanels = ScheduleData.instance().getFreePanels();
         for(Panel p : freePanels) {
             p.setDifficulty(1);

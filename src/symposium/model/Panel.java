@@ -52,4 +52,15 @@ public class Panel implements Comparable<Panel>{
     public int compareTo(Panel that) {
         return this.difficulty - that.difficulty;
     }
+
+    public boolean hasVenueConstraint() {
+        boolean hasvc = false;
+        for (Constraint c: this.CONSTRAINTS) {
+            if (c instanceof VenueConstraint) {
+                hasvc = true;
+                break;
+            }
+        }
+        return hasvc;
+    }
 }

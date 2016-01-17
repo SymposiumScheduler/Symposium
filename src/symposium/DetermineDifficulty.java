@@ -69,6 +69,15 @@ abstract class DetermineDifficulty {
         }
         return m;
     }
+
+    public int venueConstraintDifficulty(Panel panel) {
+        if (panel.hasVenueConstraint()) {
+            return 200;
+        }
+        else {
+            return 0;
+        }
+    }
 }
 
 

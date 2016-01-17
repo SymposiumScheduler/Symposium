@@ -5,7 +5,7 @@ import symposium.model.ScheduleData;
 import symposium.model.Range;
 import symposium.model.TimeRange;
 
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * Difficulty is determined by :
@@ -54,6 +54,20 @@ abstract class DetermineDifficulty {
         }
         int avail = (int) 10000/total;
         return avail;
+    }
+
+    public Map panelistDifficulty(List<Panel> panels) {
+        Map<String, Integer> m = new HashMap();
+        for (Panel panel: panels) {
+            for (String panelist : panel.PANELISTS) {
+                if (m.containsKey(panelist)) {
+                    m.put(panelist, m.get(panelist) + 1);
+                } else {
+                    m.put(panelist, 1);
+                }
+            }
+        }
+        return m;
     }
 }
 

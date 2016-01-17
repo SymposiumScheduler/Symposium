@@ -3,6 +3,7 @@ package symposium.model;
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO we need venue-constaint (need to build venue somehow), duration-constraint (need to see how this is represented in input)
 public class ConstraintFactory{
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings){
         List<Constraint> constraints = new ArrayList<Constraint>();
@@ -31,6 +32,12 @@ public class ConstraintFactory{
                 int size =  Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
                 short s = (short) size;
                 Constraint constraint = new SizeConstraint(ps, panel, s);
+                constraints.add(constraint);
+            }
+            else if (constraint_string.contains("Panelist-Constraint")){
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                short ps = (short) priority;
+                Constraint constraint = new CategoryConstraint(ps, panel);
                 constraints.add(constraint);
             }
         }

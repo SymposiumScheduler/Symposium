@@ -3,6 +3,8 @@ package symposium;
 import symposium.model.Panel;
 import symposium.model.ScheduleData;
 
+import java.util.Iterator;
+
 /**
  * Difficulty is determined by :
  *
@@ -39,13 +41,16 @@ abstract class DetermineDifficulty {
 
     public int availabilityDifficulty(Panel panel){
         Range range = panel.getAvailability();
+        Iterator<Range> rangeIterator = range.iterator();
+        TimeRange timeRange = rangeIterator.next();
         int total = 0;
-        for (Range timeRange : range){
+        while (rangeIterator.hasNext()){
             int start = timeRange.getStart();
             int end = timeRange.getEnd();
             total += (end - start);
+            timeRange = rangeIterator.next();
         }
-        float avail = 10000/total;
+        int avail = (int) 10000/total;
         return avail;
     }
 }

@@ -18,7 +18,7 @@ public class Panel implements Comparable<Panel>{
         this.CATEGORIES = categories;
         this.AVAILABILITY = availability;
         this.PANELISTS = panelists;
-        this.CONSTRAINTS =  ConstraintFactory.buildConstraints(this, constraintsStrs);;
+        this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraintsStrs);
         //TODO set locked if minimum size is larger than some number
         this.LOCKED = false;
     }

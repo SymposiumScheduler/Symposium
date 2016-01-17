@@ -23,7 +23,7 @@ import symposium.model.ScheduleData;
 
 
 /**
- * TO DO: Method for Availability length: X * (Days * 24 - Availability )
+ * TO DO: Method for Availability length: X/Availability (might want a realluy high x here and then round so we don't need to deal with decimals and it is on the same scale as other difficulties)
  * TO DO: Method for Panelists Overlap length: X * (Sum of Panilists: Panels)
  * TO DO: Method for Min-Size + VenueConstraints 
  *
@@ -36,4 +36,40 @@ abstract class DetermineDifficulty {
         int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData
         return 0;
     }
+
+    public int availabilityDifficulty(Panel panel){
+        Range range = panel.getAvailability();
+        int total = 0;
+        for (Range timeRange : range){
+            int start = timeRange.getStart();
+            int end = timeRange.getEnd();
+            total += (end - start);
+        }
+        float avail = 10000/total;
+        return avail;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

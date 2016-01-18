@@ -13,9 +13,9 @@ import java.util.*;
  * 1 :   : overlap and length of availability
  * 2 :   : panelists overlap
  * 3 :   : min size of venue
- * 4 :   : locked
+ * 4 :   : locked (no longer needed)
  * 5 :   : number and priority of constraint
- * 6?:   : category overlap
+ * 6:   : category overlap
  *
  *
  * 1: Required * 100
@@ -25,20 +25,17 @@ import java.util.*;
  * X = order of magnitude
  */
 
-
-/**
- * TO DO: Method for Availability length: X/Availability (might want a realluy high x here and then round so we don't need to deal with decimals and it is on the same scale as other difficulties)
- * TO DO: Method for Panelists Overlap length: X * (Sum of Panilists: Panels)
- * TO DO: Method for Min-Size + VenueConstraints 
- *
- */
-
-
+//to use, need to call panelistDifficulty and categoryDifficulty before determining difficulty of all panels.
+    //Then loop through each panel and call evalDifficulty which then calls all other difficulty methods.
+    //This will return an integer. Then, for the panel in question, query the panelistdifficulty and categorydifficulty maps and add that information to the number (after applying modifiers)
+    //set this to the panel difficulty
+    //sort panels by difficulty
 
 abstract class DetermineDifficulty {
     public static int evalDifficulty(Panel panel) {
-        int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData
-        return 0;
+        //int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData, but why? What does this do?
+        int difficulty = availabilityDifficulty(panel) + venueConstraintDifficulty(panel) + sizeConstraintDifficulty(panel);
+        return difficulty;
     }
 
     public int availabilityDifficulty(Panel panel){
@@ -77,6 +74,24 @@ abstract class DetermineDifficulty {
         else {
             return 0;
         }
+    }
+
+    public int sizeConstraintDifficulty(Panel panel) {
+        return 10*panel.getSizeConstraint();
+    }
+
+    public Map constraintDifficulty(List<Panel> panels) {
+        Map<String, Integer> m = new HashMap();
+        for (Panel panel: panels) {
+            for (String category : panel.CATEGORIES) {
+                if (m.containsKey(category)) {
+                    m.put(category, m.get(category) + 1);
+                } else {
+                    m.put(category, 1);
+                }
+            }
+        }
+        return m;
     }
 }
 

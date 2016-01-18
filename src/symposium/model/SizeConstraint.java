@@ -30,4 +30,8 @@ public class SizeConstraint extends Constraint {
         cache.put(venueTime, violated);
         return violated;
     }
+
+    public int getMinSize(){
+        return (int) this.minSize()
+    }
 }

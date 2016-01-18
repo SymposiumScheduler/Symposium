@@ -114,7 +114,6 @@ public class Parser {
                 }
 
                 List<String> constraints = new ArrayList<String>();
-                //TODO set panel constraints
                 for (Object k : json_constraints) {
                     String constraint = (String) k;
                     constraints.add(constraint);
@@ -124,7 +123,7 @@ public class Parser {
                 }
                 panels.add(new Panel(panel_name, names, intersection, categoryList, constraints));
             }
-            ScheduleData.init(venues, panels, 4); // FIXME, TODO, VERY_IMPORTANT : 4 should be changed to the number of days in the whole space
+            ScheduleData.init(venues, panels, 4); // FIXME: 4 should be changed to the number of days in the whole space (might not be necessary anymore)
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -132,28 +131,6 @@ public class Parser {
         catch (ParseException e) {
             e.printStackTrace();
         }
-    }
-
-
-    //output function
-    static void output(List<Venue> venues, List<Panel> panels){
-        System.out.println("Venue Availability:");
-        for (Venue venue : venues){
-            System.out.println("\t" + venue.NAME + ": ");
-            List<VenueTime> freeTimes = venue.getFreeVenueTimes();
-            for (VenueTime times : freeTimes){
-                System.out.println("\t\t" + times.TIME.getStart() + " - " + times.TIME.getEnd());
-            }
-        }
-        System.out.println("");
-        System.out.println("Panel Availability:");
-        for (Panel panel : panels){
-            System.out.println("\t" + panel.getName() + ": ");
-            for (TimeRange range : panel.getAvailability()){
-                System.out.println("\t\t" + range.START + " - " + range.END);
-            }
-        }
-        System.out.println("Done");
     }
 }
 

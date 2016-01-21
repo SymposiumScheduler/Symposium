@@ -32,8 +32,19 @@ public class DummyScheduler {
     private void schedule(Panel panel) {
         for(Venue v : ScheduleData.instance().VENUES) {
             if(v.getFreeVenueTimes().size() >= 1) {
-                ScheduleData.instance().assignPanelToVenueTime(panel,v.getFreeVenueTimes().get(0));
-                return;
+                for (int i = 0; i < v.getFreeVenueTimes().size(); i++) {
+                    boolean noConstraintsViolated = true;
+                    for (int j = 0; j < panel.CONSTRAINTS.size(); j++) {
+                        if(panel.CONSTRAINTS.get(j).isConstraintViolated(v.getFreeVenueTimes().get(i))){
+                            noConstraintsViolated = false;
+                        }
+                    }
+                    if (noConstraintsViolated) {
+                        ScheduleData.instance().assignPanelToVenueTime(panel, v.getFreeVenueTimes().get(i));
+                        return;
+                    }
+
+                }
             }
         }
         Report.INSTANCE.cannotSchedule(panel, "no available venue times");

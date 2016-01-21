@@ -141,21 +141,26 @@ public class ScheduleData {
         int start = (vt.TIME.getStart() / 1440)*1440; //Division Should be floor
         int end = start + 1440;
         Range day = new TimeRange(start, end);
-        List<Panel> appears1 = panelistAssigned.get(p1);
-        List<Panel> appears2 = panelistAssigned.get(p2);
-        for (int i = 0; i < appears1.size(); i++){
-            for (int j = 0; j < appears2.size(); j++) {
-                if (appears1.get(i) == appears2.get(j)) {
-                    Panel appear = appears1.get(i);
-                    if (appear.getVenueTime() != null) {
-                        if (appear.getVenueTime().TIME.doesIntersect(day)) {
-                            assigned++;
+        if (panelistAssigned.get(p1) == null || panelistAssigned.get(p2) == null) {
+            return assigned;
+        }
+        else {
+            List<Panel> appears1 = panelistAssigned.get(p1);
+            List<Panel> appears2 = panelistAssigned.get(p2);
+            for (int i = 0; i < appears1.size(); i++) {
+                for (int j = 0; j < appears2.size(); j++) {
+                    if (appears1.get(i) == appears2.get(j)) {
+                        Panel appear = appears1.get(i);
+                        if (appear.getVenueTime() != null) {
+                            if (appear.getVenueTime().TIME.doesIntersect(day)) {
+                                assigned++;
+                            }
                         }
                     }
                 }
             }
+            return assigned;
         }
-        return assigned;
     }
 
     public void assignPanelToVenueTime(Panel p, VenueTime vt) {

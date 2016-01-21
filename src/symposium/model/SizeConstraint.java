@@ -32,6 +32,6 @@ public class SizeConstraint extends Constraint {
     }
 
     public int getMinSize(){
-        return (int) this.minSize()
+        return (int) this.minSize;
     }
 }

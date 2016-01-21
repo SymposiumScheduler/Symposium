@@ -10,7 +10,7 @@ public class VenueConstraintTest {
 
     @Test
     public void testConstructor() throws Exception {
-        short priority = 1;
+        ConstraintPriority priority = ConstraintPriority.DESIRED;
 
         String name = "new";
         List<String> panelists = new ArrayList<>(3);
@@ -39,12 +39,12 @@ public class VenueConstraintTest {
         Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
 
         Constraint vC = new VenueConstraint(priority, p, v);
-        assert(vC.PRIORITY == 1);
+        assert(vC.PRIORITY == ConstraintPriority.DESIRED);
     }
 
     @Test
     public void test_isConstraintViolated_true() throws Exception {
-        short priority = 1;
+        ConstraintPriority priority = ConstraintPriority.DESIRED;
 
         String name = "new";
         List<String> panelists = new ArrayList<>(3);
@@ -81,7 +81,7 @@ public class VenueConstraintTest {
 
     @Test
     public void test_isConstraintViolated_false() throws Exception {
-        short priority = 1;
+        ConstraintPriority priority = ConstraintPriority.DESIRED;
 
         String name = "new";
         List<String> panelists = new ArrayList<>(3);

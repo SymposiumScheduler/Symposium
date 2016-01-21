@@ -1,0 +1,233 @@
+{
+"Venues": [
+	{
+		"name": "Duane-Physics-G1B30",
+		"size": 3
+	},
+	{
+		"name": "Eaton-Humanities-1B50",
+		"size": 3
+	},
+	{
+		"name": "Fleming-155",
+		"size": 2
+	},
+	{
+		"name": "Hellems-252",
+		"size": 6
+	},
+	{
+		"name": "KGNU-88-5-FM-1390-AM",
+		"size": 5
+	}
+		
+],
+"Venue-Times": [
+	{
+		"name": "KGNU-88-5-FM-1390-AM",
+		"time": "0, 01:00-02:00"
+	},
+	{
+		"name": "KGNU-88-5-FM-1390-AM",
+		"time": "0, 03:00-05:00"
+	},
+	{
+    		"name": "KGNU-88-5-FM-1390-AM",
+    		"time": "0, 15:00-20:00"
+   	},
+    	{
+    		"name": "KGNU-88-5-FM-1390-AM",
+    		"time": "0, 21:00-23:00"
+  	},
+    	{
+    		"name": "Hellems-252",
+    		"time": "0, 01:00-02:00"
+    	},
+    	{
+    		"name": "Hellems-252",
+    		"time": "0, 03:00-10:00"
+    	},
+    	{
+        	"name": "Hellems-252",
+    		"time": "0, 11:00-12:00"
+    	},
+   	{
+   		"name": "Fleming-155",
+   		"time": "0, 11:00-15:00"
+   	},
+   	{
+       		"name": "Fleming-155",
+       		"time": "0, 15:00-16:00"
+    	},
+    	{
+       		"name": "Eaton-Humanities-1B50",
+        	"time": "0, 01:30-05:00"
+    	},
+    	{
+       		"name": "Eaton-Humanities-1B50",
+        	"time": "0, 06:00-07:00"
+    	},
+    	{
+      		"name": "Eaton-Humanities-1B50",
+       		"time": "0, 10:00-14:00"
+    	},
+    	{
+        	"name": "Duane-Physics-G1B30",
+        	"time": "0, 05:00-06:00"
+    	},
+    	{
+        	"name": "Duane-Physics-G1B30",
+        	"time": "0, 10:00-15:00"
+    	},
+    	{
+       		"name": "Duane-Physics-G1B30",
+       		"time": "0, 20:00-23:00"
+    }
+],
+"Panelists": [
+	{
+		"name": "Gordon Adams",
+		"times": [
+			"0, 03:00-5:00",
+			"0, 15:00-20:00"
+		],
+		"new": "no"
+	},
+	{
+		"name": "Margot Adler",
+		"times": [
+			"0, 03:00-05:00",
+			"0, 06:00-07:00",
+			"0, 10:00-15:00"
+		],
+		"new": "no"
+	},
+	{
+		"name": "Avi Agababa",
+		"times": [
+			"0, 05:00-06:00",
+			"0, 10:00-14:00",
+			"0, 20:00-23:59"
+		],
+		"new": "yes"
+	},
+	{
+		"name": "Shihana Alazzaz",
+		"times": [
+			"0, 01:00-02:00",
+			"0, 03:00-10:00",
+			"0, 11:00-15:00"
+		],
+		"new": "yes"
+	},
+	{
+		"name": "Suhad Babaa",
+		"times": [
+			"0, 16:00-17:00"
+		],
+		"new": "no"
+	},
+	{
+		"name": "Bijoux Barbosa",
+		"times": [
+			"0, 01:00-02:00",
+			"0, 03:00-05:00",
+			"0, 10:00-15:00"
+		],
+		"new": "no"
+	}
+],
+"Panels": [
+	{
+		"name": "EBERT UNINTERRUPTUS The Graduate",
+		"panelists": [
+				"Gordon Adams",
+				"Margot Adler"
+		],
+		"constraints": [
+			"New-Panelist:2",
+			"Paired-Panelists:3",
+			"Single-Category:2",
+			"Max-Panels(3):1",
+			"Min-Panels(1):1",
+			"Minimum-Capacity(4):2",
+			"Venue(Hellems-252):1",
+			"Time(6;15:00):1",
+			"Availability:1"
+		],
+		"category": "Arts"
+	},
+	{
+		"name": "RADIO BROADCAST A Public Affair: Why The Graduate",
+		"panelists": [
+			"Avi Agababa",
+			"Shihana Alazzaz"
+		],
+		"constraints": [
+			"New-Panelist:2",
+			"Paired-Panelists:3",
+			"Single-Category:2",
+			"Max-Panels(3):1",
+			"Min-Panels(1):1",
+			"Minimum-Capacity(1):2",
+			"Venue(Duane-Physics-G1B30):1",
+			"Availability:1"
+		],
+		"category": "Arts"
+	},
+	{
+		"name": "Ex-Pat Nightmares and Misadventures",
+		"panelists": [
+			"Suhad Babaa",
+			"Bijoux Barbosa"
+
+		],
+		"constraints": [
+			"New-Panelist:2",
+			"Paired-Panelists:3",
+			"Single-Category:2",
+			"Max-Panels(3):1",
+			"Min-Panels(1):1",
+			"Minimum-Capacity(2):2",
+			"Availability:1"
+		],
+		"category": "IA"
+	},
+	{
+		"name": "Snowden: Patriot or Pariah",
+		"panelists": [
+			"Gordon Adams",
+			"Avi Agababa"
+
+		],
+		"constraints": [
+			"New-Panelist:2",
+			"Paired-Panelists:3",
+			"Single-Category:2",
+			"Max-Panels(3):1",
+			"Min-Panels(1):1",
+			"Minimum-Capacity(5):2",
+			"Availability:1"
+		],
+		"category": "P&M"
+	},
+	{
+		"name": "Young Entrepreneurs: Your Economy Needs You",
+		"panelists": [
+			"Bijoux Barbosa",
+			"Shihana Alazzaz"
+		],
+		"constraints": [
+			"New-Panelist:2",
+			"Paired-Panelists:3",
+			"Single-Category:2",
+			"Max-Panels(3):1",
+			"Min-Panels(1):1",
+			"Minimum-Capacity(3):2",
+			"Availability:1"
+		],
+		"category": "Bus."
+	}
+]
+}
+

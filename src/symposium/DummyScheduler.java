@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.zip.Deflater;
 
 public class DummyScheduler {
+    private enum ConstraintLevel {
+        REQUIRED, VERY_IMPORTANT, DESIRED
+    }
     public DummyScheduler() {}
 
     private void determineDifficulity() {
@@ -46,8 +49,19 @@ public class DummyScheduler {
         Report.INSTANCE.finishReport();
     }
 
-    public VenueTime returnFirstLegalVenueTime() {
-        return null;
-
+    private VenueTime returnFirstLegalVenueTime(Panel panel) {
+        VenueTime vt = searchForLegalVenueTime(panel, ConstraintLevel.DESIRED); // min requirement is desired
+        if (vt == null) {
+            vt = searchForLegalVenueTime(panel, ConstraintLevel.VERY_IMPORTANT); // min requirement is important
+            if ( vt == null) {
+                vt = searchForLegalVenueTime(panel, ConstraintLevel.REQUIRED); // min requirement is required
+            }
+        }
+        return vt;
+    }
+    private VenueTime searchForLegalVenueTime(Panel panel, ConstraintLevel minRequirement) {
+        // minRequirement
+        // TODO : just a template
+        return null; // no venueTime found
     }
 }

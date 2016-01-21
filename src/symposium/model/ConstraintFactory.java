@@ -36,6 +36,19 @@ public class ConstraintFactory{
                 Constraint constraint = new CategoryConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
+            else if (constraint_string.contains("Venue")) {
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                String venueS = constraint_string.split("\\(")[1].split("\\)")[0];
+                List<Venue> venueList = ScheduleData.instance().VENUES;
+                Venue venue = null;
+                for (Venue v: venueList) {
+                    if (v.NAME == venueS) {
+                        venue = v;
+                        break;
+                    }
+                }
+                Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
+            }
         }
         return constraints;
     }

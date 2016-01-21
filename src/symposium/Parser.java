@@ -117,15 +117,21 @@ public class Parser {
                 String name = (String) panelist;
                 names.add(name);
                 Collection<TimeRange> times = panelists.get(name);
-                availability.add(new TimeRangeSeries(times));
-                if (new_panelists.contains(name)) {
+                Iterator<TimeRange> timesIterator = times.iterator();
+                Range unionTimes = timesIterator.next();
+                while(timesIterator.hasNext()){
+                    unionTimes.union(timesIterator.next());
+                }
+                availability.add(unionTimes);
+                if (new_panelists.contains(name)){
                     new_count += 1;
                 }
             }
             Range intersection = null;
-            if (availability.size() > 0) {
+            if(availability.size() > 0) {
                 intersection = availability.get(0).intersect(availability);
-            } else {
+            }
+            if(intersection == null){
                 throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability");
             }
 

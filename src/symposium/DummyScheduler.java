@@ -6,6 +6,7 @@ import symposium.model.Venue;
 import symposium.model.VenueTime;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.zip.Deflater;
@@ -14,10 +15,12 @@ public class DummyScheduler {
     public DummyScheduler() {}
 
     private void determineDifficulity() {
-        Collection<Panel> freePanels = ScheduleData.instance().getFreePanels();
+        List<Panel> freePanels = ScheduleData.instance().getFreePanels();
         for(Panel p : freePanels) {
-            p.setDifficulty(1);
+            p.setDifficulty(DetermineDifficulty.evalDifficulty(p));
         }
+        Collections.sort(freePanels);
+        Collections.reverse(freePanels);
     }
 
     private void schedule(Panel panel) {

@@ -78,6 +78,12 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
      * @return true if all starts and ends are identical, otherwise false.
      */
     boolean equals(Range other);
+
+    /**
+     * get the length of the included points in the length
+     * @return the length of the range. Min is 1
+     */
+    int length();
 }
 
 

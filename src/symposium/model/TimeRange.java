@@ -163,4 +163,8 @@ public class TimeRange implements Range {
         return this.START +
                 31*(this.END);
     }
+
+    public int length() {
+        return END - START + 1; // + 1 because range is inclusive.
+    }
 }

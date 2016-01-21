@@ -52,37 +52,26 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
+    /*
+        TODO :
+        Can be optimized by making one iteration and keeping three venueTimes in the same time as iterating.
+        DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
 
-        for(Venue v : ScheduleData.instance().VENUES) {
-            if(v.getFreeVenueTimes().size() >= 1) {
-                for (int i = 0; i < v.getFreeVenueTimes().size(); i++) {
-                    boolean noConstraintsViolated = true;
-                    for (int j = 0; j < panel.CONSTRAINTS.size(); j++) {
-                        if(panel.CONSTRAINTS.get(j).isConstraintViolated(v.getFreeVenueTimes().get(i))){
-                            noConstraintsViolated = false;
-                        }
-                    }
-                    if (noConstraintsViolated) {
+        In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
+        DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
+        If no RequiredSatisfied found, then venueTime cannot be found.
+*/
 
-                        return v.getFreeVenueTimes().get(i);
-                    }
-
-                }
-            }
-        }
-        return null;
-
-
-       /* VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
+       VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
             vt = searchForLegalVenueTime(panel, ConstraintPriority.VERY_IMPORTANT); // min requirement is important
             if ( vt == null) {
                 vt = searchForLegalVenueTime(panel, ConstraintPriority.REQUIRED); // min requirement is required
             }
         }
-        return vt;*/
+        return vt;
     }
-/*
+
     private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
         // minRequirement
         for ( Venue v : ScheduleData.instance().VENUES) {
@@ -94,8 +83,9 @@ public class DummyScheduler {
                         }
                     }
                 }
+                return vt; // vt has passed all priority conditions
             }
         }
         return null; // no venueTime found
-    }*/
+    }
 }

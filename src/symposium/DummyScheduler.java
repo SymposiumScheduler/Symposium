@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.zip.Deflater;
+import java.util.HashMap;
 
 public class DummyScheduler {
     private enum ConstraintLevel {
@@ -19,15 +20,15 @@ public class DummyScheduler {
 
     private void determineDifficulity() {
         List<Panel> freePanels = ScheduleData.instance().getFreePanels();
-        HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty();
-        HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty();
+        HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty(freePanels);
+        HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty(freePanels);
         int y = 0;
         for(Panel p : freePanels) {
             for (String x : p.PANELISTS){
-                y += panelistDifficulty.get(x);
+                y += (int) panelistDifficulty.get(x);
             }
             for (String x : p.CATEGORIES){
-                y += categoryDifficulty.get(x);
+                y += (int) categoryDifficulty.get(x);
             }
             p.setDifficulty(DetermineDifficulty.evalDifficulty(p)+y);
         }

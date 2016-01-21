@@ -48,6 +48,7 @@ public class ConstraintFactory{
                     }
                 }
                 Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
+                constraints.add(constraint);
             }
         }
         return constraints;

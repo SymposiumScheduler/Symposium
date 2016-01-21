@@ -29,12 +29,11 @@ public class ScheduleData {
 
     /**
      * @param venues
-     * @param panels
      */
-    public ScheduleData(List<Venue> venues, List<Panel> panels, int numberOfDays) {
+    public ScheduleData(List<Venue> venues, int numberOfDays) {
         this.VENUES = Collections.unmodifiableList(venues);
 
-        this.freePanels = new ArrayList<>(panels);
+        this.freePanels = new ArrayList<>();
         this.assignedPanels = new ArrayList<>();
 
         this.categoryAssigned = new HashMap<>();
@@ -163,6 +162,10 @@ public class ScheduleData {
         }
     }
 
+    public void initPanels(List<Panel> panels) {
+        this.freePanels.addAll(panels);
+    }
+
     public void assignPanelToVenueTime(Panel p, VenueTime vt) {
         p.setVenueTime(vt);
         vt.assignPanel(p);
@@ -182,11 +185,12 @@ public class ScheduleData {
         getFreePanels().remove(p);
     }
 
-    public static void init(List<Venue> venues, List<Panel> panels, int noOfDays){
+    public static void init(List<Venue> venues, int noOfDays){
         if(instance == null) {
-            instance = new ScheduleData(venues, panels, noOfDays);
+            instance = new ScheduleData(venues, noOfDays);
         }
     }
+
 
     public static ScheduleData instance() {
         return ScheduleData.instance;

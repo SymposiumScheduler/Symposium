@@ -7,7 +7,7 @@ public class VenueConstraint extends Constraint {
      * Dependencies: (Additionally) Venue class
      * @param v The venue the panel must appear in.
      */
-    public VenueConstraint(short priority, Panel p, Venue v) {
+    public VenueConstraint(ConstraintPriority priority, Panel p, Venue v) {
         super(priority, p);
         venue = v;
     }

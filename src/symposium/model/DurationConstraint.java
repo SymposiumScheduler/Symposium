@@ -5,7 +5,7 @@ package symposium.model;
  */
 public class DurationConstraint extends TimeConstraint {
 
-    public DurationConstraint(short priority, Panel p) {
+    public DurationConstraint(ConstraintPriority priority, Panel p) {
         super(priority, p);
     }
     //May change implementation in future if VenueTime implements an isShort bool

@@ -4,7 +4,7 @@ import java.sql.Time;
 
 abstract class TimeConstraint extends Constraint {
 
-    public TimeConstraint(short priority, Panel p) {
+    public TimeConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }
     /**

@@ -1,21 +1,14 @@
 package symposium;
 
-import symposium.model.Panel;
-import symposium.model.ScheduleData;
-import symposium.model.Venue;
-import symposium.model.VenueTime;
+import symposium.model.*;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.zip.Deflater;
 import java.util.HashMap;
 
 public class DummyScheduler {
-    private enum ConstraintLevel {
-        REQUIRED, VERY_IMPORTANT, DESIRED
-    }
     public DummyScheduler() {}
 
     private void determineDifficulity() {
@@ -60,18 +53,29 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
-        VenueTime vt = searchForLegalVenueTime(panel, ConstraintLevel.DESIRED); // min requirement is desired
+        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
-            vt = searchForLegalVenueTime(panel, ConstraintLevel.VERY_IMPORTANT); // min requirement is important
+            vt = searchForLegalVenueTime(panel, ConstraintPriority.VERY_IMPORTANT); // min requirement is important
             if ( vt == null) {
-                vt = searchForLegalVenueTime(panel, ConstraintLevel.REQUIRED); // min requirement is required
+                vt = searchForLegalVenueTime(panel, ConstraintPriority.REQUIRED); // min requirement is required
             }
         }
         return vt;
     }
-    private VenueTime searchForLegalVenueTime(Panel panel, ConstraintLevel minRequirement) {
+
+    private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
         // minRequirement
-        // TODO : just a template
+        for ( Venue v : ScheduleData.instance().VENUES) {
+            for (VenueTime vt : v.getFreeVenueTimes()) {
+                for (Constraint constraint : panel.CONSTRAINTS) {
+                    if(constraint.PRIORITY.compareTo(minRequirement) >= 0) {
+                        if(constraint.isConstraintViolated(vt)) {
+                            break; // ignore the current venueTime and check the next ( continue in venueTime loop)
+                        }
+                    }
+                }
+            }
+        }
         return null; // no venueTime found
     }
 }

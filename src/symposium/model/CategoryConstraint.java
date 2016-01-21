@@ -2,7 +2,7 @@ package symposium.model;
 
 public class CategoryConstraint extends NoOverlapConstraint {
 
-    public CategoryConstraint(short priority, Panel p) {
+    public CategoryConstraint(ConstraintPriority priority, Panel p) {
         super(priority, p);
     }
     /**

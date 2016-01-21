@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Constraint {
-    public final short PRIORITY;
+    public final ConstraintPriority PRIORITY;
     public final Panel PANEL;
     Map<VenueTime, Boolean> cache = new HashMap<VenueTime, Boolean>();
 
@@ -15,7 +15,7 @@ public abstract class Constraint {
      * @param priority enum determining whether constraint is required, important, or desirable.
      * @param p        the Panel that the constraint is part of.
      */
-    public Constraint(short priority, Panel p) {  //Refering to ScheduleData globally?
+    public Constraint(ConstraintPriority priority, Panel p) {  //Refering to ScheduleData globally?
         this.PRIORITY = priority;
         this.PANEL = p;
     }

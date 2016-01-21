@@ -8,7 +8,7 @@ public class SizeConstraint extends Constraint {
      *
      * @param mSize The minimum size necessary for the panel to fit.
      */
-    public SizeConstraint(short priority, Panel p, short mSize) {
+    public SizeConstraint(ConstraintPriority priority, Panel p, short mSize) {
         super(priority, p);
         minSize = mSize;
     }

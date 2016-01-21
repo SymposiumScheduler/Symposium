@@ -1,7 +1,7 @@
 package symposium.model;
 
 public class PairedPanelistConstraint extends Constraint {
-    public PairedPanelistConstraint(short priority, Panel p) {
+    public PairedPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }
     /**

@@ -2,7 +2,7 @@ package symposium.model;
 
 public class NewPanelistConstraint extends TimeConstraint { //Ask team members
 
-    public NewPanelistConstraint(short priority, Panel p) {
+    public NewPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority, p);
     }
 

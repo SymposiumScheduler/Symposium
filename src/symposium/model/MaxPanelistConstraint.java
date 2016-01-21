@@ -8,7 +8,7 @@ import java.util.*;
 public class MaxPanelistConstraint extends Constraint {
     final int MAX;
 
-    public MaxPanelistConstraint(short priority, Panel p, int max) {
+    public MaxPanelistConstraint(ConstraintPriority priority, Panel p, int max) {
         super(priority,p);
         this.MAX = max;
     }

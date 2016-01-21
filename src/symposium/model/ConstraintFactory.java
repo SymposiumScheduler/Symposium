@@ -39,10 +39,11 @@ public class ConstraintFactory{
             else if (constraint_string.contains("Venue")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 String venueS = constraint_string.split("\\(")[1].split("\\)")[0];
+
                 List<Venue> venueList = ScheduleData.instance().VENUES;
                 Venue venue = null;
                 for (Venue v: venueList) {
-                    if (v.NAME == venueS) {
+                    if (v.NAME.equals(venueS)) {
                         venue = v;
                         break;
                     }

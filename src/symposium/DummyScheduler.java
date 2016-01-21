@@ -1,5 +1,7 @@
 package symposium;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import symposium.model.*;
 
 import java.util.Collection;
@@ -47,8 +49,6 @@ public class DummyScheduler {
         while(pnlCollection.size() > 0) {
             this.schedule(pnlCollection.get(0));
         }
-        //
-        Report.INSTANCE.finishReport();
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
@@ -73,17 +73,26 @@ public class DummyScheduler {
     }
 
     private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
+
+
         // minRequirement
+        boolean noViolations;
         for ( Venue v : ScheduleData.instance().VENUES) {
             for (VenueTime vt : v.getFreeVenueTimes()) {
+                noViolations = true;
                 for (Constraint constraint : panel.CONSTRAINTS) {
                     if(constraint.PRIORITY.compareTo(minRequirement) >= 0) {
                         if(constraint.isConstraintViolated(vt)) {
-                            break; // ignore the current venueTime and check the next ( continue in venueTime loop)
+                            noViolations = false;
+                            break;
                         }
                     }
                 }
-                return vt; // vt has passed all priority conditions
+                if(noViolations){
+                    return vt; // vt has passed all priority conditions
+                } else {
+                    continue;
+                }
             }
         }
         return null; // no venueTime found

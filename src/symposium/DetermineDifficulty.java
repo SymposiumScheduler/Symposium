@@ -38,7 +38,7 @@ abstract class DetermineDifficulty {
         return difficulty;
     }
 
-    public int availabilityDifficulty(Panel panel){
+    public static int availabilityDifficulty(Panel panel){
         Range range = panel.getAvailability();
         Iterator<TimeRange> rangeIterator = range.iterator();
         TimeRange timeRange = rangeIterator.next();
@@ -67,7 +67,7 @@ abstract class DetermineDifficulty {
         return m;
     }
 
-    public int venueConstraintDifficulty(Panel panel) {
+    public static int venueConstraintDifficulty(Panel panel) {
         if (panel.hasVenueConstraint()) {
             return 200;
         }
@@ -76,7 +76,7 @@ abstract class DetermineDifficulty {
         }
     }
 
-    public int sizeConstraintDifficulty(Panel panel) {
+    public static int sizeConstraintDifficulty(Panel panel) {
         return 10*panel.getSizeConstraint();
     }
 

@@ -30,25 +30,13 @@ public class DummyScheduler {
     }
 
     private void schedule(Panel panel) {
-        for(Venue v : ScheduleData.instance().VENUES) {
-            if(v.getFreeVenueTimes().size() >= 1) {
-                for (int i = 0; i < v.getFreeVenueTimes().size(); i++) {
-                    boolean noConstraintsViolated = true;
-                    for (int j = 0; j < panel.CONSTRAINTS.size(); j++) {
-                        if(panel.CONSTRAINTS.get(j).isConstraintViolated(v.getFreeVenueTimes().get(i))){
-                            noConstraintsViolated = false;
-                        }
-                    }
-                    if (noConstraintsViolated) {
-                        ScheduleData.instance().assignPanelToVenueTime(panel, v.getFreeVenueTimes().get(i));
-                        return;
-                    }
-
-                }
-            }
+        VenueTime vt = returnFirstLegalVenueTime(panel);
+        if (vt != null) {
+            ScheduleData.instance().assignPanelToVenueTime(panel,vt);
+        } else {
+            Report.INSTANCE.cannotSchedule(panel, "no available venue times");
+            ScheduleData.instance().cannotSchedule(panel);
         }
-        Report.INSTANCE.cannotSchedule(panel, "no available venue times");
-        ScheduleData.instance().cannotSchedule(panel);
     }
 
     public void makeSchedule() {
@@ -64,16 +52,37 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
-        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
+
+        for(Venue v : ScheduleData.instance().VENUES) {
+            if(v.getFreeVenueTimes().size() >= 1) {
+                for (int i = 0; i < v.getFreeVenueTimes().size(); i++) {
+                    boolean noConstraintsViolated = true;
+                    for (int j = 0; j < panel.CONSTRAINTS.size(); j++) {
+                        if(panel.CONSTRAINTS.get(j).isConstraintViolated(v.getFreeVenueTimes().get(i))){
+                            noConstraintsViolated = false;
+                        }
+                    }
+                    if (noConstraintsViolated) {
+
+                        return v.getFreeVenueTimes().get(i);
+                    }
+
+                }
+            }
+        }
+        return null;
+
+
+       /* VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
             vt = searchForLegalVenueTime(panel, ConstraintPriority.VERY_IMPORTANT); // min requirement is important
             if ( vt == null) {
                 vt = searchForLegalVenueTime(panel, ConstraintPriority.REQUIRED); // min requirement is required
             }
         }
-        return vt;
+        return vt;*/
     }
-
+/*
     private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
         // minRequirement
         for ( Venue v : ScheduleData.instance().VENUES) {
@@ -88,5 +97,5 @@ public class DummyScheduler {
             }
         }
         return null; // no venueTime found
-    }
+    }*/
 }

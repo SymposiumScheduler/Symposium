@@ -27,7 +27,7 @@ public class Report {
     public String toString() {
         StringBuilder result = new StringBuilder();
         for(Panel panel : ScheduleData.instance().getAssignedPanels()) {
-            result.append("\n").append(panel.NAME).append("\n\t").append(panel.getVenueTime().toString());
+            result.append("\n\n").append(panel.NAME).append("\n\t").append(panel.getVenueTime().toString());
         }
         result.append("\n");
         for(Panel panel : unscheduledPanels.keySet()) {

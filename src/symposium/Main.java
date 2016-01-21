@@ -10,6 +10,6 @@ public class Main {
         DummyScheduler bs = new DummyScheduler();
         bs.makeSchedule();
         // Print report
-        System.out.print(Report.INSTANCE.toJson());
+        System.out.print(Report.INSTANCE);
     }
 }

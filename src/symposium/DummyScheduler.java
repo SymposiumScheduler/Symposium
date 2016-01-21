@@ -30,14 +30,13 @@ public class DummyScheduler {
     }
 
     private void schedule(Panel panel) {
-        for(Venue v : ScheduleData.instance().VENUES) {
-            if(v.getFreeVenueTimes().size() >= 1) {
-                ScheduleData.instance().assignPanelToVenueTime(panel,v.getFreeVenueTimes().get(0));
-                return;
-            }
+        VenueTime vt = returnFirstLegalVenueTime(panel);
+        if (vt != null) {
+            ScheduleData.instance().assignPanelToVenueTime(panel,vt);
+        } else {
+            Report.INSTANCE.cannotSchedule(panel, "no available venue times");
+            ScheduleData.instance().cannotSchedule(panel);
         }
-        Report.INSTANCE.cannotSchedule(panel, "no available venue times");
-        ScheduleData.instance().cannotSchedule(panel);
     }
 
     public void makeSchedule() {
@@ -53,7 +52,17 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
-        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
+    /*
+        TODO :
+        Can be optimized by making one iteration and keeping three venueTimes in the same time as iterating.
+        DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
+
+        In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
+        DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
+        If no RequiredSatisfied found, then venueTime cannot be found.
+*/
+
+       VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
             vt = searchForLegalVenueTime(panel, ConstraintPriority.VERY_IMPORTANT); // min requirement is important
             if ( vt == null) {
@@ -74,6 +83,7 @@ public class DummyScheduler {
                         }
                     }
                 }
+                return vt; // vt has passed all priority conditions
             }
         }
         return null; // no venueTime found

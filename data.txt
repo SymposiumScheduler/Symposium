@@ -2239,8 +2239,8 @@
 	{
 		"name": "EBERT UNINTERRUPTUS The Graduate",
 		"panelists": [
-				"G. Willow Wilson",
-				"David Bender"
+					"G. Willow Wilson",
+        			"Sarah Holewinski"
 		],
 		"constraints": [
 			"New-Panelist:2",

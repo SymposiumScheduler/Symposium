@@ -106,6 +106,8 @@ public class Parser {
                 Range intersection = null;
                 if(availability.size() > 0) {
                     intersection = availability.get(0).intersect(availability);
+                } else {
+                    throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability");
                 }
 
                 List<String> categoryList = new ArrayList<String>();

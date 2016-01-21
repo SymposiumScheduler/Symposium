@@ -36,8 +36,7 @@ public class DummyScheduler {
         if (vt != null) {
             ScheduleData.instance().assignPanelToVenueTime(panel,vt);
         } else {
-            Report.INSTANCE.cannotSchedule(panel, "no available venue times");
-            ScheduleData.instance().cannotSchedule(panel);
+            ScheduleData.instance().cannotSchedule(panel, "no available venue times");
         }
     }
 

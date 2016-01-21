@@ -53,8 +53,8 @@ abstract class DetermineDifficulty {
         return avail;
     }
 
-    public Map panelistDifficulty(List<Panel> panels) {
-        Map<String, Integer> m = new HashMap();
+    public static HashMap panelistDifficulty(List<Panel> panels) {
+        HashMap<String, Integer> m = new HashMap();
         for (Panel panel: panels) {
             for (String panelist : panel.PANELISTS) {
                 if (m.containsKey(panelist)) {
@@ -80,8 +80,8 @@ abstract class DetermineDifficulty {
         return 10*panel.getSizeConstraint();
     }
 
-    public Map constraintDifficulty(List<Panel> panels) {
-        Map<String, Integer> m = new HashMap();
+    public static HashMap constraintDifficulty(List<Panel> panels) {
+        HashMap<String, Integer> m = new HashMap();
         for (Panel panel: panels) {
             for (String category : panel.CATEGORIES) {
                 if (m.containsKey(category)) {

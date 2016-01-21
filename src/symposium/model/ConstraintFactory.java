@@ -48,7 +48,9 @@ public class ConstraintFactory{
                         break;
                     }
                 }
-                throw new RuntimeException("VenueConstraint for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.")
+                if (venue == null) {
+                    throw new RuntimeException("VenueConstraint for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.");
+                }
                 Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
                 constraints.add(constraint);
             }

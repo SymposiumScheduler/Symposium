@@ -64,7 +64,7 @@ public class Panel implements Comparable<Panel>{
         return hasvc;
     }
 
-    public boolean getSizeConstraint() {
+    public int getSizeConstraint() {
         int hassc = 0;
         for (Constraint c: this.CONSTRAINTS) {
             if (c instanceof SizeConstraint) {

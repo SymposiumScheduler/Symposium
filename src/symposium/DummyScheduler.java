@@ -19,8 +19,17 @@ public class DummyScheduler {
 
     private void determineDifficulity() {
         List<Panel> freePanels = ScheduleData.instance().getFreePanels();
+        HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty();
+        HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty();
+        int y = 0;
         for(Panel p : freePanels) {
-            p.setDifficulty(DetermineDifficulty.evalDifficulty(p));
+            for (String x : p.PANELISTS){
+                y += panelistDifficulty.get(x);
+            }
+            for (String x : p.CATEGORIES){
+                y += categoryDifficulty.get(x);
+            }
+            p.setDifficulty(DetermineDifficulty.evalDifficulty(p)+y);
         }
         Collections.sort(freePanels);
         Collections.reverse(freePanels);

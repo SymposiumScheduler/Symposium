@@ -80,7 +80,7 @@ abstract class DetermineDifficulty {
         return 10*panel.getSizeConstraint();
     }
 
-    public static HashMap constraintDifficulty(List<Panel> panels) {
+    public static HashMap categoryDifficulty(List<Panel> panels) {
         HashMap<String, Integer> m = new HashMap();
         for (Panel panel: panels) {
             for (String category : panel.CATEGORIES) {

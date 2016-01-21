@@ -6,7 +6,7 @@ import symposium.model.ScheduleData;
 
 import java.util.ArrayList;
 import java.util.List;
-// TODO : better implementation for this.
+// TODO : better implementation for this. Make sure to include the percentage of panels scheduled at the end of the report
 public class Report {
     public static final Report INSTANCE = new Report();
 

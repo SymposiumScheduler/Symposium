@@ -25,10 +25,10 @@ import java.util.*;
  * X = order of magnitude
  */
 
-//to use, need to call panelistDifficulty and categoryDifficulty before determining difficulty of all panels.
+//to use, call panelistDifficulty and categoryDifficulty
     //Then loop through each panel and call evalDifficulty which then calls all other difficulty methods.
     //This will return an integer. Then, for the panel in question, query the panelistdifficulty and categorydifficulty maps and add that information to the number (after applying modifiers)
-    //set this to the panel difficulty
+    //set this to that panel's difficulty, and repeat
     //sort panels by difficulty
 
 abstract class DetermineDifficulty {

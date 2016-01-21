@@ -126,6 +126,14 @@ public class TimeRangeSeries implements Range {
         }
     }
 
+    public int length() {
+        int result = 0;
+        for(TimeRange tr : this.ranges) {
+            result += tr.length();
+        }
+        return result;
+    }
+
     @Override
     public Range intersect(Collection<Range> others) {
         Range result = this;

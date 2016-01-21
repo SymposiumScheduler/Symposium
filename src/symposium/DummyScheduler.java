@@ -17,8 +17,10 @@ public class DummyScheduler {
         List<Panel> freePanels = ScheduleData.instance().getFreePanels();
         HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty(freePanels);
         HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty(freePanels);
-        int y = 0;
+        int y;
         for(Panel p : freePanels) {
+            y = 0; // reset y for every panel
+
             for (String x : p.PANELISTS){
                 y += (int) panelistDifficulty.get(x);
             }
@@ -36,8 +38,7 @@ public class DummyScheduler {
         if (vt != null) {
             ScheduleData.instance().assignPanelToVenueTime(panel,vt);
         } else {
-            Report.INSTANCE.cannotSchedule(panel, "no available venue times");
-            ScheduleData.instance().cannotSchedule(panel);
+            ScheduleData.instance().cannotSchedule(panel, "no available venue times");
         }
     }
 

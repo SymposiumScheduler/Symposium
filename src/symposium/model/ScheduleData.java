@@ -26,6 +26,7 @@ public class ScheduleData {
      */
     private final List<Panel> assignedPanels;
     private final List<Panel> freePanels;
+    private final Map<Panel, String> unschedulablePanels;
 
     /**
      * @param venues
@@ -35,11 +36,13 @@ public class ScheduleData {
 
         this.freePanels = new ArrayList<>();
         this.assignedPanels = new ArrayList<>();
+        this.unschedulablePanels = new HashMap<>();
 
         this.categoryAssigned = new HashMap<>();
         this.panelistAssigned = new HashMap<>();
 
         this.NUMBER_OF_DAYS = numberOfDays;
+
     }
 
     /**
@@ -180,9 +183,13 @@ public class ScheduleData {
     public List<Panel> getAssignedPanels() {
         return this.assignedPanels;
     }
+    public Map<Panel, String> getUnschedulablePanels() {
+        return this.unschedulablePanels;
+    }
     public List<Panel> getPanelistAssignedPanels(String panelist) { return this.panelistAssigned.get(panelist);}
-    public void cannotSchedule(Panel p) {
+    public void cannotSchedule(Panel p, String msg) {
         getFreePanels().remove(p);
+        this.unschedulablePanels.put(p, msg);
     }
 
     public static void init(List<Venue> venues, int noOfDays){

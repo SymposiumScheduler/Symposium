@@ -40,17 +40,7 @@ abstract class DetermineDifficulty {
 
     public static int availabilityDifficulty(Panel panel){
         Range range = panel.getAvailability();
-        Iterator<TimeRange> rangeIterator = range.iterator();
-        TimeRange timeRange = rangeIterator.next();
-        int total = 0;
-        while (rangeIterator.hasNext()){
-            int start = timeRange.getStart();
-            int end = timeRange.getEnd();
-            total += (end - start);
-            timeRange = rangeIterator.next();
-        }
-        int avail = (int) 10000/total;
-        return avail;
+        return  (int) 10000/range.length();
     }
 
     public static HashMap panelistDifficulty(List<Panel> panels) {

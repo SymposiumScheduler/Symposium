@@ -82,22 +82,24 @@ public class Parser {
         JSONArray json_panels = (JSONArray) jsonObject.get("Panels");
 
         //System.out.println("Setting up panelists...");
-        Map<String, List<TimeRange>> panelists = new HashMap<String, List<TimeRange>>();
+        Map<String, Range> panelists = new HashMap<String, Range>();
         List<String> new_panelists = new ArrayList<String>();
         for (Object o : json_panelists) {
             JSONObject item = (JSONObject) o;
             String panelist_name = (String) item.get("name");
             JSONArray json_times = (JSONArray) item.get("times");
-            List<TimeRange> panelist_times = new ArrayList<TimeRange>();
+            List<Range> panelist_times = new ArrayList<Range>();
             for (Object time_slot : json_times) {
                 String panelist_time = (String) time_slot;
                 TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(panelist_time);
                 panelist_times.add(timeRange); //panelist_time
             }
+            Range panelistTime = panelist_times.get(0).union(panelist_times);
+
             if (item.get("new") == "yes") {
                 new_panelists.add(panelist_name);
             } else {
-                panelists.put(panelist_name, panelist_times);
+                panelists.put(panelist_name, panelistTime);
             }
         }
 
@@ -111,21 +113,23 @@ public class Parser {
             String categories = (String) item.get("category");
             int new_count = 0;
 
-            List<String> names = new ArrayList<String>();
-            List<Range> availability = new ArrayList<Range>();
+            List<String> names = new ArrayList<>();
+            List<Range> panelistAvailabilities = new ArrayList<>();
+
             for (Object panelist : panel_panelists) {
                 String name = (String) panelist;
                 names.add(name);
-                Collection<TimeRange> times = panelists.get(name);
-                availability.add(new TimeRangeSeries(times));
-                if (new_panelists.contains(name)) {
+                panelistAvailabilities.add(panelists.get(name));
+                if (new_panelists.contains(name)){
                     new_count += 1;
                 }
             }
-            Range intersection = null;
-            if (availability.size() > 0) {
-                intersection = availability.get(0).intersect(availability);
-            } else {
+
+            Range panelAvailability = null;
+            if(panelistAvailabilities.size() > 0){
+                panelAvailability = panelistAvailabilities.get(0).intersect(panelistAvailabilities);
+            }
+            if(panelAvailability == null){
                 throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability");
             }
 
@@ -142,7 +146,7 @@ public class Parser {
             if (new_count > 1) {
                 constraints.add("New-Panelist");
             }
-            panels.add(new Panel(panel_name, names, intersection, categoryList, constraints));
+            panels.add(new Panel(panel_name, names, panelAvailability, categoryList, constraints));
 
         }
         ScheduleData.instance().initPanels(panels);

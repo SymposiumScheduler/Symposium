@@ -18,9 +18,9 @@ public class DummyScheduler {
     }
 
     public void makeSchedule() {
-        // init difficulty
+        // 0) init difficulty
         DetermineDifficulty.setDifficulties();
-        // go through panels and schedule
+        // 1) go through panels and schedule
         List<Panel> pnlCollection = ScheduleData.instance().getFreePanels();
         while(pnlCollection.size() > 0) {
             this.schedule(pnlCollection.get(0));
@@ -28,15 +28,14 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
-    /*
+        /*
         TODO :
-        Can be optimized by making one iteration and keeping three venueTimes in the same time as iterating.
-        DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
+            Can be optimized by making one iteration and keeping three venueTimes : DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
 
-        In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
-        DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
-        If no RequiredSatisfied found, then venueTime cannot be found.
-*/
+            In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
+            DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
+            If no RequiredSatisfied found, then venueTime cannot be found.
+        */
 
        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
@@ -73,6 +72,9 @@ public class DummyScheduler {
     }
 
     private static abstract class DetermineDifficulty {
+        private static final int SIZE_CONSTRAINT_FACTOR = 10;
+        private static final int VENUE_CONSTRAINT_VALUE = 200;
+        private static final int AVAILABILITY_CONSTRAINT_FACTOR = 10000;
         /**
          * Difficulty is determined by :
          *
@@ -93,87 +95,72 @@ public class DummyScheduler {
 
         public static void setDifficulties() {
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
-            HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty(freePanels);
-            HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty(freePanels);
-            int y;
+            HashMap<String, Integer> panelistDifficulty = DetermineDifficulty.panelistDifficultyMap(freePanels);
+            HashMap<String, Integer> categoryDifficulty = DetermineDifficulty.categoryDifficultyMap(freePanels);
+            int panelDifficulty;
             for(Panel p : freePanels) {
-                y = 0; // reset y for every panel
+                panelDifficulty = 0; // reset  for every panel
 
                 for (String x : p.PANELISTS){
-                    y += (int) panelistDifficulty.get(x);
+                    panelDifficulty += panelistDifficulty.get(x);
                 }
                 for (String x : p.CATEGORIES){
-                    y += (int) categoryDifficulty.get(x);
+                    panelDifficulty += categoryDifficulty.get(x);
                 }
-                p.setDifficulty(DetermineDifficulty.evalDifficulty(p)+y);
+
+                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p);
+                p.setDifficulty(panelDifficulty);
             }
             Collections.sort(freePanels);
             Collections.reverse(freePanels);
         }
 
-
-        private static int evalDifficulty(Panel panel) {
-            //int i = ScheduleData.instance().VENUES.size(); // do somehting from ScheduleData, but why? What does this do?
-            int difficulty = availabilityDifficulty(panel) + venueConstraintDifficulty(panel) + sizeConstraintDifficulty(panel);
-            return difficulty;
-        }
-
         private static int availabilityDifficulty(Panel panel){
             Range range = panel.getAvailability();
-            return  (int) 10000/range.length();
-        }
-
-        private static HashMap panelistDifficulty(List<Panel> panels) {
-            HashMap<String, Integer> m = new HashMap();
-            for (Panel panel: panels) {
-                for (String panelist : panel.PANELISTS) {
-                    if (m.containsKey(panelist)) {
-                        m.put(panelist, m.get(panelist) + 1);
-                    } else {
-                        m.put(panelist, 1);
-                    }
-                }
-            }
-            return m;
+            return  AVAILABILITY_CONSTRAINT_FACTOR/range.length();
         }
 
         private static int venueConstraintDifficulty(Panel panel) {
-            boolean hasvc = false;
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
-                    hasvc = true;
-                    break;
+                    return VENUE_CONSTRAINT_VALUE;
                 }
             }
-            //
-            if (hasvc) {
-                return 200;
-            }
-            else {
-                return 0;
-            }
+            return 0;
         }
 
         private static int sizeConstraintDifficulty(Panel panel) {
-            int hassc = 0;
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
-                    hassc = ((SizeConstraint) c).getMinSize();
-                    break;
+                    return SIZE_CONSTRAINT_FACTOR * ((SizeConstraint) c).getMinSize();
                 }
             }
-            //
-            return 10*hassc;
+
+            return 0;
         }
 
-        private static HashMap categoryDifficulty(List<Panel> panels) {
-            HashMap<String, Integer> m = new HashMap();
+        private static HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
+            HashMap<String, Integer> m = new HashMap<>();
             for (Panel panel: panels) {
                 for (String category : panel.CATEGORIES) {
                     if (m.containsKey(category)) {
                         m.put(category, m.get(category) + 1);
                     } else {
                         m.put(category, 1);
+                    }
+                }
+            }
+            return m;
+        }
+
+        private static HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
+            HashMap<String, Integer> m = new HashMap<>();
+            for (Panel panel: panels) {
+                for (String panelist : panel.PANELISTS) {
+                    if (m.containsKey(panelist)) {
+                        m.put(panelist, m.get(panelist) + 1);
+                    } else {
+                        m.put(panelist, 1);
                     }
                 }
             }

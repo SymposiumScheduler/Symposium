@@ -53,25 +53,4 @@ public class Panel implements Comparable<Panel>{
         return this.difficulty - that.difficulty;
     }
 
-    public boolean hasVenueConstraint() {
-        boolean hasvc = false;
-        for (Constraint c: this.CONSTRAINTS) {
-            if (c instanceof VenueConstraint) {
-                hasvc = true;
-                break;
-            }
-        }
-        return hasvc;
-    }
-
-    public int getSizeConstraint() {
-        int hassc = 0;
-        for (Constraint c: this.CONSTRAINTS) {
-            if (c instanceof SizeConstraint) {
-                hassc = ((SizeConstraint) c).getMinSize();
-                break;
-            }
-        }
-        return hassc;
-    }
 }

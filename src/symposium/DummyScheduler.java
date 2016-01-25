@@ -1,37 +1,12 @@
 package symposium;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import symposium.model.*;
-
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 import java.util.HashMap;
 
 public class DummyScheduler {
     public DummyScheduler() {}
-
-    private void determineDifficulity() {
-        List<Panel> freePanels = ScheduleData.instance().getFreePanels();
-        HashMap panelistDifficulty = DetermineDifficulty.panelistDifficulty(freePanels);
-        HashMap categoryDifficulty = DetermineDifficulty.categoryDifficulty(freePanels);
-        int y;
-        for(Panel p : freePanels) {
-            y = 0; // reset y for every panel
-
-            for (String x : p.PANELISTS){
-                y += (int) panelistDifficulty.get(x);
-            }
-            for (String x : p.CATEGORIES){
-                y += (int) categoryDifficulty.get(x);
-            }
-            p.setDifficulty(DetermineDifficulty.evalDifficulty(p)+y);
-        }
-        Collections.sort(freePanels);
-        Collections.reverse(freePanels);
-    }
 
     private void schedule(Panel panel) {
         VenueTime vt = returnFirstLegalVenueTime(panel);
@@ -43,9 +18,9 @@ public class DummyScheduler {
     }
 
     public void makeSchedule() {
-        // init difficulity
-        determineDifficulity();
-        // go through panels and schedule
+        // 0) init difficulty
+        DetermineDifficulty.setDifficulties();
+        // 1) go through panels and schedule
         List<Panel> pnlCollection = ScheduleData.instance().getFreePanels();
         while(pnlCollection.size() > 0) {
             this.schedule(pnlCollection.get(0));
@@ -53,15 +28,14 @@ public class DummyScheduler {
     }
 
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
-    /*
+        /*
         TODO :
-        Can be optimized by making one iteration and keeping three venueTimes in the same time as iterating.
-        DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
+            Can be optimized by making one iteration and keeping three venueTimes : DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
 
-        In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
-        DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
-        If no RequiredSatisfied found, then venueTime cannot be found.
-*/
+            In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
+            DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
+            If no RequiredSatisfied found, then venueTime cannot be found.
+        */
 
        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
@@ -75,8 +49,6 @@ public class DummyScheduler {
 
     private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
 
-
-        // minRequirement
         boolean noViolations;
         for ( Venue v : ScheduleData.instance().VENUES) {
             for (VenueTime vt : v.getFreeVenueTimes()) {
@@ -97,5 +69,102 @@ public class DummyScheduler {
             }
         }
         return null; // no venueTime found
+    }
+
+    private static abstract class DetermineDifficulty {
+        private static final int SIZE_CONSTRAINT_FACTOR = 10;
+        private static final int VENUE_CONSTRAINT_VALUE = 200;
+        private static final int AVAILABILITY_CONSTRAINT_FACTOR = 10000;
+        /**
+         * Difficulty is determined by :
+         *
+         * 1 :   : overlap and length of availability
+         * 2 :   : panelists overlap
+         * 3 :   : min size of venue
+         * 4 :   : locked (no longer needed)
+         * 5 :   : number and priority of constraint
+         * 6:   : category overlap
+         *
+         *
+         * 1: Required * 100
+         * 2: Very important * 10
+         * 3: Desirable * 1
+         *
+         * X = order of magnitude
+         */
+
+        public static void setDifficulties() {
+            List<Panel> freePanels = ScheduleData.instance().getFreePanels();
+            HashMap<String, Integer> panelistDifficulty = DetermineDifficulty.panelistDifficultyMap(freePanels);
+            HashMap<String, Integer> categoryDifficulty = DetermineDifficulty.categoryDifficultyMap(freePanels);
+            int panelDifficulty;
+            for(Panel p : freePanels) {
+                panelDifficulty = 0; // reset  for every panel
+
+                for (String x : p.PANELISTS){
+                    panelDifficulty += panelistDifficulty.get(x);
+                }
+                for (String x : p.CATEGORIES){
+                    panelDifficulty += categoryDifficulty.get(x);
+                }
+
+                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p);
+                p.setDifficulty(panelDifficulty);
+            }
+            Collections.sort(freePanels);
+            Collections.reverse(freePanels);
+        }
+
+        private static int availabilityDifficulty(Panel panel){
+            Range range = panel.getAvailability();
+            return  AVAILABILITY_CONSTRAINT_FACTOR/range.length();
+        }
+
+        private static int venueConstraintDifficulty(Panel panel) {
+            for (Constraint c: panel.CONSTRAINTS) {
+                if (c instanceof VenueConstraint) {
+                    return VENUE_CONSTRAINT_VALUE;
+                }
+            }
+            return 0;
+        }
+
+        private static int sizeConstraintDifficulty(Panel panel) {
+            for (Constraint c: panel.CONSTRAINTS) {
+                if (c instanceof SizeConstraint) {
+                    return SIZE_CONSTRAINT_FACTOR * ((SizeConstraint) c).getMinSize();
+                }
+            }
+
+            return 0;
+        }
+
+        private static HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
+            HashMap<String, Integer> m = new HashMap<>();
+            for (Panel panel: panels) {
+                for (String category : panel.CATEGORIES) {
+                    if (m.containsKey(category)) {
+                        m.put(category, m.get(category) + 1);
+                    } else {
+                        m.put(category, 1);
+                    }
+                }
+            }
+            return m;
+        }
+
+        private static HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
+            HashMap<String, Integer> m = new HashMap<>();
+            for (Panel panel: panels) {
+                for (String panelist : panel.PANELISTS) {
+                    if (m.containsKey(panelist)) {
+                        m.put(panelist, m.get(panelist) + 1);
+                    } else {
+                        m.put(panelist, 1);
+                    }
+                }
+            }
+            return m;
+        }
     }
 }

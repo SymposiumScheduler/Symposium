@@ -1034,4 +1034,78 @@ public class TimeRangeSeriesTest {
 
         assertNotEquals(x.hashCode(), y.hashCode());
     }
+
+    @Test
+    public void testDoesEnclose_Disjoints() throws Exception {
+
+        // x is the TimeRangeSeries for x1-2
+        TimeRange x1 = new TimeRange(0, 15);
+        TimeRange x2 = new TimeRange(20, 30);
+        List<TimeRange> xList = new ArrayList<>(2);
+        xList.add(x1);
+        xList.add(x2);
+        Range x = new TimeRangeSeries(xList);
+
+        // y is the TimeRangeSeries for y1-2
+        TimeRange y1 = new TimeRange(17, 18);
+        TimeRange y2 = new TimeRange(32, 40);
+        List<TimeRange> yList = new ArrayList<>(2);
+        yList.add(y1);
+        yList.add(y2);
+        Range y = new TimeRangeSeries(yList);
+
+        assertFalse(x.doesEnclose(y));
+    }
+
+    @Test
+    public void testDoesEnclose_CompleteIn() throws Exception {
+
+        // x is the TimeRangeSeries for x1-3
+        TimeRange x1 = new TimeRange(0, 15);
+        TimeRange x2 = new TimeRange(20, 30);
+        TimeRange x3 = new TimeRange(35, 40);
+        List<TimeRange> xList = new ArrayList<>(3);
+        xList.add(x1);
+        xList.add(x2);
+        xList.add(x3);
+        Range x = new TimeRangeSeries(xList);
+
+        // y is the TimeRangeSeries for y1-3
+        TimeRange y1 = new TimeRange(5, 10);
+        TimeRange y2 = new TimeRange(25, 29);
+        TimeRange y3 = new TimeRange(36, 39);
+        List<TimeRange> yList = new ArrayList<>(3);
+        yList.add(y1);
+        yList.add(y2);
+        yList.add(y3);
+        Range y = new TimeRangeSeries(yList);
+
+        assertTrue(x.doesEnclose(y));
+    }
+
+    @Test
+    public void testDoesEnclose_InBetween() throws Exception {
+
+        // x is the TimeRangeSeries for x1-3
+        TimeRange x1 = new TimeRange(0, 20);
+        TimeRange x2 = new TimeRange(30, 40);
+        TimeRange x3 = new TimeRange(50, 60);
+        List<TimeRange> xList = new ArrayList<>(3);
+        xList.add(x1);
+        xList.add(x2);
+        xList.add(x3);
+        Range x = new TimeRangeSeries(xList);
+
+        // y is the TimeRangeSeries for y1-3
+        TimeRange y1 = new TimeRange(5, 10);
+        TimeRange y2 = new TimeRange(22, 29);
+        TimeRange y3 = new TimeRange(50, 70);
+        List<TimeRange> yList = new ArrayList<>(3);
+        yList.add(y1);
+        yList.add(y2);
+        yList.add(y3);
+        Range y = new TimeRangeSeries(yList);
+
+        assertFalse(x.doesEnclose(y));
+    }
 }

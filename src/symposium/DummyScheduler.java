@@ -52,6 +52,9 @@ public class DummyScheduler {
         boolean noViolations;
         for ( Venue v : ScheduleData.instance().VENUES) {
             for (VenueTime vt : v.getFreeVenueTimes()) {
+                if(! panel.AVAILABILITY.doesEnclose(vt.TIME) ) {
+                    continue;
+                }
                 noViolations = true;
                 for (Constraint constraint : panel.CONSTRAINTS) {
                     if(constraint.PRIORITY.compareTo(minRequirement) >= 0) {

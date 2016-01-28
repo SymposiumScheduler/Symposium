@@ -33,7 +33,7 @@ public class ConstraintFactory{
             }
             else if (constraint_string.contains("Panelist-Constraint")){
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
-                Constraint constraint = new CategoryConstraint(intToPriority(priority), panel);
+                Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
             else if (constraint_string.contains("Venue")) {
@@ -54,7 +54,27 @@ public class ConstraintFactory{
                 Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
                 constraints.add(constraint);
             }
+            else if (constraint_string.contains("Max-Panels")) {
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                int maxPanels = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
+                Constraint constraint = new MaxPanelistConstraint(intToPriority(priority), panel, maxPanels);
+                constraints.add(constraint);
+            }
+            else if (constraint_string.contains("Min-Panels")) {
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
+                //Always assigns Desired priority, because we're using our fake-up estimation.
+                Constraint constraint = new MinPanelistConstraint(ConstraintPriority.DESIRED, panel);
+                constraints.add(constraint);
+            }
+            else if (constraint_string.contains("Minimum-Capacity")) {
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
+                Constraint constraint = new SizeConstraint(intToPriority(priority), panel, minimum);
+                constraints.add(constraint);
+            }
         }
+
         return constraints;
     }
     private static ConstraintPriority intToPriority(int level) {

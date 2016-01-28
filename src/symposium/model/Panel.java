@@ -1,5 +1,7 @@
 package symposium.model;
 
+import javafx.scene.layout.Priority;
+
 import java.util.*;
 
 public class Panel implements Comparable<Panel>{
@@ -19,6 +21,11 @@ public class Panel implements Comparable<Panel>{
         this.AVAILABILITY = availability;
         this.PANELISTS = panelists;
         this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraintsStrs);
+        //The below should probably be handled in parser
+        //but this is a constraint that isn't on the list of constraints
+        //so this is how it's handled now.
+        //Assigns Very Important for now, we should talk with Marc about this.
+        this.CONSTRAINTS.add(new SizeConstraint(ConstraintPriority.VERY_IMPORTANT, this, this.PANELISTS.size()));
         //TODO set locked if minimum size is larger than some number
         this.LOCKED = false;
     }

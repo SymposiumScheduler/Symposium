@@ -2,13 +2,13 @@ package symposium.model;
 
 public class SizeConstraint extends Constraint {
 
-    short minSize;
+    int minSize;
 
     /**
      *
      * @param mSize The minimum size necessary for the panel to fit.
      */
-    public SizeConstraint(ConstraintPriority priority, Panel p, short mSize) {
+    public SizeConstraint(ConstraintPriority priority, Panel p, int mSize) {
         super(priority, p);
         minSize = mSize;
     }
@@ -32,6 +32,6 @@ public class SizeConstraint extends Constraint {
     }
 
     public int getMinSize(){
-        return (int) this.minSize;
+        return this.minSize;
     }
 }

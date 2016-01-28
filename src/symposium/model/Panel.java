@@ -1,7 +1,5 @@
 package symposium.model;
 
-import javafx.scene.layout.Priority;
-
 import java.util.*;
 
 public class Panel implements Comparable<Panel>{

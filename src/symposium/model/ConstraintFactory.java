@@ -67,6 +67,12 @@ public class ConstraintFactory{
                 Constraint constraint = new MinPanelistConstraint(ConstraintPriority.DESIRED, panel);
                 constraints.add(constraint);
             }
+            else if (constraint_string.contains("Minimum-Capacity")) {
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
+                Constraint constraint = new SizeConstraint(intToPriority(priority), panel, minimum);
+                constraints.add(constraint);
+            }
         }
 
         return constraints;

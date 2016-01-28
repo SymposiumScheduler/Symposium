@@ -69,10 +69,7 @@ public class Parser {
             List<TimeRange> timeRanges = ranges.get(key);
             venues.add(new Venue(key, venue_size, timeRanges));
         }
-
-
         ScheduleData.init(venues, 4); // FIXME: 4 should be changed to the number of days in the whole space (might not be necessary anymore)
-
     }
 
     private static void initPanels(JSONObject jsonObject) {
@@ -143,7 +140,7 @@ public class Parser {
                 String constraint = (String) k;
                 constraints.add(constraint);
             }
-            if (new_count > 1) {
+            if (new_count == names.size()) {
                 constraints.add("New-Panelist");
             }
             panels.add(new Panel(panel_name, names, panelAvailability, categoryList, constraints));

@@ -167,4 +167,11 @@ public class TimeRange implements Range {
     public int length() {
         return END - START + 1; // + 1 because range is inclusive.
     }
+
+    public boolean doesEnclose(Range range) {
+        if(this.START <= range.getStart() && this.END >= range.getEnd()) {
+            return true;
+        }
+        return false;
+    }
 }

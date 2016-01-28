@@ -1,6 +1,8 @@
 package symposium.model;
 
 
+import sun.net.TelnetInputStream;
+
 import javax.rmi.CORBA.Tie;
 import java.util.*;
 
@@ -304,5 +306,29 @@ public class TimeRangeSeries implements Range {
         result.append("}");
 
         return result.toString();
+    }
+
+    public boolean doesEnclose(Range range) {
+        Iterator<TimeRange> myItr = this.iterator();
+        Iterator<TimeRange> otherItr = range.iterator();
+        TimeRange myRange = myItr.next();
+        TimeRange otherRange = otherItr.next();
+
+        while(true) {
+            // does enclose
+            if(myRange.doesEnclose(otherRange)) {
+                if(otherItr.hasNext()) { // more ranges to check
+                    otherRange = otherItr.next();
+                } else { // no more other ranges to check
+                    return true;
+                }
+            } else {
+                if(myItr.hasNext()) {
+                    myRange = myItr.next();
+                }  else {
+                    return false; // does not enclose : because no more myRange and there is otherRange which is not enclosed
+                }
+            }
+        }
     }
 }

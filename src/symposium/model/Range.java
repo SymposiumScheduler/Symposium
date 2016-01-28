@@ -84,6 +84,12 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
      * @return the length of the range. Min is 1
      */
     int length();
+
+    /**
+     * check if a range encloses another one
+     * @return true if it encloses it, otherwise false.
+     */
+    boolean doesEnclose(Range range);
 }
 
 

@@ -49,6 +49,7 @@ public class Parser {
 
 
         //System.out.println("Setting up Venues...");
+        int lastTimePoint = -1; // the last time anything could be scheduled (for number of days);
         Map<String, List<TimeRange>> ranges = new HashMap<String, List<TimeRange>>();
         for (Object o : json_venue_times) {
             JSONObject item = (JSONObject) o;
@@ -63,13 +64,15 @@ public class Parser {
             }
             timeRanges.add(timeRange);
             ranges.put(venue_name, timeRanges);
+            // update last time point
+            lastTimePoint = (lastTimePoint > timeRange.END ? lastTimePoint : timeRange.END);
         }
         for (String key : ranges.keySet()) {
             int venue_size = sizes.get(key);
             List<TimeRange> timeRanges = ranges.get(key);
             venues.add(new Venue(key, venue_size, timeRanges));
         }
-        ScheduleData.init(venues, 4); // FIXME: 4 should be changed to the number of days in the whole space (might not be necessary anymore)
+        ScheduleData.init(venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
     }
 
     private static void initPanels(JSONObject jsonObject) {

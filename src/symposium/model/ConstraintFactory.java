@@ -4,34 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletionService;
 
-//TODO we need venue-constaint (need to build venue somehow), duration-constraint (need to see how this is represented in input)
 public class ConstraintFactory{
-    public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings){
+    public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
-        for (String constraint_string : constraint_strings){
-            if (constraint_string.contains("New-Panelist")){
+        for (String constraint_string : constraint_strings) {
+            if (constraint_string.contains("New-Panelist")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 Constraint constraint = new NewPanelistConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
-            else if (constraint_string.contains("Paired-Panelist")){
+            else if (constraint_string.contains("Paired-Panelist")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 Constraint constraint = new PairedPanelistConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
-            else if (constraint_string.contains("Single-Category")){
+            else if (constraint_string.contains("Single-Category")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 Constraint constraint = new CategoryConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
-            else if (constraint_string.contains("Minimum-Capacity")){
-                int priority = Integer.valueOf(constraint_string.split(":")[1]);
-                int size =  Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
-                short s = (short) size;
-                Constraint constraint = new SizeConstraint(intToPriority(priority), panel, s);
-                constraints.add(constraint);
-            }
-            else if (constraint_string.contains("Panelist-Constraint")){
+            else if (constraint_string.contains("Panelist-Constraint")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
@@ -60,11 +52,12 @@ public class ConstraintFactory{
                 Constraint constraint = new MaxPanelistConstraint(intToPriority(priority), panel, maxPanels);
                 constraints.add(constraint);
             }
+            //FIXME: Min-Panels needs to be implemented.
             else if (constraint_string.contains("Min-Panels")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
                 //Always assigns Desired priority, because we're using our fake-up estimation.
-                Constraint constraint = new MinPanelistConstraint(ConstraintPriority.DESIRED, panel);
+                Constraint constraint = new MinPanelistConstraint(ConstraintPriority.VERY_IMPORTANT, panel);
                 constraints.add(constraint);
             }
             else if (constraint_string.contains("Minimum-Capacity")) {
@@ -72,6 +65,9 @@ public class ConstraintFactory{
                 int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
                 Constraint constraint = new SizeConstraint(intToPriority(priority), panel, minimum);
                 constraints.add(constraint);
+            }
+            else {
+                System.err.print(constraint_string + " Constraint is not implemented");
             }
         }
 

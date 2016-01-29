@@ -78,28 +78,30 @@ public class DummyScheduler {
         private static final int SIZE_CONSTRAINT_FACTOR = 10;
         private static final int VENUE_CONSTRAINT_VALUE = 200;
         private static final int AVAILABILITY_CONSTRAINT_FACTOR = 10000;
+
         /**
          * Difficulty is determined by :
          *
          * 1 :   : overlap and length of availability
          * 2 :   : panelists overlap
-         * 3 :   : min size of venue
-         * 4 :   : locked (no longer needed)
-         * 5 :   : number and priority of constraint
-         * 6:   : category overlap
+         * 3 :   : category overlap
+         * 4 :   : min size of venue
+         * 5 :   : venue constraint
+         * 6 :   : number and priority of constraint
+         *
          *
          *
          * 1: Required * 100
          * 2: Very important * 10
          * 3: Desirable * 1
          *
-         * X = order of magnitude
+         *
          */
 
         public static void setDifficulties() {
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
-            HashMap<String, Integer> panelistDifficulty = DetermineDifficulty.panelistDifficultyMap(freePanels);
-            HashMap<String, Integer> categoryDifficulty = DetermineDifficulty.categoryDifficultyMap(freePanels);
+            HashMap<String, Integer> panelistDifficulty = panelistDifficultyMap(freePanels);
+            HashMap<String, Integer> categoryDifficulty = categoryDifficultyMap(freePanels);
             int panelDifficulty;
             for(Panel p : freePanels) {
                 panelDifficulty = 0; // reset  for every panel

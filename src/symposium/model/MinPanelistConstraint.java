@@ -7,7 +7,7 @@ public class MinPanelistConstraint extends Constraint {
 
     public MinPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
-        minimum = 1;
+        minimum = ScheduleData.instance().NUMBER_OF_DAYS;
     }
 
     /**

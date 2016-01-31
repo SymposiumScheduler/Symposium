@@ -13,5 +13,9 @@ public class Main {
         bs.makeSchedule();
         // Print report
         System.out.print(Report.INSTANCE);
+        System.out.print("\n\n");
+        for (String key : Report.errorRecord.keySet()) {
+            System.out.println(key + " " + Report.errorRecord.get(key));
+        }
     }
 }

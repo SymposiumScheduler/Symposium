@@ -59,6 +59,13 @@ public class DummyScheduler {
                 for (Constraint constraint : panel.CONSTRAINTS) {
                     if(constraint.PRIORITY.compareTo(minRequirement) >= 0) {
                         if(constraint.isConstraintViolated(vt)) {
+                            if (minRequirement == ConstraintPriority.REQUIRED) {
+                                if (Report.errorRecord.containsKey(panel.getName() + constraint.toString())) {
+                                    Report.errorRecord.put(panel.getName() + constraint.toString(),  Report.errorRecord.get(panel.getName() + constraint.toString()));
+                                } else {
+                                    Report.errorRecord.put(panel.getName() + constraint.toString(), 1);
+                                }
+                            }
                             noViolations = false;
                             break;
                         }

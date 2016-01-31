@@ -195,12 +195,12 @@ public class ScheduleData {
     }
 
     public void cannotSchedule(Panel p, Map<Constraint, Integer> m) {
-        String message = new String();
+        StringBuilder message = new StringBuilder();
 
         for (Constraint key : m.keySet()) {
-            message += key.toString() + " violated " + m.get(key).toString() + " times; ";
+            message.append(key.toString()).append(" violated ").append(m.get(key).toString()).append(" times; ");
         }
-        cannotSchedule(p, message);
+        cannotSchedule(p, message.toString());
     }
 
     public static void init(List<Venue> venues, int noOfDays){

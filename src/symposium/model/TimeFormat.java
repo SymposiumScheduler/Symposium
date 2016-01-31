@@ -105,7 +105,7 @@ public final class TimeFormat {
         }
     }
 
-    private static int timeComponentsToAbsolute(int day, int hours, int minutes) {
+    public static int timeComponentsToAbsolute(int day, int hours, int minutes) {
         return day * (24 * 60) + hours * 60 + minutes;
     }
 

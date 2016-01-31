@@ -66,8 +66,23 @@ public class ConstraintFactory{
                 Constraint constraint = new SizeConstraint(intToPriority(priority), panel, minimum);
                 constraints.add(constraint);
             }
+            else if (constraint_string.contains("Availability")) {
+                // Always implemented within the scheduler
+
+            }
+            else if (constraint_string.contains("Time(")) {
+                String timeOfDay = constraint_string.split("\\(")[1];
+                int day = Integer.valueOf(timeOfDay.split(";")[0]);
+                int hour = Integer.valueOf((timeOfDay.split(";")[1]).split(":")[0]);
+                int minute = Integer.valueOf((timeOfDay.split(";")[1]).split(":")[1].split("\\)")[0]);
+                int timePoint = TimeFormat.timeComponentsToAbsolute(day,hour,minute);
+                int priority = Integer.valueOf(constraint_string.split("\\):")[1]);
+                System.out.println(day+","+hour+":"+minute+" = "+timePoint);
+                Constraint constraint = new SpecificTimeConstraint(intToPriority(priority), panel, timePoint);
+                constraints.add(constraint);
+            }
             else {
-                System.err.print(constraint_string + " Constraint is not implemented");
+                System.err.println(constraint_string + " Constraint is not implemented ");
             }
         }
 

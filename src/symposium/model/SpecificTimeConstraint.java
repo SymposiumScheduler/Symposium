@@ -11,6 +11,6 @@ public class SpecificTimeConstraint extends TimeConstraint {
 
     @Override
     public boolean checkTime(VenueTime vt){
-        return vt.TIME.isInside(time);
+        return (vt.TIME.getStart() == time);
     }
 }

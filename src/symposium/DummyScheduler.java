@@ -61,7 +61,7 @@ public class DummyScheduler {
                         if(constraint.isConstraintViolated(vt)) {
                             if (minRequirement == ConstraintPriority.REQUIRED) {
                                 if (Report.errorRecord.containsKey(panel.getName() + constraint.toString())) {
-                                    Report.errorRecord.put(panel.getName() + constraint.toString(),  Report.errorRecord.get(panel.getName() + constraint.toString()));
+                                    Report.errorRecord.put(panel.getName() + constraint.toString(),  Report.errorRecord.get(panel.getName() + constraint.toString()) + 1);
                                 } else {
                                     Report.errorRecord.put(panel.getName() + constraint.toString(), 1);
                                 }

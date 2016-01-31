@@ -7,7 +7,6 @@ import java.util.*;
 
 public class Report {
     public static final Report INSTANCE = new Report();
-    public static Map<String, Integer> errorRecord = new HashMap<String, Integer>();
 
     public String toString() {
         StringBuilder result = new StringBuilder();

@@ -4,6 +4,7 @@ import symposium.model.*;
 import java.util.Collections;
 import java.util.List;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DummyScheduler {
     public DummyScheduler() {}
@@ -12,8 +13,6 @@ public class DummyScheduler {
         VenueTime vt = returnFirstLegalVenueTime(panel);
         if (vt != null) {
             ScheduleData.instance().assignPanelToVenueTime(panel,vt);
-        } else {
-            ScheduleData.instance().cannotSchedule(panel, "no available venue times");
         }
     }
 
@@ -48,7 +47,7 @@ public class DummyScheduler {
     }
 
     private VenueTime searchForLegalVenueTime(Panel panel, ConstraintPriority minRequirement) {
-
+        Map<Constraint, Integer> violationMap = new HashMap();
         boolean noViolations;
         for ( Venue v : ScheduleData.instance().VENUES) {
             for (VenueTime vt : v.getFreeVenueTimes()) {
@@ -60,10 +59,10 @@ public class DummyScheduler {
                     if(constraint.PRIORITY.compareTo(minRequirement) >= 0) {
                         if(constraint.isConstraintViolated(vt)) {
                             if (minRequirement == ConstraintPriority.REQUIRED) {
-                                if (Report.errorRecord.containsKey(panel.getName() + constraint.toString())) {
-                                    Report.errorRecord.put(panel.getName() + constraint.toString(),  Report.errorRecord.get(panel.getName() + constraint.toString()) + 1);
+                                if (violationMap.containsKey(constraint)) {
+                                    violationMap.put(constraint,  violationMap.get(constraint) + 1);
                                 } else {
-                                    Report.errorRecord.put(panel.getName() + constraint.toString(), 1);
+                                    violationMap.put(constraint, 1);
                                 }
                             }
                             noViolations = false;
@@ -77,6 +76,9 @@ public class DummyScheduler {
                     continue;
                 }
             }
+        }
+        if (minRequirement == ConstraintPriority.REQUIRED) {
+            ScheduleData.instance().cannotSchedule(panel, violationMap);
         }
         return null; // no venueTime found
     }

@@ -1,6 +1,8 @@
 package symposium.model;
 
 
+import symposium.Report;
+
 import java.util.*;
 
 
@@ -190,6 +192,15 @@ public class ScheduleData {
     public void cannotSchedule(Panel p, String msg) {
         getFreePanels().remove(p);
         this.unschedulablePanels.put(p, msg);
+    }
+
+    public void cannotSchedule(Panel p, Map<Constraint, Integer> m) {
+        String message = new String();
+
+        for (Constraint key : m.keySet()) {
+            message += key.toString() + " violated " + m.get(key).toString() + " times; ";
+        }
+        cannotSchedule(p, message);
     }
 
     public static void init(List<Venue> venues, int noOfDays){

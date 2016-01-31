@@ -14,13 +14,7 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
     boolean checkTime(VenueTime venueTime) {
         Range time = venueTime.TIME; // Implement in VenueTime later
         Range monday = new TimeRange(0, 1440); // Assuming Joey's current parser, change if implementation changes
-        short newAll = 0;
-        for (int i = 0; i < PANEL.PANELISTS.size(); i++) {
-            if(PANEL.PANELISTS.get(i).contains("new")) {  // built on assumption that the PANELIST array in panel contains the substring
-                newAll++;
-            }
-        }
-        if (!time.doesIntersect(monday) || newAll < PANEL.PANELISTS.size()) {
+        if (!time.doesIntersect(monday)) {
             return true;
         }
         else {

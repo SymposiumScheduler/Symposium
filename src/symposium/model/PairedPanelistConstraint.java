@@ -23,4 +23,9 @@ public class PairedPanelistConstraint extends Constraint {
         cache.put(venueTime, violated);
         return violated;
     }
+
+    @Override
+    public String toString() {
+        return "PairedPanelistConstraint: Two panelists shouldn't appear together more than once per day";
+    }
 }

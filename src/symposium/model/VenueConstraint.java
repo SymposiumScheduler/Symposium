@@ -29,4 +29,9 @@ public class VenueConstraint extends Constraint {
         cache.put(venueTime, violated);
         return violated;
     }
+
+    @Override
+    public String toString() {
+        return "VenueConstraint: Panel must appear in specific venue.";
+    }
 }

@@ -19,4 +19,9 @@ public class CategoryConstraint extends NoOverlapConstraint {
             return false;
         }
     }
+
+    @Override
+    public String toString() {
+        return "CategoryConstraint: Two panels of same category can't be scheduled at same time";
+    }
 }

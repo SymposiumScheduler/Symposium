@@ -14,17 +14,22 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
     boolean checkTime(VenueTime venueTime) {
         Range time = venueTime.TIME; // Implement in VenueTime later
         Range monday = new TimeRange(0, 1440); // Assuming Joey's current parser, change if implementation changes
-        short newMoreThanTwo = 0;
+        short newAll = 0;
         for (int i = 0; i < PANEL.PANELISTS.size(); i++) {
             if(PANEL.PANELISTS.get(i).contains("new")) {  // built on assumption that the PANELIST array in panel contains the substring
-                newMoreThanTwo++;
+                newAll++;
             }
         }
-        if (!time.doesIntersect(monday) || newMoreThanTwo < 2) {
+        if (!time.doesIntersect(monday) || newAll < PANEL.PANELISTS.size()) {
             return true;
         }
         else {
             return false;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "NewPanelistConstraint: Not all New Panelists on Monday";
     }
 }

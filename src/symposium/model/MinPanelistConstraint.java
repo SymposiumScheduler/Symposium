@@ -32,4 +32,9 @@ public class MinPanelistConstraint extends Constraint {
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "MinPanelistConstraint: Panelist should appear a minimum number of times per day.";
+    }
+
 }

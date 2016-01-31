@@ -34,4 +34,9 @@ public class SizeConstraint extends Constraint {
     public int getMinSize(){
         return this.minSize;
     }
+
+    @Override
+    public String toString() {
+        return "SizeConstraint: Venue must be able to fit panelists";
+    }
 }

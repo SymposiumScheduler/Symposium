@@ -77,7 +77,6 @@ public class ConstraintFactory{
                 int minute = Integer.valueOf((timeOfDay.split(";")[1]).split(":")[1].split("\\)")[0]);
                 int timePoint = TimeFormat.timeComponentsToAbsolute(day,hour,minute);
                 int priority = Integer.valueOf(constraint_string.split("\\):")[1]);
-                System.out.println(day+","+hour+":"+minute+" = "+timePoint);
                 Constraint constraint = new SpecificTimeConstraint(intToPriority(priority), panel, timePoint);
                 constraints.add(constraint);
             }

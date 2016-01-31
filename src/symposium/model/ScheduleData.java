@@ -209,6 +209,11 @@ public class ScheduleData {
         }
     }
 
+    public static void deleteScheduleData() {
+        System.err.print("\nScheduleData instance is being deleted.");
+        instance = null;
+    }
+
 
     public static ScheduleData instance() {
         return ScheduleData.instance;

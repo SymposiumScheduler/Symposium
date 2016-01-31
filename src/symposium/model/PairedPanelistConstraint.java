@@ -26,6 +26,6 @@ public class PairedPanelistConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "PairedPanelistConstraint: Two panelists shouldn't appear together more than once per day";
+        return "PairedPanelistConstraint (Two panelists shouldn't appear together more than once per day)";
     }
 }

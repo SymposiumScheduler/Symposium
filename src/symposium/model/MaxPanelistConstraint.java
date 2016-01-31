@@ -37,6 +37,6 @@ public class MaxPanelistConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "MaxPanelistConstraint: Panelist should only appear a maximum number of times per day";
+        return "MaxPanelistConstraint (Panelist should only appear a maximum number of times per day)";
     }
 }

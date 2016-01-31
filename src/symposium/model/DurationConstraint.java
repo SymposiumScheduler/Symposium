@@ -27,7 +27,7 @@ public class DurationConstraint extends TimeConstraint {
 
     @Override
     public String toString() {
-        return "DurationConstraint: Short Panel shouldn't be in Long Timeslot";
+        return "DurationConstraint (Short Panel shouldn't be in Long Timeslot)";
     }
 
 }

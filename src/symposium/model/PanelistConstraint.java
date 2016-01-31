@@ -25,6 +25,6 @@ public class PanelistConstraint extends NoOverlapConstraint {
 
     @Override
     public String toString() {
-        return "PanelistConstraint: Panelist cannot appear outside of availability or be in two places at once";
+        return "PanelistConstraint (Panelist cannot appear outside of availability or be in two places at once)";
     }
 }

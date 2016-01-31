@@ -16,6 +16,6 @@ public class SpecificTimeConstraint extends TimeConstraint {
 
     @Override
     public String toString() {
-        return "SpecificTimeConstraint: Panel must be scheduled at specific time.";
+        return "SpecificTimeConstraint (Panel must be scheduled at specific time)";
     }
 }

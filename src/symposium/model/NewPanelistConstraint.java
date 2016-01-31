@@ -24,6 +24,6 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
 
     @Override
     public String toString() {
-        return "NewPanelistConstraint: Not all New Panelists on Monday";
+        return "NewPanelistConstraint (Not all New Panelists on Monday)";
     }
 }

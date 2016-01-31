@@ -30,9 +30,7 @@ public class Parser {
     }
 
     private static void initVenues(JSONObject jsonObject) {
-
         List<Venue> venues = new ArrayList<Venue>();
-
 
         JSONArray json_venues = (JSONArray) jsonObject.get("Venues");
         JSONArray json_venue_times = (JSONArray) jsonObject.get("Venue-Times");
@@ -130,7 +128,7 @@ public class Parser {
                 panelAvailability = panelistAvailabilities.get(0).intersect(panelistAvailabilities);
             }
             if(panelAvailability == null){
-                throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability");
+                throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability based on panelist overlap.");
             }
 
             List<String> categoryList = new ArrayList<String>();

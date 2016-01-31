@@ -113,7 +113,7 @@ public class DummyScheduler {
                     panelDifficulty += categoryDifficulty.get(x);
                 }
 
-                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p);
+                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p) + lockedDifficulty(p);
                 p.setDifficulty(panelDifficulty);
             }
             Collections.sort(freePanels);
@@ -129,6 +129,15 @@ public class DummyScheduler {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
                     return VENUE_CONSTRAINT_VALUE;
+                }
+            }
+            return 0;
+        }
+
+        private static int lockedDifficulty(Panel panel) {
+            for (Constraint c: panel.CONSTRAINTS) {
+                if (c instanceof SpecificTimeConstraint) {
+                    return 10000;
                 }
             }
             return 0;

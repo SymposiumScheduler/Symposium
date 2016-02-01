@@ -12,9 +12,9 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
      */
     @Override
     boolean checkTime(VenueTime venueTime) {
-        Range time = venueTime.TIME; // Implement in VenueTime later
-        Range monday = new TimeRange(0, 1440); // Assuming Joey's current parser, change if implementation changes
-        if (!time.doesIntersect(monday)) {
+        Range time = venueTime.TIME;
+        Range firstDay = TimeFormat.getDayRange(0);
+        if (!time.doesIntersect(firstDay)) {
             return true;
         }
         else {

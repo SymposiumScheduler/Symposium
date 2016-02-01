@@ -10,6 +10,8 @@ public class Panel implements Comparable<Panel>{
     public final List<String> CATEGORIES;
     public final boolean LOCKED;
 
+
+    private final List<String> messages;
     private VenueTime assignedVenueTime;
     private int difficulty;
 
@@ -19,6 +21,7 @@ public class Panel implements Comparable<Panel>{
         this.AVAILABILITY = availability;
         this.PANELISTS = panelists;
         this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraintsStrs);
+        this.messages = new ArrayList<>();
         //TODO set locked if minimum size is larger than some number
         this.LOCKED = false;
     }
@@ -48,9 +51,35 @@ public class Panel implements Comparable<Panel>{
         return AVAILABILITY;
     }
 
+    public void addMessage(String message){
+        messages.add(message);
+    }
+    public List<String> getMessages() {
+        return this.messages;
+    }
+
     @Override
     public int compareTo(Panel that) {
         return this.difficulty - that.difficulty;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.NAME).append("\n\t");
+        if(this.assignedVenueTime != null) {
+            sb.append(this.getVenueTime().toString());
+        } else {
+            sb.append("Unscheduled");
+        }
+        sb.append("\n\tMessages:");
+        if(this.messages.size()!=0) {
+            for (String message : this.messages) {
+                sb.append("\n\t\t").append(message);
+            }
+        } else {
+            sb.append(" No Messages");
+        }
+        return sb.toString();
     }
 
 }

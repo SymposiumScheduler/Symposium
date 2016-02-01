@@ -24,8 +24,22 @@ public class DummyScheduler {
         while(pnlCollection.size() > 0) {
             this.schedule(pnlCollection.get(0));
         }
+        setAssignedPanelsMessages();
     }
-
+    public void setAssignedPanelsMessages(){
+        for(Panel panel: ScheduleData.instance().getAssignedPanels()) {
+            for (Constraint constraint : panel.CONSTRAINTS) {
+                if (constraint.isConstraintViolated(panel.getVenueTime())) {
+                    panel.addMessage(constraint.toString());
+                }
+            }
+        }
+    }
+    public void setUnschedulablePanelMessages(Panel p, Map<Constraint, Integer> m) {
+        for (Constraint key : m.keySet()) {
+            p.addMessage(key + " violated " + m.get(key) + " times");
+        }
+    }
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
         /*
         TODO :
@@ -78,15 +92,17 @@ public class DummyScheduler {
             }
         }
         if (minRequirement == ConstraintPriority.REQUIRED) {
-            ScheduleData.instance().cannotSchedule(panel, violationMap);
+            setUnschedulablePanelMessages(panel, violationMap);
+            ScheduleData.instance().cannotSchedule(panel);
         }
         return null; // no venueTime found
     }
 
     private static abstract class DetermineDifficulty {
-        private static final int SIZE_CONSTRAINT_FACTOR = 10;
-        private static final int VENUE_CONSTRAINT_VALUE = 200;
-        private static final int AVAILABILITY_CONSTRAINT_FACTOR = 10000;
+        private static final int SIZE_CONSTRAINT_VALUE = 10;
+        private static final int VENUE_CONSTRAINT_VALUE = 20000;
+        private static final int TIME_CONSTRAINT_VALUE = 20000;
+        private static final int AVAILABILITY_CONSTRAINT_VALUE = 10000;
 
         /**
          * Difficulty is determined by :
@@ -122,7 +138,7 @@ public class DummyScheduler {
                     panelDifficulty += categoryDifficulty.get(x);
                 }
 
-                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p) + lockedDifficulty(p);
+                panelDifficulty += availabilityDifficulty(p) + venueConstraintDifficulty(p) + sizeConstraintDifficulty(p) + TimeConstraintDifficulty(p);
                 p.setDifficulty(panelDifficulty);
             }
             Collections.sort(freePanels);
@@ -131,7 +147,7 @@ public class DummyScheduler {
 
         private static int availabilityDifficulty(Panel panel){
             Range range = panel.getAvailability();
-            return  AVAILABILITY_CONSTRAINT_FACTOR/range.length();
+            return  AVAILABILITY_CONSTRAINT_VALUE /range.length();
         }
 
         private static int venueConstraintDifficulty(Panel panel) {
@@ -143,10 +159,10 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static int lockedDifficulty(Panel panel) {
+        private static int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeConstraint) {
-                    return 10000;
+                    return TIME_CONSTRAINT_VALUE;
                 }
             }
             return 0;
@@ -155,7 +171,7 @@ public class DummyScheduler {
         private static int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
-                    return SIZE_CONSTRAINT_FACTOR * ((SizeConstraint) c).getMinSize();
+                    return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
                 }
             }
 

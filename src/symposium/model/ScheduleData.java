@@ -28,7 +28,7 @@ public class ScheduleData {
      */
     private final List<Panel> assignedPanels;
     private final List<Panel> freePanels;
-    private final Map<Panel, String> unschedulablePanels;
+    private final List<Panel> unschedulablePanels;
 
     /**
      * @param venues
@@ -38,7 +38,7 @@ public class ScheduleData {
 
         this.freePanels = new ArrayList<>();
         this.assignedPanels = new ArrayList<>();
-        this.unschedulablePanels = new HashMap<>();
+        this.unschedulablePanels = new ArrayList<>();
 
         this.categoryAssigned = new HashMap<>();
         this.panelistAssigned = new HashMap<>();
@@ -185,22 +185,13 @@ public class ScheduleData {
     public List<Panel> getAssignedPanels() {
         return this.assignedPanels;
     }
-    public Map<Panel, String> getUnschedulablePanels() {
+    public List<Panel> getUnschedulablePanels() {
         return this.unschedulablePanels;
     }
     public List<Panel> getPanelistAssignedPanels(String panelist) { return this.panelistAssigned.get(panelist);}
-    public void cannotSchedule(Panel p, String msg) {
+    public void cannotSchedule(Panel p) {
         getFreePanels().remove(p);
-        this.unschedulablePanels.put(p, msg);
-    }
-
-    public void cannotSchedule(Panel p, Map<Constraint, Integer> m) {
-        StringBuilder message = new StringBuilder();
-
-        for (Constraint key : m.keySet()) {
-            message.append(key.toString()).append(" violated ").append(m.get(key).toString()).append(" times; ");
-        }
-        cannotSchedule(p, message.toString());
+        unschedulablePanels.add(p);
     }
 
     public static void init(List<Venue> venues, int noOfDays){

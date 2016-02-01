@@ -112,15 +112,13 @@ public class DummyScheduler {
          * 3 :   : category overlap
          * 4 :   : min size of venue
          * 5 :   : venue constraint
-         * 6 :   : number and priority of constraint
-         *
+         * 6 :   : time constraint
+         * 7 :   : number and priority of constraint
          *
          *
          * 1: Required * 100
          * 2: Very important * 10
          * 3: Desirable * 1
-         *
-         *
          */
 
         public static void setDifficulties() {

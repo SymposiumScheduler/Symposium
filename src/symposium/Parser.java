@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import symposium.model.Panel;
 
@@ -70,7 +71,8 @@ public class Parser {
             List<TimeRange> timeRanges = ranges.get(key);
             venues.add(new Venue(key, venue_size, timeRanges));
         }
-        ScheduleData.init(venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
+        sorted_venues = Collections.sort(venues);
+        ScheduleData.init(sorted_venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
     }
 
     private static void initPanels(JSONObject jsonObject) {

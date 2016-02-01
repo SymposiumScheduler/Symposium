@@ -24,7 +24,6 @@ public class Venue {
                 this.freeVenueTimes.add(new VenueTime(tr,this));
             }
         }
-
         this.assignedVenueTimes = new ArrayList<VenueTime>();
     }
 
@@ -40,6 +39,11 @@ public class Venue {
             assignedVenueTimes.remove(venueTime);
             freeVenueTimes.add(venueTime);
         }
+    }
+
+    @Override
+    public int compareTo(Venue that) {
+        return this.SIZE - that.SIZE;
     }
 
     /**

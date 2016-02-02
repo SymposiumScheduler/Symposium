@@ -110,8 +110,8 @@ public class ScheduleData {
             List<Panel> p = this.panelistAssigned.get(panelist);
             if (this.panelistAssigned.get(panelist) != null) {
                 for (int j = 0; j < p.size(); j++) {
-                    if (p.get(j).getVenueTime() != null) {
-                        if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME) && p.get(j).getVenueTime() != vt) {
+                    if (p.get(j).getVenueTime() != null && p.get(j).getVenueTime() != vt) {
+                        if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
                             panelistOverlap = true;
                             break;
                         }
@@ -125,13 +125,11 @@ public class ScheduleData {
         boolean categoryOverlap = false;
         for (int i = 0; i < categories.size(); i++) {
             String category = categories.get(i);
-            System.err.println(category); //TODO: Debug Statement, Remove Later
             List<Panel> p = this.categoryAssigned.get(category);
             if (this.categoryAssigned.get(category) != null) {
                 for (int j = 0; j < p.size(); j++) {
                     if(p.get(j).getVenueTime() != null && p.get(j).getVenueTime() != vt) {
                         if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
-                            System.err.println("CategoryConstraint Violated here: " + vt.TIME + " and " + p.get(j).getVenueTime().TIME); //TODO: Remove Later
                             categoryOverlap = true;
                             break;
                         }

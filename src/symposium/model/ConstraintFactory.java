@@ -23,7 +23,7 @@ public class ConstraintFactory{
                 Constraint constraint = new CategoryConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
-            else if (constraint_string.contains("Panelist-Constraint")) {
+            else if (constraint_string.contains("Panelist-Constraint")) { //WARN: Does nothing.  This string never actually appears in the data.
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
@@ -68,7 +68,9 @@ public class ConstraintFactory{
             }
             else if (constraint_string.contains("Availability")) {
                 // Always implemented within the scheduler
-
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
+                constraints.add(constraint);
             }
             else if (constraint_string.contains("Time(")) {
                 String timeOfDay = constraint_string.split("\\(")[1];

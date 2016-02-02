@@ -71,8 +71,8 @@ public class Parser {
             List<TimeRange> timeRanges = ranges.get(key);
             venues.add(new Venue(key, venue_size, timeRanges));
         }
-        sorted_venues = Collections.sort(venues);
-        ScheduleData.init(sorted_venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
+        Collections.sort(venues);
+        ScheduleData.init(venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
     }
 
     private static void initPanels(JSONObject jsonObject) {

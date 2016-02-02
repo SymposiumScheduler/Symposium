@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Collection;
 
-public class Venue {
+public class Venue implements Comparable<Venue>{
 
     public final String NAME;
     public final int SIZE;

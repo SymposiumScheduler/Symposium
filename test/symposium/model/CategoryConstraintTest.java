@@ -10,8 +10,13 @@ public class CategoryConstraintTest {
 
     @Test
     public void testConstructor() {
-        ScheduleData.deleteScheduleData();
         ConstraintPriority priority = ConstraintPriority.VERY_IMPORTANT;
+
+        Venue v1 = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        List<Venue> venues = Arrays.asList(v1);
+
+        ScheduleData.init(venues, 4);
+
 
         String name1 = "new";
         List<String> panelists1 = new ArrayList<>(3);
@@ -36,8 +41,6 @@ public class CategoryConstraintTest {
         category1.add("IA");
 
         Panel p1 = new Panel(name1, panelists1, range1, category1, constraints1);
-
-        Venue v1 = new Venue("North Building", 4, Collections.EMPTY_LIST);
 
         CategoryConstraint cc = new CategoryConstraint(priority, p1);
 
@@ -67,11 +70,26 @@ public class CategoryConstraintTest {
 
         Panel p2 = new Panel(name2, panelists2, range2, category2, constraints2);
 
+        ScheduleData.deleteScheduleData();
     }
 
     @Test
     public void test_isConstraintViolated_true() {
-        ScheduleData.deleteScheduleData();
+
+        List<TimeRange> vt1 = new ArrayList<TimeRange>();
+
+        vt1.add((new TimeRange(600,700)));
+
+        Venue v1 = new Venue("North Building", 4, vt1);
+
+        Venue v2 = new Venue("South Building", 4, vt1);
+
+        List<Venue> venues = new ArrayList<Venue>();
+        venues.add(v1);
+        venues.add(v2);
+
+        ScheduleData.init(venues, 1);
+
         String name1 = "new";
         List<String> panelists1 = new ArrayList<>(3);
         panelists1.add("Trey Lyons");
@@ -95,12 +113,6 @@ public class CategoryConstraintTest {
         category1.add("IA");
 
         Panel p1 = new Panel(name1, panelists1, range1, category1, constraints1);
-
-        List<TimeRange> vt1 = new ArrayList<TimeRange>();
-
-        vt1.add((new TimeRange(600,700)));
-
-        Venue v1 = new Venue("North Building", 4, vt1);
 
         String name2 = "new";
         List<String> panelists2 = new ArrayList<>(3);
@@ -126,20 +138,12 @@ public class CategoryConstraintTest {
 
         Panel p2 = new Panel(name2, panelists2, range2, category2, constraints2);
 
-        Venue v2 = new Venue("South Building", 4, vt1);
-
-        List<Venue> venues = new ArrayList<Venue>();
-        venues.add(v1);
-        venues.add(v2);
-
         List<Panel> panels = Arrays.asList(p1, p2);
-
-        ScheduleData.init(venues, 1);
 
         ScheduleData.instance().initPanels(panels);
 
-        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), venues.get(0).getFreeVenueTimes().get(0));
-        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), venues.get(1).getFreeVenueTimes().get(0));
+        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
+        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(1).getFreeVenueTimes().get(0));
 
         CategoryConstraint cc1 = null;
         CategoryConstraint cc2 = null;
@@ -163,11 +167,27 @@ public class CategoryConstraintTest {
 
         assertTrue(cc1.isConstraintViolated());
         assertTrue(cc2.isConstraintViolated());
+
+        ScheduleData.deleteScheduleData();
     }
 
     @Test
-    public void test_isConstraintViolated_false(){
-        ScheduleData.deleteScheduleData();
+    public void test_isConstraintViolated_false() {
+
+        List<TimeRange> vt1 = Arrays.asList(new TimeRange(600,700));
+
+        Venue v1 = new Venue("North Building", 4, vt1);
+
+        List<TimeRange> vt2 = Arrays.asList(new TimeRange(800, 900));
+
+        Venue v2 = new Venue("South Building", 4, vt2);
+
+        List<Venue> venues = new ArrayList<Venue>();
+        venues.add(v1);
+        venues.add(v2);
+
+        ScheduleData.init(venues, 1);
+
         String name1 = "new";
         List<String> panelists1 = new ArrayList<>(3);
         panelists1.add("Trey Lyons");
@@ -191,12 +211,6 @@ public class CategoryConstraintTest {
         category1.add("IA");
 
         Panel p1 = new Panel(name1, panelists1, range1, category1, constraints1);
-
-        List<TimeRange> vt1 = new ArrayList<TimeRange>();
-
-        vt1.add((new TimeRange(600,700)));
-
-        Venue v1 = new Venue("North Building", 4, vt1);
 
         String name2 = "new";
         List<String> panelists2 = new ArrayList<>(3);
@@ -222,22 +236,17 @@ public class CategoryConstraintTest {
 
         Panel p2 = new Panel(name2, panelists2, range2, category2, constraints2);
 
-        List<TimeRange> vt2 = Arrays.asList(new TimeRange(800, 900));
-
-        Venue v2 = new Venue("South Building", 4, vt2);
-
-        List<Venue> venues = new ArrayList<Venue>();
-        venues.add(v1);
-        venues.add(v2);
-
         List<Panel> panels = Arrays.asList(p1, p2);
-
-        ScheduleData.init(venues, 1);
 
         ScheduleData.instance().initPanels(panels);
 
-        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), venues.get(0).getFreeVenueTimes().get(0));
-        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), venues.get(1).getFreeVenueTimes().get(0));
+        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
+        ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(1).getFreeVenueTimes().get(0));
+
+        System.out.println(ScheduleData.instance().VENUES.get(0).getAssignedVenueTimes().get(0));
+        System.out.println(ScheduleData.instance().VENUES.get(1).getAssignedVenueTimes().get(0));
+
+        System.out.println(ScheduleData.instance().getAssignedPanels());
 
         CategoryConstraint cc1 = null;
         CategoryConstraint cc2 = null;
@@ -261,6 +270,8 @@ public class CategoryConstraintTest {
 
         assertFalse(cc1.isConstraintViolated());
         assertFalse(cc2.isConstraintViolated());
+
+        ScheduleData.deleteScheduleData();
     }
 
 }

@@ -34,12 +34,16 @@ public class VenueConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Panel p = new Panel(name, panelists, range, category, constraints);
-
         Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
+
+        ScheduleData.init(Arrays.asList(v), 1);
+
+        Panel p = new Panel(name, panelists, range, category, constraints);
 
         Constraint vC = new VenueConstraint(priority, p, v);
         assert(vC.PRIORITY == ConstraintPriority.REQUIRED);
+
+        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -68,15 +72,20 @@ public class VenueConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Panel p = new Panel(name, panelists, range, category, constraints);
-
         Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
 
         Venue v2 = new Venue ("South Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5)));
 
+        ScheduleData.init(Arrays.asList(v, v2), 1);
+
+        Panel p = new Panel(name, panelists, range, category, constraints);
+
+
         Constraint vC = new VenueConstraint(priority, p, v);
 
         assertTrue(vC.isConstraintViolated(v2.getFreeVenueTimes().get(0)));
+
+        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -105,13 +114,17 @@ public class VenueConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Panel p = new Panel(name, panelists, range, category, constraints);
-
         Venue v = new Venue("North Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5)));
+
+        ScheduleData.init(Arrays.asList(v), 1);
+
+        Panel p = new Panel(name, panelists, range, category, constraints);
 
         Constraint vC = new VenueConstraint(priority, p, v);
 
         assertFalse(vC.isConstraintViolated(v.getFreeVenueTimes().get(0)));
+
+        ScheduleData.deleteScheduleData();
     }
 
 }

@@ -16,23 +16,27 @@ public class MaxPanelistConstraint extends Constraint {
      * @return bool true if the panel is scheduled more times per day than the maximum, false otherwise
      */
     public boolean isConstraintViolated(VenueTime venueTime) {
-        boolean violated = false;
+        int counter;
         for (String pist: PANEL.PANELISTS ) {
-            int counter = 0;
+            counter = 1; // reset and assume self is always assigned
             List<Panel> assigned = ScheduleData.instance().getPanelistAssignedPanels(pist);
             if (assigned != null) { //Guard condition against null pointers.
                 for (Panel pl : assigned) {
+                    if(pl == this.PANEL) {
+                        continue; // don't count self because it's assumed and already counted.
+                    }
+
                     int day = pl.getVenueTime().getDay();
                     if (day == venueTime.getDay()) {
                         counter++;
                         if (counter > MAX) {
-                            violated = true;
+                            return true;
                         }
                     }
                 }
             }
         }
-        return violated;
+        return false;
     }
 
     @Override

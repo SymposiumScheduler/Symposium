@@ -153,7 +153,7 @@ public class ScheduleData {
             List<Panel> appears2 = panelistAssigned.get(p2);
             for (int i = 0; i < appears1.size(); i++) {
                 for (int j = 0; j < appears2.size(); j++) {
-                    if (appears1.get(i) == appears2.get(j)) {
+                    if (appears1.get(i).equals(appears2.get(j))) {
                         Panel appear = appears1.get(i);
                         if (appear.getVenueTime() != null) {
                             if (appear.getVenueTime().TIME.doesIntersect(day)) {
@@ -201,7 +201,7 @@ public class ScheduleData {
     }
 
     public static void deleteScheduleData() {
-        System.err.print("\nScheduleData instance is being deleted.");
+        System.err.println("ScheduleData instance is being deleted.");
         instance = null;
     }
 

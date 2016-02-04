@@ -65,7 +65,13 @@ public class VenueConstraintTest {
         ScheduleData.instance().initPanels(Arrays.asList(p1));
 
         VenueTime vt = v1.getFreeVenueTimes().get(0);
-        Constraint cnst = p1.CONSTRAINTS.get(0);
+        Constraint cnst = null;
+        for(Constraint c : p1.CONSTRAINTS) {
+            if(c instanceof VenueConstraint) {
+                cnst = c;
+                break;
+            }
+        }
 
         assertFalse(cnst.isConstraintViolated(vt));
     }
@@ -84,7 +90,13 @@ public class VenueConstraintTest {
         ScheduleData.instance().initPanels(Arrays.asList(p1));
 
         VenueTime vt = v2.getFreeVenueTimes().get(0);
-        Constraint cnst = p1.CONSTRAINTS.get(0);
+        Constraint cnst = null;
+        for(Constraint c : p1.CONSTRAINTS) {
+            if(c instanceof VenueConstraint) {
+                cnst = c;
+                break;
+            }
+        }
 
         assertTrue(cnst.isConstraintViolated(vt));
     }
@@ -108,7 +120,14 @@ public class VenueConstraintTest {
         ScheduleData.instance().assignPanelToVenueTime(p1,v2.getFreeVenueTimes().get(0));
 
         // check
-        Constraint cnst = p1.CONSTRAINTS.get(0);
+        Constraint cnst = null;
+        for(Constraint c : p1.CONSTRAINTS) {
+            if(c instanceof VenueConstraint) {
+                cnst = c;
+                break;
+            }
+        }
+
         assertTrue(cnst.isConstraintViolated());
     }
     @Test
@@ -129,7 +148,14 @@ public class VenueConstraintTest {
         ScheduleData.instance().assignPanelToVenueTime(p1,v1.getFreeVenueTimes().get(0));
 
         // check
-        Constraint cnst = p1.CONSTRAINTS.get(0);
+        Constraint cnst = null;
+        for(Constraint c : p1.CONSTRAINTS) {
+            if(c instanceof VenueConstraint) {
+                cnst = c;
+                break;
+            }
+        }
+
         assertFalse(cnst.isConstraintViolated());
     }
 }

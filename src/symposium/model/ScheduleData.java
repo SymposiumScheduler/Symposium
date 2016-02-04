@@ -180,6 +180,9 @@ public class ScheduleData {
     }
 
     public int getPanelistAppearanceNo(int day, String panelist) {
+        if(panelistAssigned.get(panelist) == null) {
+            return 0;
+        }
         int count = 0;
         for (Panel p: panelistAssigned.get(panelist)) {
             if (p.getVenueTime().getDay() == day) {

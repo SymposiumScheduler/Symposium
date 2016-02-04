@@ -4,6 +4,7 @@ import java.util.*;
 
 public class ConsecutivePanelsConstraint extends Constraint {
 
+    //TODO in order to fail this constraint check, the panelists must be scheduled in 3+ panels where there isn't an 80+ minute gap somewhere in there
     public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }

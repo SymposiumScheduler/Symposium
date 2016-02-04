@@ -179,6 +179,16 @@ public class ScheduleData {
         this.changeToAssigned(p);
     }
 
+    public int getPanelistAppearanceNo(int day, String panelist) {
+        int count = 0;
+        for (Panel p: panelistAssigned.get(panelist)) {
+            if (p.getVenueTime().getDay() == day) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public List<Panel> getFreePanels() {
         return this.freePanels;
     }

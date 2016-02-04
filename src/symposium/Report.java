@@ -25,7 +25,7 @@ public class Report {
         int unscheduled = ScheduleData.instance().getUnschedulablePanels().size();
         int total = scheduled + unscheduled;
         float percent = (float) scheduled/(float) total;
-        result.append("\n\n").append(percent + " of panels scheduled (" + scheduled + " out of " + total + ")");
+        result.append("\n\n").append(percent + "% of panels scheduled (" + scheduled + " out of " + total + ")");
 
         return result.toString();
     }

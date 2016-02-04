@@ -7,7 +7,43 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DummyScheduler {
-    public DummyScheduler() {}
+    public int[] adjustment;
+
+    public DummyScheduler(int[] adjust) {
+        this.adjustment = adjust;
+        if(adjust[0] == 0){
+            ScheduleData.instance().SIZE_CONSTRAINT_VALUE = ScheduleData.instance().SIZE_CONSTRAINT_VALUE / 10;
+        }
+        else {
+            ScheduleData.instance().SIZE_CONSTRAINT_VALUE = ScheduleData.instance().SIZE_CONSTRAINT_VALUE * adjust[0];
+        }
+
+        if(adjust[1] == 0){
+            ScheduleData.instance().VENUE_CONSTRAINT_VALUE = ScheduleData.instance().VENUE_CONSTRAINT_VALUE / 10;
+
+        }
+        else {
+            ScheduleData.instance().VENUE_CONSTRAINT_VALUE = ScheduleData.instance().VENUE_CONSTRAINT_VALUE * adjust[1];
+        }
+
+        if(adjust[2] == 0){
+            ScheduleData.instance().TIME_CONSTRAINT_VALUE = ScheduleData.instance().TIME_CONSTRAINT_VALUE / 10;
+        }
+        else {
+            ScheduleData.instance().TIME_CONSTRAINT_VALUE = ScheduleData.instance().TIME_CONSTRAINT_VALUE * adjust[2];
+        }
+
+        if(adjust[3] == 0){
+            ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE = ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE / 10;
+        }
+        else {
+            ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE = ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
+        }
+    }
+
+    public DummyScheduler(){
+
+    }
 
     private void schedule(Panel panel) {
         VenueTime vt = returnFirstLegalVenueTime(panel);
@@ -42,15 +78,15 @@ public class DummyScheduler {
     }
     private VenueTime returnFirstLegalVenueTime(Panel panel) {
         /*
-        TODO :
-            Can be optimized by making one iteration and keeping three venueTimes : DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
+         TODO :
+         Can be optimized by making one iteration and keeping three venueTimes : DesiredSatisfied, VeryImportantSatisfied, RequiredSatisfied.
 
-            In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
-            DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
-            If no RequiredSatisfied found, then venueTime cannot be found.
-        */
+         In the iteration, if a DesiredSatisfied venueTime is found, just return it. If we finished the whole venueTime space and cannot find
+         DesiredSatisfied then we return VeryImportantSatisfied if it's found. if not, return RequiredSatisfied.
+         If no RequiredSatisfied found, then venueTime cannot be found.
+         */
 
-       VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
+        VenueTime vt = searchForLegalVenueTime(panel, ConstraintPriority.DESIRED); // min requirement is desired
         if (vt == null) {
             vt = searchForLegalVenueTime(panel, ConstraintPriority.VERY_IMPORTANT); // min requirement is important
             if ( vt == null) {
@@ -99,10 +135,10 @@ public class DummyScheduler {
     }
 
     private static abstract class DetermineDifficulty {
-        private static final int SIZE_CONSTRAINT_VALUE = 10;
-        private static final int VENUE_CONSTRAINT_VALUE = 20000;
-        private static final int TIME_CONSTRAINT_VALUE = 20000;
-        private static final int AVAILABILITY_CONSTRAINT_VALUE = 10000;
+        //private static final int SIZE_CONSTRAINT_VALUE = 10;
+        //private static final int VENUE_CONSTRAINT_VALUE = 10000;
+        //private static final int TIME_CONSTRAINT_VALUE = 10000;
+        //private static final int AVAILABILITY_CONSTRAINT_VALUE = 10000;
 
         /**
          * Difficulty is determined by :
@@ -145,13 +181,13 @@ public class DummyScheduler {
 
         private static int availabilityDifficulty(Panel panel){
             Range range = panel.getAvailability();
-            return  AVAILABILITY_CONSTRAINT_VALUE /range.length();
+            return  ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE /range.length();
         }
 
         private static int venueConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
-                    return VENUE_CONSTRAINT_VALUE;
+                    return ScheduleData.instance().VENUE_CONSTRAINT_VALUE;
                 }
             }
             return 0;
@@ -160,7 +196,7 @@ public class DummyScheduler {
         private static int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeConstraint) {
-                    return TIME_CONSTRAINT_VALUE;
+                    return ScheduleData.instance().TIME_CONSTRAINT_VALUE;
                 }
             }
             return 0;
@@ -169,7 +205,7 @@ public class DummyScheduler {
         private static int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
-                    return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
+                    return ScheduleData.instance().SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
                 }
             }
 

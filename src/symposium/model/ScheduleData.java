@@ -10,6 +10,11 @@ public class ScheduleData {
     // singleton : see init() and instance()
     private static ScheduleData instance;
 
+    public int SIZE_CONSTRAINT_VALUE = 100;
+    public int VENUE_CONSTRAINT_VALUE = 1000;
+    public int TIME_CONSTRAINT_VALUE = 1000;
+    public int AVAILABILITY_CONSTRAINT_VALUE = 1000;
+
     public final List<Venue> VENUES;
     public final int NUMBER_OF_DAYS;
     private final Comparator<Panel> panelTimeComparator = new Comparator<Panel>() {
@@ -56,7 +61,7 @@ public class ScheduleData {
             freePanels.remove(panel);
             assignedPanels.add(panel);
 
-            // update panelists map
+// update panelists map
             for ( String panelist : panel.PANELISTS) {
 
                 if(!panelistAssigned.containsKey(panelist)) {
@@ -66,13 +71,13 @@ public class ScheduleData {
                 Collections.sort( panelistAssigned.get(panelist), panelTimeComparator);
             }
 
-            // update category map
+// update category map
             for( String category : panel.CATEGORIES ) {
                 if(!categoryAssigned.containsKey(category)) {
                     categoryAssigned.put(category, new ArrayList<>());
                 }
                 categoryAssigned.get(category).add(panel);
-                //keep sorted
+//keep sorted
                 Collections.sort( categoryAssigned.get(category), panelTimeComparator);
             }
 
@@ -91,11 +96,11 @@ public class ScheduleData {
             assignedPanels.remove(panel);
             freePanels.add(panel);
 
-            // update panelists map
+// update panelists map
             for ( String panelist : panel.PANELISTS) {
                 panelistAssigned.get(panelist).remove(panel);
             }
-            // update category map
+// update category map
             for ( String category : panel.CATEGORIES) {
                 panelistAssigned.get(category).remove(panel);
             }
@@ -171,6 +176,20 @@ public class ScheduleData {
         this.freePanels.addAll(panels);
     }
 
+    public int[] calculateScheduleOptimization() {
+        int count = 0;
+        for (Panel p: assignedPanels) {
+            count += p.getMessages().size();
+        }
+        for (Panel p: unschedulablePanels) {
+            count += p.getMessages().size();
+        }
+        int[] r = new int[2];
+        r[0] = count;
+        r[1] = unschedulablePanels.size();
+        return r;
+    }
+
     public void assignPanelToVenueTime(Panel p, VenueTime vt) {
         p.setVenueTime(vt);
         vt.assignPanel(p);
@@ -211,7 +230,7 @@ public class ScheduleData {
     }
 
     public static void deleteScheduleData() {
-        System.err.println("ScheduleData instance is being deleted.");
+// System.err.println("ScheduleData instance is being deleted.");
         instance = null;
     }
 

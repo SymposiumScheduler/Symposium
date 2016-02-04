@@ -2,11 +2,13 @@ package symposium.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CompletionService;
 
 public class ConstraintFactory{
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
+        // assumed constraints
+        constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
+        // input constraints
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
@@ -23,11 +25,7 @@ public class ConstraintFactory{
                 Constraint constraint = new CategoryConstraint(intToPriority(priority), panel);
                 constraints.add(constraint);
             }
-            else if (constraint_string.contains("Panelist-Constraint")) { //WARN: Does nothing.  This string never actually appears in the data.
-                int priority = Integer.valueOf(constraint_string.split(":")[1]);
-                Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
-                constraints.add(constraint);
-            }
+
             else if (constraint_string.contains("Venue")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 String venueS = constraint_string.split("\\(")[1].split("\\)")[0];
@@ -67,10 +65,7 @@ public class ConstraintFactory{
                 constraints.add(constraint);
             }
             else if (constraint_string.contains("Availability")) {
-                // Always implemented within the scheduler
-                int priority = Integer.valueOf(constraint_string.split(":")[1]);
-                Constraint constraint = new PanelistConstraint(intToPriority(priority), panel);
-                constraints.add(constraint);
+                // TODO : Availability does not have a constraint. It's always assumed. REMOVE FROM DATA FILE
             }
             else if (constraint_string.contains("Time(")) {
                 String timeOfDay = constraint_string.split("\\(")[1];

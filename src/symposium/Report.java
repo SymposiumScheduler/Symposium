@@ -20,6 +20,13 @@ public class Report {
         for(Panel panel : ScheduleData.instance().getUnschedulablePanels()) {
             result.append("\n\n").append(panel.toString());
         }
+
+        int scheduled = ScheduleData.instance().getAssignedPanels().size();
+        int unscheduled = ScheduleData.instance().getUnschedulablePanels().size();
+        int total = scheduled + unscheduled;
+        float percent = (float) scheduled/(float) total;
+        result.append("\n\n").append(percent + " of panels scheduled (" + scheduled + " out of " + total + ")");
+
         return result.toString();
     }
 

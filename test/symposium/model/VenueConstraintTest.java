@@ -1,5 +1,6 @@
 package symposium.model;
 
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.*;
@@ -8,6 +9,11 @@ import static org.junit.Assert.*;
 import java.util.Collections;
 
 public class VenueConstraintTest {
+
+    @After
+    public void tearDown() {
+        ScheduleData.deleteScheduleData();
+    }
 
     @Test
     public void testConstructor() throws Exception {
@@ -43,8 +49,6 @@ public class VenueConstraintTest {
 
         Constraint vC = new VenueConstraint(priority, p, v);
         assert(vC.PRIORITY == ConstraintPriority.REQUIRED);
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -64,9 +68,6 @@ public class VenueConstraintTest {
         Constraint cnst = p1.CONSTRAINTS.get(0);
 
         assertFalse(cnst.isConstraintViolated(vt));
-
-        // clean up
-        ScheduleData.deleteScheduleData();  // TODO : delete if test fails
     }
 
     @Test
@@ -86,9 +87,6 @@ public class VenueConstraintTest {
         Constraint cnst = p1.CONSTRAINTS.get(0);
 
         assertTrue(cnst.isConstraintViolated(vt));
-
-        // clean up
-        ScheduleData.deleteScheduleData();  // TODO : delete if test fails
     }
 
 
@@ -112,9 +110,6 @@ public class VenueConstraintTest {
         // check
         Constraint cnst = p1.CONSTRAINTS.get(0);
         assertTrue(cnst.isConstraintViolated());
-
-        // clean up
-        ScheduleData.deleteScheduleData();  // TODO : delete if test fails
     }
     @Test
     public void test_isConstraintViolated_inPlace_false() throws Exception {
@@ -136,8 +131,5 @@ public class VenueConstraintTest {
         // check
         Constraint cnst = p1.CONSTRAINTS.get(0);
         assertFalse(cnst.isConstraintViolated());
-
-        // clean up
-        ScheduleData.deleteScheduleData();  // TODO : delete if test fails
     }
 }

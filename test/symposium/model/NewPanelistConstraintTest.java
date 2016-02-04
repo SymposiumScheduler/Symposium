@@ -1,5 +1,6 @@
 package symposium.model;
 
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.*;
@@ -7,6 +8,11 @@ import java.util.*;
 import static org.junit.Assert.*;
 
 public class NewPanelistConstraintTest {
+
+    @After
+    public void tearDown(){
+        ScheduleData.deleteScheduleData();
+    }
 
     @Test
     public void testConstructor() throws Exception {
@@ -42,8 +48,6 @@ public class NewPanelistConstraintTest {
 
         Constraint nPC = new NewPanelistConstraint(priority, p);
         assert(nPC.PRIORITY == ConstraintPriority.REQUIRED);
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -96,8 +100,6 @@ public class NewPanelistConstraintTest {
         }
 
         assertTrue(nPC.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -150,8 +152,6 @@ public class NewPanelistConstraintTest {
         }
 
         assertFalse(nPC.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
 }

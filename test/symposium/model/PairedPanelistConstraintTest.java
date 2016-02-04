@@ -1,5 +1,6 @@
 package symposium.model;
 
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.*;
@@ -7,6 +8,11 @@ import java.util.*;
 import static org.junit.Assert.*;
 
 public class PairedPanelistConstraintTest {
+
+    @After
+    public void tearDown() {
+        ScheduleData.deleteScheduleData();
+    }
 
     @Test
     public void testConstructor() {
@@ -45,8 +51,6 @@ public class PairedPanelistConstraintTest {
         PairedPanelistConstraint pc = new PairedPanelistConstraint(priority, p1);
 
         assert(pc.PRIORITY == ConstraintPriority.VERY_IMPORTANT);
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -88,7 +92,7 @@ public class PairedPanelistConstraintTest {
         constraints1.add("Max-Panels(3):1");
         constraints1.add("Min-Panels(1):1");
         constraints1.add("Minimum-Capacity(2):2");
-        constraints1.add("Panelist-Constraint:1");
+        constraints1.add("Availability:1");
         List<String> category1 = new ArrayList<>(1);
         category1.add("IA");
 
@@ -113,7 +117,7 @@ public class PairedPanelistConstraintTest {
         constraints2.add("Max-Panels(3):1");
         constraints2.add("Min-Panels(1):1");
         constraints2.add("Minimum-Capacity(2):2");
-        constraints2.add("Panelist-Constraint:1");
+        constraints2.add("Availability:1");
         List<String> category2 = new ArrayList<>(1);
         category2.add("IA");
 
@@ -148,8 +152,6 @@ public class PairedPanelistConstraintTest {
 
         assertTrue(pc1.isConstraintViolated());
         assertTrue(pc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -188,7 +190,7 @@ public class PairedPanelistConstraintTest {
         constraints1.add("Max-Panels(3):1");
         constraints1.add("Min-Panels(1):1");
         constraints1.add("Minimum-Capacity(2):2");
-        constraints1.add("Panelist-Constraint:1");
+        constraints1.add("Availability:1");
         List<String> category1 = new ArrayList<>(1);
         category1.add("IA");
 
@@ -213,7 +215,7 @@ public class PairedPanelistConstraintTest {
         constraints2.add("Max-Panels(3):1");
         constraints2.add("Min-Panels(1):1");
         constraints2.add("Minimum-Capacity(2):2");
-        constraints2.add("Panelist-Constraint:1");
+        constraints2.add("Availability:1");
         List<String> category2 = new ArrayList<>(1);
         category2.add("IA");
 
@@ -248,8 +250,6 @@ public class PairedPanelistConstraintTest {
 
         assertFalse(pc1.isConstraintViolated());
         assertFalse(pc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -288,7 +288,7 @@ public class PairedPanelistConstraintTest {
         constraints1.add("Max-Panels(3):1");
         constraints1.add("Min-Panels(1):1");
         constraints1.add("Minimum-Capacity(2):2");
-        constraints1.add("Panelist-Constraint:1");
+        constraints1.add("Availability:1");
         List<String> category1 = new ArrayList<>(1);
         category1.add("IA");
 
@@ -313,7 +313,7 @@ public class PairedPanelistConstraintTest {
         constraints2.add("Max-Panels(3):1");
         constraints2.add("Min-Panels(1):1");
         constraints2.add("Minimum-Capacity(2):2");
-        constraints2.add("Panelist-Constraint:1");
+        constraints2.add("Availability:1");
         List<String> category2 = new ArrayList<>(1);
         category2.add("IA");
 
@@ -348,8 +348,6 @@ public class PairedPanelistConstraintTest {
 
         assertFalse(pc1.isConstraintViolated());
         assertFalse(pc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
 }

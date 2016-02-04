@@ -1,5 +1,6 @@
 package symposium.model;
 
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.*;
@@ -7,6 +8,11 @@ import java.util.*;
 import static org.junit.Assert.*;
 
 public class SizeConstraintTest {
+
+    @After
+    public void tearDown() {
+        ScheduleData.deleteScheduleData();
+    }
 
     @Test
     public void testConstructor() throws Exception {
@@ -42,8 +48,6 @@ public class SizeConstraintTest {
 
         Constraint sC = new SizeConstraint(priority, p, 2);
         assert(sC.PRIORITY == ConstraintPriority.REQUIRED);
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -140,8 +144,6 @@ public class SizeConstraintTest {
 
         assertTrue(sc1.isConstraintViolated());
         assertTrue(sc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -238,8 +240,6 @@ public class SizeConstraintTest {
 
         assertFalse(sc1.isConstraintViolated());
         assertFalse(sc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
 }

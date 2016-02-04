@@ -1,5 +1,6 @@
 package symposium.model;
 
+import org.junit.After;
 import org.junit.Test;
 
 import java.util.*;
@@ -7,6 +8,11 @@ import java.util.*;
 import static org.junit.Assert.*;
 
 public class CategoryConstraintTest {
+
+    @After
+    public void tearDown () {
+        ScheduleData.deleteScheduleData();
+    }
 
     @Test
     public void testConstructor() {
@@ -69,8 +75,6 @@ public class CategoryConstraintTest {
         category2.add("IA");
 
         Panel p2 = new Panel(name2, panelists2, range2, category2, constraints2);
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -167,8 +171,6 @@ public class CategoryConstraintTest {
 
         assertTrue(cc1.isConstraintViolated());
         assertTrue(cc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
     @Test
@@ -270,8 +272,6 @@ public class CategoryConstraintTest {
 
         assertFalse(cc1.isConstraintViolated());
         assertFalse(cc2.isConstraintViolated());
-
-        ScheduleData.deleteScheduleData();
     }
 
 }

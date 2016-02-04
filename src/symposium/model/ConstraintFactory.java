@@ -52,11 +52,11 @@ public class ConstraintFactory{
             }
             //FIXME: Min-Panels needs to be implemented.
             else if (constraint_string.contains("Min-Panels")) {
-                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                /*int priority = Integer.valueOf(constraint_string.split(":")[1]);
                 int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
                 //Always assigns Desired priority, because we're using our fake-up estimation.
                 Constraint constraint = new MinPanelistConstraint(ConstraintPriority.VERY_IMPORTANT, panel);
-                constraints.add(constraint);
+                constraints.add(constraint);*/
             }
             else if (constraint_string.contains("Minimum-Capacity")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);

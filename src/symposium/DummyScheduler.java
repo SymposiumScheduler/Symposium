@@ -8,37 +8,17 @@ import java.util.Map;
 
 public class DummyScheduler {
     public int[] adjustment;
+    public static int SIZE_CONSTRAINT_VALUE = 1;
+    public static int VENUE_CONSTRAINT_VALUE = 1;
+    public static int TIME_CONSTRAINT_VALUE = 1;
+    public static int AVAILABILITY_CONSTRAINT_VALUE = 1;
 
     public DummyScheduler(int[] adjust) {
         this.adjustment = adjust;
-        if(adjust[0] == 0){
-            ScheduleData.instance().SIZE_CONSTRAINT_VALUE = ScheduleData.instance().SIZE_CONSTRAINT_VALUE / 10;
-        }
-        else {
-            ScheduleData.instance().SIZE_CONSTRAINT_VALUE = ScheduleData.instance().SIZE_CONSTRAINT_VALUE * adjust[0];
-        }
-
-        if(adjust[1] == 0){
-            ScheduleData.instance().VENUE_CONSTRAINT_VALUE = ScheduleData.instance().VENUE_CONSTRAINT_VALUE / 10;
-
-        }
-        else {
-            ScheduleData.instance().VENUE_CONSTRAINT_VALUE = ScheduleData.instance().VENUE_CONSTRAINT_VALUE * adjust[1];
-        }
-
-        if(adjust[2] == 0){
-            ScheduleData.instance().TIME_CONSTRAINT_VALUE = ScheduleData.instance().TIME_CONSTRAINT_VALUE / 10;
-        }
-        else {
-            ScheduleData.instance().TIME_CONSTRAINT_VALUE = ScheduleData.instance().TIME_CONSTRAINT_VALUE * adjust[2];
-        }
-
-        if(adjust[3] == 0){
-            ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE = ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE / 10;
-        }
-        else {
-            ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE = ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
-        }
+        SIZE_CONSTRAINT_VALUE = SIZE_CONSTRAINT_VALUE * adjust[0];
+        VENUE_CONSTRAINT_VALUE = VENUE_CONSTRAINT_VALUE * adjust[1];
+        TIME_CONSTRAINT_VALUE = TIME_CONSTRAINT_VALUE * adjust[2];
+        AVAILABILITY_CONSTRAINT_VALUE = AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
     }
 
     public DummyScheduler(){
@@ -181,13 +161,13 @@ public class DummyScheduler {
 
         private static int availabilityDifficulty(Panel panel){
             Range range = panel.getAvailability();
-            return  ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE /range.length();
+            return  AVAILABILITY_CONSTRAINT_VALUE /range.length();
         }
 
         private static int venueConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
-                    return ScheduleData.instance().VENUE_CONSTRAINT_VALUE;
+                    return VENUE_CONSTRAINT_VALUE;
                 }
             }
             return 0;
@@ -196,7 +176,7 @@ public class DummyScheduler {
         private static int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeConstraint) {
-                    return ScheduleData.instance().TIME_CONSTRAINT_VALUE;
+                    return TIME_CONSTRAINT_VALUE;
                 }
             }
             return 0;
@@ -205,7 +185,7 @@ public class DummyScheduler {
         private static int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
-                    return ScheduleData.instance().SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
+                    return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
                 }
             }
 

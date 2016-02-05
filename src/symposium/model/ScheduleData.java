@@ -10,11 +10,6 @@ public class ScheduleData {
     // singleton : see init() and instance()
     private static ScheduleData instance;
 
-    public int SIZE_CONSTRAINT_VALUE = 100;
-    public int VENUE_CONSTRAINT_VALUE = 1000;
-    public int TIME_CONSTRAINT_VALUE = 1000;
-    public int AVAILABILITY_CONSTRAINT_VALUE = 1000;
-
     public final List<Venue> VENUES;
     public final int NUMBER_OF_DAYS;
     private final Comparator<Panel> panelTimeComparator = new Comparator<Panel>() {
@@ -230,7 +225,7 @@ public class ScheduleData {
     }
 
     public static void deleteScheduleData() {
-// System.err.println("ScheduleData instance is being deleted.");
+        System.err.println("ScheduleData instance is being deleted.");
         instance = null;
     }
 

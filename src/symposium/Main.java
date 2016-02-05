@@ -25,7 +25,7 @@ public class Main {
         int[][] optimalscore = new int[3][2];
         int[] adjust = new int[4];
 
-        int[][] provisionaladjustment = new int[5][4];
+        int[][] provisionaladjustment = new int[10][4];
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 4; j++) {
@@ -42,9 +42,9 @@ public class Main {
             adjust[2] = optimaladjust[0][2];
             adjust[3] = optimaladjust[0][3];
 
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 10; j++) {
                 for (int k = 0; k < 4; k++) {
-                    provisionaladjustment[j][k] = (int) Math.round(Math.random() * 2 - 1);
+                    provisionaladjustment[j][k] = (int) Math.round(Math.random());
                 }
 
                 // Reading parsing json files
@@ -52,7 +52,7 @@ public class Main {
                 Parser.parse(INPUT_FILE);
                 // Schedule data is initiated
                 for (int m = 0; m < 4; m++) {
-                    adjust[m] = (int) ((double) adjust[m] * Math.pow(10, provisionaladjustment[j][m]));
+                    adjust[m] = adjust[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
                     if (adjust[m] == 0) {
                         adjust[m] = 1;
                     }

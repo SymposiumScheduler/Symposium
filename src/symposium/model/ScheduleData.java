@@ -11,9 +11,10 @@ public class ScheduleData {
     private static ScheduleData instance;
 
     public int SIZE_CONSTRAINT_VALUE = 100;
-    public int VENUE_CONSTRAINT_VALUE = 1000;
-    public int TIME_CONSTRAINT_VALUE = 1000;
-    public int AVAILABILITY_CONSTRAINT_VALUE = 1000;
+    public int PANELISTS_CONSTRAINT_VALUE = 10;
+    public int VENUE_CONSTRAINT_VALUE = 100000;
+    public int TIME_CONSTRAINT_VALUE = 100000;
+    public int AVAILABILITY_CONSTRAINT_VALUE = 10000000;
 
     public final List<Venue> VENUES;
     public final int NUMBER_OF_DAYS;

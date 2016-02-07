@@ -39,6 +39,13 @@ public class DummyScheduler {
         else {
             ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE = ScheduleData.instance().AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
         }
+
+        if(adjust[4] == 0){
+            ScheduleData.instance().PANELISTS_CONSTRAINT_VALUE = ScheduleData.instance().PANELISTS_CONSTRAINT_VALUE / 10;
+        }
+        else {
+            ScheduleData.instance().PANELISTS_CONSTRAINT_VALUE = ScheduleData.instance().PANELISTS_CONSTRAINT_VALUE * adjust[4];
+        }
     }
 
     public DummyScheduler(){
@@ -168,6 +175,7 @@ public class DummyScheduler {
                 for (String x : p.PANELISTS){
                     panelDifficulty += panelistDifficulty.get(x);
                 }
+                panelDifficulty = panelDifficulty * ScheduleData.instance().PANELISTS_CONSTRAINT_VALUE;
                 for (String x : p.CATEGORIES){
                     panelDifficulty += categoryDifficulty.get(x);
                 }

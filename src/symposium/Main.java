@@ -21,136 +21,93 @@ public class Main {
     }
 
     public static void evolutionary(){
+        int[][] optimaladjust = new int[3][4];
+        int[][] optimalscore = new int[3][2];
+        int[] adjust = new int[4];
 
-        int[] optimaladjustAND = new int[5];
-        int[] optimalscoreAND = new int[2];
-        int[] adjustAND = new int[5];
+        int[][] provisionaladjustment = new int[10][4];
 
-        int[] optimaladjustOR = new int[5];
-        int[] optimalscoreOR = new int[2];
-        int[] adjustOR = new int[5];
-
-        int[] optimaladjustMes = new int[5];
-        int[] optimalscoreMes = new int[2];
-        int[] adjustMes = new int[5];
-
-        int[][] provisionaladjustment = new int[5][5];
-
-        for(int i = 0; i < 5; i++){
-            optimaladjustAND[i] = 1;
-            optimaladjustOR[i] = 1;
-            optimaladjustMes[i] = 1;
-        }
-        for(int i = 0; i < 2; i++){
-            optimalscoreAND[i] = 1000000;
-            optimalscoreOR[i] = 1000000;
-            optimalscoreMes[i] = 1000000;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                optimaladjust[i][j] = 1;
+            }
+            for (int j=0; j < 2; j++) {
+                optimalscore[i][j] = 1000000;
+            }
         }
 
+        for (int i = 0; i < 100; i++) {
+            adjust[0] = optimaladjust[0][0];
+            adjust[1] = optimaladjust[0][1];
+            adjust[2] = optimaladjust[0][2];
+            adjust[3] = optimaladjust[0][3];
 
-
-        for (int i = 0; i < 1000000; i++) {
-            System.out.println(i);
-            adjustAND[0] = optimaladjustAND[0];
-            adjustAND[1] = optimaladjustAND[1];
-            adjustAND[2] = optimaladjustAND[2];
-            adjustAND[3] = optimaladjustAND[3];
-            adjustAND[4] = optimaladjustAND[4];
-
-            adjustOR[0] = optimaladjustOR[0];
-            adjustOR[1] = optimaladjustOR[1];
-            adjustOR[2] = optimaladjustOR[2];
-            adjustOR[3] = optimaladjustOR[3];
-            adjustOR[4] = optimaladjustOR[4];
-
-            adjustMes[0] = opgitimaladjustMes[0];
-            adjustMes[1] = optimaladjustMes[1];
-            adjustMes[2] = optimaladjustMes[2];
-            adjustMes[3] = optimaladjustMes[3];
-            adjustMes[4] = optimaladjustMes[4];
-
-            for (int j = 0; j < 5; j++) {
-                for (int k = 0; k < 5; k++) {
-                    provisionaladjustment[j][k] = (int) Math.round(Math.random() * 2 - 1);
+            for (int j = 0; j < 10; j++) {
+                for (int k = 0; k < 4; k++) {
+                    provisionaladjustment[j][k] = (int) Math.round(Math.random());
                 }
 
                 // Reading parsing json files
                 final String INPUT_FILE = "datas/data.txt";
                 Parser.parse(INPUT_FILE);
                 // Schedule data is initiated
-                for (int m = 0; m < 5; m++) {
-                    adjustAND[m] = adjustAND[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
-                    adjustOR[m] = adjustOR[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
-                    adjustMes[m] = adjustMes[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
+                for (int m = 0; m < 4; m++) {
+                    adjust[m] = adjust[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
+                    if (adjust[m] == 0) {
+                        adjust[m] = 1;
+                    }
                 }
 
-                DummyScheduler bs = new DummyScheduler(adjustAND);
+                DummyScheduler bs = new DummyScheduler(adjust);
                 bs.makeSchedule();
 
 
                 int[] score = ScheduleData.instance().calculateScheduleOptimization();
+                boolean check = false;
+                for (int m = 0; m < 3; m++) {
+                    if (m == 0) {
+                        check = (score[0] < optimalscore[0][0] && score[1] < optimalscore[0][1]);
+                    } else if (m == 1) {
+                        check = (score[0] < optimalscore[1][0] || score[1] < optimalscore[1][1]);
+                    } else if (m == 2) {
+                        check = (score[0] < optimalscore[2][0]);
+                    }
 
-                if (score[0] < optimalscoreAND[0] && score[1] < optimalscoreAND[1]) {
-                    optimalscoreAND[0] = score[0];
-                    optimalscoreAND[1] = score[1];
-                    optimaladjustAND[0] = adjustAND[0];
-                    optimaladjustAND[1] = adjustAND[1];
-                    optimaladjustAND[2] = adjustAND[2];
-                    optimaladjustAND[3] = adjustAND[3];
-                    optimaladjustAND[4] = adjustAND[4];
+                    if (check) {
+                        optimalscore[m][0] = score[0];
+                        optimalscore[m][1] = score[1];
+                        optimaladjust[m][0] = adjust[0];
+                        optimaladjust[m][1] = adjust[1];
+                        optimaladjust[m][2] = adjust[2];
+                        optimaladjust[m][3] = adjust[3];
+                    }
                 }
-
-                if (score[0] < optimalscoreOR[0] || score[1] < optimalscoreOR[1]) {
-                    optimalscoreOR[0] = score[0];
-                    optimalscoreOR[1] = score[1];
-                    optimaladjustOR[0] = adjustOR[0];
-                    optimaladjustOR[1] = adjustOR[1];
-                    optimaladjustOR[2] = adjustOR[2];
-                    optimaladjustOR[3] = adjustOR[3];
-                    optimaladjustOR[4] = adjustOR[4];
-                }
-
-                if (score[0] < optimalscoreMes[0]) {
-                    optimalscoreMes[0] = score[0];
-                    optimalscoreMes[1] = score[1];
-                    optimaladjustMes[0] = adjustMes[0];
-                    optimaladjustMes[1] = adjustMes[1];
-                    optimaladjustMes[2] = adjustMes[2];
-                    optimaladjustMes[3] = adjustMes[3];
-                    optimaladjustMes[4] = adjustMes[4];
-                }
-
                 ScheduleData.deleteScheduleData();
             }
         }
         System.out.println("\n-------------------THE RESULTS BY DECREASING BOTH VIOLATIONS AND UNSCHEDULED-------------------");
-        System.out.println("Violations = " + optimalscoreAND[0]);
-        System.out.println("Unscheduled = " + optimalscoreAND[1]);
-        System.out.println("Scale for Size = " + optimaladjustAND[0]);
-        System.out.println("Scale for Venue = " + optimaladjustAND[1]);
-        System.out.println("Scale for Time = " + optimaladjustAND[2]);
-        System.out.println("Scale for Availability = " + optimaladjustAND[3]);
-        System.out.println("Scale for Panelists = " + optimaladjustAND[4]);
+        System.out.println("Violations = " + optimalscore[0][0]);
+        System.out.println("Unscheduled = " + optimalscore[0][1]);
+        System.out.println("Scale for Size = " + optimaladjust[0][0]);
+        System.out.println("Scale for Venue = " + optimaladjust[0][1]);
+        System.out.println("Scale for Time = " + optimaladjust[0][2]);
+        System.out.println("Scale for Availability = " + optimaladjust[0][3]);
 
         System.out.println("\n-------------------THE RESULTS BY DECREASING EITHER VIOLATIONS AND UNSCHEDULED-------------------");
-        System.out.println("Violations = " + optimalscoreOR[0]);
-        System.out.println("Unscheduled = " + optimalscoreOR[1]);
-        System.out.println("Scale for Size = " + optimaladjustOR[0]);
-        System.out.println("Scale for Venue = " + optimaladjustOR[1]);
-        System.out.println("Scale for Time = " + optimaladjustOR[2]);
-        System.out.println("Scale for Availability  = " + optimaladjustOR[3]);
-        System.out.println("Scale for Panelists = " + optimaladjustOR[4]);
+        System.out.println("Violations = " + optimalscore[1][0]);
+        System.out.println("Unscheduled = " + optimalscore[1][1]);
+        System.out.println("Scale for Size = " + optimaladjust[1][0]);
+        System.out.println("Scale for Venue = " + optimaladjust[1][1]);
+        System.out.println("Scale for Time = " + optimaladjust[1][2]);
+        System.out.println("Scale for Availability  = " + optimaladjust[1][3]);
 
         System.out.println("\n-------------------THE RESULTS BY DECREASING ONLY VIOLATIONS-------------------");
-        System.out.println("Violations = " + optimalscoreMes[0]);
-        System.out.println("Unscheduled = " + optimalscoreMes[1]);
-        System.out.println("Scale for Size = " + optimaladjustMes[0]);
-        System.out.println("Scale for Venue = " + optimaladjustMes[1]);
-        System.out.println("Scale for Time = " + optimaladjustMes[2]);
-        System.out.println("Scale for Availability = " + optimaladjustMes[3]);
-        System.out.println("Scale for Panelists = " + optimaladjustMes[4]);
-
-
+        System.out.println("Violations = " + optimalscore[2][0]);
+        System.out.println("Unscheduled = " + optimalscore[2][1]);
+        System.out.println("Scale for Size = " + optimaladjust[2][0]);
+        System.out.println("Scale for Venue = " + optimaladjust[2][1]);
+        System.out.println("Scale for Time = " + optimaladjust[2][2]);
+        System.out.println("Scale for Availability = " + optimaladjust[2][3]);
 
     }
 
@@ -162,6 +119,5 @@ public class Main {
         bs.makeSchedule();
         // Print report
         System.out.print(Report.INSTANCE);
-
     }
 }

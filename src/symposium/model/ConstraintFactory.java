@@ -1,13 +1,20 @@
 package symposium.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ConstraintFactory{
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
         // assumed constraints
+
+        constraints.add(new AvailabilityFilter(ConstraintPriority.REQUIRED, panel));
+        constraints.add(new MinPanelsFilter(ConstraintPriority.VERY_IMPORTANT, panel));
+
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
+        constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
         // input constraints
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {
@@ -81,7 +88,17 @@ public class ConstraintFactory{
                 System.err.println(constraint_string + " Constraint is not implemented ");
             }
         }
-
+        Collections.sort(constraints, new Comparator<Constraint>() {
+            @Override
+            public int compare(Constraint c, Constraint other) {
+                // TODO : FIXME : better implementation
+                return -1*c.PRIORITY.compareTo(other.PRIORITY);
+            }
+        });
+        // test sort
+        //System.out.println("---");
+        //System.out.println(constraints.get(0).PRIORITY);
+        //System.out.println(constraints.get(constraints.size()-1).PRIORITY);
         return constraints;
     }
     private static ConstraintPriority intToPriority(int level) {

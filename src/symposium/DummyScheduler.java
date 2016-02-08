@@ -1,10 +1,9 @@
 package symposium;
 
 import symposium.model.*;
-import symposium.VenueTimeFilter.RecommendedVenueTime;
 import static symposium.model.ConstraintPriority.*;
 import java.util.*;
-
+import static symposium.model.Filter.RecommendedVenueTime;
 public class DummyScheduler {
 
     private static class SearchResult {
@@ -24,18 +23,15 @@ public class DummyScheduler {
         }
     }
 
-    public static final int VIOLATION_COST_DESIRED = -1;
-    public static final int VIOLATION_COST_VERYIMPORTANT = -3;
+    public static final int VIOLATION_COST_DESIRED = 2;
+    public static final int VIOLATION_COST_VERYIMPORTANT = 4;
 
     public DummyScheduler() {
     }
 
-    private static int dd = 0;
-    private static int qq = 0;
 
     private void schedule(Panel panel) {
-
-        SearchResult sr = searchForVenueTime( panel);
+        SearchResult sr = searchForVenueTime(panel);
         if(sr.isSuccess()) {
             ScheduleData.instance().assignPanelToVenueTime(panel, sr.VENUETIME);
         } else {
@@ -74,14 +70,32 @@ public class DummyScheduler {
 
 
     private SearchResult searchForVenueTime(Panel panel) {
+        // prepare venueTime map, should be done in schedule data. TODO this is just for now.
+        Map<VenueTime, Integer> vtPointMap = new HashMap<>();
+        for(Venue v : ScheduleData.instance().VENUES) {
+            for(VenueTime vt : v.getFreeVenueTimes()) {
+                vtPointMap.put(vt,0);
+            }
+        }
+        // go thorugh the filters
+        for(Constraint c : panel.CONSTRAINTS) {
+            if(c instanceof Filter) {
+                ((Filter) c).filter(vtPointMap);
+            }
+        }
+        // create Iterable recommendations!
+        List<RecommendedVenueTime> rVts = new ArrayList<>();
+        for(VenueTime vt : vtPointMap.keySet()) {
+            rVts.add(new RecommendedVenueTime(vt, vtPointMap.get(vt)));
+        }
+        Collections.sort(rVts);
+        // begin the search
         Map<Constraint, Integer> violationMap = new HashMap<>();
         RecommendedVenueTime bestVt = null;
-
-        vtLoop : for (RecommendedVenueTime rVt : new VenueTimeFilter(panel)) {
-            int vtGain = rVt.GAIN;
-
+        vtLoop : for (RecommendedVenueTime rVt : rVts) {
+            int vtPoints = rVt.POINTS;
             for (Constraint c : panel.CONSTRAINTS) {
-                if(c.isConstraintViolated(rVt.VENUETIME)) {
+                if(!(c instanceof Filter) && c.isConstraintViolated(rVt.VENUETIME)) {
                     if(c.PRIORITY == REQUIRED) {
                         // add to violationMap
                         if(violationMap.containsKey(c)) {
@@ -89,23 +103,25 @@ public class DummyScheduler {
                         } else {
                             violationMap.put(c,1);
                         }
+                        //System.out.println("V!"+ c);
                         //
                         continue vtLoop; // next venueTime
                     }
                     //
-                    vtGain -= (c.PRIORITY == DESIRED ? VIOLATION_COST_DESIRED : VIOLATION_COST_VERYIMPORTANT);
+                    vtPoints -= (c.PRIORITY == DESIRED ? VIOLATION_COST_DESIRED : VIOLATION_COST_VERYIMPORTANT);
                 }
             }
-
-            if(bestVt == null || bestVt.GAIN < vtGain) {
-                bestVt = new RecommendedVenueTime(rVt.VENUETIME, vtGain);
+            //System.out.println(/*rVt.toString()+*/"   OrigGain:"+rVt.GAIN +" New GAIN: " + vtGain);
+            if(bestVt == null || bestVt.POINTS < vtPoints) {
+                //System.out.print((bestVt == null ? "" : bestVt.GAIN));
+                //System.out.println("-->" + vtGain);
+                bestVt = new RecommendedVenueTime(rVt.VENUETIME, vtPoints);
 
                 // TODO : Currently it doesn't stop if there is no violations. It checks everything regardless. The results are much better if we checked everything
                 // and the cost in terms of performance is really small
             }
-
         }
-
+        //System.out.println("-------");
         // return
         if(bestVt != null) {
             return new SearchResult(bestVt.VENUETIME);

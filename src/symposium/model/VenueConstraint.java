@@ -32,6 +32,6 @@ public class VenueConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "VenueConstraint (Panel must appear in specific venue)";
+        return "VenueConstraint " + this.venue.NAME;
     }
 }

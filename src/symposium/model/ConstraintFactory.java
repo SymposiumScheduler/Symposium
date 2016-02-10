@@ -10,6 +10,7 @@ public class ConstraintFactory{
         List<Constraint> constraints = new ArrayList<Constraint>();
         // assumed constraints
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
+        constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
         // input constraints
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {

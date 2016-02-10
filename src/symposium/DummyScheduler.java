@@ -24,18 +24,15 @@ public class DummyScheduler {
         }
     }
 
-    public static final int VIOLATION_COST_DESIRED = -1;
-    public static final int VIOLATION_COST_VERYIMPORTANT = -3;
+    public static final int VIOLATION_COST_DESIRED = 2;
+    public static final int VIOLATION_COST_VERYIMPORTANT = 4;
 
     public DummyScheduler() {
     }
 
-    private static int dd = 0;
-    private static int qq = 0;
 
     private void schedule(Panel panel) {
-
-        SearchResult sr = searchForVenueTime( panel);
+        SearchResult sr = searchForVenueTime(panel);
         if(sr.isSuccess()) {
             ScheduleData.instance().assignPanelToVenueTime(panel, sr.VENUETIME);
         } else {
@@ -76,10 +73,8 @@ public class DummyScheduler {
     private SearchResult searchForVenueTime(Panel panel) {
         Map<Constraint, Integer> violationMap = new HashMap<>();
         RecommendedVenueTime bestVt = null;
-
         vtLoop : for (RecommendedVenueTime rVt : new VenueTimeFilter(panel)) {
             int vtGain = rVt.GAIN;
-
             for (Constraint c : panel.CONSTRAINTS) {
                 if(c.isConstraintViolated(rVt.VENUETIME)) {
                     if(c.PRIORITY == REQUIRED) {
@@ -89,6 +84,7 @@ public class DummyScheduler {
                         } else {
                             violationMap.put(c,1);
                         }
+                        //System.out.println("V!"+ c);
                         //
                         continue vtLoop; // next venueTime
                     }
@@ -96,16 +92,17 @@ public class DummyScheduler {
                     vtGain -= (c.PRIORITY == DESIRED ? VIOLATION_COST_DESIRED : VIOLATION_COST_VERYIMPORTANT);
                 }
             }
-
+            //System.out.println(/*rVt.toString()+*/"   OrigGain:"+rVt.GAIN +" New GAIN: " + vtGain);
             if(bestVt == null || bestVt.GAIN < vtGain) {
+                //System.out.print((bestVt == null ? "" : bestVt.GAIN));
+                //System.out.println("-->" + vtGain);
                 bestVt = new RecommendedVenueTime(rVt.VENUETIME, vtGain);
 
                 // TODO : Currently it doesn't stop if there is no violations. It checks everything regardless. The results are much better if we checked everything
                 // and the cost in terms of performance is really small
             }
-
         }
-
+        //System.out.println("-------");
         // return
         if(bestVt != null) {
             return new SearchResult(bestVt.VENUETIME);

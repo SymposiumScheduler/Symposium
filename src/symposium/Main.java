@@ -16,11 +16,11 @@ public class Main {
 
     public static void main(String[] args) {
 	    // Reading parsing json files
-
+        long initTime = System.nanoTime();
         final String INPUT_FILE = "datas/data.txt";
         Parser.parse(INPUT_FILE);
         // Schedule data is initiated
-        long initTime = System.nanoTime();
+
         DummyScheduler bs = new DummyScheduler();
         bs.makeSchedule();
         long elapsedTime = System.nanoTime() - initTime;

@@ -25,20 +25,22 @@ public class VenueTimeFilter implements Iterable<VenueTimeFilter.RecommendedVenu
             //smaller gain is first => negative
             return otherVt.GAIN - this.GAIN ;
         }
+        public String toString() {
+            return GAIN + " => " + VENUETIME.toString();
+        }
     }
 
-
-    public static int COST_OF_MIN_PANELIST_VIOLATION = 4; // by testing various values
+    public static int COST_OF_MIN_PANELIST_VIOLATION = 2; // by testing various values
 
     private final Panel panel;
     private final List<RecommendedVenueTime> suggestions;
     public VenueTimeFilter(Panel panel) {
         this.panel = panel;
-        this.suggestions = createSuggestionsBasedOnMinPanelists(panel);
+        this.suggestions = createSuggestions(panel);
     }
 
-    public static List<RecommendedVenueTime> createSuggestionsBasedOnMinPanelists(Panel panel) {
-        Collection<Integer> daysInAvailability = new HashSet<>();
+    public static Map<Integer, Integer> getMinPanelistDayGain(Panel panel) {
+        Set<Integer> daysInAvailability = new HashSet<>();
         Iterator<TimeRange> pItr = panel.AVAILABILITY.iterator();
         while (pItr.hasNext()) {
             daysInAvailability.add(TimeFormat.getNumberOfDay(pItr.next().START));
@@ -49,21 +51,10 @@ public class VenueTimeFilter implements Iterable<VenueTimeFilter.RecommendedVenu
         Map<Integer, Integer> dayGainMap = new HashMap<>();
         for (String pnst : panel.PANELISTS) {
             for (int avDay : daysInAvailability) {
-                boolean scheduledInAvDay = false;
-                Collection<Panel> ps = ScheduleData.instance().getPanelistAssignedPanels(pnst);
-                if (ps != null) {
-                    for (Panel p : ps) {
-                        if (p.getVenueTime().getDay() == avDay) {
-                            scheduledInAvDay = true;
-                            break;
-                        }
-                    }
+                if(ScheduleData.instance().getPanelistAppearanceNo(avDay, pnst)>0){
+                    continue;
                 }
-
-                if (scheduledInAvDay) {
-                    continue; // it's scheduled in this day
-                }
-
+                // If this line is reached, pnst is not scheduled in avDay
                 if (dayGainMap.get(avDay) == null) {
                     dayGainMap.put(avDay, 1);
                 } else {
@@ -71,18 +62,32 @@ public class VenueTimeFilter implements Iterable<VenueTimeFilter.RecommendedVenu
                 }
             }
         }
-        //
-        // Sort Vt's by gain
+        return dayGainMap;
+    }
+
+    public static List<RecommendedVenueTime> createSuggestions(Panel panel) {
+        Map<Integer, Integer> minDayToGainMap = getMinPanelistDayGain(panel);
         //
         List<RecommendedVenueTime> suggs = new ArrayList<>();
         for (Venue v : ScheduleData.instance().VENUES) {
             for (VenueTime vt : v.getFreeVenueTimes()) {
-                    int gain = COST_OF_MIN_PANELIST_VIOLATION*(dayGainMap.containsKey(vt.getDay()) ? dayGainMap.get(vt.getDay()) : 0 );
-                    suggs.add(new RecommendedVenueTime(vt, gain) );
+                // Availability elimination
+                if(! panel.AVAILABILITY.doesEnclose(vt.TIME)) {
+                    continue;
+                }
+                int gain = 0;
+                // Min panelist constraint
+                gain += COST_OF_MIN_PANELIST_VIOLATION*(minDayToGainMap.containsKey(vt.getDay()) ? minDayToGainMap.get(vt.getDay()) : 0 );
+                //
+                suggs.add(new RecommendedVenueTime(vt, gain) );
             }
         }
         //
         java.util.Collections.sort(suggs);
+        /*System.out.println("---------");
+        for(RecommendedVenueTime r : suggs) {
+            System.out.println(r);
+        }*/
         return suggs;
     }
 

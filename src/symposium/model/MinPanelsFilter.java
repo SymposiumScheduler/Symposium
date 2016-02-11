@@ -1,7 +1,7 @@
 package symposium.model;
 
 import java.util.*;
-
+//TODO: MinPanelsFilter is always assumed that the priority is VeryImportant
 public class MinPanelsFilter extends Filter {
     public static int COST_OF_MIN_PANELIST_VIOLATION = 2; // by testing various values
 
@@ -9,22 +9,38 @@ public class MinPanelsFilter extends Filter {
         super(priority, panel);
     }
 
+    /**
+     * Never actually called in scheduling stage, only for report purposes
+     * @param venueTime
+     * @return false
+     */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         return false; // not violated because the panel is scheduled. and its panels are scheduled in this day.
     }
 
+    /**
+     *  for each VenueTime vt in the map vtScoreMap:
+     *      increase vt's score by the number of panelist not scheduled yet in vt's day
+     *
+     * @param vtScoreMap A map from possible venueTime to score to be evaluated
+     * @param requiredViolationMap A map from only required Constraints to the number of violations
+     */
     @Override
-    public void filter(Map<VenueTime, Integer> vtMap) {
+    public void filter(Map<VenueTime, Integer> vtScoreMap, Map<Constraint, Integer> requiredViolationMap) {
         Map<Integer, Integer> minDayToGainMap = getMinPanelistDayGain();
         //
-        List<RecommendedVenueTime> suggs = new ArrayList<>();
-        for (VenueTime vt : vtMap.keySet()) {
-            vtMap.put(vt, vtMap.get(vt) + COST_OF_MIN_PANELIST_VIOLATION * (minDayToGainMap.containsKey(vt.getDay()) ? minDayToGainMap.get(vt.getDay()) : 0));
+        for (VenueTime vt : vtScoreMap.keySet()) {
+            vtScoreMap.put(vt, vtScoreMap.get(vt) + COST_OF_MIN_PANELIST_VIOLATION * (minDayToGainMap.containsKey(vt.getDay()) ? minDayToGainMap.get(vt.getDay()) : 0));
         }
     }
 
+    /**
+     *
+     * @return Map<available day, number of panelists not scheduled on a certain day
+     */
     private Map<Integer, Integer> getMinPanelistDayGain() {
+        //TODO: better implementation is  possible in scheduleData
         Set<Integer> daysInAvailability = new HashSet<>();
         Iterator<TimeRange> pItr = this.PANEL.AVAILABILITY.iterator();
         while (pItr.hasNext()) {
@@ -48,6 +64,11 @@ public class MinPanelsFilter extends Filter {
             }
         }
         return dayGainMap;
+    }
+
+    @Override
+    public String toString() {
+        return "MinPanelsFilter: priority = " + PRIORITY;
     }
 
 }

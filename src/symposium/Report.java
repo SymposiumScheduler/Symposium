@@ -20,6 +20,17 @@ public class Report {
         for(Panel panel : ScheduleData.instance().getUnschedulablePanels()) {
             result.append("\n\n").append(panel.toString());
         }
+
+        result.append("\n\n---------------------------- Free Panelists ---------------------------");
+        Map<String, Set<Integer>> freePanelists = ScheduleData.instance().getPanelistsUnscheduledDays();
+        int counter = 0;
+        int total = 0;
+        for(String pnst : freePanelists.keySet()) {
+            counter++;
+            total += freePanelists.get(pnst).size();
+            result.append("\n").append(counter).append(") ").append(pnst).append(" in days ").append(freePanelists.get(pnst));
+        }
+        result.append("\n\nTotal Panelist×Day violations: ").append(total);
         return result.toString();
     }
 
@@ -46,6 +57,16 @@ public class Report {
             unscheduled.add(panelObj);
         }
         root.put("unscheduled", unscheduled);
+
+        // Free Panelists
+        JSONObject minViolations = new JSONObject();
+        Map<String, Set<Integer>> freePanelists = ScheduleData.instance().getPanelistsUnscheduledDays();
+        for(String pnst : freePanelists.keySet()) {
+            JSONArray pnstDays = new JSONArray();
+            pnstDays.addAll(freePanelists.get(pnst));
+            minViolations.put(pnst, pnstDays);
+        }
+        root.put("min_panelist_violations", minViolations);
 
         return root;
     }

@@ -9,12 +9,9 @@ public class ConstraintFactory{
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
         // assumed constraints
-
-        constraints.add(new AvailabilityFilter(ConstraintPriority.REQUIRED, panel));
-        constraints.add(new MinPanelsFilter(ConstraintPriority.VERY_IMPORTANT, panel));
-
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
         constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
+
         // input constraints
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {
@@ -57,13 +54,9 @@ public class ConstraintFactory{
                 Constraint constraint = new MaxPanelistConstraint(intToPriority(priority), panel, maxPanels);
                 constraints.add(constraint);
             }
-            //FIXME: Min-Panels needs to be implemented.
             else if (constraint_string.contains("Min-Panels")) {
-                /*int priority = Integer.valueOf(constraint_string.split(":")[1]);
-                int minimum = Integer.valueOf(constraint_string.split("\\(")[1].split("\\)")[0]);
-                //Always assigns Desired priority, because we're using our fake-up estimation.
-                Constraint constraint = new MinPanelistConstraint(ConstraintPriority.VERY_IMPORTANT, panel);
-                constraints.add(constraint);*/
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                constraints.add(new MinPanelsFilter(intToPriority(priority), panel));
             }
             else if (constraint_string.contains("Minimum-Capacity")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
@@ -72,7 +65,8 @@ public class ConstraintFactory{
                 constraints.add(constraint);
             }
             else if (constraint_string.contains("Availability")) {
-                // TODO : Availability does not have a constraint. It's always assumed. REMOVE FROM DATA FILE
+                int priority = Integer.valueOf(constraint_string.split(":")[1]);
+                constraints.add(new AvailabilityFilter(intToPriority(priority), panel));
             }
             else if (constraint_string.contains("Time(")) {
                 String timeOfDay = constraint_string.split("\\(")[1];
@@ -95,10 +89,6 @@ public class ConstraintFactory{
                 return -1*c.PRIORITY.compareTo(other.PRIORITY);
             }
         });
-        // test sort
-        //System.out.println("---");
-        //System.out.println(constraints.get(0).PRIORITY);
-        //System.out.println(constraints.get(constraints.size()-1).PRIORITY);
         return constraints;
     }
     private static ConstraintPriority intToPriority(int level) {

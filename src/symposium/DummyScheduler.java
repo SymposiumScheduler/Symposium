@@ -3,7 +3,7 @@ package symposium;
 import symposium.model.*;
 import static symposium.model.ConstraintPriority.*;
 import java.util.*;
-import static symposium.model.Filter.RecommendedVenueTime;
+
 public class DummyScheduler {
 
     private static class SearchResult {
@@ -68,65 +68,87 @@ public class DummyScheduler {
         }
     }
 
+    /**
+     * A data structure that contains a VenueTime and its score. It is used in searchForVenueTime to order the venueTimes by their scores
+     */
+    private static class VenueTimeWithScore implements Comparable<VenueTimeWithScore> {
+        public final VenueTime VENUETIME;
+        public final int SCORE;
+        public VenueTimeWithScore(VenueTime vt, int score) {
+            VENUETIME = vt;
+            SCORE = score;
+        }
 
+        /**
+         * If this is larger than other return negative number.
+         * @param otherVt
+         * @return negative if this is first, 0 if equal, and positive if other is first.
+         */
+        @Override
+        public int compareTo(VenueTimeWithScore otherVt) {
+            return otherVt.SCORE - this.SCORE;
+        }
+        public String toString() {
+            return "Score: " + SCORE + ", VenueTime : " + VENUETIME.toString();
+        }
+    }
     private SearchResult searchForVenueTime(Panel panel) {
+        Map<Constraint, Integer> requiredViolationMap = new HashMap<>();
         // prepare venueTime map, should be done in schedule data. TODO this is just for now.
-        Map<VenueTime, Integer> vtPointMap = new HashMap<>();
+        Map<VenueTime, Integer> vtScoreMap = new HashMap<>();
         for(Venue v : ScheduleData.instance().VENUES) {
             for(VenueTime vt : v.getFreeVenueTimes()) {
-                vtPointMap.put(vt,0);
+                vtScoreMap.put(vt,0);
             }
         }
         // go thorugh the filters
         for(Constraint c : panel.CONSTRAINTS) {
             if(c instanceof Filter) {
-                ((Filter) c).filter(vtPointMap);
+                ((Filter) c).filter(vtScoreMap, requiredViolationMap);
             }
         }
-        // create Iterable recommendations!
-        List<RecommendedVenueTime> rVts = new ArrayList<>();
-        for(VenueTime vt : vtPointMap.keySet()) {
-            rVts.add(new RecommendedVenueTime(vt, vtPointMap.get(vt)));
+        // create Iterable score
+        List<VenueTimeWithScore> vtScores = new ArrayList<>();
+        for(VenueTime vt : vtScoreMap.keySet()) {
+            vtScores.add(new VenueTimeWithScore(vt, vtScoreMap.get(vt)));
         }
-        Collections.sort(rVts);
+        Collections.sort(vtScores);
         // begin the search
-        Map<Constraint, Integer> violationMap = new HashMap<>();
-        RecommendedVenueTime bestVt = null;
-        vtLoop : for (RecommendedVenueTime rVt : rVts) {
-            int vtPoints = rVt.POINTS;
+        VenueTimeWithScore bestVt = null;
+        vtLoop : for (VenueTimeWithScore recommendedVt: vtScores) {
+            int vtScore = recommendedVt.SCORE;
             for (Constraint c : panel.CONSTRAINTS) {
-                if(!(c instanceof Filter) && c.isConstraintViolated(rVt.VENUETIME)) {
+                if(!(c instanceof Filter) && c.isConstraintViolated(recommendedVt.VENUETIME)) {
+
+                    // if c is required, continue to next vt and update violation map
                     if(c.PRIORITY == REQUIRED) {
                         // add to violationMap
-                        if(violationMap.containsKey(c)) {
-                            violationMap.put(c, violationMap.get(c) + 1);
+                        if(requiredViolationMap.containsKey(c)) {
+                            requiredViolationMap.put(c, requiredViolationMap.get(c) + 1);
                         } else {
-                            violationMap.put(c,1);
+                            requiredViolationMap.put(c,1);
                         }
-                        //System.out.println("V!"+ c);
-                        //
                         continue vtLoop; // next venueTime
                     }
                     //
-                    vtPoints -= (c.PRIORITY == DESIRED ? VIOLATION_COST_DESIRED : VIOLATION_COST_VERYIMPORTANT);
+                    vtScore -= (c.PRIORITY == DESIRED ? VIOLATION_COST_DESIRED : VIOLATION_COST_VERYIMPORTANT);
                 }
             }
-            //System.out.println(/*rVt.toString()+*/"   OrigGain:"+rVt.GAIN +" New GAIN: " + vtGain);
-            if(bestVt == null || bestVt.POINTS < vtPoints) {
-                //System.out.print((bestVt == null ? "" : bestVt.GAIN));
-                //System.out.println("-->" + vtGain);
-                bestVt = new RecommendedVenueTime(rVt.VENUETIME, vtPoints);
 
-                // TODO : Currently it doesn't stop if there is no violations. It checks everything regardless. The results are much better if we checked everything
-                // and the cost in terms of performance is really small
+            if(bestVt == null || bestVt.SCORE < vtScore) {
+                bestVt = new VenueTimeWithScore(recommendedVt.VENUETIME, vtScore);
+
+                // if No violations, break. No way a better venue time is coming.
+                if(bestVt.SCORE == recommendedVt.SCORE) {
+                    break;
+                }
             }
         }
-        //System.out.println("-------");
         // return
         if(bestVt != null) {
             return new SearchResult(bestVt.VENUETIME);
         } else {
-            return new SearchResult(violationMap);
+            return new SearchResult(requiredViolationMap);
         }
     }
 

@@ -179,6 +179,68 @@ public class ScheduleData {
         this.changeToAssigned(p);
     }
 
+    /**
+     * Calculated from the union of the panelist's panel's availabilities no the availability of the panelist theirselves
+     *
+     * @return map from panelist to set of days which they are not scheduled
+     */
+    public Map<String, Set<Integer>> getPanelistsUnscheduledDays() {
+        // TODO : implementation is bad and slow. Better implementation needed!.
+
+
+        Map<String, Set<Integer>> resultMap = new HashMap<String,Set<Integer>>();
+            Set<String> checked = new HashSet<>();
+
+            for(Panel p : this.getAssignedPanels()) {
+                for(String pnst : p.PANELISTS) {
+                    if(checked.contains(pnst)) {
+                        continue;
+                    }
+                    //
+                    Set<Integer> daysThisPanelistIsAvailable = new HashSet<>();
+                    // find days of availability for pnst {{{
+                    // assigned
+                    for(Panel pnstP: ScheduleData.instance().getPanelistAssignedPanels(pnst)){
+                        Iterator<TimeRange> itr = pnstP.AVAILABILITY.iterator();
+                        while(itr.hasNext()) {
+                            daysThisPanelistIsAvailable.add(TimeFormat.getNumberOfDay(itr.next().START));
+                        }
+                    }
+                    // un assigned
+                    for(Panel pnstP: ScheduleData.instance().getFreePanels()){
+                        if(!pnstP.PANELISTS.contains(pnstP) ){
+                            continue;
+                        }
+                        Iterator<TimeRange> itr = pnstP.AVAILABILITY.iterator();
+                        while(itr.hasNext()) {
+                            daysThisPanelistIsAvailable.add(TimeFormat.getNumberOfDay(itr.next().START));
+                        }
+                    }
+                    // }}}
+
+
+                    pnstDayLoop : for(int day : daysThisPanelistIsAvailable) {
+                        for(Panel dayP : this.getPanelistAssignedPanels(pnst) ){
+                            if(dayP.getVenueTime().getDay() == day) {
+                                continue pnstDayLoop;
+                            }
+                        }
+
+                        if(resultMap.containsKey(pnst)) {
+                            resultMap.get(pnst).add(day);
+                        } else {
+                            resultMap.put(pnst, new HashSet<Integer>());
+                            resultMap.get(pnst).add(day);
+                        }
+                    }
+
+                    //
+                    checked.add(pnst);
+                }
+            }
+
+        return resultMap;
+    }
     public int getPanelistAppearanceNo(int day, String panelist) {
         if(panelistAssigned.get(panelist) == null) {
             return 0;

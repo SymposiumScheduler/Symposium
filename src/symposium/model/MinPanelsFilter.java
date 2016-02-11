@@ -11,7 +11,7 @@ public class MinPanelsFilter extends Filter {
 
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
-        return false; // not violated
+        return false; // not violated because the panel is scheduled. and its panels are scheduled in this day.
     }
 
     @Override

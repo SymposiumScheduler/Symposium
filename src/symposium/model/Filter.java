@@ -10,7 +10,6 @@ public abstract class Filter extends Constraint {
             VENUETIME = vt;
             POINTS = points;
         }
-
         @Override
         public int compareTo(RecommendedVenueTime otherVt) {
                 //smaller points is first => negative
@@ -28,7 +27,7 @@ public abstract class Filter extends Constraint {
     /**
      * evaluate the venueTimes and encourage or discourage.
      * If the filter is required, bad venueTimes should be removed.
-     * @param vtMap
+     * @param vtPointsMap
      */
-    public abstract void filter(Map<VenueTime, Integer> vtMap);
+    public abstract void filter(Map<VenueTime, Integer> vtPointsMap);
 }

@@ -1,7 +1,9 @@
 package symposium.model;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class AvailabilityFilter extends Filter {
     public AvailabilityFilter(ConstraintPriority priority, Panel p) {
@@ -10,12 +12,11 @@ public class AvailabilityFilter extends Filter {
 
     @Override
     public void filter(Map<VenueTime, Integer> vtMap) {
-        Iterator<Map.Entry<VenueTime,Integer>> iter = vtMap.entrySet().iterator();
-        while (iter.hasNext()) {
-            Map.Entry<VenueTime,Integer> entry = iter.next();
-            if(this.isConstraintViolated(entry.getKey()) && this.PRIORITY == ConstraintPriority.REQUIRED) {
+        Set<VenueTime> keys = new HashSet<>(vtMap.keySet());
+        for ( VenueTime vt : keys) {
+            if(this.isConstraintViolated(vt) && this.PRIORITY == ConstraintPriority.REQUIRED) {
                 // TODO : doesn't do anything if it's not required. Low priority since it's impossible to be not required
-                iter.remove(); // remove vt from map
+                vtMap.remove(vt);
             }
         }
     }

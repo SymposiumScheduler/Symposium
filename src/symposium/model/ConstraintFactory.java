@@ -9,6 +9,10 @@ public class ConstraintFactory{
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
         // assumed constraints
+
+        constraints.add(new AvailabilityFilter(ConstraintPriority.REQUIRED, panel));
+        constraints.add(new MinPanelsFilter(ConstraintPriority.VERY_IMPORTANT, panel));
+
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
         constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
         // input constraints

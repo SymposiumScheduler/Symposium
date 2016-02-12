@@ -12,12 +12,14 @@ public class CategoryConstraint extends NoOverlapConstraint {
      */
     @Override
     boolean doesOverlap(VenueTime venueTime) {
-        if (ScheduleData.instance().isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
+        return false;
+        // FIXME : ignore this constraint for now, because it's violated so many times and screwing with the scores
+        /*if (ScheduleData.instance().isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
             return true;
         }
         else {
             return false;
-        }
+        }*/
     }
 
     @Override

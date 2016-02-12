@@ -86,7 +86,10 @@ public class DummyScheduler {
          */
         @Override
         public int compareTo(VenueTimeWithScore otherVt) {
-            return otherVt.SCORE - this.SCORE;
+            if(this.SCORE != otherVt.SCORE) {
+                return (otherVt.SCORE < this.SCORE ? -1 : 1);
+            }
+            return this.VENUETIME.compareTo(otherVt.VENUETIME);
         }
         public String toString() {
             return "Score: " + SCORE + ", VenueTime : " + VENUETIME.toString();
@@ -112,7 +115,10 @@ public class DummyScheduler {
         for(VenueTime vt : vtScoreMap.keySet()) {
             vtScores.add(new VenueTimeWithScore(vt, vtScoreMap.get(vt)));
         }
+        //List<VenueTimeWithScore> tmp = new ArrayList<>(vtScores);
+        Collections.shuffle(vtScores);
         Collections.sort(vtScores);
+        //System.out.print(tmp.equals(vtScores));
         // begin the search
         VenueTimeWithScore bestVt = null;
         vtLoop : for (VenueTimeWithScore recommendedVt: vtScores) {

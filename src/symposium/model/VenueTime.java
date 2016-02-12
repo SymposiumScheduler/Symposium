@@ -1,9 +1,8 @@
 package symposium.model;
 
 
-import sun.util.resources.cldr.fr.TimeZoneNames_fr;
 
-public class VenueTime {
+public class VenueTime implements Comparable<VenueTime>{
     public final Range TIME;
     public final Venue VENUE;
     private Panel assignedPanel;
@@ -35,6 +34,16 @@ public class VenueTime {
 
     public int getDay() {
         return TimeFormat.getNumberOfDay(TIME.getStart());
+    }
+
+    @Override
+    public int compareTo(VenueTime other) {
+        // smaller venue comes first
+        if(this.VENUE.SIZE - other.VENUE.SIZE != 0) {
+            return (this.VENUE.SIZE < other.VENUE.SIZE ? -1 : 1);
+        }
+        // earlier time comes first
+        return this.TIME.getStart() - other.TIME.getStart();
     }
 }
 

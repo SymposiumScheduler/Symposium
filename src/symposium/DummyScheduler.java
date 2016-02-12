@@ -23,7 +23,7 @@ public class DummyScheduler {
         }
     }
 
-    public static final int VIOLATION_COST_DESIRED = 2;
+    public static final int VIOLATION_COST_DESIRED = 1;
     public static final int VIOLATION_COST_VERYIMPORTANT = 4;
 
     public DummyScheduler() {
@@ -118,7 +118,7 @@ public class DummyScheduler {
         vtLoop : for (VenueTimeWithScore recommendedVt: vtScores) {
             int vtScore = recommendedVt.SCORE;
             for (Constraint c : panel.CONSTRAINTS) {
-                if(!(c instanceof Filter) && c.isConstraintViolated(recommendedVt.VENUETIME)) {
+                if(c.isConstraintViolated(recommendedVt.VENUETIME)) {
 
                     // if c is required, continue to next vt and update violation map
                     if(c.PRIORITY == REQUIRED) {

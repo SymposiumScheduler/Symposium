@@ -4,7 +4,6 @@ import java.util.*;
 
 public class ConsecutivePanelsConstraint extends Constraint {
 
-    //TODO in order to fail this constraint check, the panelists must be scheduled in 3+ panels where there isn't an 80+ minute gap somewhere in there
     public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }
@@ -28,17 +27,20 @@ public class ConsecutivePanelsConstraint extends Constraint {
                     }
                 }
             }
+
             if(panelsSameDay.size()<3){
                 continue;
             }
+
             panelsSameDay.sort(Comparator.<Range>naturalOrder());
             int ctr = 0;
             for(int i = 1; i<panelsSameDay.size(); i++){
-                int diffrenceStartEnd = panelsSameDay.get(i).getEnd() - panelsSameDay.get(i-1).getStart();
-                if(diffrenceStartEnd > difference){
+                int diffrenceStartEnd = panelsSameDay.get(i).getStart() - panelsSameDay.get(i-1).getEnd();
+                if(diffrenceStartEnd < difference){
                     ctr++;
                 }
             }
+
             // if there is more than 1 consecutive panels return true
             if(ctr > 1){
                 return true;

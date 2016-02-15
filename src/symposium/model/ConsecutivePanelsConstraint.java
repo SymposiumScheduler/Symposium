@@ -39,6 +39,12 @@ public class ConsecutivePanelsConstraint extends Constraint {
                 if(diffrenceStartEnd < difference){
                     ctr++;
                 }
+                if(diffrenceStartEnd >= difference) {
+                    ctr = 0;
+                }
+                if(ctr > 3 ) {
+                    return true;
+                }
             }
 
             // if there is more than 1 consecutive panels return true

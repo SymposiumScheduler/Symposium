@@ -20,7 +20,7 @@ public class PanelTest {
         newCategory.add("newCategory");
 
         List<String> constraints = new ArrayList<String>();
-        constraints.add("New");
+        constraints.add("New-Panelist:2");
         List<String> panelists = new ArrayList<String>();
         panelists.add("Joey");
         panelists.add("Yousef");
@@ -35,7 +35,15 @@ public class PanelTest {
         assertTrue(panel.PANELISTS.get(0).equals("Joey"));
         assertTrue(panel.AVAILABILITY.equals(range));
         assertTrue(panel.CATEGORIES.get(0).equals("newCategory"));
-        assertTrue(panel.CONSTRAINTS.get(0).equals("New"));
+
+        boolean newConstraintFound = false;
+        for(Constraint c : panel.CONSTRAINTS) {
+            if(c instanceof NewPanelistConstraint) {
+                newConstraintFound = true;
+                break;
+            }
+        }
+        assertTrue(newConstraintFound);
 
 
 

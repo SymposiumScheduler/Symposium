@@ -1,6 +1,9 @@
 package symposium.model;
 
+import java.util.List;
+
 public class NewPanelistConstraint extends TimeConstraint { //Ask team members
+    public static List<String> panelist;
 
     public NewPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority, p);
@@ -18,12 +21,17 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
             return true;
         }
         else {
+            panelist = this.PANEL.PANELISTS;
             return false;
         }
     }
 
     @Override
     public String toString() {
-        return "NewPanelistConstraint (Not all New Panelists on Monday)";
+        StringBuilder sb = new StringBuilder();
+        sb.append("New Panelist Constraint Violated: (Not all New Panelists on Monday)").append("\n");
+        sb.append("\t\t\tPanelists are: ").append(panelist);
+
+        return sb.toString();
     }
 }

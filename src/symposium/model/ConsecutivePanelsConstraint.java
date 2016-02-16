@@ -34,7 +34,7 @@ public class ConsecutivePanelsConstraint extends Constraint {
 
             panelsSameDay.sort(Comparator.<Range>naturalOrder());
             int ctr = 0;
-            for(int i = 1; i<panelsSameDay.size(); i++){
+            for(int i = 1; i < panelsSameDay.size(); i++){
                 int diffrenceStartEnd = panelsSameDay.get(i).getStart() - panelsSameDay.get(i-1).getEnd();
                 if(diffrenceStartEnd < difference){
                     ctr++;
@@ -56,7 +56,7 @@ public class ConsecutivePanelsConstraint extends Constraint {
     }
     @Override
     public String toString() {
-        return "ConsecutivePanelsConstraint: priority = "+ PRIORITY;
+        return "Consecutive Panels Constraint is violated: priority = "+ PRIORITY;
     }
 
 }

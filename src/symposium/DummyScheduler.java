@@ -160,8 +160,8 @@ public class DummyScheduler {
 
 
     private static abstract class DetermineDifficulty {
-        private static final int SIZE_CONSTRAINT_VALUE = 10;
-        private static final int PANELISTS_CONSTRAINT_VALUE = 1000;
+        private static final int SIZE_CONSTRAINT_VALUE = 100;
+        private static final int PANELISTS_CONSTRAINT_VALUE = 100;
         private static final int VENUE_CONSTRAINT_VALUE = 100000;
         private static final int TIME_CONSTRAINT_VALUE = 10000;
         private static final int AVAILABILITY_CONSTRAINT_VALUE = 1000000;
@@ -194,7 +194,7 @@ public class DummyScheduler {
                 for (String x : p.PANELISTS) {
                     panelDifficulty += panelistDifficulty.get(x);
                 }
-                panelDifficulty = panelDifficulty * PANELISTS_CONSTRAINT_VALUE;
+                panelDifficulty *= PANELISTS_CONSTRAINT_VALUE;
                 for (String x : p.CATEGORIES) {
                     panelDifficulty += categoryDifficulty.get(x);
                 }

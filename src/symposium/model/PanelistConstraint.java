@@ -1,6 +1,9 @@
 package symposium.model;
 
+import java.util.List;
+
 public class PanelistConstraint extends NoOverlapConstraint {
+    public static List<String> panelistsViolating;
 
     public PanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
@@ -16,6 +19,7 @@ public class PanelistConstraint extends NoOverlapConstraint {
     @Override
     boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
         if( ScheduleData.instance().isAssignedPanelists(venueTime, PANEL.PANELISTS)) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
+            panelistsViolating = PANEL.PANELISTS;
             return true;
         }
         else {
@@ -25,6 +29,10 @@ public class PanelistConstraint extends NoOverlapConstraint {
 
     @Override
     public String toString() {
-        return "PanelistConstraint (Panelist cannot appear outside of availability or be in two places at once)";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Panelist Constraint Violated: Panelist cannot appear outside of availability or be in two places at once)").append("\n");
+        sb.append("\t\t\tPanelists are: ").append(panelistsViolating);
+
+        return sb.toString();
     }
 }

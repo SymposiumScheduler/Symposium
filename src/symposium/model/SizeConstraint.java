@@ -3,6 +3,7 @@ package symposium.model;
 public class SizeConstraint extends Constraint {
 
     int minSize;
+    VenueTime vt;
 
     /**
      *
@@ -25,6 +26,7 @@ public class SizeConstraint extends Constraint {
             violated = false;
         }
         else {
+            vt = venueTime;
             violated = true;
         }
         cache.put(venueTime, violated);
@@ -37,6 +39,10 @@ public class SizeConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "SizeConstraint: Venue must be able to fit panelists";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Size Constraint Violated: (Venue must be able to fit panelists)").append("\n");
+        sb.append("\t\t\tSize needed").append(minSize).append("Size Given ").append(vt.VENUE.SIZE);
+
+        return sb.toString();
     }
 }

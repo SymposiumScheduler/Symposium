@@ -4,6 +4,7 @@ import java.util.*;
 
 public class MaxPanelistConstraint extends Constraint {
     final int MAX;
+    public static String panelistsViolating;
 
     public MaxPanelistConstraint(ConstraintPriority priority, Panel p, int max) {
         super(priority,p);
@@ -30,6 +31,7 @@ public class MaxPanelistConstraint extends Constraint {
                     if (day == venueTime.getDay()) {
                         counter++;
                         if (counter > MAX) {
+                            panelistsViolating = pist;
                             return true;
                         }
                     }
@@ -41,6 +43,11 @@ public class MaxPanelistConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "MaxPanelistConstraint (Panelist should only appear a maximum number of times per day)";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Max Panelist Constraint Violated: (Panelist should only appear a maximum number of times per day)").append("\n");
+        sb.append("\t\t\tThe Panelist is: ").append(panelistsViolating).append("\n");
+
+
+        return sb.toString();
     }
 }

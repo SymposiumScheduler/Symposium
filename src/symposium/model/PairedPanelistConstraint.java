@@ -1,6 +1,8 @@
 package symposium.model;
 
 public class PairedPanelistConstraint extends Constraint {
+    public static String firstPanelist;
+    public static String secondPanelist;
     public PairedPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }
@@ -16,8 +18,12 @@ public class PairedPanelistConstraint extends Constraint {
             for (int j = 0; j < PANEL.PANELISTS.size(); j++) {
                 if ((i != j)) {
                     if ((ScheduleData.instance().timesAssignedTogetherDay(venueTime, PANEL.PANELISTS.get(i)
-                            , PANEL.PANELISTS.get(j)) >= 2)) {  //Another function that will be written later in scheduleData
+                            , PANEL.PANELISTS.get(j)) >= 2)) {
+                        //Another function that will be written later in scheduleData
                         violated = true;
+                        firstPanelist = PANEL.PANELISTS.get(i);
+                        secondPanelist = PANEL.PANELISTS.get(j);
+
                     }
                 }
             }
@@ -28,6 +34,9 @@ public class PairedPanelistConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "PairedPanelistConstraint (Two panelists shouldn't appear together more than once per day)";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Paired Panelist Constraint Violated: (Two panelists shouldn't appear together more than once per day)").append("\n");
+        sb.append("\t\t\tPanelists are: ").append(firstPanelist).append(" , ").append(secondPanelist);
+        return sb.toString();
     }
 }

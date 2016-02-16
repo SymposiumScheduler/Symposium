@@ -40,6 +40,6 @@ public class AvailabilityFilter extends Filter {
 
     @Override
     public String toString() {
-        return "AvailabilityFilter: priority = " + PRIORITY;
+        return "Availability Constraint violated: priority = " + PRIORITY;
     }
 }

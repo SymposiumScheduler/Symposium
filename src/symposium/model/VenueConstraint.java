@@ -32,6 +32,6 @@ public class VenueConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "Venue Constraint Violated: \n\t\t\tVenue name: " +this.venue.NAME;
+        return "Venue Constraint Violated: Venue name: " +this.venue.NAME;
     }
 }

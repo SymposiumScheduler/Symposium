@@ -66,7 +66,7 @@ public class Report {
             pnstDays.addAll(freePanelists.get(pnst));
             minViolations.put(pnst, pnstDays);
         }
-        root.put("min_panelist_violations", minViolations);
+        root.put("underutilized_panelists", minViolations);
 
         return root;
     }

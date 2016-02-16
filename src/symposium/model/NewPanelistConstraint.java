@@ -30,7 +30,7 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("New Panelist Constraint Violated: (Not all New Panelists on Monday)").append("\n");
-        sb.append("\t\t\tPanelists are: ").append(panelist);
+        sb.append("\t\t\t").append("Panelists are: ").append(panelist);
 
         return sb.toString();
     }

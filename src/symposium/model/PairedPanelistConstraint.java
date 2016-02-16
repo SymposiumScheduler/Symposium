@@ -36,7 +36,7 @@ public class PairedPanelistConstraint extends Constraint {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Paired Panelist Constraint Violated: (Two panelists shouldn't appear together more than once per day)").append("\n");
-        sb.append("\t\t\tPanelists are: ").append(firstPanelist).append(" , ").append(secondPanelist);
+        sb.append("\t\t\t").append("Panelists are: ").append(firstPanelist).append(" , ").append(secondPanelist);
         return sb.toString();
     }
 }

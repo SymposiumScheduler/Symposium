@@ -68,7 +68,7 @@ public class MinPanelsFilter extends Filter {
 
     @Override
     public String toString() {
-        return "MinPanelsFilter: priority = " + PRIORITY;
+        return "Min Panels Filter: priority = " + PRIORITY;
     }
 
 }

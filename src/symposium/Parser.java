@@ -96,11 +96,10 @@ public class Parser {
             }
             Range panelistTime = panelist_times.get(0).union(panelist_times);
 
-            if (item.get("new") == "yes") {
+            if (item.get("new").equals("yes")) {
                 new_panelists.add(panelist_name);
-            } else {
-                panelists.put(panelist_name, panelistTime);
             }
+            panelists.put(panelist_name, panelistTime);
         }
 
 
@@ -139,12 +138,17 @@ public class Parser {
             }
 
             List<String> constraints = new ArrayList<String>();
+            String new_panelists_string = null;
             for (Object k : json_constraints) {
                 String constraint = (String) k;
+                if(constraint.contains("New-Panelist")){
+                    new_panelists_string = constraint;
+                    continue;
+                }
                 constraints.add(constraint);
             }
-            if (new_count == names.size()) {
-                constraints.add("New-Panelist");
+            if (new_panelists_string != null && new_count == names.size()) {
+                constraints.add(new_panelists_string);
             }
             panels.add(new Panel(panel_name, names, panelAvailability, categoryList, constraints));
 

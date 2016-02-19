@@ -36,7 +36,7 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             adjust[0] = optimaladjust[0][0];
             adjust[1] = optimaladjust[0][1];
             adjust[2] = optimaladjust[0][2];
@@ -118,6 +118,6 @@ public class Main {
         DummyScheduler bs = new DummyScheduler();
         bs.makeSchedule();
         // Print report
-        System.out.print(Report.INSTANCE);
+       // System.out.print(Report.INSTANCE);
     }
 }

@@ -8,17 +8,21 @@ import java.util.Map;
 
 public class DummyScheduler {
     public int[] adjustment;
-    public static int SIZE_CONSTRAINT_VALUE = 1;
-    public static int VENUE_CONSTRAINT_VALUE = 1;
-    public static int TIME_CONSTRAINT_VALUE = 1;
-    public static int AVAILABILITY_CONSTRAINT_VALUE = 1;
+    public int SIZE_CONSTRAINT_VALUE = 1;
+    public int VENUE_CONSTRAINT_VALUE = 1;
+    public int TIME_CONSTRAINT_VALUE = 1;
+    public int AVAILABILITY_CONSTRAINT_VALUE = 1;
 
     public DummyScheduler(int[] adjust) {
         this.adjustment = adjust;
         SIZE_CONSTRAINT_VALUE = SIZE_CONSTRAINT_VALUE * adjust[0];
+        System.out.println("Size: "+SIZE_CONSTRAINT_VALUE);
         VENUE_CONSTRAINT_VALUE = VENUE_CONSTRAINT_VALUE * adjust[1];
+        System.out.println("Venue: "+VENUE_CONSTRAINT_VALUE);
         TIME_CONSTRAINT_VALUE = TIME_CONSTRAINT_VALUE * adjust[2];
+        System.out.println("Time: "+TIME_CONSTRAINT_VALUE);
         AVAILABILITY_CONSTRAINT_VALUE = AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
+        System.out.println("Availability: "+AVAILABILITY_CONSTRAINT_VALUE);
     }
 
     public DummyScheduler(){
@@ -34,7 +38,7 @@ public class DummyScheduler {
 
     public void makeSchedule() {
         // 0) init difficulty
-        DetermineDifficulty.setDifficulties();
+        setDifficulties();
         // 1) go through panels and schedule
         List<Panel> pnlCollection = ScheduleData.instance().getFreePanels();
         while(pnlCollection.size() > 0) {
@@ -113,7 +117,6 @@ public class DummyScheduler {
         return null; // no venueTime found
     }
 
-    private static abstract class DetermineDifficulty {
         //private static final int SIZE_CONSTRAINT_VALUE = 10;
         //private static final int VENUE_CONSTRAINT_VALUE = 10000;
         //private static final int TIME_CONSTRAINT_VALUE = 10000;
@@ -136,7 +139,7 @@ public class DummyScheduler {
          * 3: Desirable * 1
          */
 
-        public static void setDifficulties() {
+        public void setDifficulties() {
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
             HashMap<String, Integer> panelistDifficulty = panelistDifficultyMap(freePanels);
             HashMap<String, Integer> categoryDifficulty = categoryDifficultyMap(freePanels);
@@ -158,12 +161,12 @@ public class DummyScheduler {
             Collections.reverse(freePanels);
         }
 
-        private static int availabilityDifficulty(Panel panel){
+        private int availabilityDifficulty(Panel panel){
             Range range = panel.getAvailability();
             return  AVAILABILITY_CONSTRAINT_VALUE /range.length();
         }
 
-        private static int venueConstraintDifficulty(Panel panel) {
+        private int venueConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
                     return VENUE_CONSTRAINT_VALUE;
@@ -172,7 +175,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static int TimeConstraintDifficulty(Panel panel) {
+        private int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeConstraint) {
                     return TIME_CONSTRAINT_VALUE;
@@ -181,7 +184,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static int sizeConstraintDifficulty(Panel panel) {
+        private int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c: panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
                     return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
@@ -191,7 +194,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
+        private HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
             HashMap<String, Integer> m = new HashMap<>();
             for (Panel panel: panels) {
                 for (String category : panel.CATEGORIES) {
@@ -205,9 +208,9 @@ public class DummyScheduler {
             return m;
         }
 
-        private static HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
+        private HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
             HashMap<String, Integer> m = new HashMap<>();
-            for (Panel panel: panels) {
+            for (Panel panel : panels) {
                 for (String panelist : panel.PANELISTS) {
                     if (m.containsKey(panelist)) {
                         m.put(panelist, m.get(panelist) + 1);
@@ -218,5 +221,4 @@ public class DummyScheduler {
             }
             return m;
         }
-    }
 }

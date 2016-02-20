@@ -18,8 +18,8 @@ public class Main {
         //long elapsedTime = System.nanoTime() - initTime;
 
         // Print report
-        System.out.println(Report.INSTANCE.toJson());
-        //System.out.println(__debugStats());
+        System.out.println(Report.INSTANCE.toString());
+        System.out.println(__debugStats());
         //System.out.println("\n\n\nTIME= " + (elapsedTime/(double)1000000000) + " ± 0.05 s");
     }
 

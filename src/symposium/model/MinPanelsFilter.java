@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 //TODO: MinPanelsFilter is always assumed that the priority is VeryImportant
 public class MinPanelsFilter extends Filter {
-    public static int COST_OF_MIN_PANELIST_VIOLATION = 4; // by testing various values
+    public static int COST_OF_MIN_PANELIST_VIOLATION = 400; // by testing various values
 
     public MinPanelsFilter(ConstraintPriority priority,Panel panel) {
         super(priority, panel);

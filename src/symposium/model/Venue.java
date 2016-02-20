@@ -9,13 +9,15 @@ public class Venue implements Comparable<Venue>{
 
     public final String NAME;
     public final int SIZE;
+    public final int PRIORITY;
 
     private final List<VenueTime> assignedVenueTimes;
     private final List<VenueTime> freeVenueTimes;
 
-    public Venue(String name, int size, Collection<TimeRange> timeRanges) {
+    public Venue(String name, int size, int priority, Collection<TimeRange> timeRanges) {
         this.NAME = name;
         this.SIZE = size;
+        this.PRIORITY = priority;
 
         this.freeVenueTimes = new ArrayList<VenueTime>();
 

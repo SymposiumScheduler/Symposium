@@ -37,13 +37,16 @@ public class Parser {
         JSONArray json_venue_times = (JSONArray) jsonObject.get("Venue-Times");
 
 
-        //System.out.println("Getting venue sizes...");
+        //System.out.println("Getting venue sizes and priorities...");
         Map<String, Integer> sizes = new HashMap<String, Integer>();
+        Map<String, Integer> priorities = new HashMap<>();
         for (Object o : json_venues) {
             JSONObject item = (JSONObject) o;
             String venue_name = (String) item.get("name");
             String venue_size = item.get("size").toString();
+            String venue_priority = item.get("priority").toString();
             sizes.put(venue_name, Integer.valueOf(venue_size));
+            priorities.put(venue_name, Integer.valueOf(venue_priority));
         }
 
 
@@ -54,6 +57,7 @@ public class Parser {
             JSONObject item = (JSONObject) o;
             String venue_name = (String) item.get("name");
             String venue_time = (String) item.get("time");
+
             TimeRange timeRange = (TimeRange) TimeFormat.normalToAbsolute(venue_time);
             List<TimeRange> timeRanges; //list of all timeRanges for this venue
             if (ranges.containsKey(venue_name)) {
@@ -68,8 +72,9 @@ public class Parser {
         }
         for (String key : ranges.keySet()) {
             int venue_size = sizes.get(key);
+            int venue_priority = priorities.get(key);
             List<TimeRange> timeRanges = ranges.get(key);
-            venues.add(new Venue(key, venue_size, timeRanges));
+            venues.add(new Venue(key, venue_size, venue_priority, timeRanges));
         }
         Collections.sort(venues);
         ScheduleData.init(venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;

@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.List;
 import symposium.model.Panel;
 
+
 public class Parser {
     public static void parse(String inputFile) {
         JSONParser parser = new JSONParser();
@@ -113,6 +114,10 @@ public class Parser {
             JSONObject item = (JSONObject) o;
             String panel_name = (String) item.get("name");
             JSONArray panel_panelists = (JSONArray) item.get("panelists");
+            if(panel_panelists.isEmpty()) {
+                System.err.println(panel_name + " Does not have any Panelists");
+                continue;
+            } // TODO: Better implementation needed for catching panels without panelists
             JSONArray json_constraints = (JSONArray) item.get("constraints");
             String categories = (String) item.get("category");
             int new_count = 0;

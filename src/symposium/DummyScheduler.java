@@ -161,10 +161,10 @@ public class DummyScheduler {
 
     private static abstract class DetermineDifficulty {
         private static final int SIZE_CONSTRAINT_VALUE = 100;
-        private static final int PANELISTS_CONSTRAINT_VALUE = 1000;
+        private static final int PANELISTS_CONSTRAINT_VALUE = 100;
         private static final int VENUE_CONSTRAINT_VALUE = 100000;
         private static final int TIME_CONSTRAINT_VALUE = 10000;
-        private static final int AVAILABILITY_CONSTRAINT_VALUE = 100000;
+        private static final int AVAILABILITY_CONSTRAINT_VALUE = 1000000;
 
         /**
          * Difficulty is determined by :

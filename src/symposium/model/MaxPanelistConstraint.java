@@ -45,7 +45,7 @@ public class MaxPanelistConstraint extends Constraint {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Max Panelist Constraint Violated: (Panelist should only appear a maximum number of times per day)").append("\n");
-        sb.append("\t\t\t").append("The Panelist is: ").append(panelistsViolating).append("\n");
+        sb.append("\t\t\t").append("The Panelist is: ").append(panelistsViolating);
 
 
         return sb.toString();

@@ -23,7 +23,7 @@ public class VenueTest {
         ranges.add(new TimeRange(50,60));
         ranges.add(new TimeRange(70,80));
 
-        Venue venue = new Venue(name, size, ranges);
+        Venue venue = new Venue(name, size, 2,ranges);
 
         assertTrue(venue.NAME.equals(name));
         assertTrue(venue.SIZE == size);
@@ -47,7 +47,7 @@ public class VenueTest {
         ranges.add(new TimeRange(50,60));
         ranges.add(new TimeRange(70,80));
 
-        Venue venue = new Venue("vnuName", 3, ranges);
+        Venue venue = new Venue("vnuName", 3, 2,ranges);
 
         venue.changeToAssigned(venue.getFreeVenueTimes().get(0));
 
@@ -67,12 +67,12 @@ public class VenueTest {
         List<TimeRange> ranges_1 = new ArrayList<>(2);
         ranges_1.add(new TimeRange(10,20));
         ranges_1.add(new TimeRange(30,40));
-        Venue venue_1 = new Venue("vnuName", 3, ranges_1);
+        Venue venue_1 = new Venue("vnuName", 3, 2, ranges_1);
 
         List<TimeRange> ranges_2 = new ArrayList<>(2);
         ranges_2.add(new TimeRange(50,60));
         ranges_2.add(new TimeRange(70,80));
-        Venue venue_2 = new Venue("diffVenue", 2, ranges_2);
+        Venue venue_2 = new Venue("diffVenue", 2, 2, ranges_2);
 
         VenueTime fromVenue_1 = venue_1.getFreeVenueTimes().get(0);
 
@@ -91,7 +91,7 @@ public class VenueTest {
         ranges.add(new TimeRange(10,20));
         ranges.add(new TimeRange(30,40));
 
-        Venue venue = new Venue("vnuName", 3, ranges);
+        Venue venue = new Venue("vnuName", 3, 2, ranges);
 
         VenueTime testVT = venue.getFreeVenueTimes().get(0);
 
@@ -110,12 +110,12 @@ public class VenueTest {
         List<TimeRange> ranges_1 = new ArrayList<>(2);
         ranges_1.add(new TimeRange(10,20));
         ranges_1.add(new TimeRange(30,40));
-        Venue venue_1 = new Venue("vnuName", 3, ranges_1);
+        Venue venue_1 = new Venue("vnuName", 3, 2, ranges_1);
 
         List<TimeRange> ranges_2 = new ArrayList<>(2);
         ranges_2.add(new TimeRange(50,60));
         ranges_2.add(new TimeRange(70,80));
-        Venue venue_2 = new Venue("diffVenue", 2, ranges_2);
+        Venue venue_2 = new Venue("diffVenue", 2, 2, ranges_2);
 
         VenueTime fromVenue_1 = venue_1.getFreeVenueTimes().get(0);
 
@@ -136,7 +136,7 @@ public class VenueTest {
         ranges.add(new TimeRange(50,60));
         ranges.add(new TimeRange(70,80));
 
-        Venue venue = new Venue("vnuName", 3, ranges);
+        Venue venue = new Venue("vnuName", 3, 2, ranges);
 
         // change first 2 venueTimes to assigned
         venue.changeToAssigned(venue.getFreeVenueTimes().get(0));
@@ -162,7 +162,7 @@ public class VenueTest {
         ranges.add(new TimeRange(50,60));
         ranges.add(new TimeRange(70,80));
 
-        Venue venue = new Venue("vnuName", 3, ranges);
+        Venue venue = new Venue("vnuName", 3, 2, ranges);
 
         List<VenueTime> venueTimes = venue.getFreeVenueTimes();
         for (int i = 0 ; i < ranges.size() ; i++){

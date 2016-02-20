@@ -132,7 +132,7 @@ public class PanelTest {
          ranges.add(new TimeRange(30,40));
          ranges.add(new TimeRange(50,60));
 
-         Venue venue = new Venue("NewVenue", 5, ranges);
+         Venue venue = new Venue("NewVenue", 5, 2, ranges);
 
          VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
 
@@ -166,7 +166,7 @@ public class PanelTest {
         ranges.add(new TimeRange(30,40));
         ranges.add(new TimeRange(50,60));
 
-        Venue venue = new Venue("NewVenue", 5, ranges);
+        Venue venue = new Venue("NewVenue", 5, 2, ranges);
 
         VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
 

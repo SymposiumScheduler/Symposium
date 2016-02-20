@@ -34,7 +34,7 @@ public class MaxPanelistConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        Venue v = new Venue("North Building", 4, 2, Collections.EMPTY_LIST);
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -116,7 +116,7 @@ public class MaxPanelistConstraintTest {
         List<String> category3 = new ArrayList<>(1);
         category3.add("IA");
 
-        Venue v = new Venue ("South Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5), new TimeRange (6, 7)));
+        Venue v = new Venue ("South Building", 4, 2, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5), new TimeRange (6, 7)));
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -232,7 +232,7 @@ public class MaxPanelistConstraintTest {
         List<String> category3 = new ArrayList<>(1);
         category3.add("IA");
 
-        Venue v = new Venue ("South Building", 4, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5), new TimeRange (1440, 1500)));
+        Venue v = new Venue ("South Building", 4, 2, Arrays.asList(new TimeRange(1,3), new TimeRange(4,5), new TimeRange (1440, 1500)));
 
         ScheduleData.init(Arrays.asList(v), 2);
 

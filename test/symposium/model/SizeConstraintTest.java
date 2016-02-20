@@ -34,7 +34,7 @@ public class SizeConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        Venue v = new Venue("North Building", 4, 2, Collections.EMPTY_LIST);
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -53,9 +53,9 @@ public class SizeConstraintTest {
 
         vt1.add((new TimeRange(600,700)));
 
-        Venue v1 = new Venue("North Building", 1, vt1);
+        Venue v1 = new Venue("North Building", 1, 2, vt1);
 
-        Venue v2 = new Venue("South Building", 1, vt1);
+        Venue v2 = new Venue("South Building", 1, 2, vt1);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v1);
@@ -149,11 +149,11 @@ public class SizeConstraintTest {
 
         List<TimeRange> vt1 = Arrays.asList(new TimeRange(600,700));
 
-        Venue v1 = new Venue("North Building", 4, vt1);
+        Venue v1 = new Venue("North Building", 4, 2, vt1);
 
         List<TimeRange> vt2 = Arrays.asList(new TimeRange(800, 900));
 
-        Venue v2 = new Venue("South Building", 2, vt2);
+        Venue v2 = new Venue("South Building", 2, 2, vt2);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v1);

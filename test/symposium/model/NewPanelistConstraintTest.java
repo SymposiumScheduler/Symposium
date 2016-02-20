@@ -34,7 +34,7 @@ public class NewPanelistConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        Venue v = new Venue("North Building", 4, 2, Collections.EMPTY_LIST);
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -72,7 +72,7 @@ public class NewPanelistConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v2 = new Venue ("South Building", 4, Arrays.asList(new TimeRange(480,540)));
+        Venue v2 = new Venue ("South Building", 4, 2, Arrays.asList(new TimeRange(480,540)));
 
         ScheduleData.init(Arrays.asList(v2), 1);
 
@@ -126,7 +126,7 @@ public class NewPanelistConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v2 = new Venue ("South Building", 4, Arrays.asList(new TimeRange(1440,1500)));
+        Venue v2 = new Venue ("South Building", 4, 2, Arrays.asList(new TimeRange(1440,1500)));
 
         ScheduleData.init(Arrays.asList(v2), 1);
 

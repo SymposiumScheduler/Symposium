@@ -24,7 +24,7 @@ public class VenueTimeTest {
         ranges.add(new TimeRange(30,40));
         ranges.add(new TimeRange(50,60));
 
-        Venue venue = new Venue("NewVenue", 5, ranges);
+        Venue venue = new Venue("NewVenue", 5, 2,ranges);
 
         assertTrue(venue.NAME.equals("NewVenue"));
         assertTrue(venue.SIZE == 5);
@@ -49,7 +49,7 @@ public class VenueTimeTest {
         ranges.add(new TimeRange(30,40));
         ranges.add(new TimeRange(50,60));
 
-        Venue venue = new Venue("NewVenue", 5, ranges);
+        Venue venue = new Venue("NewVenue", 5, 2,ranges);
 
         String panelName = "NewPanel";
         List<String> newCategory = new ArrayList<String>();
@@ -88,7 +88,7 @@ public class VenueTimeTest {
         ranges.add(new TimeRange(30,40));
         ranges.add(new TimeRange(50,60));
 
-        Venue venue = new Venue("NewVenue", 5, ranges);
+        Venue venue = new Venue("NewVenue", 5, 2,ranges);
 
         String panelName = "NewPanel";
         List<String> newCategory = new ArrayList<String>();
@@ -122,7 +122,7 @@ public class VenueTimeTest {
         ranges.add(new TimeRange(30,40));
         ranges.add(new TimeRange(50,60));
 
-        Venue venue = new Venue("NewVenue", 5, ranges);
+        Venue venue = new Venue("NewVenue", 5, 2, ranges);
 
         String panelName = "NewPanel";
         List<String> newCategory = new ArrayList<String>();

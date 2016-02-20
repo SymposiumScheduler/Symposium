@@ -15,7 +15,7 @@ public class AvailabilityFilterTest {
         vt.add(new TimeRange(1000,1100));
         vt.add(new TimeRange(1500, 2000));
         vt.add(new TimeRange(2600, 3000));
-        Venue v = new Venue("Venue1", 4, vt);
+        Venue v = new Venue("Venue1", 4, 2,vt);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v);

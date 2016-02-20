@@ -12,7 +12,7 @@ public class PairedPanelistConstraintTest {
     public void testConstructor() {
         ConstraintPriority priority = ConstraintPriority.VERY_IMPORTANT;
 
-        Venue v1 = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        Venue v1 = new Venue("North Building", 4, 2,Collections.EMPTY_LIST);
         List<Venue> venues = Arrays.asList(v1);
 
         ScheduleData.init(venues, 4);
@@ -59,9 +59,9 @@ public class PairedPanelistConstraintTest {
 
         vt2.add((new TimeRange(800,900)));
 
-        Venue v1 = new Venue("North Building", 4, vt1);
+        Venue v1 = new Venue("North Building", 4,  2,vt1);
 
-        Venue v2 = new Venue("South Building", 4, vt2);
+        Venue v2 = new Venue("South Building", 4, 2,vt2);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v1);
@@ -157,11 +157,11 @@ public class PairedPanelistConstraintTest {
 
         List<TimeRange> vt1 = Arrays.asList(new TimeRange(600, 700));
 
-        Venue v1 = new Venue("North Building", 4, vt1);
+        Venue v1 = new Venue("North Building", 4, 2, vt1);
 
         List<TimeRange> vt2 = Arrays.asList(new TimeRange(600, 700));
 
-        Venue v2 = new Venue("South Building", 4, vt2);
+        Venue v2 = new Venue("South Building", 4, 2, vt2);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v1);
@@ -257,11 +257,11 @@ public class PairedPanelistConstraintTest {
 
         List<TimeRange> vt1 = Arrays.asList(new TimeRange(600, 700));
 
-        Venue v1 = new Venue("North Building", 4, vt1);
+        Venue v1 = new Venue("North Building", 4, 2, vt1);
 
         List<TimeRange> vt2 = Arrays.asList(new TimeRange(1450, 1500));
 
-        Venue v2 = new Venue("South Building", 4, vt2);
+        Venue v2 = new Venue("South Building", 4, 2, vt2);
 
         List<Venue> venues = new ArrayList<Venue>();
         venues.add(v1);

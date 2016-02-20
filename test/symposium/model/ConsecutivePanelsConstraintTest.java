@@ -52,7 +52,7 @@ public class ConsecutivePanelsConstraintTest {
         List<String> category3 = new ArrayList<>(1);
         category3.add("IA");
 
-        Venue v = new Venue ("Venue", 4, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(200, 280)));
+        Venue v = new Venue ("Venue", 4, 2, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(200, 280)));
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -140,7 +140,7 @@ public class ConsecutivePanelsConstraintTest {
         List<String> category3 = new ArrayList<>(1);
         category3.add("IA");
 
-        Venue v = new Venue ("Venue", 4, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(300, 380)));
+        Venue v = new Venue ("Venue", 4, 2, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(300, 380)));
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -241,7 +241,7 @@ public class ConsecutivePanelsConstraintTest {
         List<String> category4 = new ArrayList<>(1);
         category4.add("IA");
 
-        Venue v = new Venue ("Venue", 4, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(300, 380), new TimeRange(400,480)));
+        Venue v = new Venue ("Venue", 4, 2, Arrays.asList(new TimeRange(0, 80), new TimeRange(100, 180), new TimeRange(300, 380), new TimeRange(400,480)));
 
         ScheduleData.init(Arrays.asList(v), 1);
 

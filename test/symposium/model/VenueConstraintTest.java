@@ -41,7 +41,7 @@ public class VenueConstraintTest {
         List<String> category = new ArrayList<>(1);
         category.add("IA");
 
-        Venue v = new Venue("North Building", 4, Collections.EMPTY_LIST);
+        Venue v = new Venue("North Building", 4, 2, Collections.EMPTY_LIST);
 
         ScheduleData.init(Arrays.asList(v), 1);
 
@@ -54,8 +54,8 @@ public class VenueConstraintTest {
     @Test
     public void test_isConstraintViolated_predictive_false() throws Exception {
 
-        Venue v1 = new Venue("V1",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
-        Venue v2 = new Venue("V2",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v1 = new Venue("V1", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v2 = new Venue("V2", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
         ScheduleData.init(Arrays.asList(v1,v2),1);
 
         List<String> panelists = Arrays.asList("a","b","c");
@@ -79,8 +79,8 @@ public class VenueConstraintTest {
     @Test
     public void test_isConstraintViolated_predictive_true() throws Exception {
 
-        Venue v1 = new Venue("V1",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
-        Venue v2 = new Venue("V2",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v1 = new Venue("V1", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v2 = new Venue("V2", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
         ScheduleData.init(Arrays.asList(v1,v2),1);
 
         List<String> panelists = Arrays.asList("a","b","c");
@@ -105,8 +105,8 @@ public class VenueConstraintTest {
     @Test
     public void test_isConstraintViolated_inPlace_true() throws Exception {
 
-        Venue v1 = new Venue("V1",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
-        Venue v2 = new Venue("V2",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v1 = new Venue("V1", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v2 = new Venue("V2", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
         ScheduleData.init(Arrays.asList(v1,v2),1);
 
         List<String> panelists = Arrays.asList("a","b","c");
@@ -133,8 +133,8 @@ public class VenueConstraintTest {
     @Test
     public void test_isConstraintViolated_inPlace_false() throws Exception {
 
-        Venue v1 = new Venue("V1",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
-        Venue v2 = new Venue("V2",1,Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v1 = new Venue("V1", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
+        Venue v2 = new Venue("V2", 1, 2, Arrays.asList(new TimeRange(20,40),new TimeRange(30,40)));
         ScheduleData.init(Arrays.asList(v1,v2),1);
 
         List<String> panelists = Arrays.asList("a","b","c");

@@ -23,8 +23,8 @@ public class DummyScheduler {
         }
     }
 
-    public static final int VIOLATION_COST_DESIRED = 1;
-    public static final int VIOLATION_COST_VERYIMPORTANT = 4;
+    public static final int VIOLATION_COST_DESIRED = 100;
+    public static final int VIOLATION_COST_VERYIMPORTANT = 400;
 
     public DummyScheduler() {
     }

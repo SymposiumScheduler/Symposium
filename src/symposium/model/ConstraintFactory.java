@@ -11,7 +11,7 @@ public class ConstraintFactory{
         // assumed constraints
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
         constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
-
+        constraints.add(new PreferedVenuesFilter(panel));
         // input constraints
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {

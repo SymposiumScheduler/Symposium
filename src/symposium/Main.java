@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 	    // Reading parsing json files
         //long initTime = System.nanoTime();
-        final String INPUT_FILE = "datas/data.txt";
+        final String INPUT_FILE = "datas/data2016.json";
         Parser.parse(INPUT_FILE);
         // Schedule data is initiated
 
@@ -56,9 +56,6 @@ public class Main {
                     if (constraint instanceof MaxPanelistConstraint) {
                         violationMap.put("Max-Panels Constraint", violationMap.get("Max-Panels Constraint"+1));
                     }
-                    /*if (constraint instanceof MinPanelistConstraint) {
-                        violationMap.put("Min-Panels Constraint", violationMap.get("Min-Panels Constraint")+1);
-                    }*/
                     if (constraint instanceof SizeConstraint) {
                         violationMap.put("Minimum-Capacity Constraint", violationMap.get("Minimum-Capacity Constraint")+1);
                     }
@@ -88,6 +85,13 @@ public class Main {
 
         constraintCount.append("\n\n").append(totalViolations + " Total Number of Violations ");
 
+        constraintCount.append("\n\nFree VenueTimes:");
+        for(Venue v : ScheduleData.instance().VENUES) {
+            constraintCount.append("\n").append(v.NAME);
+            for (VenueTime vt : v.getFreeVenueTimes()) {
+                constraintCount.append("\n\t").append(vt);
+            }
+        }
 
         return constraintCount.toString();
     }

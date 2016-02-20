@@ -3,7 +3,7 @@
 	{
 		"name": "Macky-Auditorium",
 		"size": 7,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "Old Main Chapel",
@@ -13,12 +13,12 @@
 	{
 		"name": "Boulder-High-School",
 		"size": 6,
-		"priority": 6
+		"priority": 2
 	},
 	{
 		"name": "ATLAS Black Box",
 		"size": 1,
-		"priority": 3
+		"priority": 5
 	},
 	{
 		"name": "Benson-180",
@@ -28,157 +28,157 @@
 	{
 		"name": "Chemistry-140",
 		"size": 4,
-		"priority": 2
+		"priority": 6
 	},
 	{
 		"name": "Chemistry-142",
 		"size": 2,
-		"priority": 2
+		"priority": 6
 	},
 	{
 		"name": "Duane-Physics-G1B20",
 		"size": 2,
-		"priority": 3
+		"priority": 5
 	},
 	{
 		"name": "Duane-Physics-G130",
 		"size": 1,
-		"priority": 3
+		"priority": 5
 	},
 	{
 		"name": "Duane-Physics-G1B30",
 		"size": 3,
-		"priority": 3
+		"priority": 5
 	},
 	{
 		"name": "Engineering 1B40",
 		"size": 1,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Engineering 200",
 		"size": 1,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Engineering 245",
 		"size": 1,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Engineering 265",
 		"size": 1,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Education 220",
 		"size": 1,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Ekeley E1B20",
 		"size": 1,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Fleming-155",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Gold Biosciences-A2B70",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Hale-270",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Hellems-252",
 		"size": 1,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Eaton-Humanities-150",
 		"size": 1,
-		"priority": 2
+		"priority": 6
 	},
 	{
 		"name": "Eaton-Humanities-1B50",
 		"size": 3,
-		"priority": 2
+		"priority": 6
 	},
 	{
 		"name": "Koelbel-210",
 		"size": 1,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Math-100",
 		"size": 4,
-		"priority": 6
+		"priority": 2
 	},
 	{
 		"name": "Museum Collections W100",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Muenzinger E0046",
 		"size": 1,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Muenzinger-Auditorium",
 		"size": 4,
-		"priority": 5
+		"priority": 3
 	},
 	{
 		"name": "Ramaley C250",
 		"size": 2,
-		"priority": 3
+		"priority": 5
 	},
 	{
 		"name": "Visual-Arts-Complex-1B20",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "Wolf-Law-Wittemyer-Courtroom",
 		"size": 2,
-		"priority": 1
+		"priority": 7
 	},
 	{
 		"name": "UMC 235",
 		"size": 3,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "UMC Center Ballroom",
 		"size": 5,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "UMC East Ballroom",
 		"size": 3,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "UMC Gallery",
 		"size": 1,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "UMC West Ballroom",
 		"size": 3,
-		"priority": 7
+		"priority": 1
 	},
 	{
 		"name": "KGNU 88.5 FM/1390 AM",
 		"size": 99,
-		"priority": 7
+		"priority": 1
 	}
 ],
 "Venue-Times": [

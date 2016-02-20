@@ -115,10 +115,7 @@ public class DummyScheduler {
         for(VenueTime vt : vtScoreMap.keySet()) {
             vtScores.add(new VenueTimeWithScore(vt, vtScoreMap.get(vt)));
         }
-        //List<VenueTimeWithScore> tmp = new ArrayList<>(vtScores);
-        Collections.shuffle(vtScores);
         Collections.sort(vtScores);
-        //System.out.print(tmp.equals(vtScores));
         // begin the search
         VenueTimeWithScore bestVt = null;
         vtLoop : for (VenueTimeWithScore recommendedVt: vtScores) {

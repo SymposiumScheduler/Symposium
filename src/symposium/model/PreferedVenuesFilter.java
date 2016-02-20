@@ -1,9 +1,6 @@
 package symposium.model;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PreferedVenuesFilter extends Filter {
     public static final int HIGHEST_PRIORITY_VENUE_POINTS = 300;
@@ -30,6 +27,6 @@ public class PreferedVenuesFilter extends Filter {
     }
     @Override
     public String toString() {
-        return "Prio Constraint violated: priority = " + this.PRIORITY;
+        return "PreferedVenuesFilter";
     }
 }

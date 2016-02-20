@@ -45,7 +45,12 @@ public class Venue implements Comparable<Venue>{
 
     @Override
     public int compareTo(Venue that) {
-        return this.SIZE - that.SIZE;
+        int sCompare = this.SIZE - that.SIZE;
+        if(sCompare != 0) {
+            return sCompare;
+        }
+
+        return this.PRIORITY - that.PRIORITY;
     }
 
     /**

@@ -39,8 +39,9 @@ public class VenueTime implements Comparable<VenueTime>{
     @Override
     public int compareTo(VenueTime other) {
         // smaller venue comes first
-        if(this.VENUE.SIZE - other.VENUE.SIZE != 0) {
-            return (this.VENUE.SIZE < other.VENUE.SIZE ? -1 : 1);
+        int vCompare = this.VENUE.compareTo(other.VENUE);
+        if( vCompare != 0) {
+            return vCompare;
         }
         // earlier time comes first
         return this.TIME.getStart() - other.TIME.getStart();

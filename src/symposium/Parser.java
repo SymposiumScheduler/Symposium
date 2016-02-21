@@ -139,14 +139,14 @@ public class Parser {
                 panelAvailability = panelistAvailabilities.get(0).intersect(panelistAvailabilities);
             }
             if(panelAvailability == null){
-                throw new RuntimeException("ERROR ==> Panel: " + panel_name + " does not have availability based on panelist overlap.");
+                ScheduleData.instance().addWarningMessage("Panel: " + panel_name + " does not have availability based on panelist overlap.");
+                continue;
             }
 
             List<String> categoryList = new ArrayList<String>();
             for (String category : categories.split(",")) {
                 categoryList.add(category);
             }
-
             List<String> constraints = new ArrayList<String>();
             String new_panelists_string = null;
             for (Object k : json_constraints) {

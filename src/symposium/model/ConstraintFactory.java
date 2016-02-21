@@ -43,7 +43,8 @@ public class ConstraintFactory{
                     }
                 }
                 if (venue == null) {
-                    throw new RuntimeException("VenueConstraint for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.");
+                    ScheduleData.instance().addWarningMessage("VenueConstraint for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.");
+                    continue;
                 }
                 Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
                 constraints.add(constraint);
@@ -79,7 +80,7 @@ public class ConstraintFactory{
                 constraints.add(constraint);
             }
             else {
-                System.err.println(constraint_string + " Constraint is not implemented ");
+                ScheduleData.instance().addWarningMessage("panel : " + panel + " has a constraint " + constraint_string + " which is not Known");
             }
         }
         Collections.sort(constraints, new Comparator<Constraint>() {

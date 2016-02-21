@@ -33,9 +33,9 @@ public class Report {
         result.append("\n\nTotal Panelist×Day violations: ").append(total);
 
 
-        result.append("\n\n---------------------------- Warning Messages ---------------------------");
+        result.append("\n\n---------------------------- Messages ---------------------------");
         for(String mes : ScheduleData.instance().getWarningMessages()) {
-            result.append("\n\nWARNING: ").append(mes);
+            result.append("\n").append(mes);
         }
 
         return result.toString();
@@ -76,11 +76,9 @@ public class Report {
         root.put("Underutilized_Panelists", minViolations);
 
         // Warning Messages
-        JSONObject warningMessages = new JSONObject();
-        for(String mes : ScheduleData.instance().getWarningMessages()) {
-            warningMessages.put("WARNING", mes);
-        }
-        root.put("Warning Messages", warningMessages);
+        JSONArray warningMessages = new JSONArray();
+        warningMessages.addAll(ScheduleData.instance().getWarningMessages());
+        root.put("Messages", warningMessages);
 
         return root;
     }

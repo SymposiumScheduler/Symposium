@@ -115,7 +115,7 @@ public class Parser {
             String panel_name = (String) item.get("name");
             JSONArray panel_panelists = (JSONArray) item.get("panelists");
             if(panel_panelists.isEmpty()) {
-                System.err.println(panel_name + " Does not have any Panelists");
+                ScheduleData.instance().addWarningMessage("Panel: " + panel_name + " Does not have any Panelists");
                 continue;
             } // TODO: Better implementation needed for catching panels without panelists
             JSONArray json_constraints = (JSONArray) item.get("constraints");

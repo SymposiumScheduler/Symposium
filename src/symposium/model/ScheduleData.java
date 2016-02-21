@@ -1,8 +1,6 @@
 package symposium.model;
 
 
-import symposium.Report;
-
 import java.util.*;
 
 
@@ -22,6 +20,8 @@ public class ScheduleData {
 
     private final Map<String, List<Panel>> categoryAssigned;
     private final Map<String, List<Panel>> panelistAssigned;
+
+    private final List<String> warningMessages;
 
     /**
      * sortedSets because duplication is not allowed in these collections.
@@ -44,6 +44,8 @@ public class ScheduleData {
         this.panelistAssigned = new HashMap<>();
 
         this.NUMBER_OF_DAYS = numberOfDays;
+
+        this.warningMessages = new ArrayList<>();
 
     }
 
@@ -267,6 +269,14 @@ public class ScheduleData {
     public void cannotSchedule(Panel p) {
         getFreePanels().remove(p);
         unschedulablePanels.add(p);
+    }
+
+    public void addWarningMessage(String message) {
+        warningMessages.add(message);
+    }
+
+    public List<String> getWarningMessages() {
+        return this.warningMessages;
     }
 
     public static void init(List<Venue> venues, int noOfDays){

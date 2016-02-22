@@ -9,7 +9,12 @@ public class Main {
     public static void main(String[] args) {
 	    // Reading parsing json files
         //long initTime = System.nanoTime();
-        final String INPUT_FILE = "datas/data2016.json";
+        final String INPUT_FILE;
+        if(args.length == 0){
+            INPUT_FILE = "datas/data2016.json";
+        } else {
+            INPUT_FILE = args[0];
+        }
         Parser.parse(INPUT_FILE);
         // Schedule data is initiated
 

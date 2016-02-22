@@ -181,6 +181,20 @@ public class ScheduleData {
         this.changeToAssigned(p);
     }
 
+    public int[] calculateScheduleOptimization() {
+        int count = 0;
+        for (Panel p: assignedPanels) {
+            count += p.getMessages().size();
+        }
+        for (Panel p: unschedulablePanels) {
+            count += p.getMessages().size();
+        }
+        int[] r = new int[2];
+        r[0] = count;
+        r[1] = unschedulablePanels.size();
+        return r;
+    }
+
     /**
      * Calculated from the union of the panelist's panel's availabilities no the availability of the panelist theirselves
      *

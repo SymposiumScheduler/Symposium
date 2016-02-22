@@ -5,8 +5,14 @@ import static symposium.model.ConstraintPriority.*;
 import java.util.*;
 
 public class DummyScheduler {
+    public int[] adjustment;
+    public int SIZE_CONSTRAINT_VALUE = 1;
+    public int VENUE_CONSTRAINT_VALUE = 1;
+    public int TIME_CONSTRAINT_VALUE = 1;
+    public int AVAILABILITY_CONSTRAINT_VALUE = 1;
+    public int PANELISTS_CONSTRAINT_VALUE = 1;
 
-    private static class SearchResult {
+    private class SearchResult {
         public final VenueTime VENUETIME;
         public final Map<Constraint, Integer> CAUSE_OF_FAIL_MAP;
 
@@ -23,10 +29,20 @@ public class DummyScheduler {
         }
     }
 
-    public static final int VIOLATION_COST_DESIRED = 100;
-    public static final int VIOLATION_COST_VERYIMPORTANT = 400;
+    public final int VIOLATION_COST_DESIRED = 100;
+    public final int VIOLATION_COST_VERYIMPORTANT = 400;
 
-    public DummyScheduler() {
+    public DummyScheduler(int[] adjust) {
+        this.adjustment = adjust;
+        SIZE_CONSTRAINT_VALUE = SIZE_CONSTRAINT_VALUE * adjust[0];
+        System.out.println("Size: "+SIZE_CONSTRAINT_VALUE);
+        VENUE_CONSTRAINT_VALUE = VENUE_CONSTRAINT_VALUE * adjust[1];
+        System.out.println("Venue: "+VENUE_CONSTRAINT_VALUE);
+        TIME_CONSTRAINT_VALUE = TIME_CONSTRAINT_VALUE * adjust[2];
+        System.out.println("Time: "+TIME_CONSTRAINT_VALUE);
+        AVAILABILITY_CONSTRAINT_VALUE = AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
+        System.out.println("Availability: "+AVAILABILITY_CONSTRAINT_VALUE);
+        PANELISTS_CONSTRAINT_VALUE = PANELISTS_CONSTRAINT_VALUE * adjust[4];
     }
 
 
@@ -42,7 +58,7 @@ public class DummyScheduler {
 
     public void makeSchedule() {
         // 0) init difficulty
-        DetermineDifficulty.setDifficulties();
+        setDifficulties();
         // 1) go through panels and schedule
         List<Panel> pnlCollection = ScheduleData.instance().getFreePanels();
         while (pnlCollection.size() > 0) {
@@ -71,7 +87,7 @@ public class DummyScheduler {
     /**
      * A data structure that contains a VenueTime and its score. It is used in searchForVenueTime to order the venueTimes by their scores
      */
-    private static class VenueTimeWithScore implements Comparable<VenueTimeWithScore> {
+    private class VenueTimeWithScore implements Comparable<VenueTimeWithScore> {
         public final VenueTime VENUETIME;
         public final int SCORE;
         public VenueTimeWithScore(VenueTime vt, int score) {
@@ -99,37 +115,38 @@ public class DummyScheduler {
         Map<Constraint, Integer> requiredViolationMap = new HashMap<>();
         // prepare venueTime map, should be done in schedule data. TODO this is just for now.
         Map<VenueTime, Integer> vtScoreMap = new HashMap<>();
-        for(Venue v : ScheduleData.instance().VENUES) {
-            for(VenueTime vt : v.getFreeVenueTimes()) {
-                vtScoreMap.put(vt,0);
+        for (Venue v : ScheduleData.instance().VENUES) {
+            for (VenueTime vt : v.getFreeVenueTimes()) {
+                vtScoreMap.put(vt, 0);
             }
         }
         // go thorugh the filters
-        for(Constraint c : panel.CONSTRAINTS) {
-            if(c instanceof Filter) {
+        for (Constraint c : panel.CONSTRAINTS) {
+            if (c instanceof Filter) {
                 ((Filter) c).filter(vtScoreMap, requiredViolationMap);
             }
         }
         // create Iterable score
         List<VenueTimeWithScore> vtScores = new ArrayList<>();
-        for(VenueTime vt : vtScoreMap.keySet()) {
+        for (VenueTime vt : vtScoreMap.keySet()) {
             vtScores.add(new VenueTimeWithScore(vt, vtScoreMap.get(vt)));
         }
         Collections.sort(vtScores);
         // begin the search
         VenueTimeWithScore bestVt = null;
-        vtLoop : for (VenueTimeWithScore recommendedVt: vtScores) {
+        vtLoop:
+        for (VenueTimeWithScore recommendedVt : vtScores) {
             int vtScore = recommendedVt.SCORE;
             for (Constraint c : panel.CONSTRAINTS) {
-                if(c.isConstraintViolated(recommendedVt.VENUETIME)) {
+                if (c.isConstraintViolated(recommendedVt.VENUETIME)) {
 
                     // if c is required, continue to next vt and update violation map
-                    if(c.PRIORITY == REQUIRED) {
+                    if (c.PRIORITY == REQUIRED) {
                         // add to violationMap
-                        if(requiredViolationMap.containsKey(c)) {
+                        if (requiredViolationMap.containsKey(c)) {
                             requiredViolationMap.put(c, requiredViolationMap.get(c) + 1);
                         } else {
-                            requiredViolationMap.put(c,1);
+                            requiredViolationMap.put(c, 1);
                         }
                         continue vtLoop; // next venueTime
                     }
@@ -138,30 +155,22 @@ public class DummyScheduler {
                 }
             }
 
-            if(bestVt == null || bestVt.SCORE < vtScore) {
+            if (bestVt == null || bestVt.SCORE < vtScore) {
                 bestVt = new VenueTimeWithScore(recommendedVt.VENUETIME, vtScore);
 
                 // if No violations, break. No way a better venue time is coming.
-                if(bestVt.SCORE == recommendedVt.SCORE) {
+                if (bestVt.SCORE == recommendedVt.SCORE) {
                     break;
                 }
             }
         }
         // return
-        if(bestVt != null) {
+        if (bestVt != null) {
             return new SearchResult(bestVt.VENUETIME);
         } else {
             return new SearchResult(requiredViolationMap);
         }
     }
-
-
-    private static abstract class DetermineDifficulty {
-        private static final int SIZE_CONSTRAINT_VALUE = 100;
-        private static final int PANELISTS_CONSTRAINT_VALUE = 100;
-        private static final int VENUE_CONSTRAINT_VALUE = 100000;
-        private static final int TIME_CONSTRAINT_VALUE = 10000;
-        private static final int AVAILABILITY_CONSTRAINT_VALUE = 1000000;
 
         /**
          * Difficulty is determined by :
@@ -180,7 +189,7 @@ public class DummyScheduler {
          * 3: Desirable * 1
          */
 
-        public static void setDifficulties() {
+        public void setDifficulties() {
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
             HashMap<String, Integer> panelistDifficulty = panelistDifficultyMap(freePanels);
             HashMap<String, Integer> categoryDifficulty = categoryDifficultyMap(freePanels);
@@ -203,12 +212,12 @@ public class DummyScheduler {
             Collections.reverse(freePanels);
         }
 
-        private static int availabilityDifficulty(Panel panel) {
+        private int availabilityDifficulty(Panel panel) {
             Range range = panel.getAvailability();
             return AVAILABILITY_CONSTRAINT_VALUE / range.length();
         }
 
-        private static int venueConstraintDifficulty(Panel panel) {
+        private int venueConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof VenueConstraint) {
                     return VENUE_CONSTRAINT_VALUE;
@@ -217,7 +226,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static int TimeConstraintDifficulty(Panel panel) {
+        private int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeConstraint) {
                     return TIME_CONSTRAINT_VALUE;
@@ -226,7 +235,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static int sizeConstraintDifficulty(Panel panel) {
+        private int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
                     return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();
@@ -236,7 +245,7 @@ public class DummyScheduler {
             return 0;
         }
 
-        private static HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
+        private HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
             HashMap<String, Integer> m = new HashMap<>();
             for (Panel panel : panels) {
                 for (String category : panel.CATEGORIES) {
@@ -250,7 +259,7 @@ public class DummyScheduler {
             return m;
         }
 
-        private static HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
+        private HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
             HashMap<String, Integer> m = new HashMap<>();
             for (Panel panel : panels) {
                 for (String panelist : panel.PANELISTS) {
@@ -263,5 +272,4 @@ public class DummyScheduler {
             }
             return m;
         }
-    }
 }

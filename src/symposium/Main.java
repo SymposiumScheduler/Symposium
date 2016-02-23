@@ -7,40 +7,36 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        boolean flag = false;
+        boolean evolutionFlag = false;
+        String inputFilePath = "datas/data2016.json"; // default file
         for (String arg: args) {
-            if (arg == "-evolution") {
-                flag = true;
+            if (arg.equals("--evolution")) {
+                evolutionFlag = true;
+            } else {
+                inputFilePath = arg;
             }
         }
 
-        if (flag) {
-            evolutionary(args);
+        if (evolutionFlag) {
+            evolutionary(inputFilePath);
         } else {
-            standard(args);
+            standard(inputFilePath);
         }
     }
 
-    public static void standard(String[] args) {
-        int[] adjust = new int[5];
-        adjust[0] = 100;
-        adjust[1] = 100000;
-        adjust[2] = 10000;
-        adjust[3] = 1000000;
-        adjust[4] = 100;
+    public static void standard(String inputFilePath) {
+        int[] diffValues = new int[5];
+        diffValues[0] = 100;
+        diffValues[1] = 100000;
+        diffValues[2] = 10000;
+        diffValues[3] = 1000000;
+        diffValues[4] = 100;
 
         // Reading parsing json files
-        //long initTime = System.nanoTime();
-        final String INPUT_FILE;
-        if(args.length == 0){
-            INPUT_FILE = "datas/data2016.json";
-        } else {
-            INPUT_FILE = args[0];
-        }
-        Parser.parse(INPUT_FILE);
+        Parser.parse(inputFilePath);
         // Schedule data is initiated
 
-        DummyScheduler bs = new DummyScheduler(adjust);
+        DummyScheduler bs = new DummyScheduler(diffValues);
         bs.makeSchedule();
         //long elapsedTime = System.nanoTime() - initTime;
 
@@ -50,7 +46,7 @@ public class Main {
         //System.out.println("\n\n\nTIME= " + (elapsedTime/(double)1000000000) + " ± 0.05 s");
     }
 
-    public static void evolutionary(String[] args){
+    public static void evolutionary(String inputFilePath){
         int[][] optimaladjust = new int[3][5];
         int[][] optimalscore = new int[3][2];
         int[] adjust = new int[5];
@@ -78,14 +74,7 @@ public class Main {
                     provisionaladjustment[j][k] = (int) Math.round(Math.random());
                 }
 
-                // Reading parsing json files
-                final String INPUT_FILE;
-                if(args.length == 0){
-                    INPUT_FILE = "datas/data2016.json";
-                } else {
-                    INPUT_FILE = args[0];
-                }
-                Parser.parse(INPUT_FILE);
+                Parser.parse(inputFilePath);
                 // Schedule data is initiated
                 for (int m = 0; m < 4; m++) {
                     adjust[m] = adjust[m] * (int) Math.pow(10, provisionaladjustment[j][m]);

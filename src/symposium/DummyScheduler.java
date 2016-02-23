@@ -5,12 +5,19 @@ import static symposium.model.ConstraintPriority.*;
 import java.util.*;
 
 public class DummyScheduler {
-    public int[] adjustment;
-    public int SIZE_CONSTRAINT_VALUE = 1;
-    public int VENUE_CONSTRAINT_VALUE = 1;
-    public int TIME_CONSTRAINT_VALUE = 1;
-    public int AVAILABILITY_CONSTRAINT_VALUE = 1;
-    public int PANELISTS_CONSTRAINT_VALUE = 1;
+    private final int SIZE_CONSTRAINT_VALUE;
+    private final  int VENUE_CONSTRAINT_VALUE;
+    private final  int TIME_CONSTRAINT_VALUE;
+    private final  int AVAILABILITY_CONSTRAINT_VALUE;
+    private final  int PANELISTS_CONSTRAINT_VALUE;
+
+    public DummyScheduler(int[] diffValues) {
+        SIZE_CONSTRAINT_VALUE = diffValues[0];
+        VENUE_CONSTRAINT_VALUE =  diffValues[1];
+        TIME_CONSTRAINT_VALUE =  diffValues[2];
+        AVAILABILITY_CONSTRAINT_VALUE =  diffValues[3];
+        PANELISTS_CONSTRAINT_VALUE = diffValues[4];
+    }
 
     private class SearchResult {
         public final VenueTime VENUETIME;
@@ -31,19 +38,6 @@ public class DummyScheduler {
 
     public final int VIOLATION_COST_DESIRED = 100;
     public final int VIOLATION_COST_VERYIMPORTANT = 400;
-
-    public DummyScheduler(int[] adjust) {
-        this.adjustment = adjust;
-        SIZE_CONSTRAINT_VALUE = SIZE_CONSTRAINT_VALUE * adjust[0];
-        System.out.println("Size: "+SIZE_CONSTRAINT_VALUE);
-        VENUE_CONSTRAINT_VALUE = VENUE_CONSTRAINT_VALUE * adjust[1];
-        System.out.println("Venue: "+VENUE_CONSTRAINT_VALUE);
-        TIME_CONSTRAINT_VALUE = TIME_CONSTRAINT_VALUE * adjust[2];
-        System.out.println("Time: "+TIME_CONSTRAINT_VALUE);
-        AVAILABILITY_CONSTRAINT_VALUE = AVAILABILITY_CONSTRAINT_VALUE * adjust[3];
-        System.out.println("Availability: "+AVAILABILITY_CONSTRAINT_VALUE);
-        PANELISTS_CONSTRAINT_VALUE = PANELISTS_CONSTRAINT_VALUE * adjust[4];
-    }
 
 
     private void schedule(Panel panel) {
@@ -198,9 +192,8 @@ public class DummyScheduler {
                 panelDifficulty = 0; // reset  for every panel
 
                 for (String x : p.PANELISTS) {
-                    panelDifficulty += panelistDifficulty.get(x);
+                    panelDifficulty += panelistDifficulty.get(x) * PANELISTS_CONSTRAINT_VALUE;
                 }
-                panelDifficulty *= PANELISTS_CONSTRAINT_VALUE;
                 for (String x : p.CATEGORIES) {
                     panelDifficulty += categoryDifficulty.get(x);
                 }

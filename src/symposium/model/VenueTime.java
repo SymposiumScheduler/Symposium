@@ -3,10 +3,8 @@ package symposium.model;
 
 
 public class VenueTime implements Comparable<VenueTime>{
-    public static final int SHORT_VENUE_TIME_LENGTH = 50;
 
     public final Range TIME;
-    public final boolean SHORT;
     public final Venue VENUE;
     private Panel assignedPanel;
 
@@ -14,7 +12,6 @@ public class VenueTime implements Comparable<VenueTime>{
         this.TIME = time;
         this.VENUE = venue;
         this.assignedPanel = null;
-        SHORT = this.TIME.length() == SHORT_VENUE_TIME_LENGTH;
     }
 
     public void assignPanel(Panel panel){

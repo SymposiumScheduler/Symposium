@@ -17,7 +17,7 @@ public class Main {
             }
         }
 
-        if (evolutionFlag) {
+        if (!evolutionFlag) {
             evolutionary(inputFilePath);
         } else {
             standard(inputFilePath);
@@ -77,7 +77,7 @@ public class Main {
                 Parser.parse(inputFilePath);
                 // Schedule data is initiated
                 for (int m = 0; m < 4; m++) {
-                    adjust[m] = adjust[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
+                    adjust[m] = adjust[m] * (int) Math.pow(16, provisionaladjustment[j][m]);
                     if (adjust[m] == 0) {
                         adjust[m] = 1;
                     }

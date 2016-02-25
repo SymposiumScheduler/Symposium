@@ -185,9 +185,32 @@ public class DummyScheduler {
 
         public void setDifficulties() {
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
+            List<Panel> lockedPanels = new ArrayList<>();
             HashMap<String, Integer> panelistDifficulty = panelistDifficultyMap(freePanels);
             HashMap<String, Integer> categoryDifficulty = categoryDifficultyMap(freePanels);
             int panelDifficulty;
+
+
+            // remove locked from freePanels
+            boolean venueConst = false;
+            boolean timeConst = false;
+            for (Panel p : freePanels) {
+                for (Constraint c : p.CONSTRAINTS) {
+                    if (c instanceof VenueConstraint) {
+                        venueConst = true;
+                    }
+                    if (c instanceof SpecificTimeConstraint) {
+                        timeConst = true;
+                    }
+                }
+                if (venueConst && timeConst) {
+                    lockedPanels.add(p);
+                }
+            }
+            // remove from freePanels
+            freePanels.removeAll(lockedPanels);
+            //////////////////////////////
+
             for (Panel p : freePanels) {
                 panelDifficulty = 0; // reset  for every panel
 
@@ -203,6 +226,8 @@ public class DummyScheduler {
             }
             Collections.sort(freePanels);
             Collections.reverse(freePanels);
+            // add locked to the begainning
+            freePanels.addAll(0,lockedPanels);
         }
 
         private int availabilityDifficulty(Panel panel) {

@@ -7,7 +7,7 @@ import java.util.*;
 
 import static org.junit.Assert.*;
 
-public class SpecificTimeConstraintTest {
+public class SpecificTimeFilterTest {
 
     @After
     public void tearDown() {
@@ -46,7 +46,7 @@ public class SpecificTimeConstraintTest {
 
         Panel p = new Panel(name, panelists, range, category, constraints);
 
-        Constraint sTC = new SpecificTimeConstraint(priority, p, 1440);
+        Constraint sTC = new SpecificTimeFilter(priority, p, 1440);
         assert (sTC.PRIORITY == ConstraintPriority.REQUIRED);
     }
 
@@ -87,11 +87,11 @@ public class SpecificTimeConstraintTest {
 
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
 
-        SpecificTimeConstraint sTC1 = null;
+        SpecificTimeFilter sTC1 = null;
 
         for (Constraint c : ScheduleData.instance().getAssignedPanels().get(0).CONSTRAINTS) {
-            if (c instanceof SpecificTimeConstraint) {
-                sTC1 = (SpecificTimeConstraint) c;
+            if (c instanceof SpecificTimeFilter) {
+                sTC1 = (SpecificTimeFilter) c;
                 break;
             }
         }
@@ -136,11 +136,11 @@ public class SpecificTimeConstraintTest {
 
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
 
-        SpecificTimeConstraint sTC1 = null;
+        SpecificTimeFilter sTC1 = null;
 
         for (Constraint c : ScheduleData.instance().getAssignedPanels().get(0).CONSTRAINTS) {
-            if (c instanceof SpecificTimeConstraint) {
-                sTC1 = (SpecificTimeConstraint) c;
+            if (c instanceof SpecificTimeFilter) {
+                sTC1 = (SpecificTimeFilter) c;
                 break;
             }
         }
@@ -183,7 +183,7 @@ public class SpecificTimeConstraintTest {
 
         ScheduleData.instance().initPanels(Arrays.asList(p1));
 
-        SpecificTimeConstraint sTC = new SpecificTimeConstraint(ConstraintPriority.REQUIRED, p1, 600);
+        SpecificTimeFilter sTC = new SpecificTimeFilter(ConstraintPriority.REQUIRED, p1, 600);
 
         assertTrue(sTC.isConstraintViolated(ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0)));
     }

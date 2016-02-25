@@ -76,6 +76,24 @@ public class DummyScheduler {
         for (Constraint key : m.keySet()) {
             p.addMessage(key + " violated " + m.get(key) + " times");
         }
+        if(p.LOCKED && p.getVenueTime() == null){
+            Venue venue = null;
+            int time = -1;
+            for(Constraint c : p.CONSTRAINTS){
+                if(c instanceof VenueFilter){
+                    venue = ((VenueFilter)c).VENUE;
+                } else if(c instanceof SpecificTimeFilter){
+                    time = ((SpecificTimeFilter)c).TIME;
+                }
+            }
+            for(VenueTime vt : venue.getAssignedVenueTimes()){
+                if(TimeFormat.withinError(vt.TIME.getStart(), time, 1)){
+                    p.addMessage("Cannot schedule, because panel \"" + vt.getAssignedPanel().NAME +
+                            "\" is scheduled at the requested venue and time");
+                    break;
+                }
+            }
+        }
     }
 
     /**
@@ -196,10 +214,10 @@ public class DummyScheduler {
             boolean timeConst = false;
             for (Panel p : freePanels) {
                 for (Constraint c : p.CONSTRAINTS) {
-                    if (c instanceof VenueConstraint) {
+                    if (c instanceof VenueFilter) {
                         venueConst = true;
                     }
-                    if (c instanceof SpecificTimeConstraint) {
+                    if (c instanceof SpecificTimeFilter) {
                         timeConst = true;
                     }
                 }
@@ -227,7 +245,7 @@ public class DummyScheduler {
             Collections.sort(freePanels);
             Collections.reverse(freePanels);
             // add locked to the begainning
-            freePanels.addAll(0,lockedPanels);
+            freePanels.addAll(0, lockedPanels);
         }
 
         private int availabilityDifficulty(Panel panel) {
@@ -237,7 +255,7 @@ public class DummyScheduler {
 
         private int venueConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
-                if (c instanceof VenueConstraint) {
+                if (c instanceof VenueFilter) {
                     return VENUE_CONSTRAINT_VALUE;
                 }
             }
@@ -246,7 +264,7 @@ public class DummyScheduler {
 
         private int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
-                if (c instanceof SpecificTimeConstraint) {
+                if (c instanceof SpecificTimeFilter) {
                     return TIME_CONSTRAINT_VALUE;
                 }
             }

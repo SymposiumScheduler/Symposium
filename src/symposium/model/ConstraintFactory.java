@@ -44,10 +44,10 @@ public class ConstraintFactory{
                     }
                 }
                 if (venue == null) {
-                    ScheduleData.instance().addWarningMessage("VenueConstraint for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.");
+                    ScheduleData.instance().addWarningMessage("VenueFilter for " + panel.NAME + " cannot be created: No such Venue " + venueS + " exists in input.");
                     continue;
                 }
-                Constraint constraint = new VenueConstraint(intToPriority(priority), panel, venue);
+                Constraint constraint = new VenueFilter(intToPriority(priority), panel, venue);
                 constraints.add(constraint);
             }
             else if (constraint_string.contains("Max-Panels")) {
@@ -77,7 +77,7 @@ public class ConstraintFactory{
                 int minute = Integer.valueOf((timeOfDay.split(";")[1]).split(":")[1].split("\\)")[0]);
                 int timePoint = TimeFormat.timeComponentsToAbsolute(day,hour,minute);
                 int priority = Integer.valueOf(constraint_string.split("\\):")[1]);
-                Constraint constraint = new SpecificTimeConstraint(intToPriority(priority), panel, timePoint);
+                Constraint constraint = new SpecificTimeFilter(intToPriority(priority), panel, timePoint);
                 constraints.add(constraint);
             }
             else {

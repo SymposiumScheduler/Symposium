@@ -166,7 +166,7 @@ public class Main {
                     if (constraint instanceof CategoryConstraint) {
                         violationMap.put("Single-Category Constraint", violationMap.get("Single-Category Constraint")+1);
                     }
-                    if (constraint instanceof VenueConstraint) {
+                    if (constraint instanceof VenueFilter) {
                         violationMap.put("Venue Constraint", violationMap.get("Venue Constraint")+1);
                     }
                     if (constraint instanceof MaxPanelistConstraint) {
@@ -175,7 +175,7 @@ public class Main {
                     if (constraint instanceof SizeConstraint) {
                         violationMap.put("Minimum-Capacity Constraint", violationMap.get("Minimum-Capacity Constraint")+1);
                     }
-                    if (constraint instanceof SpecificTimeConstraint) {
+                    if (constraint instanceof SpecificTimeFilter) {
                         violationMap.put("Specific Time Constraint", violationMap.get("Specific Time Constraint")+1);
                     }
                     if (constraint instanceof ConsecutivePanelsConstraint) {

@@ -8,7 +8,7 @@ import java.util.*;
 import static org.junit.Assert.*;
 import java.util.Collections;
 
-public class VenueConstraintTest {
+public class VenueFilterTest {
 
     @After
     public void tearDown() {
@@ -47,7 +47,7 @@ public class VenueConstraintTest {
 
         Panel p = new Panel(name, panelists, range, category, constraints);
 
-        Constraint vC = new VenueConstraint(priority, p, v);
+        Constraint vC = new VenueFilter(priority, p, v);
         assert(vC.PRIORITY == ConstraintPriority.REQUIRED);
     }
 
@@ -67,7 +67,7 @@ public class VenueConstraintTest {
         VenueTime vt = v1.getFreeVenueTimes().get(0);
         Constraint cnst = null;
         for(Constraint c : p1.CONSTRAINTS) {
-            if(c instanceof VenueConstraint) {
+            if(c instanceof VenueFilter) {
                 cnst = c;
                 break;
             }
@@ -92,7 +92,7 @@ public class VenueConstraintTest {
         VenueTime vt = v2.getFreeVenueTimes().get(0);
         Constraint cnst = null;
         for(Constraint c : p1.CONSTRAINTS) {
-            if(c instanceof VenueConstraint) {
+            if(c instanceof VenueFilter) {
                 cnst = c;
                 break;
             }
@@ -122,7 +122,7 @@ public class VenueConstraintTest {
         // check
         Constraint cnst = null;
         for(Constraint c : p1.CONSTRAINTS) {
-            if(c instanceof VenueConstraint) {
+            if(c instanceof VenueFilter) {
                 cnst = c;
                 break;
             }
@@ -150,7 +150,7 @@ public class VenueConstraintTest {
         // check
         Constraint cnst = null;
         for(Constraint c : p1.CONSTRAINTS) {
-            if(c instanceof VenueConstraint) {
+            if(c instanceof VenueFilter) {
                 cnst = c;
                 break;
             }

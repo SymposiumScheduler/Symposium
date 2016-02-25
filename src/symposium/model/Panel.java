@@ -22,8 +22,18 @@ public class Panel implements Comparable<Panel>{
         this.PANELISTS = panelists;
         this.CONSTRAINTS = ConstraintFactory.buildConstraints(this, constraintsStrs);
         this.messages = new ArrayList<>();
-        //TODO set locked if minimum size is larger than some number
-        this.LOCKED = false;
+        int ctr = 0;
+        boolean tmp = false;
+        for(Constraint c : CONSTRAINTS){
+            if(c instanceof VenueFilter || c instanceof SpecificTimeFilter) {
+                ctr++;
+            }
+            if(ctr == 2){
+                tmp = true;
+                break;
+            }
+        }
+        this.LOCKED = tmp;
     }
 
     public void setDifficulty(int difficulty) {

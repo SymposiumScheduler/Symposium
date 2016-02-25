@@ -81,7 +81,7 @@ public class ConstraintFactory{
                 constraints.add(constraint);
             }
             else {
-                ScheduleData.instance().addWarningMessage("panel : " + panel + " has a constraint " + constraint_string + " which is not Known");
+                ScheduleData.instance().addWarningMessage("panel : " + panel.NAME + " has a constraint " + constraint_string + " which is not Known");
             }
         }
         Collections.sort(constraints, new Comparator<Constraint>() {

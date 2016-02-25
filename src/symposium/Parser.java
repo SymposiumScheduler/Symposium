@@ -145,7 +145,9 @@ public class Parser {
 
             List<String> categoryList = new ArrayList<String>();
             for (String category : categories.split(",")) {
-                categoryList.add(category);
+                if(! category.trim().isEmpty()) { // handle empty category
+                    categoryList.add(category);
+                }
             }
             List<String> constraints = new ArrayList<String>();
             String new_panelists_string = null;

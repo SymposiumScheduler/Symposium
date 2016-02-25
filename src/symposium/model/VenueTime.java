@@ -3,6 +3,7 @@ package symposium.model;
 
 
 public class VenueTime implements Comparable<VenueTime>{
+
     public final Range TIME;
     public final Venue VENUE;
     private Panel assignedPanel;

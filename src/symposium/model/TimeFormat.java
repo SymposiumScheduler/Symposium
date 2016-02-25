@@ -118,4 +118,8 @@ public final class TimeFormat {
 
         return absoluteTime / 60 + ":" + absoluteTime % 60;
     }
+
+    public static boolean withinError(int origin, int compare, int error){
+        return Math.abs(origin - compare) <= Math.abs(error);
+    }
 }

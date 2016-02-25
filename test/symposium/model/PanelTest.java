@@ -67,7 +67,6 @@ public class PanelTest {
         newCategory.add("newCategory");
 
         List<String> constraints = new ArrayList<String>();
-        constraints.add("New");
         List<String> panelists = new ArrayList<String>();
         panelists.add("Joey");
         panelists.add("Yousef");
@@ -91,7 +90,6 @@ public class PanelTest {
          newCategory.add("newCategory");
 
          List<String> constraints = new ArrayList<String>();
-         constraints.add("New");
          List<String> panelists = new ArrayList<String>();
          panelists.add("Joey");
          panelists.add("Yousef");
@@ -116,7 +114,6 @@ public class PanelTest {
          newCategory.add("newCategory");
 
          List<String> constraints = new ArrayList<String>();
-         constraints.add("New");
          List<String> panelists = new ArrayList<String>();
          panelists.add("Joey");
          panelists.add("Yousef");
@@ -150,7 +147,6 @@ public class PanelTest {
         newCategory.add("newCategory");
 
         List<String> constraints = new ArrayList<String>();
-        constraints.add("New");
         List<String> panelists = new ArrayList<String>();
         panelists.add("Joey");
         panelists.add("Yousef");

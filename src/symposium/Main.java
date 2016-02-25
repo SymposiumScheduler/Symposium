@@ -26,11 +26,11 @@ public class Main {
 
     public static void standard(String inputFilePath) {
         int[] diffValues = new int[5];
-        diffValues[0] = 100;
+        diffValues[0] = 10;
         diffValues[1] = 100000;
-        diffValues[2] = 10000;
-        diffValues[3] = 1000000;
-        diffValues[4] = 100;
+        diffValues[2] = 100000;
+        diffValues[3] = 10000000;
+        diffValues[4] = 100; // panelist
 
         // Reading parsing json files
         Parser.parse(inputFilePath);
@@ -41,8 +41,8 @@ public class Main {
         //long elapsedTime = System.nanoTime() - initTime;
 
         // Print report
-        System.out.println(Report.INSTANCE.toJson());
-        //   System.out.println(__debugStats());
+        System.out.println(Report.INSTANCE.toString());
+        System.out.println(__debugStats());
         //System.out.println("\n\n\nTIME= " + (elapsedTime/(double)1000000000) + " ± 0.05 s");
     }
 
@@ -70,14 +70,14 @@ public class Main {
             adjust[4] = optimaladjust[0][4];
 
             for (int j = 0; j < 10; j++) {
-                for (int k = 0; k < 4; k++) {
+                for (int k = 0; k < adjust.length; k++) {
                     provisionaladjustment[j][k] = (int) Math.round(Math.random());
                 }
 
                 Parser.parse(inputFilePath);
                 // Schedule data is initiated
-                for (int m = 0; m < 4; m++) {
-                    adjust[m] = adjust[m] * (int) Math.pow(10, provisionaladjustment[j][m]);
+                for (int m = 0; m < adjust.length; m++) {
+                    adjust[m] = adjust[m] * (int) Math.pow(8, provisionaladjustment[j][m]);
                     if (adjust[m] == 0) {
                         adjust[m] = 1;
                     }
@@ -105,6 +105,7 @@ public class Main {
                         optimaladjust[m][1] = adjust[1];
                         optimaladjust[m][2] = adjust[2];
                         optimaladjust[m][3] = adjust[3];
+                        optimaladjust[m][4] = adjust[4];
                     }
                 }
                 ScheduleData.deleteScheduleData();
@@ -117,6 +118,7 @@ public class Main {
         System.out.println("Scale for Venue = " + optimaladjust[0][1]);
         System.out.println("Scale for Time = " + optimaladjust[0][2]);
         System.out.println("Scale for Availability = " + optimaladjust[0][3]);
+        System.out.println("Scale for Panelists = " + optimaladjust[0][4]);
 
         System.out.println("\n-------------------THE RESULTS BY DECREASING EITHER VIOLATIONS AND UNSCHEDULED-------------------");
         System.out.println("Violations = " + optimalscore[1][0]);
@@ -125,6 +127,7 @@ public class Main {
         System.out.println("Scale for Venue = " + optimaladjust[1][1]);
         System.out.println("Scale for Time = " + optimaladjust[1][2]);
         System.out.println("Scale for Availability  = " + optimaladjust[1][3]);
+        System.out.println("Scale for Panelists = " + optimaladjust[0][4]);
 
         System.out.println("\n-------------------THE RESULTS BY DECREASING ONLY VIOLATIONS-------------------");
         System.out.println("Violations = " + optimalscore[2][0]);
@@ -133,6 +136,7 @@ public class Main {
         System.out.println("Scale for Venue = " + optimaladjust[2][1]);
         System.out.println("Scale for Time = " + optimaladjust[2][2]);
         System.out.println("Scale for Availability = " + optimaladjust[2][3]);
+        System.out.println("Scale for Panelists = " + optimaladjust[0][4]);
     }
 
     private static String __debugStats() {
@@ -148,7 +152,7 @@ public class Main {
         violationMap.put("Specific Time Constraint", 0);
         violationMap.put("Consecutive Panels Constraint", 0);
 
-        constraintCount.append("\n------------------------------ Debug Stats ------------------------------");
+        constraintCount.append("\n------------------------------ Debug Stats ------------------------------ ");
 
         for (Panel panel : ScheduleData.instance().getAssignedPanels()) {
             for (Constraint constraint : panel.CONSTRAINTS) {
@@ -197,13 +201,46 @@ public class Main {
 
         constraintCount.append("\n\n").append(totalViolations + " Total Number of Violations ");
 
-        constraintCount.append("\n\nFree VenueTimes:");
+
+        int countPrefVenueViolations = 0;
+        int countPrefVenue = 0;
+        constraintCount.append("\n\n------------------------------ Free VenueTimes ------------------------------ \n");
         for(Venue v : ScheduleData.instance().VENUES) {
-            constraintCount.append("\n").append(v.NAME);
-            for (VenueTime vt : v.getFreeVenueTimes()) {
-                constraintCount.append("\n\t").append(vt);
+            if(v.PRIORITY < 10) {
+                constraintCount.append("\n").append(v.NAME);
+                for (VenueTime vt : v.getFreeVenueTimes()) {
+
+                    constraintCount.append("\n\t").append(vt);
+                    countPrefVenueViolations++;
+
+                }
+                for(VenueTime vt : v.getAssignedVenueTimes()) {
+                    countPrefVenue++;
+                }
             }
+
         }
+
+            constraintCount.append("\n\n------------------------------ Venue Times Violating The duration Filter ------------------------------ \n");
+            int countDuration = 0;
+            for (Panel panel : ScheduleData.instance().getAssignedPanels()) {
+                if((panel.PANELISTS.size() <= 2) && TimeFormat.withinError(panel.getVenueTime().TIME.length(),
+                        80, 1)){
+                //    constraintCount.append("\n").append(panel.NAME).append(" Violated Duration");
+                    countDuration++;
+                }
+                else if((panel.PANELISTS.size() > 2) && TimeFormat.withinError(panel.getVenueTime().TIME.length(),
+                        50, 1)){
+                //    constraintCount.append("\n").append(panel.NAME).append(" Violated Duration");
+                    countDuration++;
+                }
+            }
+
+            constraintCount.append("\n\n").append("Number of Violations for Duration: ").append(countDuration);
+            constraintCount.append("\n\n").append("Number of Violations for Preferred: ").append(countPrefVenueViolations);
+
+            constraintCount.append("\n\n").append("Number of Scheulded for Preferred: ").append(countPrefVenue);
+
         return constraintCount.toString();
     }
 }

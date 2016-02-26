@@ -76,6 +76,9 @@ public class Panel implements Comparable<Panel>{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(this.NAME).append("\n\t");
+        if(this.LOCKED) {
+            sb.append("Locked Panel").append("\n\t");
+        }
         if(this.assignedVenueTime != null) {
             sb.append(this.getVenueTime().toString());
         } else {

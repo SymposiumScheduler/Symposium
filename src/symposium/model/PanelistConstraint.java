@@ -30,7 +30,7 @@ public class PanelistConstraint extends NoOverlapConstraint {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Panelist Constraint Violated: Panelist cannot appear outside of availability or be in two places at once)").append("\n");
+        sb.append("Panelist Constraint Violated: Panelist cannot be in two places at once").append("\n");
         sb.append("\t\t\t").append("Panelists are: ").append(panelistsViolating);
 
         return sb.toString();

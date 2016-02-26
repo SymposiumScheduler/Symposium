@@ -8,278 +8,213 @@
 	{ "name": "Old Main Chapel [6]", "size": 2, "priority": 6 },
 	{ "name": "ATLAS Black Box [182]", "size": 1, "priority": 7 },
 	{ "name": "Muenzinger Auditorium [103]", "size": 3, "priority": 8 },
-	{ "name": "Benson 180 [200]", "size": 1, "priority": 999 },
 	{ "name": "Boulder High School [125]", "size": 3, "priority": 999 },
 	{ "name": "Chemistry 140 [7]", "size": 3, "priority": 999 },
-	{ "name": "Chemistry 142 [74]", "size": 2, "priority": 999 },
 	{ "name": "Classroom Visits [361]", "size": 1, "priority": 999 },
 	{ "name": "Classroom Visits 2 [362]", "size": 1, "priority": 999 },
-	{ "name": "Duane Physics G130 [358]", "size": 1, "priority": 999 },
-	{ "name": "Duane Physics G1B20 [150]", "size": 2, "priority": 999 },
+	{ "name": "CU Art Museum [364]", "size": 1, "priority": 999 },
 	{ "name": "Duane Physics G1B30 [175]", "size": 2, "priority": 999 },
 	{ "name": "Eaton Humanities 150 [195]", "size": 1, "priority": 999 },
 	{ "name": "Eaton Humanities 1B50 [167]", "size": 2, "priority": 999 },
-	{ "name": "Education 220 [35]", "size": 1, "priority": 999 },
-	{ "name": "Ekeley E1B20 [77]", "size": 1, "priority": 999 },
-	{ "name": "Engineering 1B40 [149]", "size": 1, "priority": 999 },
-	{ "name": "Engineering 200 [199]", "size": 1, "priority": 999 },
-	{ "name": "Engineering 245 [158]", "size": 1, "priority": 999 },
-	{ "name": "Engineering 265 [157]", "size": 1, "priority": 999 },
 	{ "name": "Fiske Auditorium [363]", "size": 1, "priority": 999 },
 	{ "name": "Fleming 155 [198]", "size": 2, "priority": 999 },
-	{ "name": "Gold Biosciences A2B70 [359]", "size": 2, "priority": 999 },
 	{ "name": "Hale 270 [106]", "size": 2, "priority": 999 },
-	{ "name": "Hellems 252 [22]", "size": 1, "priority": 999 },
-	{ "name": "Koelbel 210 [201]", "size": 1, "priority": 999 },
-	{ "name": "Math 100 [107]", "size": 3, "priority": 999 },
+	{ "name": "Innisfree [365]", "size": 1, "priority": 999 },
 	{ "name": "Muenzinger E0046 [184]", "size": 1, "priority": 999 },
-	{ "name": "Museum Collections W100 [174]", "size": 1, "priority": 999 },
 	{ "name": "none [357]", "size": 1, "priority": 999 },
-	{ "name": "Ramaley C250 [49]", "size": 2, "priority": 999 },
-	{ "name": "UMC Gallery [134]", "size": 1, "priority": 999 },
 	{ "name": "Visual Arts Complex 1B20 [189]", "size": 2, "priority": 999 },
 	{ "name": "Wolf Law Wittemyer Courtroom [180]", "size": 2, "priority": 999 },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "size": 1, "priority": 1200 }
   ],
   "Venue-Times": [
-	{ "name": "Macky Auditorium [1]", "time": "0, 09:30-10:50" },
-	{ "name": "Macky Auditorium [1]", "time": "0, 10:30-11:20" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 09:00-10:30" },
 	{ "name": "Macky Auditorium [1]", "time": "0, 11:30-12:20" },
-	{ "name": "Macky Auditorium [1]", "time": "0, 12:30-13:20" },
-	{ "name": "Macky Auditorium [1]", "time": "0, 13:30-14:50" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 13:00-14:30" },
 	{ "name": "Macky Auditorium [1]", "time": "0, 15:00-18:00" },
-	{ "name": "Macky Auditorium [1]", "time": "0, 19:00-20:00" },
-	{ "name": "Macky Auditorium [1]", "time": "1, 16:00-18:00" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 09:00-10:20" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 10:30-11:20" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 11:30-12:20" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 12:30-13:20" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 13:30-14:50" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 15:00-15:50" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 16:00-18:00" },
-	{ "name": "Macky Auditorium [1]", "time": "2, 19:00-20:00" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 19:00-19:50" },
+	{ "name": "Macky Auditorium [1]", "time": "1, 10:00-14:50" },
+	{ "name": "Macky Auditorium [1]", "time": "1, 15:30-16:50" },
+	{ "name": "Macky Auditorium [1]", "time": "1, 18:00-20:00" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 09:00-10:30" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 11:00-12:30" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 13:00-14:30" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 15:00-16:30" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 19:00-19:50" },
 	{ "name": "Macky Auditorium [1]", "time": "3, 09:30-10:50" },
 	{ "name": "Macky Auditorium [1]", "time": "3, 11:00-12:20" },
 	{ "name": "Macky Auditorium [1]", "time": "3, 12:30-13:50" },
 	{ "name": "Macky Auditorium [1]", "time": "3, 14:00-15:50" },
-	{ "name": "Macky Auditorium [1]", "time": "3, 16:00-18:00" },
-	{ "name": "Macky Auditorium [1]", "time": "4, 09:00-10:20" },
-	{ "name": "Macky Auditorium [1]", "time": "4, 10:30-11:50" },
-	{ "name": "Macky Auditorium [1]", "time": "4, 12:00-13:20" },
-	{ "name": "Macky Auditorium [1]", "time": "4, 13:30-14:20" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 16:00-17:20" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 18:00-19:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 09:00-10:30" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 11:00-12:30" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 13:00-14:20" },
 	{ "name": "Macky Auditorium [1]", "time": "4, 14:30-15:20" },
-	{ "name": "Macky Auditorium [1]", "time": "4, 15:30-18:00" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 09:00-10:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 10:30-11:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 12:00-13:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 13:30-14:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 15:00-16:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "0, 17:00-18:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 15:30-16:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 09:00-10:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 11:00-12:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 13:00-14:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 15:00-16:30" },
 	{ "name": "UMC Center Ballroom [101]", "time": "1, 09:30-10:50" },
 	{ "name": "UMC Center Ballroom [101]", "time": "1, 11:00-12:20" },
 	{ "name": "UMC Center Ballroom [101]", "time": "1, 12:30-13:50" },
 	{ "name": "UMC Center Ballroom [101]", "time": "1, 14:00-15:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "1, 16:00-17:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 09:00-10:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 10:30-11:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 12:00-13:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 13:30-14:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 15:00-16:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "2, 17:00-17:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 15:30-16:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 18:00-19:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 09:00-10:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 11:00-12:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 13:00-14:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 15:00-16:30" },
 	{ "name": "UMC Center Ballroom [101]", "time": "2, 18:00-19:20" },
 	{ "name": "UMC Center Ballroom [101]", "time": "3, 09:30-10:50" },
 	{ "name": "UMC Center Ballroom [101]", "time": "3, 11:00-12:20" },
 	{ "name": "UMC Center Ballroom [101]", "time": "3, 12:30-13:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "3, 14:00-15:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "3, 16:00-17:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 14:00-15:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 15:30-16:50" },
 	{ "name": "UMC Center Ballroom [101]", "time": "3, 18:00-19:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 09:00-10:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 11:00-12:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 12:00-13:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 13:30-14:50" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 15:00-16:20" },
-	{ "name": "UMC Center Ballroom [101]", "time": "4, 17:00-18:20" },
-	{ "name": "UMC 235 [108]", "time": "0, 09:00-10:20" },
-	{ "name": "UMC 235 [108]", "time": "0, 10:30-11:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 09:00-10:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 11:00-12:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 13:00-14:30" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 15:00-16:30" },
+	{ "name": "UMC 235 [108]", "time": "0, 09:00-10:30" },
+	{ "name": "UMC 235 [108]", "time": "0, 11:00-11:50" },
 	{ "name": "UMC 235 [108]", "time": "0, 12:00-13:20" },
-	{ "name": "UMC 235 [108]", "time": "0, 13:30-14:50" },
-	{ "name": "UMC 235 [108]", "time": "0, 15:00-16:20" },
-	{ "name": "UMC 235 [108]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC 235 [108]", "time": "0, 13:30-14:30" },
+	{ "name": "UMC 235 [108]", "time": "0, 15:00-16:30" },
 	{ "name": "UMC 235 [108]", "time": "1, 09:30-10:50" },
 	{ "name": "UMC 235 [108]", "time": "1, 11:00-12:20" },
 	{ "name": "UMC 235 [108]", "time": "1, 12:30-13:50" },
-	{ "name": "UMC 235 [108]", "time": "1, 14:00-15:50" },
-	{ "name": "UMC 235 [108]", "time": "1, 16:00-17:50" },
+	{ "name": "UMC 235 [108]", "time": "1, 14:00-15:20" },
+	{ "name": "UMC 235 [108]", "time": "1, 15:30-16:50" },
 	{ "name": "UMC 235 [108]", "time": "2, 08:30-09:50" },
-	{ "name": "UMC 235 [108]", "time": "2, 10:00-10:20" },
-	{ "name": "UMC 235 [108]", "time": "2, 10:30-11:50" },
-	{ "name": "UMC 235 [108]", "time": "2, 12:00-13:20" },
-	{ "name": "UMC 235 [108]", "time": "2, 13:30-14:50" },
-	{ "name": "UMC 235 [108]", "time": "2, 15:00-16:20" },
-	{ "name": "UMC 235 [108]", "time": "2, 17:00-17:50" },
-	{ "name": "UMC 235 [108]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC 235 [108]", "time": "2, 10:00-10:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 11:00-12:30" },
+	{ "name": "UMC 235 [108]", "time": "2, 13:00-14:30" },
+	{ "name": "UMC 235 [108]", "time": "2, 15:00-16:30" },
 	{ "name": "UMC 235 [108]", "time": "3, 09:30-10:50" },
 	{ "name": "UMC 235 [108]", "time": "3, 11:00-12:20" },
 	{ "name": "UMC 235 [108]", "time": "3, 12:30-13:50" },
 	{ "name": "UMC 235 [108]", "time": "3, 14:00-15:20" },
-	{ "name": "UMC 235 [108]", "time": "3, 16:00-17:50" },
-	{ "name": "UMC 235 [108]", "time": "3, 18:00-19:20" },
-	{ "name": "UMC 235 [108]", "time": "4, 09:00-10:20" },
-	{ "name": "UMC 235 [108]", "time": "4, 10:30-12:20" },
-	{ "name": "UMC 235 [108]", "time": "4, 12:30-13:50" },
-	{ "name": "UMC 235 [108]", "time": "4, 13:30-14:50" },
-	{ "name": "UMC 235 [108]", "time": "4, 15:00-16:20" },
-	{ "name": "UMC 235 [108]", "time": "4, 17:00-18:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 09:00-10:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 10:30-11:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 12:00-13:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 13:30-14:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 15:00-16:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC 235 [108]", "time": "3, 15:30-16:50" },
+	{ "name": "UMC 235 [108]", "time": "4, 09:00-10:30" },
+	{ "name": "UMC 235 [108]", "time": "4, 11:00-12:30" },
+	{ "name": "UMC 235 [108]", "time": "4, 13:00-14:30" },
+	{ "name": "UMC 235 [108]", "time": "4, 15:00-16:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 09:00-10:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 11:00-12:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 13:00-14:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 15:00-16:30" },
 	{ "name": "UMC East Ballroom [104]", "time": "1, 09:30-10:50" },
 	{ "name": "UMC East Ballroom [104]", "time": "1, 11:00-12:20" },
 	{ "name": "UMC East Ballroom [104]", "time": "1, 12:30-13:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "1, 14:00-15:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "1, 16:00-17:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 09:00-10:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 10:30-11:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 12:00-13:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 13:30-14:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 15:00-16:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 17:00-17:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 14:00-15:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 15:30-16:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 09:00-10:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 11:00-12:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 13:00-14:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 15:00-16:30" },
 	{ "name": "UMC East Ballroom [104]", "time": "3, 09:30-10:50" },
 	{ "name": "UMC East Ballroom [104]", "time": "3, 11:00-12:20" },
 	{ "name": "UMC East Ballroom [104]", "time": "3, 12:30-13:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "3, 14:00-15:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "3, 16:00-17:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "3, 18:00-19:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 09:00-10:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 10:30-11:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 12:00-13:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 13:30-14:50" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 15:00-16:20" },
-	{ "name": "UMC East Ballroom [104]", "time": "4, 17:00-18:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 09:00-10:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 10:30-11:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 12:00-13:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 13:30-14:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 15:00-16:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 14:00-15:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 15:30-16:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 09:00-09:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 10:00-11:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 11:30-12:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 13:00-14:30" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 15:00-16:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 09:00-10:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 11:00-12:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 13:00-14:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 15:00-16:30" },
 	{ "name": "UMC West Ballroom [102]", "time": "1, 09:30-10:50" },
 	{ "name": "UMC West Ballroom [102]", "time": "1, 11:00-12:20" },
 	{ "name": "UMC West Ballroom [102]", "time": "1, 12:30-13:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "1, 14:00-15:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "1, 16:00-17:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 09:00-10:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 10:30-11:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 12:00-13:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 13:30-14:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 15:00-16:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 17:00-17:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 14:00-15:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 15:30-16:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 09:00-10:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 11:00-12:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 13:00-14:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 15:00-16:30" },
 	{ "name": "UMC West Ballroom [102]", "time": "3, 09:30-10:50" },
 	{ "name": "UMC West Ballroom [102]", "time": "3, 11:00-12:20" },
 	{ "name": "UMC West Ballroom [102]", "time": "3, 12:30-13:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "3, 14:00-15:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "3, 16:00-17:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "3, 18:00-19:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 09:00-10:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 10:30-11:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 12:00-13:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 13:30-14:50" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 15:00-16:20" },
-	{ "name": "UMC West Ballroom [102]", "time": "4, 17:00-18:20" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 09:00-10:20" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 10:30-11:50" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 12:00-13:20" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 13:30-14:50" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 15:00-16:20" },
-	{ "name": "Old Main Chapel [6]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 14:00-15:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 15:30-16:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 09:00-09:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 10:00-11:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 11:30-12:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 13:00-14:30" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 15:00-16:30" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 09:00-10:30" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 11:00-12:30" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 13:00-14:30" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 15:00-16:30" },
 	{ "name": "Old Main Chapel [6]", "time": "1, 09:30-10:50" },
 	{ "name": "Old Main Chapel [6]", "time": "1, 11:00-12:20" },
 	{ "name": "Old Main Chapel [6]", "time": "1, 12:30-13:50" },
-	{ "name": "Old Main Chapel [6]", "time": "1, 14:00-15:50" },
-	{ "name": "Old Main Chapel [6]", "time": "1, 16:00-17:50" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 09:00-10:20" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 10:30-11:50" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 12:00-13:20" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 13:30-14:50" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 15:00-16:20" },
-	{ "name": "Old Main Chapel [6]", "time": "2, 17:00-17:50" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 14:00-15:20" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 15:30-16:50" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 09:00-10:30" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 11:00-12:30" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 13:00-14:30" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 15:00-16:30" },
 	{ "name": "Old Main Chapel [6]", "time": "3, 09:30-10:50" },
 	{ "name": "Old Main Chapel [6]", "time": "3, 11:00-12:20" },
 	{ "name": "Old Main Chapel [6]", "time": "3, 12:30-13:50" },
-	{ "name": "Old Main Chapel [6]", "time": "3, 14:00-15:50" },
-	{ "name": "Old Main Chapel [6]", "time": "3, 16:00-17:50" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 09:00-10:20" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 10:30-11:50" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 12:00-13:20" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 13:30-14:50" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 15:00-16:20" },
-	{ "name": "Old Main Chapel [6]", "time": "4, 17:00-18:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "0, 09:00-10:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "0, 10:30-11:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "0, 12:00-13:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "0, 13:30-14:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "0, 15:00-16:20" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 14:00-15:20" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 15:30-16:50" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 09:00-10:30" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 11:00-12:30" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 13:00-14:30" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 15:00-16:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 09:00-10:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 11:00-12:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 13:00-14:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 15:00-15:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 16:00-16:50" },
 	{ "name": "ATLAS Black Box [182]", "time": "1, 09:30-10:50" },
 	{ "name": "ATLAS Black Box [182]", "time": "1, 11:00-12:20" },
 	{ "name": "ATLAS Black Box [182]", "time": "1, 12:30-13:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "1, 14:00-15:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "1, 16:00-16:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "2, 09:00-10:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "2, 10:30-11:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "2, 12:00-13:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "2, 13:30-14:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "2, 15:00-16:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 14:00-15:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 15:30-16:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 09:00-10:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 11:00-12:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 13:00-14:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 15:00-16:30" },
 	{ "name": "ATLAS Black Box [182]", "time": "3, 09:30-10:50" },
 	{ "name": "ATLAS Black Box [182]", "time": "3, 11:00-12:20" },
 	{ "name": "ATLAS Black Box [182]", "time": "3, 12:30-13:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "3, 14:00-15:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 14:00-15:20" },
 	{ "name": "ATLAS Black Box [182]", "time": "3, 16:00-16:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "4, 09:00-10:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "4, 10:30-11:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "4, 12:00-13:20" },
-	{ "name": "ATLAS Black Box [182]", "time": "4, 13:30-14:50" },
-	{ "name": "ATLAS Black Box [182]", "time": "4, 15:00-16:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 09:00-10:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 11:00-12:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 13:00-14:30" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 15:00-16:30" },
 	{ "name": "Muenzinger Auditorium [103]", "time": "0, 16:30-17:20" },
 	{ "name": "Muenzinger Auditorium [103]", "time": "1, 15:00-15:50" },
-	{ "name": "Muenzinger Auditorium [103]", "time": "1, 16:00-17:50" },
-	{ "name": "Muenzinger Auditorium [103]", "time": "2, 16:30-17:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "1, 16:00-18:00" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "2, 16:30-18:30" },
 	{ "name": "Muenzinger Auditorium [103]", "time": "3, 15:00-15:50" },
-	{ "name": "Muenzinger Auditorium [103]", "time": "3, 16:00-17:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "3, 16:00-18:00" },
 	{ "name": "Muenzinger Auditorium [103]", "time": "4, 11:00-11:50" },
 	{ "name": "Muenzinger Auditorium [103]", "time": "4, 14:00-15:50" },
-	{ "name": "Muenzinger Auditorium [103]", "time": "4, 16:00-17:50" },
-	{ "name": "Benson 180 [200]", "time": "0, 10:00-10:50" },
-	{ "name": "Benson 180 [200]", "time": "2, 10:00-10:50" },
-	{ "name": "Benson 180 [200]", "time": "2, 15:00-15:50" },
-	{ "name": "Benson 180 [200]", "time": "4, 09:00-10:20" },
-	{ "name": "Benson 180 [200]", "time": "4, 15:00-16:20" },
-	{ "name": "Benson 180 [200]", "time": "4, 16:30-17:50" },
-	{ "name": "Boulder High School [125]", "time": "2, 09:45-11:05" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "4, 16:00-18:00" },
+	{ "name": "Boulder High School [125]", "time": "2, 08:30-09:20" },
+	{ "name": "Boulder High School [125]", "time": "2, 09:45-11:00" },
 	{ "name": "Boulder High School [125]", "time": "2, 13:30-14:50" },
 	{ "name": "Boulder High School [125]", "time": "3, 09:10-10:40" },
 	{ "name": "Boulder High School [125]", "time": "3, 13:05-14:25" },
 	{ "name": "Chemistry 140 [7]", "time": "0, 16:00-17:20" },
-	{ "name": "Chemistry 140 [7]", "time": "1, 09:00-10:20" },
+	{ "name": "Chemistry 140 [7]", "time": "1, 09:30-10:50" },
 	{ "name": "Chemistry 140 [7]", "time": "1, 17:00-17:50" },
 	{ "name": "Chemistry 140 [7]", "time": "2, 14:00-14:50" },
-	{ "name": "Chemistry 140 [7]", "time": "2, 16:00-17:20" },
-	{ "name": "Chemistry 140 [7]", "time": "3, 09:00-10:20" },
-	{ "name": "Chemistry 140 [7]", "time": "3, 17:00-17:50" },
+	{ "name": "Chemistry 140 [7]", "time": "2, 16:00-17:30" },
+	{ "name": "Chemistry 140 [7]", "time": "3, 09:30-10:50" },
+	{ "name": "Chemistry 140 [7]", "time": "3, 17:00-18:20" },
 	{ "name": "Chemistry 140 [7]", "time": "4, 16:00-16:50" },
-	{ "name": "Chemistry 142 [74]", "time": "1, 15:00-15:50" },
-	{ "name": "Chemistry 142 [74]", "time": "2, 15:00-15:50" },
-	{ "name": "Chemistry 142 [74]", "time": "3, 15:00-15:50" },
-	{ "name": "Chemistry 142 [74]", "time": "4, 12:00-12:50" },
-	{ "name": "Chemistry 142 [74]", "time": "4, 14:00-15:20" },
-	{ "name": "Classroom Visits [361]", "time": "0, 10:00-10:50" },
-	{ "name": "Classroom Visits [361]", "time": "0, 13:00-13:50" },
-	{ "name": "Classroom Visits [361]", "time": "1, 9:30-12:00" },
+	{ "name": "Classroom Visits [361]", "time": "1, 09:30-10:30" },
 	{ "name": "Classroom Visits [361]", "time": "1, 11:00-12:15" },
-	{ "name": "Classroom Visits [361]", "time": "1, 12:30-13:45" },
 	{ "name": "Classroom Visits [361]", "time": "1, 14:00-15:15" },
 	{ "name": "Classroom Visits [361]", "time": "1, 15:30-16:45" },
 	{ "name": "Classroom Visits [361]", "time": "1, 18:00-18:50" },
@@ -287,108 +222,49 @@
 	{ "name": "Classroom Visits [361]", "time": "2, 11:00-11:50" },
 	{ "name": "Classroom Visits [361]", "time": "2, 13:00-13:50" },
 	{ "name": "Classroom Visits [361]", "time": "2, 14:00-14:50" },
-	{ "name": "Classroom Visits [361]", "time": "3, 11:00-12:15" },
-	{ "name": "Classroom Visits [361]", "time": "3, 12:30-13:45" },
 	{ "name": "Classroom Visits [361]", "time": "3, 14:00-15:15" },
 	{ "name": "Classroom Visits [361]", "time": "3, 15:30-16:45" },
-	{ "name": "Classroom Visits [361]", "time": "4, 10:00-10:50" },
-	{ "name": "Classroom Visits [361]", "time": "4, 13:00-13:50" },
-	{ "name": "Classroom Visits [361]", "time": "4, 14:00-14:50" },
-	{ "name": "Classroom Visits 2 [362]", "time": "0, 14:00-14:50" },
-	{ "name": "Classroom Visits 2 [362]", "time": "1, 09:30-10:30" },
-	{ "name": "Classroom Visits 2 [362]", "time": "1, 10:30-11:30" },
-	{ "name": "Classroom Visits 2 [362]", "time": "1, 12:30-13:30" },
-	{ "name": "Classroom Visits 2 [362]", "time": "1, 14:00-15:15" },
-	{ "name": "Classroom Visits 2 [362]", "time": "1, 15:30-17:20" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 09:30-12:00" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 14:00-14:50" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 15:00-17:50" },
 	{ "name": "Classroom Visits 2 [362]", "time": "2, 14:00-14:50" },
-	{ "name": "Classroom Visits 2 [362]", "time": "3, 09:30-10:30" },
-	{ "name": "Classroom Visits 2 [362]", "time": "3, 10:30-11:30" },
-	{ "name": "Classroom Visits 2 [362]", "time": "3, 12:30-13:30" },
 	{ "name": "Classroom Visits 2 [362]", "time": "3, 14:00-15:15" },
-	{ "name": "Classroom Visits 2 [362]", "time": "3, 15:30-17:20" },
-	{ "name": "Classroom Visits 2 [362]", "time": "4, 14:00-14:50" },
-	{ "name": "Duane Physics G130 [358]", "time": "0, 12:00-12:50" },
-	{ "name": "Duane Physics G130 [358]", "time": "0, 16:00-17:20" },
-	{ "name": "Duane Physics G130 [358]", "time": "1, 17:00-17:50" },
-	{ "name": "Duane Physics G130 [358]", "time": "2, 12:00-12:50" },
-	{ "name": "Duane Physics G130 [358]", "time": "2, 16:00-17:20" },
-	{ "name": "Duane Physics G130 [358]", "time": "3, 15:30-16:50" },
-	{ "name": "Duane Physics G130 [358]", "time": "4, 16:00-17:20" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "0, 15:00-16:20" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "0, 16:30-17:50" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "1, 17:00-17:50" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "2, 11:00-11:50" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "2, 15:00-15:50" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "3, 17:00-17:50" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "4, 12:00-13:20" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "4, 15:00-16:20" },
-	{ "name": "Duane Physics G1B20 [150]", "time": "4, 16:30-17:50" },
+	{ "name": "CU Art Museum [364]", "time": "1, 14:00-17:00" },
 	{ "name": "Duane Physics G1B30 [175]", "time": "1, 17:00-17:50" },
 	{ "name": "Duane Physics G1B30 [175]", "time": "2, 16:00-16:50" },
-	{ "name": "Eaton Humanities 150 [195]", "time": "0, 11:00-11:50" },
-	{ "name": "Eaton Humanities 150 [195]", "time": "2, 09:00-10:50" },
-	{ "name": "Eaton Humanities 150 [195]", "time": "2, 11:00-11:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "0, 09:00-09:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "0, 10:00-11:30" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "2, 09:00-10:20" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "2, 10:30-11:50" },
 	{ "name": "Eaton Humanities 150 [195]", "time": "2, 15:00-15:50" },
 	{ "name": "Eaton Humanities 150 [195]", "time": "3, 17:00-17:50" },
 	{ "name": "Eaton Humanities 150 [195]", "time": "4, 11:00-12:20" },
-	{ "name": "Eaton Humanities 150 [195]", "time": "4, 14:00-15:20" },
-	{ "name": "Eaton Humanities 150 [195]", "time": "4, 15:30-16:20" },
-	{ "name": "Eaton Humanities 1B50 [167]", "time": "0, 16:00-17:20" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "4, 14:00-15:00" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "4, 15:00-16:30" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "0, 16:00-17:30" },
 	{ "name": "Eaton Humanities 1B50 [167]", "time": "1, 17:00-17:50" },
 	{ "name": "Eaton Humanities 1B50 [167]", "time": "2, 14:00-14:50" },
 	{ "name": "Eaton Humanities 1B50 [167]", "time": "3, 17:00-17:50" },
-	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 09:00-10:20" },
-	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 14:00-15:20" },
-	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 15:30-16:50" },
-	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 17:00-17:50" },
-	{ "name": "Education 220 [35]", "time": "0, 16:00-17:50" },
-	{ "name": "Education 220 [35]", "time": "1, 17:00-17:50" },
-	{ "name": "Education 220 [35]", "time": "2, 16:00-16:50" },
-	{ "name": "Education 220 [35]", "time": "3, 17:00-17:50" },
-	{ "name": "Education 220 [35]", "time": "4, 12:00-12:50" },
-	{ "name": "Education 220 [35]", "time": "4, 16:00-17:50" },
-	{ "name": "Ekeley E1B20 [77]", "time": "0, 15:00-16:20" },
-	{ "name": "Ekeley E1B20 [77]", "time": "1, 15:30-16:50" },
-	{ "name": "Ekeley E1B20 [77]", "time": "2, 15:00-16:20" },
-	{ "name": "Ekeley E1B20 [77]", "time": "3, 15:30-16:50" },
-	{ "name": "Ekeley E1B20 [77]", "time": "4, 14:00-15:20" },
-	{ "name": "Ekeley E1B20 [77]", "time": "4, 15:30-16:20" },
-	{ "name": "Engineering 1B40 [149]", "time": "1, 12:30-13:20" },
-	{ "name": "Engineering 1B40 [149]", "time": "2, 16:00-17:20" },
-	{ "name": "Engineering 1B40 [149]", "time": "3, 12:30-13:50" },
-	{ "name": "Engineering 1B40 [149]", "time": "3, 17:00-17:50" },
-	{ "name": "Engineering 1B40 [149]", "time": "4, 16:00-17:20" },
-	{ "name": "Engineering 200 [199]", "time": "0, 17:00-17:50" },
-	{ "name": "Engineering 200 [199]", "time": "2, 11:00-11:50" },
-	{ "name": "Engineering 200 [199]", "time": "2, 17:00-17:50" },
-	{ "name": "Engineering 200 [199]", "time": "3, 17:00-17:50" },
-	{ "name": "Engineering 200 [199]", "time": "4, 11:00-11:50" },
-	{ "name": "Engineering 200 [199]", "time": "4, 16:30-17:50" },
-	{ "name": "Engineering 245 [158]", "time": "1, 14:00-15:20" },
-	{ "name": "Engineering 245 [158]", "time": "2, 15:00-15:50" },
-	{ "name": "Engineering 245 [158]", "time": "4, 11:00-11:50" },
-	{ "name": "Engineering 245 [158]", "time": "4, 15:00-16:20" },
-	{ "name": "Engineering 245 [158]", "time": "4, 16:30-17:50" },
-	{ "name": "Engineering 265 [157]", "time": "1, 17:00-17:50" },
-	{ "name": "Engineering 265 [157]", "time": "2, 12:00-12:50" },
-	{ "name": "Engineering 265 [157]", "time": "2, 15:00-15:50" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 09:00-10:30" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 14:00-15:00" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 15:00-16:30" },
+	{ "name": "Fiske Auditorium [363]", "time": "0, 14:00-16:00" },
+	{ "name": "Fiske Auditorium [363]", "time": "1, 15:30-16:50" },
+	{ "name": "Fiske Auditorium [363]", "time": "2, 13:00-15:00" },
+	{ "name": "Fiske Auditorium [363]", "time": "3, 12:00-15:00" },
 	{ "name": "Fleming 155 [198]", "time": "0, 12:00-12:50" },
 	{ "name": "Fleming 155 [198]", "time": "1, 13:00-13:50" },
 	{ "name": "Fleming 155 [198]", "time": "1, 15:30-16:50" },
 	{ "name": "Fleming 155 [198]", "time": "1, 17:00-17:50" },
-	{ "name": "Fleming 155 [198]", "time": "1, 15:30-16:50" },
-	{ "name": "Fleming 155 [198]", "time": "1, 17:00-17:50" },
 	{ "name": "Fleming 155 [198]", "time": "2, 12:00-12:50" },
 	{ "name": "Fleming 155 [198]", "time": "2, 17:00-17:50" },
-	{ "name": "Fleming 155 [198]", "time": "4, 10:30-11:50" },
-	{ "name": "Fleming 155 [198]", "time": "4, 12:00-13:20" },
-	{ "name": "Fleming 155 [198]", "time": "4, 13:30-14:50" },
-	{ "name": "Fleming 155 [198]", "time": "4, 15:00-16:20" },
-	{ "name": "Fleming 155 [198]", "time": "4, 16:30-17:50" },
-	{ "name": "Gold Biosciences A2B70 [359]", "time": "0, 09:00-09:50" },
-	{ "name": "Gold Biosciences A2B70 [359]", "time": "2, 09:00-09:50" },
-	{ "name": "Gold Biosciences A2B70 [359]", "time": "2, 15:00-15:50" },
-	{ "name": "Gold Biosciences A2B70 [359]", "time": "4, 13:00-13:50" },
+	{ "name": "Fleming 155 [198]", "time": "3, 15:30-17:00" },
+	{ "name": "Fleming 155 [198]", "time": "3, 17:00-18:00" },
+	{ "name": "Fleming 155 [198]", "time": "4, 10:00-10:50" },
+	{ "name": "Fleming 155 [198]", "time": "4, 11:00-12:20" },
+	{ "name": "Fleming 155 [198]", "time": "4, 12:30-13:50" },
+	{ "name": "Fleming 155 [198]", "time": "4, 14:00-15:20" },
+	{ "name": "Fleming 155 [198]", "time": "4, 15:30-16:50" },
 	{ "name": "Hale 270 [106]", "time": "0, 16:30-17:50" },
 	{ "name": "Hale 270 [106]", "time": "2, 13:00-13:50" },
 	{ "name": "Hale 270 [106]", "time": "2, 16:30-17:50" },
@@ -396,243 +272,214 @@
 	{ "name": "Hale 270 [106]", "time": "4, 09:00-09:50" },
 	{ "name": "Hale 270 [106]", "time": "4, 14:00-15:20" },
 	{ "name": "Hale 270 [106]", "time": "4, 15:30-16:50" },
-	{ "name": "Hale 270 [106]", "time": "4, 17:00-17:50" },
-	{ "name": "Hellems 252 [22]", "time": "0, 15:00-16:20" },
-	{ "name": "Hellems 252 [22]", "time": "1, 17:00-17:50" },
-	{ "name": "Hellems 252 [22]", "time": "2, 15:00-18:00" },
-	{ "name": "Hellems 252 [22]", "time": "4, 09:00-09:50" },
-	{ "name": "Hellems 252 [22]", "time": "4, 15:00-16:20" },
-	{ "name": "Hellems 252 [22]", "time": "4, 16:30-17:50" },
-	{ "name": "Koelbel 210 [201]", "time": "4, 09:00-09:50" },
-	{ "name": "Koelbel 210 [201]", "time": "4, 15:00-16:20" },
-	{ "name": "Koelbel 210 [201]", "time": "4, 16:30-17:50" },
-	{ "name": "Math 100 [107]", "time": "0, 16:30-17:20" },
-	{ "name": "Math 100 [107]", "time": "1, 15:30-16:50" },
-	{ "name": "Math 100 [107]", "time": "4, 09:00-10:20" },
-	{ "name": "Math 100 [107]", "time": "4, 10:30-11:50" },
-	{ "name": "Math 100 [107]", "time": "4, 15:00-16:20" },
-	{ "name": "Math 100 [107]", "time": "4, 16:30-17:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "0, 13:00-14:20" },
-	{ "name": "Muenzinger E0046 [184]", "time": "0, 14:30-15:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "0, 16:00-17:50" },
+	{ "name": "Innisfree [365]", "time": "3, 17:00-19:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 13:00-15:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 15:00-17:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 17:00-17:50" },
 	{ "name": "Muenzinger E0046 [184]", "time": "1, 15:30-16:50" },
 	{ "name": "Muenzinger E0046 [184]", "time": "1, 17:00-17:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "2, 13:00-14:20" },
-	{ "name": "Muenzinger E0046 [184]", "time": "2, 14:30-15:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "2, 16:00-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 13:00-15:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 15:00-17:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 17:00-17:50" },
 	{ "name": "Muenzinger E0046 [184]", "time": "3, 15:30-16:50" },
 	{ "name": "Muenzinger E0046 [184]", "time": "3, 17:00-17:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "4, 13:00-14:20" },
-	{ "name": "Muenzinger E0046 [184]", "time": "4, 14:30-15:50" },
-	{ "name": "Muenzinger E0046 [184]", "time": "4, 16:00-17:50" },
-	{ "name": "Museum Collections W100 [174]", "time": "0, 15:00-16:20" },
-	{ "name": "Museum Collections W100 [174]", "time": "2, 15:00-16:20" },
-	{ "name": "Museum Collections W100 [174]", "time": "4, 09:00-10:20" },
-	{ "name": "Museum Collections W100 [174]", "time": "4, 10:30-11:50" },
-	{ "name": "Museum Collections W100 [174]", "time": "4, 15:00-16:20" },
-	{ "name": "Ramaley C250 [49]", "time": "0, 09:00-09:50" },
-	{ "name": "Ramaley C250 [49]", "time": "0, 16:00-17:20" },
-	{ "name": "Ramaley C250 [49]", "time": "1, 15:30-16:20" },
-	{ "name": "Ramaley C250 [49]", "time": "2, 09:00-09:50" },
-	{ "name": "Ramaley C250 [49]", "time": "2, 12:00-12:50" },
-	{ "name": "Ramaley C250 [49]", "time": "2, 16:00-16:50" },
-	{ "name": "Ramaley C250 [49]", "time": "3, 15:30-16:50" },
-	{ "name": "Ramaley C250 [49]", "time": "4, 09:00-09:50" },
-	{ "name": "Ramaley C250 [49]", "time": "4, 12:00-12:50" },
-	{ "name": "Ramaley C250 [49]", "time": "4, 16:00-17:20" },
-	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 12:00-13:20" },
-	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 15:00-16:20" },
-	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 16:30-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 13:00-15:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 15:00-17:00" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 17:00-17:50" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "1, 18:00-21:00" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 12:00-13:00" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 13:00-14:00" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 15:30-16:50" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 17:00-17:50" },
 	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 09:00-10:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 10:30-11:50" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 12:00-13:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 13:30-14:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 11:00-12:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 13:00-14:20" },
 	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 15:00-16:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 09:00-10:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 10:30-11:50" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 12:00-13:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 13:30-14:50" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 15:00-16:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 17:00-18:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 09:30-10:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 11:00-12:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 12:30-13:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 14:00-15:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 15:30-16:50" },
 	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 09:00-10:20" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 10:30-11:50" },
-	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 12:00-12:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 11:00-12:20" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "0, 08:30-09:30" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "0, 18:30-19:00" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "1, 08:30-09:30" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "1, 18:00-19:00" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "2, 08:30-09:30" },
 	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "3, 08:30-09:30" },
-	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "4, 08:30-09:30" },
-	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "4, 10:30-11:30" }
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "3, 18:00-19:00" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "4, 08:30-09:30" }
   ],
   "Panelists": [
 	{
 	  "name": "Kathleen Adams [14608]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Maria Mercedes Alvarez [14616]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Arturo Ardila-Gomez [6623]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Aaron Balick [14628]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Rony Barrak (Jazz) [6334]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Alex B. Berezow [14627]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Pablo Better [14538]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Liz Blake [13590]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Gregory Bowles [14618]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Bonnie Burton [14561]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Joseph Byrum [14540]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Douglas Carlston [14713]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Bobbie Carlton [14612]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Jamais Cascio [13576]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Morrow Cater [13606]",
 	  "times": [
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
 		"4, 08:00-12:00"
 	  ],
 	  "new": "no"
@@ -640,472 +487,473 @@
 	{
 	  "name": "Bwire Chirangi [14591]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Jorge Chojol&aacute;n [14703]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Sam J. Cook [7545]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Mike Cordano [14611]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Anna Therese Day [14527]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Chuck Dietzen [6792]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Athena Edmonds [14624]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Andr&eacute;s Edwards [14592]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Ismail Elfath [14600]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Michael Elliott [4532]",
 	  "times": [
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "G. Kelly Eplee [14086]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Mark Fallon [14599]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Michael Franc [6171]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Peter Frumhoff [14567]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Marilinda Garcia [14705]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Antoinette Gawin [14594]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Marshall Gilkes (Jazz) [14556]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Gooding [7011]",
 	  "times": [
-		"0, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 12:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 12:00-17:00"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Martha Clark Goss [14613]",
 	  "times": [
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "C. Lawrence Greenwood Jr. [10769]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Francesca Grifo [7606]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "David H. Grinspoon [6247]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Damaris Maria Grossmann [14560]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Don Grusin (Jazz) [4660]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Ellie Boldman Hill [10724]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Alexandra Huddleston [14706]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Vicki J. Huddleston [6532]",
 	  "times": [
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Heather Hurlburt [7128]",
 	  "times": [
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Joanne Grady Huskey [13622]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Janelle Iglesias [14564]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Robert Inglis Sr. [14544]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Malou Innocent [6865]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Aruna Kalyanam [14541]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Sofie Karasek [14593]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Robert G. Kaufman [6591]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Zainab Zeb Khan [14625]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Cynthia Koenig [14557]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Jeff Lieberman [7003]",
 	  "times": [
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Peter Lighte [7578]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Eric Lindstrom [14621]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Wendy Lustbader [14537]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Ren&eacute; Marie [14716]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "William (Bill) C. Martin [14533]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
 		"2, 08:00-12:00"
 	  ],
 	  "new": "yes"
@@ -1113,169 +961,169 @@
 	{
 	  "name": "Kate Reynolds McLeod [14543]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Charles A. Menzie [14534]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Paul &quot;DJ Spooky&quot; Miller [14610]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Scott Miller [14558]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Judith Morrison [6510]",
 	  "times": [
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Oliver Morton [14553]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Max Nanis [14562]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Matthew Nelson [14609]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Vivian Nixon [14531]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Vivian Onano [10756]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Sonja Perkins [14596]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Sidney Perkowitz [6576]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Andrea Polli [14528]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Srdja Popovic [14606]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Reza Ramazani [6994]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
@@ -1289,8 +1137,8 @@
 	{
 	  "name": "Joshua Roman [14547]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
 		"2, 08:00-12:00"
 	  ],
 	  "new": "yes"
@@ -1298,23 +1146,23 @@
 	{
 	  "name": "Thom Rotella (Jazz) [14555]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Steven Rubin [14550]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
 		"4, 08:00-12:00"
 	  ],
 	  "new": "yes"
@@ -1322,297 +1170,297 @@
 	{
 	  "name": "Adam J. Schrager [14598]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Matt Zoller Seitz [14549]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Eugene Sepulveda [14568]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Joseph Sexton [14571]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Frank Shafroth [13570]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Seth Shostak [6132]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Diane Singerman [14702]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Jeffrey Smith [11411]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Daniel Stid [14620]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Ellen Sweets [14572]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "James Tanabe [7039]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Rulan Tangen [14603]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Ty Tashiro [14526]",
 	  "times": [
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Mary Reynolds Thompson [14551]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "William A. Thorne Jr. [6605]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Hoi Trinh [14590]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Charles van der Horst [13502]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Jose Antonio Vargas [14566]",
 	  "times": [
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "James E. Viator [14535]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Paul Wapner [14622]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Rob Warden [14732]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Ernie Watts (Jazz) [10448]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "B.J. Whetstine [14704]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "David Wilcox [13572]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "no"
 	},
 	{
 	  "name": "Kenji Williams [14731]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Mary G. Wilson [5469]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
-		"4, 08:00-20:00"
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
+		"4, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "Tim Wirth [14730]",
 	  "times": [
-		"2, 12:00-20:00",
+		"2, 12:00-23:59",
 		"3, 08:00-12:00"
 	  ],
 	  "new": "yes"
@@ -1620,42 +1468,26 @@
 	{
 	  "name": "Korey Wise [14707]",
 	  "times": [
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00"
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59"
 	  ],
 	  "new": "yes"
 	},
 	{
 	  "name": "[Guest Speaker] [14729]",
 	  "times": [
-		"6, 08:00-20:00",
-		"0, 08:00-20:00",
-		"1, 08:00-20:00",
-		"2, 08:00-20:00",
-		"3, 08:00-20:00",
+		"6, 08:00-23:59",
+		"0, 08:00-23:59",
+		"1, 08:00-23:59",
+		"2, 08:00-23:59",
+		"3, 08:00-23:59",
 		"4, 08:00-17:00"
 	  ],
 	  "new": "yes"
 	}
   ],
   "Panels": [
-	{
-	  "name": "541: Performance - Poetry Slam [15159]",
-	  "panelists": [
-		"Sam J. Cook [7545]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
 	{
 	  "name": "336: Pay It Forward: The Value of giving back [15239]",
 	  "panelists": [
@@ -1674,59 +1506,6 @@
 		"Availability:1"
 	  ],
 	  "category": "Bus."
-	},
-	{
-	  "name": "719: Film - I Am Malala [15264]",
-	  "panelists": [
-		"Zainab Zeb Khan [14625]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "FLTR"
-	},
-	{
-	  "name": "733: KNGU - Thursday Evening [15277]",
-	  "panelists": [
-		"Kate Reynolds McLeod [14543]",
-		"Eugene Sepulveda [14568]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "FLTR"
-	},
-	{
-	  "name": "524: CU MFA Students - Master Class [15085]",
-	  "panelists": [
-		"Jeff Lieberman [7003]",
-		"Steven Rubin [14550]",
-		"Max Nanis [14562]",
-		"Janelle Iglesias [14564]",
-		"Alexandra Huddleston [14706]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
 	},
 	{
 	  "name": "479: US Foreign Policy: The World's Policeman [15104]",
@@ -2192,7 +1971,7 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(Fiske Auditorium [363]):1",
+		"Venue(UMC Center Ballroom [101]):1",
 		"Minimum-Capacity(2):2",
 		"Availability:1"
 	  ],
@@ -2224,24 +2003,6 @@
 		"Francesca Grifo [7606]",
 		"Andrea Polli [14528]",
 		"Athena Edmonds [14624]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
-	},
-	{
-	  "name": "384: CLIMATE SERIES: Global Warming or Cyclical Climate Change (TUESDAY) [15133]",
-	  "panelists": [
-		"David H. Grinspoon [6247]",
-		"Peter Frumhoff [14567]",
-		"Eric Lindstrom [14621]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -2495,6 +2256,26 @@
 	  "category": "Bus."
 	},
 	{
+	  "name": "504: Apocalypse Wow! Having fun with the end of the world [15148]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Matt Zoller Seitz [14549]",
+		"Oliver Morton [14553]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC West Ballroom [102]):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
 	  "name": "519: Can Books Still Change the World? [15149]",
 	  "panelists": [
 		"Peter Lighte [7578]",
@@ -2589,41 +2370,6 @@
 	  "category": "S&T"
 	},
 	{
-	  "name": "538: Performance - Tell Me Your Story, I'll Write Your Song [15157]",
-	  "panelists": [
-		"David Wilcox [13572]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(ATLAS Black Box [182]):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
-	{
-	  "name": "539: Performance - Together Again [15158]",
-	  "panelists": [
-		"Rony Barrak (Jazz) [6334]",
-		"Gooding [7011]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(UMC Center Ballroom [101]):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
-	{
 	  "name": "295: High-Powered Women Share Their Secrets [15161]",
 	  "panelists": [
 		"Kate Reynolds McLeod [14543]",
@@ -2677,25 +2423,6 @@
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
 		"Minimum-Capacity(3):2",
-		"Availability:1"
-	  ],
-	  "category": "Bus."
-	},
-	{
-	  "name": "350: Leadership is Harder Than I Thought [15164]",
-	  "panelists": [
-		"Vivian Onano [10756]",
-		"Pablo Better [14538]",
-		"Ismail Elfath [14600]",
-		"Martha Clark Goss [14613]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "Bus."
@@ -3321,25 +3048,6 @@
 	  "category": "Arts"
 	},
 	{
-	  "name": "382: CLIMATE SERIES: Risky Climate, Risky Solutions (Wednesday) [15204]",
-	  "panelists": [
-		"Jamais Cascio [13576]",
-		"Morrow Cater [13606]",
-		"Oliver Morton [14553]",
-		"Peter Frumhoff [14567]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
-	},
-	{
 	  "name": "380: TWEAKING: Modeling Computational Biology: Visualizing Artificial Life [15205]",
 	  "panelists": [
 		"Andrea Polli [14528]",
@@ -3544,23 +3252,6 @@
 		"Availability:1"
 	  ],
 	  "category": "IA"
-	},
-	{
-	  "name": "392: CLIMATE SERIES: DUET - Climate Change, Inequality and Economic Growth (Thursday AM) [15218]",
-	  "panelists": [
-		"Arturo Ardila-Gomez [6623]",
-		"Tim Wirth [14730]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(3):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
 	},
 	{
 	  "name": "653: TABLE: Global Health Challenges [15219]",
@@ -3768,49 +3459,12 @@
 	  "category": "IA"
 	},
 	{
-	  "name": "369: CLIMATE SERIES - When the Oceans Rise (Monday) [15232]",
-	  "panelists": [
-		"Charles A. Menzie [14534]",
-		"Andr&eacute;s Edwards [14592]",
-		"Eric Lindstrom [14621]",
-		"Paul Wapner [14622]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
-	},
-	{
 	  "name": "391: Irreproducible Scientific Results [15233]",
 	  "panelists": [
 		"Francesca Grifo [7606]",
 		"Peter Frumhoff [14567]",
 		"Eric Lindstrom [14621]",
 		"Alex B. Berezow [14627]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
-	},
-	{
-	  "name": "399: Performance & Panel: Whats the point of looking for life beyond Earth anyway? (Monday 9 AM) [15234]",
-	  "panelists": [
-		"Seth Shostak [6132]",
-		"David H. Grinspoon [6247]",
-		"Kenji Williams [14731]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -3862,7 +3516,7 @@
 	  "category": "Bus."
 	},
 	{
-	  "name": "327: How Business and Government Work Together [15237]",
+	  "name": "327: Business and Government Can Work Together [15237]",
 	  "panelists": [
 		"Liz Blake [13590]",
 		"G. Kelly Eplee [14086]",
@@ -3989,43 +3643,6 @@
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
 		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
-	{
-	  "name": "542: Performance - Strings & Circuits [15246]",
-	  "panelists": [
-		"Joshua Roman [14547]",
-		"Paul &quot;DJ Spooky&quot; Miller [14610]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(ATLAS Black Box [182]):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
-	{
-	  "name": "543: Performance & Panel - Our Native Land [15247]",
-	  "panelists": [
-		"William A. Thorne Jr. [6605]",
-		"Rulan Tangen [14603]",
-		"Kenji Williams [14731]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Fiske Auditorium [363]):1",
-		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "Arts"
@@ -4265,44 +3882,6 @@
 	  "category": ""
 	},
 	{
-	  "name": "718: Interview 3 [15263]",
-	  "panelists": [
-		"Korey Wise [14707]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Boulder High School [125]):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
-	  "name": "726: Jazz Master Class [15270]",
-	  "panelists": [
-		"Don Grusin (Jazz) [4660]",
-		"Rony Barrak (Jazz) [6334]",
-		"Ernie Watts (Jazz) [10448]",
-		"Thom Rotella (Jazz) [14555]",
-		"Marshall Gilkes (Jazz) [14556]",
-		"Ren&eacute; Marie [14716]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
 	  "name": "734: DUET - Africa, a Hopeful Continent [15278]",
 	  "panelists": [
 		"Vivian Onano [10756]",
@@ -4314,45 +3893,6 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
-	  "name": "735: Disruptive Innovation Can Save the World [15279]",
-	  "panelists": [
-		"Joseph Byrum [14540]",
-		"Cynthia Koenig [14557]",
-		"Bwire Chirangi [14591]",
-		"Maria Mercedes Alvarez [14616]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
-	  "name": "736: Performance - Rene [15280]",
-	  "panelists": [
-		"Don Grusin (Jazz) [4660]",
-		"Ernie Watts (Jazz) [10448]",
-		"Joshua Roman [14547]",
-		"Ren&eacute; Marie [14716]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
@@ -4412,27 +3952,9 @@
 	  "category": "none"
 	},
 	{
-	  "name": "801: CLIMATE SERIES: Political Views on Climate Change: A Widening Gap (Friday) [15303]",
+	  "name": "806: Performance: Origin Stories [15308]",
 	  "panelists": [
-		"Mary G. Wilson [5469]",
-		"Ellie Boldman Hill [10724]",
-		"Morrow Cater [13606]",
-		"Peter Frumhoff [14567]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "none"
-	},
-	{
-	  "name": "Performance - Origin Stories [15308]",
-	  "panelists": [
+		"[Guest Speaker] [14729]",
 		"Kenji Williams [14731]"
 	  ],
 	  "constraints": [
@@ -4441,28 +3963,11 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
+		"Venue(Muenzinger Auditorium [103]):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "none"
-	},
-	{
-	  "name": "377: What Science Says About GMOs [15079]",
-	  "panelists": [
-		"Charles A. Menzie [14534]",
-		"Joseph Byrum [14540]",
-		"Alex B. Berezow [14627]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Minimum-Capacity(3):2",
-		"Availability:1"
-	  ],
-	  "category": "S&T"
 	},
 	{
 	  "name": "410: TITLE COMING: GMOs to Feed the World (debate) [15080]",
@@ -4552,27 +4057,6 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
-	},
-	{
-	  "name": "540: Performance - SO MANY GUITARS [15087]",
-	  "panelists": [
-		"David H. Grinspoon [6247]",
-		"Gooding [7011]",
-		"David Wilcox [13572]",
-		"James E. Viator [14535]",
-		"Thom Rotella (Jazz) [14555]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
@@ -4768,7 +4252,7 @@
 	  "category": "P&M"
 	},
 	{
-	  "name": "688: March to the Beat of Your Own Drum (Monday 9 AM) [15147]",
+	  "name": "688: March to the Beat of Your Own Drum [15147]",
 	  "panelists": [
 		"Don Grusin (Jazz) [4660]",
 		"James Tanabe [7039]",
@@ -4787,27 +4271,6 @@
 		"Availability:1"
 	  ],
 	  "category": "Bus."
-	},
-	{
-	  "name": "504: Apocalypse Wow! Having fun with the end of the world [15148]",
-	  "panelists": [
-		"Seth Shostak [6132]",
-		"Matt Zoller Seitz [14549]",
-		"Oliver Morton [14553]",
-		"Douglas Carlston [14713]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(UMC West Ballroom [102]):1",
-		"Time(0;09:00):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "Arts"
 	},
 	{
 	  "name": "558: Technology is a Fetish [15154]",
@@ -4831,7 +4294,7 @@
 	  "category": "S&T"
 	},
 	{
-	  "name": "529: Film and TV - Change the Channel, Change Your Life (Monday 9 AM) [15202]",
+	  "name": "529: Film and TV - Change the Channel, Change Your Life [15202]",
 	  "panelists": [
 		"Arturo Ardila-Gomez [6623]",
 		"Aruna Kalyanam [14541]",
@@ -4873,7 +4336,7 @@
 	  "category": "P&M"
 	},
 	{
-	  "name": "344: Impacts of the Aging Population (Monday 9 AM) [15092]",
+	  "name": "344: Impacts of the Aging Population [15092]",
 	  "panelists": [
 		"Francesca Grifo [7606]",
 		"C. Lawrence Greenwood Jr. [10769]",
@@ -4894,28 +4357,7 @@
 	  "category": "Bus."
 	},
 	{
-	  "name": "641: The Threat of ISIS (Monday 9 AM) [15095]",
-	  "panelists": [
-		"Malou Innocent [6865]",
-		"Joanne Grady Huskey [13622]",
-		"Anna Therese Day [14527]",
-		"Mark Fallon [14599]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Macky Auditorium [1]):1",
-		"Time(0;09:30):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": "IA"
-	},
-	{
-	  "name": "715: Plenary - How free enterprise can solve climate change [15259]",
+	  "name": "715: The Howard Higman Memorial Plenary: How Free Enterprise Can Solve Climate Change [15259]",
 	  "panelists": [
 		"Robert Inglis Sr. [14544]"
 	  ],
@@ -4954,6 +4396,68 @@
 	  "category": "Arts"
 	},
 	{
+	  "name": "369: Climate Series: When the Oceans Rise [15232]",
+	  "panelists": [
+		"Charles A. Menzie [14534]",
+		"Andr&eacute;s Edwards [14592]",
+		"Eric Lindstrom [14621]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(0;13:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "807: Performance Meeting - Our Native Land [15311]",
+	  "panelists": [
+		"Rulan Tangen [14603]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Fiske Auditorium [363]):1",
+		"Time(0;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "537: Poetry 'Words Words Words' [15156]",
+	  "panelists": [
+		"Sam J. Cook [7545]",
+		"David Wilcox [13572]",
+		"Charles A. Menzie [14534]",
+		"Joseph Sexton [14571]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(0;15:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
 	  "name": "687: Film Uninterruptus / Interruptus I [15160]",
 	  "panelists": [
 		"Matt Zoller Seitz [14549]"
@@ -4970,6 +4474,46 @@
 		"Availability:1"
 	  ],
 	  "category": "Arts"
+	},
+	{
+	  "name": "542: Performance - Strings & Circuits [15246]",
+	  "panelists": [
+		"Joshua Roman [14547]",
+		"Paul &quot;DJ Spooky&quot; Miller [14610]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Time(0;15:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "736: Performance & Panel: Jazz Jam: Music & Stories [15280]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Ernie Watts (Jazz) [10448]",
+		"Joshua Roman [14547]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Time(0;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
 	},
 	{
 	  "name": "720: KGNU - Monday PM - Host: Karen Raforth [15265]",
@@ -4991,7 +4535,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "Keynote [15305]",
+	  "name": "804: Keynote [15305]",
 	  "panelists": [
 		"[Guest Speaker] [14729]"
 	  ],
@@ -5029,27 +4573,9 @@
 	  "category": ""
 	},
 	{
-	  "name": "742: #Classroom Visit - Reporting on the Environment Class [15284]",
+	  "name": "#Classroom Visit - Reporting on the Environment Class [15284]",
 	  "panelists": [
 		"Oliver Morton [14553]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Classroom Visits [361]):1",
-		"Time(1;09:30):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
-	  "name": "754: #Classroom Visit - Design & Communication [15295]",
-	  "panelists": [
-		"Andr&eacute;s Edwards [14592]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5065,7 +4591,71 @@
 	  "category": ""
 	},
 	{
-	  "name": "740: #Classroom Visit - Cross-Cultural Writing [15287]",
+	  "name": "#Classroom Visit - Design & Communication [15295]",
+	  "panelists": [
+		"Andr&eacute;s Edwards [14592]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;09:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "588: White Privilege: as American as Apple Pie [15102]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Malou Innocent [6865]",
+		"Vivian Nixon [14531]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(1;09:30):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "810: Jazz Rehearsal [15309]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]",
+		"Ernie Watts (Jazz) [10448]",
+		"David Wilcox [13572]",
+		"Joshua Roman [14547]",
+		"Thom Rotella (Jazz) [14555]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(1;10:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "#Classroom Visit - Cross-Cultural Writing [15287]",
 	  "panelists": [
 		"Vivian Onano [10756]"
 	  ],
@@ -5081,6 +4671,26 @@
 		"Availability:1"
 	  ],
 	  "category": ""
+	},
+	{
+	  "name": "384: Climate Series: Global Warming or Cyclical Climate Change [15133]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Peter Frumhoff [14567]",
+		"Eric Lindstrom [14621]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(1;12:30):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
 	},
 	{
 	  "name": "428: Police Shootings: When the 'Perfect Storm' is the Perfect Cop-Out [15171]",
@@ -5104,12 +4714,12 @@
 	  "category": "HC"
 	},
 	{
-	  "name": "492: Anthropology of War [15229]",
+	  "name": "735: Disruptive Innovation Can Save the World [15279]",
 	  "panelists": [
-		"Arturo Ardila-Gomez [6623]",
-		"Damaris Maria Grossmann [14560]",
-		"Mark Fallon [14599]",
-		"Alexandra Huddleston [14706]"
+		"Joseph Byrum [14540]",
+		"Cynthia Koenig [14557]",
+		"Bwire Chirangi [14591]",
+		"Maria Mercedes Alvarez [14616]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5117,15 +4727,15 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
-		"Time(1;12:30):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Time(1;14:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": ""
 	},
 	{
-	  "name": "743: #Classroom Visit - American Congress [15285]",
+	  "name": "#Classroom Visit - American Congress [15285]",
 	  "panelists": [
 		"Michael Franc [6171]"
 	  ],
@@ -5143,7 +4753,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "745: #Classroom Visit - War Peace, Strategic Defense - Section 1 [15288]",
+	  "name": "#Classroom Visit - War Peace, Strategic Defense - Section 1 [15288]",
 	  "panelists": [
 		"C. Lawrence Greenwood Jr. [10769]"
 	  ],
@@ -5161,9 +4771,12 @@
 	  "category": ""
 	},
 	{
-	  "name": "737: #Classroom Visit - Percussion Performance [15281]",
+	  "name": "524: CU MFA Critique: Master Class [15085]",
 	  "panelists": [
-		"Rony Barrak (Jazz) [6334]"
+		"Steven Rubin [14550]",
+		"Max Nanis [14562]",
+		"Janelle Iglesias [14564]",
+		"Alexandra Huddleston [14706]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5171,15 +4784,61 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(Classroom Visits [361]):1",
+		"Venue(CU Art Museum [364]):1",
+		"Time(1;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "811: Jazz Rehearsal - Location #2 (TBD) [15310]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]",
+		"Ernie Watts (Jazz) [10448]",
+		"David Wilcox [13572]",
+		"Joshua Roman [14547]",
+		"Thom Rotella (Jazz) [14555]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits 2 [362]):1",
+		"Time(1;15:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "399: Performance & Panel: Whats the Point of Looking for Life Beyond Earth Anyway? [15234]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"David H. Grinspoon [6247]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Fiske Auditorium [363]):1",
 		"Time(1;15:30):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
-	  "category": ""
+	  "category": "S&T"
 	},
 	{
-	  "name": "745b: #Classroom Visit - War Peace, Strategic Defense - Section 2 [15306]",
+	  "name": "#Classroom Visit - War Peace, Strategic Defense - Section 2 [15306]",
 	  "panelists": [
 		"Diane Singerman [14702]"
 	  ],
@@ -5197,6 +4856,47 @@
 	  "category": "none"
 	},
 	{
+	  "name": "377: What Science Says About GMOs [15079]",
+	  "panelists": [
+		"Charles A. Menzie [14534]",
+		"Joseph Byrum [14540]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(1;15:30):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "641: The Threat of ISIS [15095]",
+	  "panelists": [
+		"Malou Innocent [6865]",
+		"Joanne Grady Huskey [13622]",
+		"Anna Therese Day [14527]",
+		"Mark Fallon [14599]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(1;15:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
 	  "name": "728: Film Interruptus: Interruptus II [15272]",
 	  "panelists": [
 		"Matt Zoller Seitz [14549]"
@@ -5209,6 +4909,24 @@
 		"Min-Panels(1):1",
 		"Venue(Muenzinger Auditorium [103]):1",
 		"Time(1;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "719: CWA@Night - 'He Named Me Malala' Film & Discussion [15264]",
+	  "panelists": [
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Visual Arts Complex 1B20 [189]):1",
+		"Time(1;18:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
@@ -5233,7 +4951,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "749: #Classroom Visit - Entrepreneurship [15292]",
+	  "name": "#Classroom Visit - Entrepreneurship [15292]",
 	  "panelists": [
 		"Paul Wapner [14622]"
 	  ],
@@ -5249,6 +4967,33 @@
 		"Availability:1"
 	  ],
 	  "category": ""
+	},
+	{
+	  "name": "812: Jazz Concert [15314]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]",
+		"Ernie Watts (Jazz) [10448]",
+		"David Wilcox [13572]",
+		"Joshua Roman [14547]",
+		"Thom Rotella (Jazz) [14555]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Ren&eacute; Marie [14716]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(1;18:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
 	},
 	{
 	  "name": "575: KGNU @ UMC: Wednesday AM: Rx For Our Political System [15181]",
@@ -5272,12 +5017,9 @@
 	  "category": "P&M"
 	},
 	{
-	  "name": "306: China is Rattling the World's Economy [15088]",
+	  "name": "718: BHS: Korey Wise Interview 3 [15263]",
 	  "panelists": [
-		"Reza Ramazani [6994]",
-		"Peter Lighte [7578]",
-		"C. Lawrence Greenwood Jr. [10769]",
-		"Mike Cordano [14611]"
+		"Korey Wise [14707]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5285,15 +5027,15 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC Center Ballroom [101]):1",
-		"Time(2;09:00):1",
-		"Minimum-Capacity(2):2",
+		"Venue(Boulder High School [125]):1",
+		"Time(2;08:30):1",
+		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
-	  "category": "Bus."
+	  "category": ""
 	},
 	{
-	  "name": "617: BHS: Performance - Funding the Future [15078]",
+	  "name": "617: BHS: Performance: Funding the Future [15078]",
 	  "panelists": [
 		"Gooding [7011]"
 	  ],
@@ -5311,7 +5053,7 @@
 	  "category": "Boulder High"
 	},
 	{
-	  "name": "747: #Classroom Visit - US Race/Ethnic Relations [15290]",
+	  "name": "#Classroom Visit - US Race/Ethnic Relations [15290]",
 	  "panelists": [
 		"Vivian Nixon [14531]"
 	  ],
@@ -5342,7 +5084,7 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
+		"Venue(Eaton Humanities 150 [195]):1",
 		"Time(2;10:30):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
@@ -5350,7 +5092,28 @@
 	  "category": "Bus."
 	},
 	{
-	  "name": "750: #Classroom Visit - Sports in Cold War [15293]",
+	  "name": "382: Climate Series: Risky Climate, Risky Solutions [15204]",
+	  "panelists": [
+		"Jamais Cascio [13576]",
+		"Morrow Cater [13606]",
+		"Oliver Morton [14553]",
+		"Peter Frumhoff [14567]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(2;11:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "#Classroom Visit - Sports in Cold War [15293]",
 	  "panelists": [
 		"Ismail Elfath [14600]"
 	  ],
@@ -5368,7 +5131,47 @@
 	  "category": ""
 	},
 	{
-	  "name": "738: #Classroom Visit #5 (Amanda Confirming Topic) [15282]",
+	  "name": "539: Performance - Together Again [15158]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(2;13:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "350: Leadership is Harder Than I Thought [15164]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Pablo Better [14538]",
+		"Ismail Elfath [14600]",
+		"Martha Clark Goss [14613]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(2;13:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "#Classroom Visit - 5 (Amanda Confirming Topic) [15282]",
 	  "panelists": [
 		"Jamais Cascio [13576]"
 	  ],
@@ -5384,6 +5187,25 @@
 		"Availability:1"
 	  ],
 	  "category": ""
+	},
+	{
+	  "name": "808: Performance Rehearsal - Our Native Land [15312]",
+	  "panelists": [
+		"Rulan Tangen [14603]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Fiske Auditorium [363]):1",
+		"Time(2;13:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
 	},
 	{
 	  "name": "618: BHS: Peculiar Politics: The 2016 Presidential Race [15075]",
@@ -5406,7 +5228,7 @@
 	  "category": "Boulder High"
 	},
 	{
-	  "name": "748: #Classroom Visit - Juvenile Justice, Delinquency, Inequalities within the JJS [15291]",
+	  "name": "#Classroom Visit - Juvenile Justice, Delinquency, Inequalities within the JJS [15291]",
 	  "panelists": [
 		"William A. Thorne Jr. [6605]"
 	  ],
@@ -5424,7 +5246,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "752: #Classroom Visit - Arabic Travel Writing [15294]",
+	  "name": "#Classroom Visit - Arabic Travel Writing [15294]",
 	  "panelists": [
 		"Alexandra Huddleston [14706]"
 	  ],
@@ -5442,13 +5264,13 @@
 	  "category": ""
 	},
 	{
-	  "name": "537: Poetry 'Words Words Words' [15156]",
+	  "name": "540: Performance - SO MANY GUITARS [15087]",
 	  "panelists": [
-		"Sam J. Cook [7545]",
+		"David H. Grinspoon [6247]",
+		"Gooding [7011]",
 		"David Wilcox [13572]",
-		"Charles A. Menzie [14534]",
-		"Joseph Sexton [14571]",
-		"Athena Edmonds [14624]"
+		"James E. Viator [14535]",
+		"Thom Rotella (Jazz) [14555]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5456,9 +5278,9 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC Center Ballroom [101]):1",
+		"Venue(UMC 235 [108]):1",
 		"Time(2;15:00):1",
-		"Minimum-Capacity(2):2",
+		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "Arts"
@@ -5482,7 +5304,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "758: Plenary - Antidotes to the Poison of Campaign Finance [15301]",
+	  "name": "758: CWA@Night Plenary - Antidotes to the Poison of Campaign Finance [15301]",
 	  "panelists": [
 		"Tim Wirth [14730]"
 	  ],
@@ -5539,6 +5361,25 @@
 	  "category": "Boulder High"
 	},
 	{
+	  "name": "392: Climate Series: DUET - Climate Change, Inequality and Economic Growth [15218]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Tim Wirth [14730]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(3;09:30):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
 	  "name": "647: What about Latin America? [15119]",
 	  "panelists": [
 		"Judith Morrison [6510]",
@@ -5552,19 +5393,19 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
-		"Time(3;09:30):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Time(3;11:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "IA"
 	},
 	{
-	  "name": "588: White Privilege: as American as Apple Pie [15102]",
+	  "name": "543: Performance & Panel - Our Native Land [15247]",
 	  "panelists": [
 		"William A. Thorne Jr. [6605]",
-		"Malou Innocent [6865]",
-		"Vivian Nixon [14531]"
+		"Rulan Tangen [14603]",
+		"Kenji Williams [14731]"
 	  ],
 	  "constraints": [
 		"New-Panelist:2",
@@ -5572,12 +5413,33 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
-		"Time(3;09:30):1",
-		"Minimum-Capacity(2):2",
+		"Venue(Fiske Auditorium [363]):1",
+		"Time(3;12:00):1",
+		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
-	  "category": "HC"
+	  "category": "Arts"
+	},
+	{
+	  "name": "492: Anthropology of War [15229]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Damaris Maria Grossmann [14560]",
+		"Mark Fallon [14599]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC East Ballroom [104]):1",
+		"Time(3;12:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
 	},
 	{
 	  "name": "620: BHS: Can We Talk? The Power of Communication [15077]",
@@ -5612,7 +5474,7 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
+		"Venue(ATLAS Black Box [182]):1",
 		"Time(3;14:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
@@ -5620,7 +5482,30 @@
 	  "category": ""
 	},
 	{
-	  "name": "741: #Classroom Visit - Gender, Islam, and Modernity [15283]",
+	  "name": "809: Jazz Master Class [15270]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Ernie Watts (Jazz) [10448]",
+		"Thom Rotella (Jazz) [14555]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(3;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "#Classroom Visit - Gender, Islam, and Modernity [15283]",
 	  "panelists": [
 		"Zainab Zeb Khan [14625]"
 	  ],
@@ -5638,7 +5523,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "744: #Classroom Visit - Planets & Their Atmosphere [15286]",
+	  "name": "#Classroom Visit - Planets & Their Atmosphere [15286]",
 	  "panelists": [
 		"David H. Grinspoon [6247]"
 	  ],
@@ -5656,7 +5541,7 @@
 	  "category": ""
 	},
 	{
-	  "name": "746: #Classroom Visit - Global Development [15289]",
+	  "name": "#Classroom Visit - Global Development [15289]",
 	  "panelists": [
 		"B.J. Whetstine [14704]"
 	  ],
@@ -5672,6 +5557,24 @@
 		"Availability:1"
 	  ],
 	  "category": ""
+	},
+	{
+	  "name": "538: Performance: Tell Me Your Story, I'll Write Your Song [15157]",
+	  "panelists": [
+		"David Wilcox [13572]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Time(3;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
 	},
 	{
 	  "name": "730: Film Interruptus: Interruptus IV [15274]",
@@ -5692,7 +5595,25 @@
 	  "category": ""
 	},
 	{
-	  "name": "512: Hard Science, Soft Art [15084]",
+	  "name": "541: CWA@Night: Performance - Poetry Slam [15159]",
+	  "panelists": [
+		"Sam J. Cook [7545]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Innisfree [365]):1",
+		"Time(3;17:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "512: CWA@Night: Hard Science, Soft Art [15084]",
 	  "panelists": [
 		"David H. Grinspoon [6247]",
 		"Jeff Lieberman [7003]",
@@ -5705,15 +5626,34 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC Center Ballroom [101]):1",
-		"Time(3;16:00):1",
+		"Venue(Chemistry 140 [7]):1",
+		"Time(3;17:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "Arts"
 	},
 	{
-	  "name": "802: Reproductive Rights [15304]",
+	  "name": "733: KNGU: Thursday PM [15277]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Eugene Sepulveda [14568]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(3;18:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "802: CWA@Night: Reproductive Rights [15304]",
 	  "panelists": [
 		"Ellie Boldman Hill [10724]",
 		"Kathleen Adams [14608]",
@@ -5751,24 +5691,6 @@
 	  "category": ""
 	},
 	{
-	  "name": "803: What I Learned About America from the Conference on World Affairs (Friday AM) [15307]",
-	  "panelists": [
-		"[Guest Speaker] [14729]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Old Main Chapel [6]):1",
-		"Time(4;10:30):1",
-		"Minimum-Capacity(2):2",
-		"Availability:1"
-	  ],
-	  "category": "none"
-	},
-	{
 	  "name": "432: The Cost of Bias to the Nation [15174]",
 	  "panelists": [
 		"William A. Thorne Jr. [6605]",
@@ -5782,15 +5704,54 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC Center Ballroom [101]):1",
-		"Time(4;11:00):1",
+		"Venue(UMC West Ballroom [102]):1",
+		"Time(4;10:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "HC"
 	},
 	{
-	  "name": "536: Performance 'Ignite' 2x4: Building a Better Future [15155]",
+	  "name": "306: China is Rattling the World's Economy [15088]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Peter Lighte [7578]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Mike Cordano [14611]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC East Ballroom [104]):1",
+		"Time(4;10:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "803: What I Learned About America from the Conference on World Affairs [15307]",
+	  "panelists": [
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(4;11:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "536: Performance: 'IGNITE' 2x4: Building a Better Future [15155]",
 	  "panelists": [
 		"Andrea Polli [14528]"
 	  ],
@@ -5821,12 +5782,51 @@
 		"Single-Category:2",
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
-		"Venue(UMC 235 [108]):1",
+		"Venue(Fleming 155 [198]):1",
 		"Time(4;12:30):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],
 	  "category": "IA"
+	},
+	{
+	  "name": "801: Climate Series: Political Views on Climate Change: A Widening Gap [15303]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Ellie Boldman Hill [10724]",
+		"Morrow Cater [13606]",
+		"Peter Frumhoff [14567]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(4;13:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "714: The Molly Ivins Memorial Plenary: Race, Immigration, Identity and Citizenship in a Multicultural America [15258]",
+	  "panelists": [
+		"Jose Antonio Vargas [14566]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(4;14:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
 	},
 	{
 	  "name": "731: Film Interruptus: Interruptus V [15275]",
@@ -5840,25 +5840,7 @@
 		"Max-Panels(3):1",
 		"Min-Panels(1):1",
 		"Venue(Muenzinger Auditorium [103]):1",
-		"Time(4;14:00):1",
-		"Minimum-Capacity(1):2",
-		"Availability:1"
-	  ],
-	  "category": ""
-	},
-	{
-	  "name": "714: Plenary - Race, Immigration, Identity and Citizenship in a Multicultural America. [15258]",
-	  "panelists": [
-		"Jose Antonio Vargas [14566]"
-	  ],
-	  "constraints": [
-		"New-Panelist:2",
-		"Paired-Panelists:3",
-		"Single-Category:2",
-		"Max-Panels(3):1",
-		"Min-Panels(1):1",
-		"Venue(Macky Auditorium [1]):1",
-		"Time(4;14:30):1",
+		"Time(4;16:00):1",
 		"Minimum-Capacity(1):2",
 		"Availability:1"
 	  ],

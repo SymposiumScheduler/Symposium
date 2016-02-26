@@ -3,6 +3,7 @@ package symposium.model;
 import java.util.*;
 
 public class VenueTimeDurationFilter extends Filter {
+    // ToDo: change the values to be read from the input file
     public static final int NUMBER_PANELIST_NEED_SHORT = 2;
     public static final int SHORT_VENUE_TIME_LENGTH = 50;
     public static final int LONG_VENUE_TIME_LENGTH = 80;
@@ -22,14 +23,20 @@ public class VenueTimeDurationFilter extends Filter {
      */
     @Override
     public void filter(Map<VenueTime, Integer> vtScoreMap, Map<Constraint, Integer> requiredViolationMap) {
-        for (VenueTime vt : vtScoreMap.keySet()) {
-            if((PANEL.PANELISTS.size() <= NUMBER_PANELIST_NEED_SHORT) && TimeFormat.withinError(vt.TIME.length(),
-                    SHORT_VENUE_TIME_LENGTH, 1)){
-                vtScoreMap.put(vt, vtScoreMap.get(vt)+VENUE_POINTS);
-            }
-            else if((PANEL.PANELISTS.size() > NUMBER_PANELIST_NEED_SHORT) && TimeFormat.withinError(vt.TIME.length(),
-                    LONG_VENUE_TIME_LENGTH, 1)){
-                vtScoreMap.put(vt, vtScoreMap.get(vt) + VENUE_POINTS);
+        Set<VenueTime> keys = new HashSet<>(vtScoreMap.keySet());
+        if(!PANEL.LOCKED) {
+            for (VenueTime vt : keys) {
+                if ((PANEL.PANELISTS.size() <= NUMBER_PANELIST_NEED_SHORT) && TimeFormat.withinError(vt.TIME.length(),
+                        SHORT_VENUE_TIME_LENGTH, 1)) {
+                    vtScoreMap.put(vt, vtScoreMap.get(vt) + VENUE_POINTS);
+                } else if ((PANEL.PANELISTS.size() > NUMBER_PANELIST_NEED_SHORT) && vt.TIME.length() < LONG_VENUE_TIME_LENGTH) {
+                    vtScoreMap.remove(vt);
+                    if (!requiredViolationMap.containsKey(this)) {
+                        requiredViolationMap.put(this, 1);
+                    } else {
+                        requiredViolationMap.put(this, requiredViolationMap.get(this) + 1);
+                    }
+                }
             }
         }
     }

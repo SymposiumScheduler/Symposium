@@ -116,7 +116,7 @@ public final class TimeFormat {
     private static String absoluteTimeToClockString(int absoluteTime) {
         absoluteTime = absoluteTime % (24 * 60);
 
-        return absoluteTime / 60 + ":" + absoluteTime % 60;
+        return String.format("%02d", absoluteTime / 60) + ":" + String.format("%02d", absoluteTime % 60);
     }
 
     public static boolean withinError(int origin, int compare, int error){

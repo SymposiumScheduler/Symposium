@@ -28,14 +28,21 @@ public class Report {
         for(String pnst : freePanelists.keySet()) {
             counter++;
             total += freePanelists.get(pnst).size();
-            result.append("\n\n").append(counter).append(") ").append(pnst).append(" in days ").append(freePanelists.get(pnst));
+            result.append("\n").append(counter).append(") ").append(pnst).append(" in days ").append(freePanelists.get(pnst));
         }
         result.append("\n\nTotal Panelist×Day violations: ").append(total);
 
 
         result.append("\n\n---------------------------- Messages ---------------------------");
-        for(String mes : ScheduleData.instance().getWarningMessages()) {
-            result.append("\n").append(mes);
+        List<String> messages =  ScheduleData.instance().getWarningMessages();
+        if(messages.isEmpty()) {
+            result.append("\nNo Messages");
+        }
+        else {
+            for(String mes : messages) {
+                result.append("\n").append(mes);
+            }
+
         }
 
         return result.toString();

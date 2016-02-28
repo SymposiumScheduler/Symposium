@@ -23,6 +23,8 @@ public class ScheduleData {
 
     private final List<String> warningMessages;
 
+    private List<String> panelistsAvailabilityViolating;
+
     /**
      * sortedSets because duplication is not allowed in these collections.
      */
@@ -46,6 +48,7 @@ public class ScheduleData {
         this.NUMBER_OF_DAYS = numberOfDays;
 
         this.warningMessages = new ArrayList<>();
+        this.panelistsAvailabilityViolating = new ArrayList<>();
 
     }
 
@@ -104,9 +107,10 @@ public class ScheduleData {
         }
     }
 
-
+    // ToDo: rewrite method to return the panelists violating the constraint
     public boolean isAssignedPanelists(VenueTime vt, List<String> panelists) {
         boolean panelistOverlap = false;
+        panelistsAvailabilityViolating.clear();
         for (int i = 0; i < panelists.size(); i++) {
             String panelist = panelists.get(i);
             List<Panel> p = this.panelistAssigned.get(panelist);
@@ -115,7 +119,8 @@ public class ScheduleData {
                     if (p.get(j).getVenueTime() != null && p.get(j).getVenueTime() != vt) {
                         if (p.get(j).getVenueTime().TIME.doesIntersect(vt.TIME)) {
                             panelistOverlap = true;
-                            break;
+                            panelistsAvailabilityViolating.add(panelist);
+                         //   break;
                         }
                     }
                 }
@@ -237,7 +242,7 @@ public class ScheduleData {
 
                     pnstDayLoop : for(int day : daysThisPanelistIsAvailable) {
                         for(Panel dayP : this.getPanelistAssignedPanels(pnst) ){
-                            if(dayP.getVenueTime().getDay() == day) {
+                            if(dayP.getVenueTime().getDay() == day || day == 6) {
                                 continue pnstDayLoop;
                             }
                         }
@@ -297,6 +302,10 @@ public class ScheduleData {
         if(instance == null) {
             instance = new ScheduleData(venues, noOfDays);
         }
+    }
+
+    public List<String> getPanelistsAvailabilityViolating() {
+        return this.panelistsAvailabilityViolating;
     }
 
     public static void deleteScheduleData() {

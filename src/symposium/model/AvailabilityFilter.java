@@ -1,11 +1,10 @@
 package symposium.model;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class AvailabilityFilter extends Filter {
+    private static List<String> panelistsViolating;
+
     public AvailabilityFilter(ConstraintPriority priority, Panel p) {
         super(priority, p);
     }
@@ -35,11 +34,17 @@ public class AvailabilityFilter extends Filter {
 
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
+        panelistsViolating = this.PANEL.PANELISTS;
         return !this.PANEL.AVAILABILITY.doesEnclose(venueTime.TIME);
     }
 
     @Override
     public String toString() {
-        return "Availability Constraint violated: priority = " + PRIORITY;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Availability Constraint violated: ").append("\n");
+        sb.append("\t\t\t").append("The Panelists are: ").append(panelistsViolating);
+
+
+        return sb.toString();
     }
 }

@@ -47,7 +47,7 @@ public class VenueTimeDurationFilter extends Filter {
     }
     @Override
     public String toString() {
-        return "VenueTimeDurationFilter";
+        return "Venue Time Duration Violated (Venue must fit the number of Panelists)";
     }
 }
 

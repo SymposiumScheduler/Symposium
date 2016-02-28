@@ -1,8 +1,8 @@
 package symposium.model;
 
 public class PairedPanelistConstraint extends Constraint {
-    public static String firstPanelist;
-    public static String secondPanelist;
+    private static String firstPanelist;
+    private static String secondPanelist;
     public PairedPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority,p);
     }

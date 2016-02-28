@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.List;
 
 public class NewPanelistConstraint extends TimeConstraint { //Ask team members
-    public static List<String> panelist;
+    private static List<String> panelist;
 
     public NewPanelistConstraint(ConstraintPriority priority, Panel p) {
         super(priority, p);

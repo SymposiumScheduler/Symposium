@@ -42,7 +42,8 @@ public class Main {
 
         // Print report
         System.out.println(Report.INSTANCE.toString());
-        System.out.println(__debugStats());
+
+        System.out.println(_DebugStatus.__debugStats());
         //System.out.println("\n\n\nTIME= " + (elapsedTime/(double)1000000000) + " ± 0.05 s");
     }
 
@@ -137,110 +138,5 @@ public class Main {
         System.out.println("Scale for Time = " + optimaladjust[2][2]);
         System.out.println("Scale for Availability = " + optimaladjust[2][3]);
         System.out.println("Scale for Panelists = " + optimaladjust[0][4]);
-    }
-
-    private static String __debugStats() {
-        StringBuilder constraintCount = new StringBuilder();
-        Map<String, Integer> violationMap = new HashMap();
-        violationMap.put("New-Panelist Constraint", 0);
-        violationMap.put("Paired-Panelist Constraint", 0);
-        violationMap.put("Single-Category Constraint", 0);
-        violationMap.put("Venue Constraint", 0);
-        violationMap.put("Max-Panels Constraint", 0);
-        violationMap.put("Min-Panels Constraint", 0);
-        violationMap.put("Minimum-Capacity Constraint", 0);
-        violationMap.put("Specific Time Constraint", 0);
-        violationMap.put("Consecutive Panels Constraint", 0);
-
-        constraintCount.append("\n------------------------------ Debug Stats ------------------------------ ");
-
-        for (Panel panel : ScheduleData.instance().getAssignedPanels()) {
-            for (Constraint constraint : panel.CONSTRAINTS) {
-                if (constraint.isConstraintViolated(panel.getVenueTime())) {
-                    if (constraint instanceof NewPanelistConstraint) {
-                        violationMap.put("New-Panelist Constraint", violationMap.get("New-Panelist Constraint")+1);
-                    }
-                    if (constraint instanceof PairedPanelistConstraint) {
-                        violationMap.put("Paired-Panelist Constraint", violationMap.get("Paired-Panelist Constraint")+1);
-                    }
-                    if (constraint instanceof CategoryConstraint) {
-                        violationMap.put("Single-Category Constraint", violationMap.get("Single-Category Constraint")+1);
-                    }
-                    if (constraint instanceof VenueFilter) {
-                        violationMap.put("Venue Constraint", violationMap.get("Venue Constraint")+1);
-                    }
-                    if (constraint instanceof MaxPanelistConstraint) {
-                        violationMap.put("Max-Panels Constraint", violationMap.get("Max-Panels Constraint"+1));
-                    }
-                    if (constraint instanceof SizeConstraint) {
-                        violationMap.put("Minimum-Capacity Constraint", violationMap.get("Minimum-Capacity Constraint")+1);
-                    }
-                    if (constraint instanceof SpecificTimeFilter) {
-                        violationMap.put("Specific Time Constraint", violationMap.get("Specific Time Constraint")+1);
-                    }
-                    if (constraint instanceof ConsecutivePanelsConstraint) {
-                        violationMap.put("Consecutive Panels Constraint", violationMap.get("Consecutive Panels Constraint")+1);
-                    }
-
-                }
-            }
-        }
-
-        int scheduled = ScheduleData.instance().getAssignedPanels().size();
-        int unscheduled = ScheduleData.instance().getUnschedulablePanels().size();
-        int total = scheduled + unscheduled;
-        float percent = 100*((float) scheduled/(float) total);
-        constraintCount.append("\n\n").append(percent + "% of panels scheduled (" + scheduled + " out of " + total + ")");
-
-        int totalViolations = 0;
-
-        for (String key : violationMap.keySet()) {
-            constraintCount.append("\n\n").append(key + " violated " + violationMap.get(key) + " times");
-            totalViolations += violationMap.get(key);
-        }
-
-        constraintCount.append("\n\n").append(totalViolations + " Total Number of Violations ");
-
-
-        int countPrefVenueViolations = 0;
-        int countPrefVenue = 0;
-        constraintCount.append("\n\n------------------------------ Free VenueTimes ------------------------------ \n");
-        for(Venue v : ScheduleData.instance().VENUES) {
-            if(v.PRIORITY < 10) {
-                constraintCount.append("\n").append(v.NAME);
-                for (VenueTime vt : v.getFreeVenueTimes()) {
-
-                    constraintCount.append("\n\t").append(vt);
-                    countPrefVenueViolations++;
-
-                }
-                for(VenueTime vt : v.getAssignedVenueTimes()) {
-                    countPrefVenue++;
-                }
-            }
-
-        }
-
-            constraintCount.append("\n\n------------------------------ Venue Times Violating The duration Filter ------------------------------ \n");
-            int countDuration = 0;
-            for (Panel panel : ScheduleData.instance().getAssignedPanels()) {
-                if((panel.PANELISTS.size() <= 2) && TimeFormat.withinError(panel.getVenueTime().TIME.length(),
-                        80, 1)){
-                //    constraintCount.append("\n").append(panel.NAME).append(" Violated Duration");
-                    countDuration++;
-                }
-                else if((panel.PANELISTS.size() > 2) && TimeFormat.withinError(panel.getVenueTime().TIME.length(),
-                        50, 1)){
-                //    constraintCount.append("\n").append(panel.NAME).append(" Violated Duration");
-                    countDuration++;
-                }
-            }
-
-            constraintCount.append("\n\n").append("Number of Violations for Duration: ").append(countDuration);
-            constraintCount.append("\n\n").append("Number of Violations for Preferred: ").append(countPrefVenueViolations);
-
-            constraintCount.append("\n\n").append("Number of Scheulded for Preferred: ").append(countPrefVenue);
-
-        return constraintCount.toString();
     }
 }

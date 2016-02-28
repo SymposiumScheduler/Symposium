@@ -95,7 +95,7 @@ public class TimeFormatTest {
         // return:  produces the correct number in a String formatted to the normalTime format.
 
         TimeRange timeRange = new TimeRange(2*60*24 + 3*60 + 20, 2*60*24 + 5*60 + 40);
-        String normalRange = "2, 3:20-5:40";
+        String normalRange = "2, 03:20-05:40";
 
         assertEquals(normalRange, TimeFormat.absoluteToNormal(timeRange));
     }
@@ -111,7 +111,7 @@ public class TimeFormatTest {
         TimeRangeSeries trs = new TimeRangeSeries(ranges);
 
 
-        String normalRange = "2, 3:20-4:30\n"+"2, 5:10-6:30\n"+"2, 15:5-18:15";
+        String normalRange = "2, 03:20-04:30\n"+"2, 05:10-06:30\n"+"2, 15:05-18:15";
 
         assertEquals(normalRange, TimeFormat.absoluteToNormal(trs));
     }
@@ -123,7 +123,7 @@ public class TimeFormatTest {
         // return:  produce a String with two lines with each day in a line and the range is split correctly
 
         TimeRange timeRange = new TimeRange(2*60*24 + 9*60 + 20, 4*60*24 + 5*60 + 40);
-        String normalRange = "2, 9:20-23:59\n" + "3, 00:00-23:59\n" + "4, 00:00-5:40";
+        String normalRange = "2, 09:20-23:59\n" + "3, 00:00-23:59\n" + "4, 00:00-05:40";
 
         assertEquals(normalRange, TimeFormat.absoluteToNormal(timeRange));
     }

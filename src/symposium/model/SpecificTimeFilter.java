@@ -34,7 +34,7 @@ public class SpecificTimeFilter extends Filter {
 
     /**
      * @param venueTime
-     * @return If the panel is assigned to the correct venue, returns false, otherwise returns true.
+     * @return If the panel is not assigned to the correct venue, returns false, otherwise returns true.
      */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
@@ -42,7 +42,7 @@ public class SpecificTimeFilter extends Filter {
     }
     @Override
     public String toString() {
-        return "SpecificTimeFilter (Panel must be scheduled at specific time)";
+        return "Specific Time Constraint Violated (Panel must be scheduled at specific time)";
     }
 }
 

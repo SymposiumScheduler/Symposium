@@ -29,7 +29,7 @@ public class Main {
         diffValues[0] = 10;
         diffValues[1] = 100000;
         diffValues[2] = 100000;
-        diffValues[3] = 10000000;
+        diffValues[3] = 100000000;
         diffValues[4] = 100; // panelist
 
         // Reading parsing json files

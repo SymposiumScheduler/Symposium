@@ -162,7 +162,7 @@ public class CategoryConstraintTest {
         }
 
         if (cc1 == null || cc2 == null) {
-            System.out.println("CategoryConstraint never initialized");
+     //       System.out.println("CategoryConstraint never initialized");
         }
 
         assertTrue(cc1.isConstraintViolated());
@@ -243,10 +243,10 @@ public class CategoryConstraintTest {
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(1).getFreeVenueTimes().get(0));
 
-        System.out.println(ScheduleData.instance().VENUES.get(0).getAssignedVenueTimes().get(0));
-        System.out.println(ScheduleData.instance().VENUES.get(1).getAssignedVenueTimes().get(0));
+//        System.out.println(ScheduleData.instance().VENUES.get(0).getAssignedVenueTimes().get(0));
+//        System.out.println(ScheduleData.instance().VENUES.get(1).getAssignedVenueTimes().get(0));
 
-        System.out.println(ScheduleData.instance().getAssignedPanels());
+//        System.out.println(ScheduleData.instance().getAssignedPanels());
 
         CategoryConstraint cc1 = null;
         CategoryConstraint cc2 = null;
@@ -265,7 +265,7 @@ public class CategoryConstraintTest {
         }
 
         if (cc1 == null || cc2 == null) {
-            System.out.println("CategoryConstraint never initialized");
+    //        System.out.println("CategoryConstraint never initialized");
         }
 
         assertFalse(cc1.isConstraintViolated());

@@ -309,7 +309,7 @@ public class ScheduleData {
     }
 
     public static void deleteScheduleData() {
-        System.err.println("ScheduleData instance is being deleted.");
+      //  System.err.println("ScheduleData instance is being deleted.");
         instance = null;
     }
 

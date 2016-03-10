@@ -247,10 +247,10 @@ public class PanelistConstraintTest {
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(0).getFreeVenueTimes().get(0));
         ScheduleData.instance().assignPanelToVenueTime(ScheduleData.instance().getFreePanels().get(0), ScheduleData.instance().VENUES.get(1).getFreeVenueTimes().get(0));
 
-        System.out.println(ScheduleData.instance().VENUES.get(0).getAssignedVenueTimes().get(0));
-        System.out.println(ScheduleData.instance().VENUES.get(1).getAssignedVenueTimes().get(0));
+  //      System.out.println(ScheduleData.instance().VENUES.get(0).getAssignedVenueTimes().get(0));
+  //      System.out.println(ScheduleData.instance().VENUES.get(1).getAssignedVenueTimes().get(0));
 
-        System.out.println(ScheduleData.instance().getAssignedPanels());
+  //      System.out.println(ScheduleData.instance().getAssignedPanels());
 
         PanelistConstraint pc1 = null;
         PanelistConstraint pc2 = null;

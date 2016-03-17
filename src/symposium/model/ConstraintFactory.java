@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ConstraintFactory{
-
     /**
      * This is our main factory method, which is called from Panel. Each time this is called, a list of constraint names (string) is
      * sent in. For each string, we create an actual constraint object using the predetermined priority number

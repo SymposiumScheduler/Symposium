@@ -15,7 +15,9 @@ import java.util.Collections;
 import java.util.List;
 import symposium.model.Panel;
 
-
+/**
+ * Takes in a JSON file and extracts information from it in order to build the data structure used for the algorithm
+ */
 public class Parser {
     public static void parse(String inputFile) {
         JSONParser parser = new JSONParser();

@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Collection;
 
+/**
+ * Each Venue is stored in its own object. We can then access its name, size, priority, and its VenueTimes
+ */
 public class Venue implements Comparable<Venue>{
 
     public final String NAME;
@@ -14,6 +17,13 @@ public class Venue implements Comparable<Venue>{
     private final List<VenueTime> assignedVenueTimes;
     private final List<VenueTime> freeVenueTimes;
 
+    /**
+     * Creates Venue objects.
+     * @param name of the Venue
+     * @param size of the Venue
+     * @param priority from the input file. The higher the number, the more important it is to schedule a Panel in this Venue
+     * @param timeRanges the available times in which this Venue is open. These are converted to VenueTime objects
+     */
     public Venue(String name, int size, int priority, Collection<TimeRange> timeRanges) {
         this.NAME = name;
         this.SIZE = size;
@@ -29,6 +39,11 @@ public class Venue implements Comparable<Venue>{
         this.assignedVenueTimes = new ArrayList<VenueTime>();
     }
 
+    /**
+     * Switch a VenueTime to the assigned list, showing that it has a panel in it
+     * Then remove it from the free list (because another panel cannot be assigned to it)
+     * @param venueTime the venueTime to be changed
+     */
     public void changeToAssigned(VenueTime venueTime) {
         if(venueTime.VENUE == this) {
             assignedVenueTimes.add(venueTime);
@@ -36,6 +51,11 @@ public class Venue implements Comparable<Venue>{
         }
     }
 
+    /**
+     * Switch a VenueTime to the free list, showing that it no longer has a panel in it
+     * Then remove it from the assigned list
+     * @param venueTime the venueTime to be changed
+     */
     public void changeToFree(VenueTime venueTime) {
         if(venueTime.VENUE == this) {
             assignedVenueTimes.remove(venueTime);
@@ -43,6 +63,11 @@ public class Venue implements Comparable<Venue>{
         }
     }
 
+    /**
+     * Compares Venues so that they can be sorted in descending priority size
+     * @param that the Venue that "this" Venue is being compared to
+     * @return an integer that sort uses to determine order
+     */
     @Override
     public int compareTo(Venue that) {
         int sCompare = this.SIZE - that.SIZE;

@@ -2,6 +2,10 @@ package symposium.model;
 
 import java.util.*;
 
+/**
+ * Stores information about Panels, such as name, constraints, category, and the panel's availability based on
+ * the panelists
+ */
 public class Panel implements Comparable<Panel>{
     public final String NAME;
     public final Range AVAILABILITY;

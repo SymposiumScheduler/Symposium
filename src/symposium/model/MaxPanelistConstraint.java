@@ -2,29 +2,47 @@ package symposium.model;
 
 import java.util.*;
 
+/**
+ * The class MaxPanelistConstraint inherits from Constraints, @see Constraint for documentation.
+ * The class tests whether the constraint Max number of Panelists is violated or not.
+ * Max number of Panelists is violated when a panelist appears more than the set maximum number of times per day.
+ *
+ */
+
 public class MaxPanelistConstraint extends Constraint {
     final int MAX;
     public static String panelistsViolating;
 
-    public MaxPanelistConstraint(ConstraintPriority priority, Panel p, int max) {
-        super(priority,p);
+    /**
+     * Constructs for the MaxPanelistConstraint class.
+     *
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
+     * @param max      The maximum number allowed for the panelist to appear per day
+     */
+
+    public MaxPanelistConstraint(ConstraintPriority priority, Panel panel, int max) {
+        super(priority,panel);
         this.MAX = max;
     }
 
     /**
-     * Dependencies: Panel class, ScheduleData class, VenueTime class
-     * @param venueTime
-     * @return bool true if the panel is scheduled more times per day than the maximum, false otherwise
+     * <b>Dependencies:</b> Panel class, ScheduleData class, VenueTime class
+     *
+     * The method gets loops through each panel panelists and counts how many times they appear per day.
+     * When the method finds the panelist violating it records the panelist and assign it to panelistsViolating
+     * @param venueTime The time being checked
+     * @return boolean; If the panelists appears more times the MAX, return true, otherwise, return false.
      */
     public boolean isConstraintViolated(VenueTime venueTime) {
         int counter;
         for (String pist: PANEL.PANELISTS ) {
-            counter = 1; // reset and assume self is always assigned
+            counter = 1; // Reset and assume self is always assigned
             List<Panel> assigned = ScheduleData.instance().getPanelistAssignedPanels(pist);
-            if (assigned != null) { //Guard condition against null pointers.
+            if (assigned != null) { // Guard condition against null pointers.
                 for (Panel pl : assigned) {
                     if(pl == this.PANEL) {
-                        continue; // don't count self because it's assumed and already counted.
+                        continue; // Don't count self because it's assumed and already counted.
                     }
 
                     int day = pl.getVenueTime().getDay();
@@ -40,6 +58,13 @@ public class MaxPanelistConstraint extends Constraint {
         }
         return false;
     }
+
+    /**
+     * ToString method for the Max Panelist Constraint to be returned when violated.
+     * The method specifies what is told when a constraint is violated.
+     *
+     * @return String of the violation message
+     */
 
     @Override
     public String toString() {

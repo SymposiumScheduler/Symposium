@@ -31,14 +31,20 @@ public class Parser {
         initPanels(root);
     }
 
+    /**
+     * Looks for the venue and venue-time sections of the json file
+     * First, we loop throw venues to get their names, size and priority values
+     * Then, we extract time information from the venue-time section and convert it into our timerange format
+     * We map each venue time to its venue, create a collection of venue objects and send that information to ScheduleData
+     * This method also determines how many days the event will last
+     * @param jsonObject is our json file
+     */
     private static void initVenues(JSONObject jsonObject) {
         List<Venue> venues = new ArrayList<Venue>();
 
         JSONArray json_venues = (JSONArray) jsonObject.get("Venues");
         JSONArray json_venue_times = (JSONArray) jsonObject.get("Venue-Times");
 
-
-        //System.out.println("Getting venue sizes and priorities...");
         Map<String, Integer> sizes = new HashMap<String, Integer>();
         Map<String, Integer> priorities = new HashMap<>();
         for (Object o : json_venues) {
@@ -50,8 +56,6 @@ public class Parser {
             priorities.put(venue_name, Integer.valueOf(venue_priority));
         }
 
-
-        //System.out.println("Setting up Venues...");
         int lastTimePoint = -1; // the last time anything could be scheduled (for number of days);
         Map<String, List<TimeRange>> ranges = new HashMap<String, List<TimeRange>>();
         for (Object o : json_venue_times) {
@@ -81,6 +85,19 @@ public class Parser {
         ScheduleData.init(venues, TimeFormat.getNumberOfDay(lastTimePoint)+1); // +1 because days begin with 0;
     }
 
+    /**
+     * This method loops over the panelists section of the json file and gathers the names and available times
+     * of each panelist, as well as checks to see if they're new or not.
+     *
+     * Then it loops over the panels section, getting all necessary information for each panel.
+     * For each panel, it finds the panelists from the above step that are needed and calculates the intersection
+     * of their available times. A panel object is then created using the name, list of panelists, and category from the json file,
+     * along with the available time as mentioned above, and a list of string names for all constraints that the json file
+     * assigns to the panel.
+     *
+     * After doing this for all panels, it gives ScheduleData a list of all Panel objects
+     * @param jsonObject is the json file
+     */
     private static void initPanels(JSONObject jsonObject) {
         List<symposium.model.Panel> panels = new ArrayList<Panel>();
 

@@ -1,7 +1,5 @@
 package symposium.model;
 
-
-
 public class VenueTime implements Comparable<VenueTime>{
 
     public final Range TIME;

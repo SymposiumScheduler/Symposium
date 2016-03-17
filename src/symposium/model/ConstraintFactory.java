@@ -6,6 +6,15 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ConstraintFactory{
+
+    /**
+     * This is our main factory method, which is called from Panel. Each time this is called, a list of constraint names (string) is
+     * sent in. For each string, we create an actual constraint object using the predetermined priority number
+     * Once the method has looped over all constraints, it returns a list of the constraint objects for the Panel to store
+     * @param panel is the panel that is calling this method, given because most constraints require their assigned panel to instantiate
+     * @param constraint_strings is a list of names corresponding to constraint objects
+     * @return a list of constraint objects for the panel that called this method
+     */
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
         // assumed constraints
@@ -93,6 +102,12 @@ public class ConstraintFactory{
         });
         return constraints;
     }
+
+    /**
+     * Simply converts an integer value to a priority type (required, very_important, or desired.)
+     * @param level an integer between 1-3
+     * @return the corresponding priority type (or desired if the given number doesn't map to a priority type)
+     */
     private static ConstraintPriority intToPriority(int level) {
         switch (level) {
             case 1 :

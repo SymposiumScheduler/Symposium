@@ -36,43 +36,76 @@ public class Panel implements Comparable<Panel>{
         this.LOCKED = tmp;
     }
 
+    /**
+     * @param difficulty is calculated in DummyScheduler
+     */
     public void setDifficulty(int difficulty) {
         this.difficulty = difficulty;
-        //concurrency - ( (end - start) + (end - start) ....)
     }
 
+    /**
+     * @return the panel's difficulty value
+     */
     public int getDifficulty(){
         return difficulty;
     }
 
+    /**
+     * @return the timeslow that the panel is scheduled in
+     */
     public VenueTime getVenueTime(){
         return assignedVenueTime;
     }
 
+    /**
+     * @param venueTime is the proposed venuetime that the panel is being placed in (done in DummyScheduler)
+     */
     public void setVenueTime(VenueTime venueTime){
         this.assignedVenueTime = venueTime;
     }
 
+    /**
+     * @return the name of the panel
+     */
     public String getName(){
         return NAME;
     }
 
+    /**
+     * @return the range in which this panel is available for scheduling
+     */
     public Range getAvailability(){
         return AVAILABILITY;
     }
 
+    /**
+     * @param message is a string given during the scheduling process that will be printed in Report
+     */
     public void addMessage(String message){
         messages.add(message);
     }
+
+    /**
+     * @return returns the list of messages
+     */
     public List<String> getMessages() {
         return this.messages;
     }
 
+    /**
+     * Compares the difficulties of two panels in order to sort them in desending order
+     * @param that panel that this one is being compared to
+     * @return a number that determines which one should come first
+     */
     @Override
     public int compareTo(Panel that) {
         return this.difficulty - that.difficulty;
     }
 
+    /**
+     * @return Returns a string that encapsulates needed information about the Panel, including:
+     * Its name, when and where it's been assigned, and any messages it has.
+     */
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(this.NAME).append("\n\t");

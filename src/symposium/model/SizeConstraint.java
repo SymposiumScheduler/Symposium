@@ -2,7 +2,6 @@ package symposium.model;
 
 /**
  * The class SizeConstraint inherits from Constraints, @see Constraint for documentation.
- * The class tests whether the constraint Size Constraint is violated or not.
  * Size Constraint is violated when a panel is given a venue smaller than the minimum size required,
  * in other words when the venue does not fit the panel.
  *
@@ -30,9 +29,10 @@ public class SizeConstraint extends Constraint {
      * <b>Dependencies:</b> venueTime.VENUE.SIZE variable
      *
      * The method tests if the venue given to a panel is smaller than the minimum size required.
-     * The method uses the minSize of the panel, which is passed when the method is called.
+     * The method uses the minSize of the panel, which is passed through the constructor.
      *
      * When the method is violated the the venue is assigned to venueTimeViolating so we can report what size was required.
+     *
      * @param venueTime The time being checked
      * @return boolean; True if the size is smaller than the minimum size required, otherwise, false.
      */
@@ -62,9 +62,6 @@ public class SizeConstraint extends Constraint {
     }
 
     /**
-     * ToString method for the Size Constraint to be returned when violated.
-     * The method specifies what is told when a constraint is violated.
-     *
      * @return String of the violation message
      */
 

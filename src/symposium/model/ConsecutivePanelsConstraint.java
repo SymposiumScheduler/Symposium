@@ -4,18 +4,24 @@ import java.util.*;
 
 /**
  * The class ConsecutivePanelsConstraint inherits from Constraints, @see Constraint for documentation.
- * The class tests whether the constraint Consecutive Panels is violated or not.
  * Consecutive Panels is violated when two panelists on some panel have 3 or more panels Consecutively
  */
 
 public class ConsecutivePanelsConstraint extends Constraint {
 
-    public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel p) {
-        super(priority,p);
+    /**
+     * Constructs for the ConsecutivePanelsConstraint class.
+     *
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
+     */
+
+
+    public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel panel) {
+        super(priority,panel);
     }
 
     /**
-     * Constructs for the ConsecutivePanelsConstraint class.
      *
      * @param venueTime The time being checked by doesOverlap
      * @return boolean; If there is more than 2 consecutive panels that a panelist is in (including the given venueTime) return true.

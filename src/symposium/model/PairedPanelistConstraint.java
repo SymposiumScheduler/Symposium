@@ -2,7 +2,6 @@ package symposium.model;
 
 /**
  * The class PairedPanelistConstraint inherits from Constraints, @see Constraint for documentation.
- * The class tests whether the constraint Paired Panelist is violated or not.
  * Paired Panelist Constraint is violated when two panelists appear together twice or more per day
  *
  */
@@ -58,9 +57,6 @@ public class PairedPanelistConstraint extends Constraint {
     }
 
     /**
-     * ToString method for the Paired Panelist Constraint to be returned when violated.
-     * The method specifies what is told when a constraint is violated.
-     *
      * @return String of the violation message
      */
 

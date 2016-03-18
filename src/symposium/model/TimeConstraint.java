@@ -6,7 +6,7 @@ import java.sql.Time;
  * The class TimeConstraint, is an abstract which inherits from Constraints, @see Constraint for documentation.
  * The class is the parent class, which represents any constraints that tests the panel or panelist on a specific time.
  * For example, the New Panelist Constraint is a time constraint, such as we test whether the panelist on the first day is new or not.
- * Testing the first day means we are testing a specific time.
+ * <I>Testing the first day means we are testing a specific time.</I>
  * Constraint is violated when the checked time satisfy the wanted time
  */
 

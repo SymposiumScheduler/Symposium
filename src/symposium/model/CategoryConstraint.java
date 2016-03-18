@@ -2,7 +2,6 @@ package symposium.model;
 
 /**
  * The class CategoryConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
- * The class tests whether the constraint Category is violated or not.
  * Category Constraint is violated when two panels of same category are scheduled at same time.
  *
  */
@@ -25,6 +24,7 @@ public class CategoryConstraint extends NoOverlapConstraint {
      *
      * The method compares the venueTime for the given panel with all the other panels scheduled at that time.
      * The method uses isAssignedCategories() to test if there is another panel with the same category at that time
+     *
      * @param venueTime The venueTime to check the Category against.
      * @return boolean; If any other panel with the same category is scheduled at the same time as venueTime, return true,  otherwise, return false.
      *
@@ -41,9 +41,6 @@ public class CategoryConstraint extends NoOverlapConstraint {
     }
 
     /**
-     * ToString method for the Category Constraint to be returned when violated.
-     * The method specifies what is told when a constraint is violated.
-     *
      * @return String of the violation message
      */
 

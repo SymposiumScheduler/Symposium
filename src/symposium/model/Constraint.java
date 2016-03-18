@@ -6,8 +6,7 @@ import java.util.Map;
 /**
  * The class Constraints is an abstract class and the main parent for all constraint classes.
  * Each Constraint has a given priority (enum), which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
- * The class holds a cache which stores a map of venueTimes and their violations.
- * The class also has methods to test if constraints are violated or not.
+ * Each child of the Constraint class will be testing if the constraint is violated or not.
  * Please refer to each constraint class for their documentation.
  */
 
@@ -117,6 +116,7 @@ public abstract class Constraint {
      * The toString method will differ for each constraint.
      * The method specifies what is meant when a constraint is violated
      * Each constraint will return the message associated with it when it is violated.
+     *
      * @return String message of the violation.
      */
 

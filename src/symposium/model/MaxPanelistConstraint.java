@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * The class MaxPanelistConstraint inherits from Constraints, @see Constraint for documentation.
- * The class tests whether the constraint Max number of Panelists is violated or not.
  * Max number of Panelists is violated when a panelist appears more than the set maximum number of times per day.
  *
  */
@@ -29,8 +28,9 @@ public class MaxPanelistConstraint extends Constraint {
     /**
      * <b>Dependencies:</b> Panel class, ScheduleData class, VenueTime class
      *
-     * The method gets loops through each panel panelists and counts how many times they appear per day.
-     * When the method finds the panelist violating it records the panelist and assign it to panelistsViolating
+     * The method loops through each panel panelists and counts how many times they appear per day.
+     * When the method finds the panelist violating it records the panelist and assign it to panelistsViolating.
+     *
      * @param venueTime The time being checked
      * @return boolean; If the panelists appears more times the MAX, return true, otherwise, return false.
      */
@@ -60,9 +60,6 @@ public class MaxPanelistConstraint extends Constraint {
     }
 
     /**
-     * ToString method for the Max Panelist Constraint to be returned when violated.
-     * The method specifies what is told when a constraint is violated.
-     *
      * @return String of the violation message
      */
 

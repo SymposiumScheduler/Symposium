@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * The class New Panelist Constraint inherits from TimeConstraint, @see TimeConstraint for documentation.
- * The class tests whether the constraint New Panelist is violated or not.
  * New Panelist constraint is violated when on Monday (or first day) all of the panelists of the panel are new
  *
  */

@@ -182,6 +182,7 @@ public class ScheduleData {
      * @return int; the number of times the panelists appear together that day.
      */
     public int timesAssignedTogetherDay(VenueTime vt, String p1, String p2) {
+        //@FIXME Current function only appears to work if panel is already scheduled; in other words, useless for predictive checking.
         int assigned = 0;
         int start = (vt.TIME.getStart() / 1440)*1440; //Division Should be floor
         int end = start + 1440;
@@ -256,6 +257,8 @@ public class ScheduleData {
      * ScheduleData.getFreePanels method, TimeFormat.getNumberOfDay method, Panel.getVenueTime method
      *
      * Calculated from the union of the panelist's panel's availabilities no the availability of the panelist themselves
+     *
+     *
      *
      * @return map from panelist to set of days which they are not scheduled
      */

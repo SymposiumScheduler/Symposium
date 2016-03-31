@@ -31,7 +31,13 @@ public class ScheduleData {
     private final List<Panel> unschedulablePanels;
 
     /**
+     * <b>Dependencies:</b> Venue class, Panel class
+     *
+     * ScheduleData constructor; initializes internal variables, assigns list of venues,
+     * assigns number of days Schedule will be in length.
+     *
      * @param venues
+     * @param numberOfDays
      */
     public ScheduleData(List<Venue> venues, int numberOfDays) {
         this.VENUES = Collections.unmodifiableList(venues);
@@ -50,7 +56,8 @@ public class ScheduleData {
     }
 
     /**
-     * change a panel status from free to assigned.
+     * Change a panel's status from free to assigned, updates relevant actors.
+     *
      * @param panel panel to be changed to assigned status
      */
     public void changeToAssigned(Panel panel) {
@@ -78,15 +85,14 @@ public class ScheduleData {
                 Collections.sort( categoryAssigned.get(category), panelTimeComparator);
             }
 
-
-
         }
     }
 
     /**
+     * Unused
+     *
      * change a panel status from assigned to free.
      * @param panel panel to be changed to free status
-     *
      */
     public void changeToFree(Panel panel) {
         if(assignedPanels.contains(panel)) {
@@ -104,7 +110,16 @@ public class ScheduleData {
         }
     }
 
-
+    /**
+     * <b>Dependencies:</b> VenueTime class, Panel class, Panel.getVenueTime method, ScheduleData.panelistAssigned method, Range interface, Range.doesIntersect method
+     *
+     * Checks a list of panelists and a venueTime; returns true if any panelists are scheduled at a venueTime that isn't the parameter vt
+     * and the the venueTime and vt overlap.
+     *
+     * @param vt; The venuetime all panelists are assumed to be scheduled at.
+     * @param panelists; A list of all panelists whose availability needs to be checked.
+     * @return boolean; returns true if there is any panelist that is scheduled for a venueTime that overlaps with vt.
+     */
     public boolean isAssignedPanelists(VenueTime vt, List<String> panelists) {
         boolean panelistOverlap = false;
         for (int i = 0; i < panelists.size(); i++) {
@@ -123,6 +138,18 @@ public class ScheduleData {
         }
         return panelistOverlap;
     }
+
+    /**
+     * <b>Dependencies:</b> VenueTime class, Panel class, Panel.getVenueTime method,
+     * Range interface, Range.doesIntersect method
+     *
+     * Checks a category and a venueTime; returns true if the category is scheduled for a venueTime that isn't the parameter vt
+     * and the the venueTime and vt overlap.
+     *
+     * @param vt; The venuetime to be checked.
+     * @param categories; The category to check for avaliability.
+     * @return boolean; returns true if the category is scheduled for a venueTime that overlaps with vt.
+     */
     public boolean isAssignedCategories(VenueTime vt, List<String> categories) {
         boolean categoryOverlap = false;
         for (int i = 0; i < categories.size(); i++) {
@@ -142,7 +169,20 @@ public class ScheduleData {
         return categoryOverlap;
     }
 
+    /**
+     * <b>Dependencies:</b> VenueTime class, Panel class, Range interface,
+     * Range.getStart method, Range.doesIntersect method, Panel.getVenueTime method
+     *
+     * Takes a venueTime, which from which the day the venueTime occurs during is calculated, and two panelists.
+     * Totals the number of times that day those two panelists appear together.
+     *
+     * @param vt; the venueTime from which day is calculated.
+     * @param p1; the first panelist to check.
+     * @param p2; the second panelist to check.
+     * @return int; the number of times the panelists appear together that day.
+     */
     public int timesAssignedTogetherDay(VenueTime vt, String p1, String p2) {
+        //@FIXME Current function only appears to work if panel is already scheduled; in other words, useless for predictive checking.
         int assigned = 0;
         int start = (vt.TIME.getStart() / 1440)*1440; //Division Should be floor
         int end = start + 1440;
@@ -169,10 +209,22 @@ public class ScheduleData {
         }
     }
 
+    /**
+     * @param panels; List of Panels to be initialized as freePanels, done as part of ScheduleData initialization.
+     */
     public void initPanels(List<Panel> panels) {
         this.freePanels.addAll(panels);
     }
 
+    /**
+     * <b>Dependencies:</b> Panel class, VenueTime class, Panel.setVenueTime method, VenueTime.assignPanel method,
+     * Venue class, Venue.changeToAssigned method, ScheduleData.changeToAssigned method
+     *
+     * Schedules a panel, updates all relevant actors.
+     *
+     * @param p; Panel to be scheduled.
+     * @param vt; VenueTime to be scheduled at.
+     */
     public void assignPanelToVenueTime(Panel p, VenueTime vt) {
         p.setVenueTime(vt);
         vt.assignPanel(p);
@@ -181,6 +233,11 @@ public class ScheduleData {
         this.changeToAssigned(p);
     }
 
+    /**
+     * <b>Dependencies:</b> Panel class
+     *
+     * @return int[2]; Returns int[0] that is the total number of messages assignedPanels and unschedulablePanels has, and int[1] that is the number of unschedulable panels.
+     */
     public int[] calculateScheduleOptimization() {
         int count = 0;
         for (Panel p: assignedPanels) {
@@ -196,7 +253,12 @@ public class ScheduleData {
     }
 
     /**
-     * Calculated from the union of the panelist's panel's availabilities no the availability of the panelist theirselves
+     * <b>Dependencies:</b> Panel class, ScheduleData.getAssignedPanels method, ScheduleData.getPanelistAssignedPanels method,
+     * ScheduleData.getFreePanels method, TimeFormat.getNumberOfDay method, Panel.getVenueTime method
+     *
+     * Calculated from the union of the panelist's panel's availabilities no the availability of the panelist themselves
+     *
+     *
      *
      * @return map from panelist to set of days which they are not scheduled
      */
@@ -257,6 +319,16 @@ public class ScheduleData {
 
         return resultMap;
     }
+
+    /**
+     * <b>Dependencies:</b> Panel class, Panel.getVenueTime method, VenueTime class, VenueTime.getDay method
+     *
+     * Gives the number of times a given panelist is scheduled during a given day.
+     *
+     * @param day; the day to check
+     * @param panelist; the panelist to check
+     * @return int; the number of times panelist appears that day.
+     */
     public int getPanelistAppearanceNo(int day, String panelist) {
         if(panelistAssigned.get(panelist) == null) {
             return 0;
@@ -280,31 +352,59 @@ public class ScheduleData {
         return this.unschedulablePanels;
     }
     public List<Panel> getPanelistAssignedPanels(String panelist) { return this.panelistAssigned.get(panelist);}
+
+    /**
+     * <b>Dependencies:</b> Panel class, ScheduleData.getFreePanels method
+     *
+     * Lists a panel as Unschedulable for error messaging purposes.
+     *
+     * @param p; Panel that cannot be scheduled.
+     */
     public void cannotSchedule(Panel p) {
         getFreePanels().remove(p);
         unschedulablePanels.add(p);
     }
 
+    /**
+     * @param message; Adds this string to list of warningMessages
+     */
     public void addWarningMessage(String message) {
         warningMessages.add(message);
     }
 
+    /**
+     * @return Returns list of all warningMessages.
+     */
     public List<String> getWarningMessages() {
         return this.warningMessages;
     }
 
+    /**
+     * <b>Dependencies:</b> Venue class
+     *
+     * Creates ScheduleData singleton if it doesn't already exist.
+     *
+     * @param venues; Venues that panels can be scheduled in.
+     * @param noOfDays; Number of days Schedule is expected to run.
+     */
     public static void init(List<Venue> venues, int noOfDays){
         if(instance == null) {
             instance = new ScheduleData(venues, noOfDays);
         }
     }
 
+    /**
+     * Deletes the current ScheduleData singleton.
+     */
     public static void deleteScheduleData() {
         System.err.println("ScheduleData instance is being deleted.");
         instance = null;
     }
 
 
+    /**
+     * @return ScheduleData; the Singleton.
+     */
     public static ScheduleData instance() {
         return ScheduleData.instance;
     }

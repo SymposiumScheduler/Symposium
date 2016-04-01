@@ -23,13 +23,16 @@ public class ConsecutivePanelsConstraint extends Constraint {
 
     /**
      *
+     * The method loops through each panel panelists and for each it takes the unique days the panelists appears in and then
+     * it counts the number of panels within the specified time difference between one panel and the next one in each of these days.
+     * Doing that will count if the panelists is showing up for consecutive panels in a day.
+     *
      * @param venueTime The time being checked by doesOverlap
      * @return boolean; If there is more than 2 consecutive panels that a panelist is in (including the given venueTime) return true.
      */
 
     public boolean isConstraintViolated(VenueTime venueTime) {
-        //time difference between two panels to be considered consecutive
-        int difference = 80;
+        int difference = 80; //time difference between two panels to be considered consecutive
         for(String pist: PANEL.PANELISTS){
             List<Range> panelsSameDay = new ArrayList<>();
             panelsSameDay.add(venueTime.TIME);
@@ -70,6 +73,11 @@ public class ConsecutivePanelsConstraint extends Constraint {
         }
         return false;
     }
+
+    /**
+     * @return String of the violation message
+     */
+
     @Override
     public String toString() {
         return "Consecutive Panels Constraint is violated: priority = "+ PRIORITY;

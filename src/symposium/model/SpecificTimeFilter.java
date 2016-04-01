@@ -1,17 +1,29 @@
 package symposium.model;
 import java.util.*;
 
+/**
+ * The class SpecificTimeFilter inherits from Filter, @see Filter for documentation.
+ * SpecificTimeFilter is a Filter removing all venueTime's not matching the time
+ * given in the constructor.
+ *
+ */
+
 public class SpecificTimeFilter extends Filter {
     public final int TIME;
-
+    /**
+    * Constructs for the SpecificTimeFilter class.
+    *
+    * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+    * @param p    The Panel that the constraint is part of.
+    * @param t The wanted time
+    */
     public SpecificTimeFilter(ConstraintPriority priority, Panel p, int t) {
         super(priority, p);
         TIME = t;
     }
 
     /**
-     *
-     *
+     * Any time of venueTime not matching TIME will be removed.
      * @param vtScoreMap A map from venueTime to score
      * @param requiredViolationMap A map from only required Constraints to the number of violations
      */
@@ -45,4 +57,3 @@ public class SpecificTimeFilter extends Filter {
         return "SpecificTimeFilter (Panel must be scheduled at specific time)";
     }
 }
-

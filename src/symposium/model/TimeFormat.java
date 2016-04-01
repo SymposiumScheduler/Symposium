@@ -18,13 +18,16 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 /**
- * Utility class for operations about TimeFormat
+ * TimeFormat is a utility class for operations about the formating of time.
  */
 public final class TimeFormat {
     private TimeFormat() {} // TimeFormat should be static, no instances should be created
 
     /**
-     * create a range including exactly every point in a day
+     * getDayRange create a range including exactly every point in a day
+     * @param dayNumber The number of the day forwhcih the range wanted.
+     * @return Retrun a TimeRange with the first minute of dayNumber as the start,
+     *  and last minute of dayNumber as the end.
      */
     public static TimeRange getDayRange(int dayNumber) {
         if (dayNumber < 0) {
@@ -34,7 +37,9 @@ public final class TimeFormat {
     }
 
     /**
-     * convert absoluteRange to normalRange
+     * absoluteToNormal convert absoluteRange to normalRange.
+     * @param absoluteRange is the Range to be converted to noraml time format.
+     * @return String of the NormalTime format.
      */
     public static String absoluteToNormal(Range absoluteRange) {
         StringBuilder normalTime = new StringBuilder();
@@ -73,7 +78,9 @@ public final class TimeFormat {
             Pattern.compile("^(?: *\\d+ *, *\\d+:\\d+-\\d+:\\d+ *)(?:\\n+ *\\d+ *, *\\d+:\\d+-\\d+:\\d+ *)*\\s*$");
 
     /**
-     * convert normalRange to absolute
+     * normalToAbsolute convert normalTime format to absoluteTime format.
+     * @param normalRange is a range in a normalTime format.
+     * @return Range with apsoluteTime format.
      */
     public static Range normalToAbsolute(String normalRange) {
 
@@ -105,10 +112,23 @@ public final class TimeFormat {
         }
     }
 
+    /**
+     * timeComponentsToAbsolute convert seprate day, hour, minute to one absolute time.
+     * @param day
+     * @param hours
+     * @param minutes
+     * @return int in apsoluteTime format.
+     */
     public static int timeComponentsToAbsolute(int day, int hours, int minutes) {
         return day * (24 * 60) + hours * 60 + minutes;
     }
 
+    /**
+     * getNumberOfDay given a time point it returns the number of day that
+     * time point is included in.
+     * @param timePoint a point in time by absolute minutes.
+     * @return the number of day that the given point lies inside.
+     */
     public static int getNumberOfDay(int timePoint) {
         return timePoint / (24 * 60);
     }
@@ -119,6 +139,13 @@ public final class TimeFormat {
         return String.format("%02d", absoluteTime / 60) + ":" + String.format("%02d", absoluteTime % 60);
     }
 
+    /**
+     * withinError given two apsoluteTime's it checks if one is withen a given error.
+     * @param origin the first absoluteTime.
+     * @param compare the second absoluteTime.
+     * @param error the acceptable error range.
+     * @return true if the absolute value of (origin-compare) <= error.
+     */
     public static boolean withinError(int origin, int compare, int error){
         return Math.abs(origin - compare) <= Math.abs(error);
     }

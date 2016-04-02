@@ -16,9 +16,16 @@ import java.util.List;
 import symposium.model.Panel;
 
 /**
- * Takes in a JSON file and extracts information from it in order to build the data structure used for the algorithm
+ * Parser takes in a JSON file and extracts information from it in order to build the data structure used for the algorithm
  */
 public class Parser {
+
+    /**
+     * This is the main method to call to parse the input file.
+     * Take in the JSON and create the object of parser, such as initVenues and initPanels
+     * The 'try' and 'catch' are in case of exception or errors in the input file
+     * @param inputFile the JSON file
+     */
     public static void parse(String inputFile) {
         JSONParser parser = new JSONParser();
         JSONObject root = null;
@@ -39,7 +46,7 @@ public class Parser {
      * Then, we extract time information from the venue-time section and convert it into our timerange format
      * We map each venue time to its venue, create a collection of venue objects and send that information to ScheduleData
      * This method also determines how many days the event will last
-     * @param jsonObject is our json file
+     * @param jsonObject is the json file
      */
     private static void initVenues(JSONObject jsonObject) {
         List<Venue> venues = new ArrayList<Venue>();
@@ -89,11 +96,12 @@ public class Parser {
 
     /**
      * This method loops over the panelists section of the json file and gathers the names and available times
-     * of each panelist, as well as checks to see if they're new or not.
+     * of each panelist, as well as, checks to see if they're new or not.
      *
-     * Then it loops over the panels section, getting all necessary information for each panel.
+     * Next it loops over the panels section, getting all the necessary information for each panel.
      * For each panel, it finds the panelists from the above step that are needed and calculates the intersection
-     * of their available times. A panel object is then created using the name, list of panelists, and category from the json file,
+     * of their available times.
+     * A panel object is then created using the name, list of panelists, and category from the json file,
      * along with the available time as mentioned above, and a list of string names for all constraints that the json file
      * assigns to the panel.
      *
@@ -106,7 +114,7 @@ public class Parser {
         JSONArray json_panelists = (JSONArray) jsonObject.get("Panelists");
         JSONArray json_panels = (JSONArray) jsonObject.get("Panels");
 
-        //System.out.println("Setting up panelists...");
+        // Setting up panelists
         Map<String, Range> panelists = new HashMap<String, Range>();
         List<String> new_panelists = new ArrayList<String>();
         for (Object o : json_panelists) {
@@ -128,12 +136,12 @@ public class Parser {
         }
 
 
-        //System.out.println("Creating Panels...");
+        // Creating Panels
         for (Object o : json_panels) {
             JSONObject item = (JSONObject) o;
             String panel_name = (String) item.get("name");
             JSONArray panel_panelists = (JSONArray) item.get("panelists");
-            if(panel_panelists.isEmpty()) {
+            if(panel_panelists.isEmpty()) { // handle empty panels
                 ScheduleData.instance().addWarningMessage("Panel: " + panel_name + " Does not have any Panelists");
                 continue;
             } // TODO: Better implementation needed for catching panels without panelists
@@ -157,7 +165,7 @@ public class Parser {
             if(panelistAvailabilities.size() > 0){
                 panelAvailability = panelistAvailabilities.get(0).intersect(panelistAvailabilities);
             }
-            if(panelAvailability == null){
+            if(panelAvailability == null){ // handle panels with no intersections
                 ScheduleData.instance().addWarningMessage("Panel: " + panel_name + " does not have availability based on panelist overlap.");
                 continue;
             }

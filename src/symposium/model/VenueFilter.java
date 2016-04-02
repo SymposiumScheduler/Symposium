@@ -3,19 +3,26 @@ package symposium.model;
 import java.util.*;
 
 /**
- * Filters out venues that are not the one(s) required by the particular panel
- * Dependencies: (Additionally) Venue class
- * @param v The venue the panel must appear in.
+ * VenueFilter filters extends Filter and out any venues that are not the required Venues for the particular panel
  */
 public class VenueFilter extends Filter {
     public final Venue VENUE;
-    public VenueFilter(ConstraintPriority priority, Panel p, Venue v) {
-        super(priority, p);
-        VENUE = v;
+
+    /**
+     * Constructs for the VenueFilter class.
+     *
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
+     * @param venue    The venue checked
+     */
+
+    public VenueFilter(ConstraintPriority priority, Panel panel, Venue venue) {
+        super(priority, panel);
+        VENUE = venue;
     }
 
     /**
-     * Chec
+     * Filler out any venues that are not in what the panel wants
      * @param vtScoreMap Ax map from possible venueTime to score to be evaluated
      * @param requiredViolationMap A map from only required Constraints to the number of violations
      */
@@ -37,8 +44,8 @@ public class VenueFilter extends Filter {
     }
 
     /**
-     * Dependencies: (Additionally) venueTime.getAssignedPanel method
-     * @param venueTime
+     *
+     * @param venueTime The time being checked
      * @return If the panel is assigned to the correct venue, returns false, otherwise returns true.
      */
     @Override
@@ -53,9 +60,14 @@ public class VenueFilter extends Filter {
         cache.put(venueTime, violated);
         return violated;
     }
+
+    /**
+     * @return String of the violation message and the Venue name
+     */
+
     @Override
     public String toString() {
-        return "Venue Constraint Violated: Venue name: " + this.VENUE.NAME;
+        return "Venue Constraint Violated (Specfiic panel needed to be in this Venue but was not able to) : Venue name: " + this.VENUE.NAME;
     }
 }
 

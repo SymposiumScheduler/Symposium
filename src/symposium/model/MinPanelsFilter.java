@@ -4,10 +4,20 @@ import java.util.*;
 //TODO: MinPanelsFilter is always assumed that the priority is VeryImportant
 
 /**
- * Determines who isn't scheduled on given day in order ot prioritize panels with those panelists
+ * MinPanelsFilter extends Filter and determines which of the panelists is not utilized, as in not scheduled on given days
+ * then order them to prioritize panels with those panelists
+ *
  */
 public class MinPanelsFilter extends Filter {
-    public static int COST_OF_MIN_PANELIST_VIOLATION = 400; // by testing various values
+    public static int COST_OF_MIN_PANELIST_VIOLATION = 400; // Cost picked to utilize the violation, different values yield different results
+
+    /**
+     * Constructs for the MinPanelsFilter class.
+     *
+     * @param priority enum which determines if a filter is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the filter is part of.
+     */
+
     public MinPanelsFilter(ConstraintPriority priority,Panel panel) {
         super(priority, panel);
     }
@@ -42,7 +52,7 @@ public class MinPanelsFilter extends Filter {
 
     /**
      * Never actually called in scheduling stage, only for report purposes
-     * @param venueTime
+     * @param venueTime The time being checked
      * @return false
      */
     @Override
@@ -52,7 +62,7 @@ public class MinPanelsFilter extends Filter {
 
     /**
      *  for each VenueTime vt in the map vtScoreMap:
-     *      increase vt's score by the number of panelist not scheduled yet in vt's day
+     *    increase vt's score by the number of panelist not scheduled yet in vt's day
      *
      * @param vtScoreMap A map from possible venueTime to score to be evaluated
      * @param requiredViolationMap A map from only required Constraints to the number of violations
@@ -66,6 +76,10 @@ public class MinPanelsFilter extends Filter {
         }
     }
 
+    /**
+     * Never actually used.
+     * @return "String with the name of the class and what it does."
+     */
 
     @Override
     public String toString() {

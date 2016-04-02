@@ -5,6 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * ConstraintFactory creates constraints objects using their predetermined priority number
+ */
+
 public class ConstraintFactory{
     /**
      * This is our main factory method, which is called from Panel. Each time this is called, a list of constraint names (string) is
@@ -16,12 +20,13 @@ public class ConstraintFactory{
      */
     public static List<Constraint> buildConstraints(Panel panel, List<String> constraint_strings) {
         List<Constraint> constraints = new ArrayList<Constraint>();
-        // assumed constraints
+        // assumed constraints, these are given for all panels
         constraints.add(new PanelistConstraint(ConstraintPriority.REQUIRED, panel));
         constraints.add(new ConsecutivePanelsConstraint(ConstraintPriority.DESIRED, panel));
-        constraints.add(new PreferedVenuesFilter(panel));
+        constraints.add(new PreferredVenuesFilter(panel));
         constraints.add(new VenueTimeDurationFilter(panel));
-        // input constraints
+
+        // input constraints, from the input file
         for (String constraint_string : constraint_strings) {
             if (constraint_string.contains("New-Panelist")) {
                 int priority = Integer.valueOf(constraint_string.split(":")[1]);
@@ -88,10 +93,11 @@ public class ConstraintFactory{
                 Constraint constraint = new SpecificTimeFilter(intToPriority(priority), panel, timePoint);
                 constraints.add(constraint);
             }
-            else {
+            else { // Constraint not implemented in the factory.
                 ScheduleData.instance().addWarningMessage("panel : " + panel.NAME + " has a constraint " + constraint_string + " which is not Known");
             }
         }
+
         Collections.sort(constraints, new Comparator<Constraint>() {
             @Override
             public int compare(Constraint c, Constraint other) {
@@ -103,9 +109,9 @@ public class ConstraintFactory{
     }
 
     /**
-     * Simply converts an integer value to a priority type (required, very_important, or desired.)
+     * Helper method to simply converts an integer value to a priority type (REQUIRED, VERY_IMPORTANT, or DESIRED.)
      * @param level an integer between 1-3
-     * @return the corresponding priority type (or desired if the given number doesn't map to a priority type)
+     * @return the corresponding priority type (or DESIRED if the given number doesn't map to a priority type)
      */
     private static ConstraintPriority intToPriority(int level) {
         switch (level) {

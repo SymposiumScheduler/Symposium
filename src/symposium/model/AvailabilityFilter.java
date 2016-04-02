@@ -6,11 +6,18 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * AvailabilityFilter checks the availability of the panel and keep only the times accepted by the panel
+ * AvailabilityFilter extends Filter and checks the availability of the panel and keep only the times accepted by the panel
  */
 public class AvailabilityFilter extends Filter {
-    public AvailabilityFilter(ConstraintPriority priority, Panel p) {
-        super(priority, p);
+
+    /**
+     * Constructs for the AvailabilityFilter class.
+     *
+     * @param priority enum which determines if a filter is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the filter is part of.
+     */
+    public AvailabilityFilter(ConstraintPriority priority, Panel panel) {
+        super(priority, panel);
     }
 
     /**
@@ -36,7 +43,7 @@ public class AvailabilityFilter extends Filter {
 
     /**
      * Checks to see if panel can be placed in the given venueTime
-     * @param venueTime a venueTime object
+     * @param venueTime The time being checked
      * @return true if panel fits, otherwise, return false
      */
     @Override
@@ -45,10 +52,11 @@ public class AvailabilityFilter extends Filter {
     }
 
     /**
-     * @return a string stating the priority of the contraint violated
+     * @return String of the violation message and the PRIORITY
      */
+
     @Override
     public String toString() {
-        return "Availability Constraint violated: priority = " + PRIORITY;
+        return "Availability Constraint is violated (Couldn't schedule the panels based on Availability) : priority = " + PRIORITY;
     }
 }

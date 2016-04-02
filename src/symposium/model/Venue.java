@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Collection;
 
 /**
- * Each Venue is stored in its own object. We can then access its name, size, priority, and its VenueTimes
+ * Venue stores its own object, its name, size, priority, and VenueTimes
+ *
+ * Venue implements Comparable<Venue> because we have many Venue objects that needs to be compared constantly
  */
 public class Venue implements Comparable<Venue>{
 
@@ -18,7 +20,9 @@ public class Venue implements Comparable<Venue>{
     private final List<VenueTime> freeVenueTimes;
 
     /**
-     * Creates Venue objects.
+     * Constructs for Venue class
+     *
+     * Creates Venue objects, setting all of the variables to the given values, and convert the timeRange to VenueTime objects
      * @param name of the Venue
      * @param size of the Venue
      * @param priority from the input file. The higher the number, the more important it is to schedule a Panel in this Venue
@@ -64,22 +68,21 @@ public class Venue implements Comparable<Venue>{
     }
 
     /**
-     * Compares Venues so that they can be sorted in descending priority size
-     * @param that the Venue that "this" Venue is being compared to
-     * @return an integer that sort uses to determine order
+     * Compares Venues sizes so that they can be sorted in descending order.
+     * @param OtherVenue the Venue that "this" Venue is being compared to
+     * @return If the difference equals 0 return the difference of the PRIORITY, otherwise, return the diffrance of the size
      */
     @Override
-    public int compareTo(Venue that) {
-        int sCompare = this.SIZE - that.SIZE;
+    public int compareTo(Venue OtherVenue) {
+        int sCompare = this.SIZE - OtherVenue.SIZE;
         if(sCompare != 0) {
             return sCompare;
         }
 
-        return this.PRIORITY - that.PRIORITY;
+        return this.PRIORITY - OtherVenue.PRIORITY;
     }
 
     /**
-     * Returns information
      * Immutable version of the lists because manipulation of state is not allowed outside Venue class.
      * @return immutable List with the assignedVenueTimes in this venue.
      */
@@ -88,7 +91,7 @@ public class Venue implements Comparable<Venue>{
     }
 
     /**
-     * @return immutable List with the assignedVenueTimes in this venue.
+     * @return immutable List with the freeVenueTimes in this venue.
      */
     public List<VenueTime> getFreeVenueTimes(){
         return Collections.unmodifiableList(freeVenueTimes);

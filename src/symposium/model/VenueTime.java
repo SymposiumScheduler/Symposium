@@ -1,9 +1,11 @@
 package symposium.model;
 
 /**
- * This class is used to encapsulate time range information for venues, where each Venue object will have multiple
- * VenueTime objects assigned to it. When a panel is assigned to a timeslot, that is kept track of here
- * These are created when a Venue is
+ * VenueTime is used to encapsulate time range information for venues, where each Venue object will have multiple
+ * VenueTime objects assigned to it.
+ * When a panel is assigned to a time slot, the information about it is kept here.
+ *
+ * VenueTime implements Comparable<VenueTime> because we have many VenueTime objects that needs to be compared constantly
  */
 public class VenueTime implements Comparable<VenueTime>{
 
@@ -11,6 +13,13 @@ public class VenueTime implements Comparable<VenueTime>{
     public final Venue VENUE;
     private Panel assignedPanel;
 
+    /**
+     * Constructs for the VenueTime class.
+     *
+     * Create VenueTime objects
+     * @param time  The times for each Venue
+     * @param venue The venue for these times
+     */
     public VenueTime(Range time, Venue venue) {
         this.TIME = time;
         this.VENUE = venue;
@@ -27,14 +36,13 @@ public class VenueTime implements Comparable<VenueTime>{
 
     /**
      * Check to see if there is a panel assigned in this VenueTIme
-     * @return true/false
+     * @return true if panel is assigned, otherwise, false
      */
     public boolean isAssigned() {
         return (assignedPanel != null);
     }
 
     /**
-     * Check which panel is assigned to this VenueTime
      * @return assigned panel, or null if there isn't one
      */
     public Panel getAssignedPanel(){
@@ -57,14 +65,15 @@ public class VenueTime implements Comparable<VenueTime>{
     }
 
     /**
-     * Compares VenueTime objects of the same Venue in order to sort them by timeslot and size
-     * They are sorted with small slots first, then normal. These are then sorted in chronological order
-     * So the first VenueTime after the sort is the first small one that takes place from the given Venue
+     * Compares VenueTime objects of the same Venue in order to sort them by time slot and size
+     * They are sorted with small slots first, then normal.
+     * Then sort them in chronological order, the first VenueTime after the time sort is the smallest one.
      * @param other we compare "this" VenueTime to the one given when the method is called. Ei, this.compareTo(other)
      * @return an integer that sort uses to determine order
      */
     @Override
     public int compareTo(VenueTime other) {
+
         // smaller venue comes first
         int vCompare = this.VENUE.compareTo(other.VENUE);
         if( vCompare != 0) {

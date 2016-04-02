@@ -3,19 +3,25 @@ package symposium.model;
 import java.util.*;
 
 /**
- * VenueTimeDurationFilter checks the venue times and increase score based on the length of the venue time. If the
- * number of panelists on a panel is 1 or 2, it prefer a short venue time. If it more than that it prefer a long
- * venue time.
+ * VenueTimeDurationFilter extends Filter and  checks the venue times and increase score based on the length of the venue time.
+ * If the number of panelists on a panel is 1 or 2, it prefer a short venue time.
+ * If it has more than that it prefer a long venue time.
  */
 public class VenueTimeDurationFilter extends Filter {
     // ToDo: change the values to be read from the input file
     public static final int NUMBER_PANELIST_NEED_SHORT = 2;
     public static final int SHORT_VENUE_TIME_LENGTH = 50;
     public static final int LONG_VENUE_TIME_LENGTH = 80;
-    public static final int VENUE_POINTS = 400;
+    public static final int VENUE_POINTS = 400; // Points picked to utilize the priority, different values yield different results
 
-    public VenueTimeDurationFilter(Panel p) {
-        super(ConstraintPriority.VERY_IMPORTANT, p);
+    /**
+     * Constructs for the VenueTimeDurationFilter class.
+     *
+     * @param panel The Panel that the filter is part of.
+     */
+
+    public VenueTimeDurationFilter(Panel panel) {
+        super(ConstraintPriority.VERY_IMPORTANT, panel);
     }
 
     /**
@@ -45,16 +51,21 @@ public class VenueTimeDurationFilter extends Filter {
 
     /**
      * Never actually called in scheduling stage, only for report purposes
-     * @param venueTime
+     * @param venueTime The time being checked
      * @return false
      */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         return false;
     }
+
+    /**
+     * @return String of the violation message
+     */
+
     @Override
     public String toString() {
-        return "VenueTimeDurationFilter";
+        return "Venue Time Duration Filter (Panels with =< 2 panelists go in short venue time slots, otherwise, go in long time slots)";
     }
 }
 

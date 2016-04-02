@@ -3,10 +3,12 @@ package symposium.model;
 import java.util.*;
 
 /**
- * Stores information about Panels, such as name, constraints, category, and the panel's availability based on
- * the panelists
+ * Panel stores information about Panels, such as name, constraints, category, the panel's availability based on
+ * the panelists, and messages of the violations a panel might have.
+ *
+ * Panel implements Comparable<Panel> because we have many panel objects that needs to be compared constantly
  */
-public class Panel implements Comparable<Panel>{
+public class Panel implements Comparable<Panel> {
     public final String NAME;
     public final Range AVAILABILITY;
     public final List<String> PANELISTS;
@@ -18,9 +20,11 @@ public class Panel implements Comparable<Panel>{
     private int difficulty;
 
     /**
-     * After setiing all of the variables to the given values, check for filters and set locked to TRUE if a filter is found.
-     * Locked is set to show that this panel must be placed at a certain time or in a certain panel, significantly
-     * increasing its difficulty.
+     * Constructs for Panel class
+     *
+     * Create the panel object, setting all of the variables to the given values, check for filters and set locked to TRUE if a filter is found.
+     * Locked is set to show that this panel must be placed at a certain time or in a certain panel, which significantly
+     * increases its difficulty.
      * @param name of the panel
      * @param panelists are the people assigned to the panel
      * @param availability an intersection of available times from the panelists (calculated in Parser)
@@ -63,14 +67,14 @@ public class Panel implements Comparable<Panel>{
     }
 
     /**
-     * @return the timeslow that the panel is scheduled in
+     * @return the time slot that the panel is scheduled in
      */
     public VenueTime getVenueTime(){
         return assignedVenueTime;
     }
 
     /**
-     * @param venueTime is the proposed venuetime that the panel is being placed in (done in DummyScheduler)
+     * @param venueTime is the proposed venueTime that the panel is being placed in (done in DummyScheduler)
      */
     public void setVenueTime(VenueTime venueTime){
         this.assignedVenueTime = venueTime;
@@ -84,7 +88,7 @@ public class Panel implements Comparable<Panel>{
     }
 
     /**
-     * @return the range in which this panel is available for scheduling
+     * @return the range of time in which this panel is available for scheduling
      */
     public Range getAvailability(){
         return AVAILABILITY;
@@ -92,6 +96,7 @@ public class Panel implements Comparable<Panel>{
 
     /**
      * @param message is a string given during the scheduling process that will be printed in Report
+     *                Each message hold what happened in the process of scheduling a panel, including what violations a panel might have
      */
     public void addMessage(String message){
         messages.add(message);
@@ -105,18 +110,19 @@ public class Panel implements Comparable<Panel>{
     }
 
     /**
-     * Compares the difficulties of two panels in order to sort them in desending order
-     * @param that panel that this one is being compared to
+     * Compares the difficulties of two panels in order to sort them in descending order
+     * @param otherPanel panel that this one is being compared to
      * @return a number that determines which one should come first
      */
     @Override
-    public int compareTo(Panel that) {
-        return this.difficulty - that.difficulty;
+    public int compareTo(Panel otherPanel) {
+        return this.difficulty - otherPanel.difficulty;
     }
 
     /**
      * @return Returns a string that encapsulates needed information about the Panel, including:
      * Its name, when and where it's been assigned, and any messages it has.
+     * Again messages are what happened during the process of scheduling a panel, including what violations a panel might have
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();

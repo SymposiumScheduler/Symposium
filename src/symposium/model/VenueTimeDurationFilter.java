@@ -2,6 +2,11 @@ package symposium.model;
 
 import java.util.*;
 
+/**
+ * VenueTimeDurationFilter checks the venue times and increase score based on the length of the venue time. If the
+ * number of panelists on a panel is 1 or 2, it prefer a short venue time. If it more than that it prefer a long
+ * venue time.
+ */
 public class VenueTimeDurationFilter extends Filter {
     // ToDo: change the values to be read from the input file
     public static final int NUMBER_PANELIST_NEED_SHORT = 2;
@@ -14,10 +19,7 @@ public class VenueTimeDurationFilter extends Filter {
     }
 
     /**
-     * VenueTimeDurationFilter checks the venue times and increase score based on the length of the venue time. If the
-     * number of panelists on a panel is 1 or 2, it prefer a short venue time. If it more than that it prefer a long
-     * venue time.
-     *
+     * Orders and filters venue times based on their size; used to prioritize short venueTImes for short Panels
      * @param vtScoreMap A map from venueTime to score
      * @param requiredViolationMap A map from only required Constraints to the number of violations
      */
@@ -41,6 +43,11 @@ public class VenueTimeDurationFilter extends Filter {
         }
     }
 
+    /**
+     * Never actually called in scheduling stage, only for report purposes
+     * @param venueTime
+     * @return false
+     */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         return false;

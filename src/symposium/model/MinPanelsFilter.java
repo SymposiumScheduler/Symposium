@@ -2,11 +2,42 @@ package symposium.model;
 
 import java.util.*;
 //TODO: MinPanelsFilter is always assumed that the priority is VeryImportant
+
+/**
+ * Determines who isn't scheduled on given day in order ot prioritize panels with those panelists
+ */
 public class MinPanelsFilter extends Filter {
     public static int COST_OF_MIN_PANELIST_VIOLATION = 400; // by testing various values
-
     public MinPanelsFilter(ConstraintPriority priority,Panel panel) {
         super(priority, panel);
+    }
+
+    /**
+     * Checks who is not scheduled on the given day and how many times
+     * @return Map<available_day,available> number of panelists not scheduled on a certain day
+     */
+    private Map<Integer, Integer> getMinPanelistDayGain() {
+        //TODO: better implementation is possible in scheduleData
+        Set<Integer> daysInAvailability = new HashSet<>();
+        Iterator<TimeRange> pItr = this.PANEL.AVAILABILITY.iterator();
+        while (pItr.hasNext()) {
+            daysInAvailability.add(TimeFormat.getNumberOfDay(pItr.next().START));
+        }
+        Map<Integer, Integer> dayGainMap = new HashMap<>();
+        for (String pnst : this.PANEL.PANELISTS) {
+            for (int avDay : daysInAvailability) {
+                if (ScheduleData.instance().getPanelistAppearanceNo(avDay, pnst) > 0) {
+                    continue;
+                }
+                // If this line is reached, pnst is not scheduled in avDay
+                if (dayGainMap.get(avDay) == null) {
+                    dayGainMap.put(avDay, 1);
+                } else {
+                    dayGainMap.put(avDay, dayGainMap.get(avDay) + 1);
+                }
+            }
+        }
+        return dayGainMap;
     }
 
     /**
@@ -35,36 +66,6 @@ public class MinPanelsFilter extends Filter {
         }
     }
 
-    /**
-     *
-     * @return Map<available day, number of panelists not scheduled on a certain day
-     */
-    private Map<Integer, Integer> getMinPanelistDayGain() {
-        //TODO: better implementation is  possible in scheduleData
-        Set<Integer> daysInAvailability = new HashSet<>();
-        Iterator<TimeRange> pItr = this.PANEL.AVAILABILITY.iterator();
-        while (pItr.hasNext()) {
-            daysInAvailability.add(TimeFormat.getNumberOfDay(pItr.next().START));
-        }
-        //
-
-        //
-        Map<Integer, Integer> dayGainMap = new HashMap<>();
-        for (String pnst : this.PANEL.PANELISTS) {
-            for (int avDay : daysInAvailability) {
-                if (ScheduleData.instance().getPanelistAppearanceNo(avDay, pnst) > 0) {
-                    continue;
-                }
-                // If this line is reached, pnst is not scheduled in avDay
-                if (dayGainMap.get(avDay) == null) {
-                    dayGainMap.put(avDay, 1);
-                } else {
-                    dayGainMap.put(avDay, dayGainMap.get(avDay) + 1);
-                }
-            }
-        }
-        return dayGainMap;
-    }
 
     @Override
     public String toString() {

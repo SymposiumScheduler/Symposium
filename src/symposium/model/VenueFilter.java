@@ -2,24 +2,21 @@ package symposium.model;
 
 import java.util.*;
 
+/**
+ * Filters out venues that are not the one(s) required by the particular panel
+ * Dependencies: (Additionally) Venue class
+ * @param v The venue the panel must appear in.
+ */
 public class VenueFilter extends Filter {
     public final Venue VENUE;
-
-    /**
-     * Dependencies: (Additionally) Venue class
-     * @param v The venue the panel must appear in.
-     */
     public VenueFilter(ConstraintPriority priority, Panel p, Venue v) {
         super(priority, p);
         VENUE = v;
     }
 
     /**
-     * VenueTimeDurationFilter checks the venue times and increase score based on the length of the venue time. If the
-     * number of panelists on a panel is 1 or 2, it prefer a short venue time. If it more than that it prefer a long
-     * venue time.
-     *
-     * @param vtScoreMap A map from venueTime to score
+     * Chec
+     * @param vtScoreMap Ax map from possible venueTime to score to be evaluated
      * @param requiredViolationMap A map from only required Constraints to the number of violations
      */
     @Override

@@ -66,9 +66,9 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * compare two ranges. ranges are compared by their start and end time.
-     * A > B if (A.start > B.start) or (A.start == B.start and A.end > B.end)
+     * A &gt; B if (A.start &gt; B.start) or (A.start == B.start and A.end &gt; B.end)
      * @param other
-     * @return positive number if this > other, 0 if this's start and end == other's start and end, otherwise negative number
+     * @return positive number if this &gt; other, 0 if this's start and end == other's start and end, otherwise negative number
      */
     int compareTo(Range other);
 
@@ -87,6 +87,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * check if a range encloses another one
+     * @param range
      * @return true if it encloses it, otherwise false.
      */
     boolean doesEnclose(Range range);

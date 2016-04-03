@@ -144,7 +144,7 @@ public final class TimeFormat {
      * @param origin the first absoluteTime.
      * @param compare the second absoluteTime.
      * @param error the acceptable error range.
-     * @return true if the absolute value of (origin-compare) <= error.
+     * @return true if the absolute value of (origin-compare) &gt;= error.
      */
     public static boolean withinError(int origin, int compare, int error){
         return Math.abs(origin - compare) <= Math.abs(error);

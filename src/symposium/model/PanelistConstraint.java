@@ -3,20 +3,20 @@ package symposium.model;
 import java.util.List;
 
 /**
- * The class PanelistConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
+ * PanelistConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
  * Panelist Constraint is violated when a panelist belonging to this panel is on another panel that has an overlapping schedule.
  */
 public class PanelistConstraint extends NoOverlapConstraint {
     public static List<String> panelistsViolating;
 
     /**
-     * Constructs a PanelistConstraint object.
+     * Constructs for the PanelistConstraint class.
      *
      * @param priority enum that determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
-     * @param p The panel the constraint belongs to.
+     * @param panel    The panel the constraint belongs to.
      */
-    public PanelistConstraint(ConstraintPriority priority, Panel p) {
-        super(priority,p);
+    public PanelistConstraint(ConstraintPriority priority, Panel panel) {
+        super(priority,panel);
     }
     /**
      * <b>Dependencies:</b> ScheduleData class, ScheduleData.isAssignedPanelists method, Panel.PANELIST variable
@@ -38,7 +38,7 @@ public class PanelistConstraint extends NoOverlapConstraint {
     }
 
     /**
-     * @return string; Error message that appears when constraint is violated.
+     * @return String of the violation message
      */
     @Override
     public String toString() {

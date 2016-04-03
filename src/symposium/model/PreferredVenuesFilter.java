@@ -3,7 +3,8 @@ package symposium.model;
 import java.util.*;
 
 /**
- * PreferredVenuesFilter extends Filter and orders the venues based on the priority value given in the input file
+ * PreferredVenuesFilter inherits from Filter, @see Filter for documentation.
+ * PreferredVenuesFilter orders the venues based on the priority value given in the input file
  */
 public class PreferredVenuesFilter extends Filter {
     public static final int HIGHEST_PRIORITY_VENUE_POINTS = 300; // Points picked to utilize the priority, different values yield different results

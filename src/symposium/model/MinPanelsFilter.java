@@ -4,7 +4,8 @@ import java.util.*;
 //TODO: MinPanelsFilter is always assumed that the priority is VeryImportant
 
 /**
- * MinPanelsFilter extends Filter and determines which of the panelists is not utilized, as in not scheduled on given days
+ * MinPanelsFilter inherits from Filter, @see Filter for documentation.
+ * MinPanelsFilter determines which of the panelists is not utilized, as in not scheduled on given days
  * then order them to prioritize panels with those panelists
  *
  */

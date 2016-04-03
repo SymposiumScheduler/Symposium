@@ -7,7 +7,6 @@ import java.util.*;
  * Max number of Panelists is violated when a panelist appears more than the set maximum number of times per day.
  *
  */
-
 public class MaxPanelistConstraint extends Constraint {
     final int MAX;
     public static String panelistsViolating;
@@ -19,7 +18,6 @@ public class MaxPanelistConstraint extends Constraint {
      * @param panel    The Panel that the constraint is part of.
      * @param max      The maximum number allowed for the panelist to appear per day
      */
-
     public MaxPanelistConstraint(ConstraintPriority priority, Panel panel, int max) {
         super(priority,panel);
         this.MAX = max;
@@ -28,8 +26,8 @@ public class MaxPanelistConstraint extends Constraint {
     /**
      * <b>Dependencies:</b> Panel class, ScheduleData class, VenueTime class
      *
-     * The method loops through each panel panelists and counts how many times they appear per day.
-     * When the method finds the panelist violating it records the panelist and assign it to panelistsViolating.
+     * The method loops through each panel's panelists and counts how many times they appear per day.
+     * When the method finds the panelist violating it, record the panelist and assign it to panelistsViolating.
      *
      * @param venueTime The time being checked
      * @return boolean; If the panelists appears more times the MAX, return true, otherwise, return false.
@@ -44,7 +42,6 @@ public class MaxPanelistConstraint extends Constraint {
                     if(pl == this.PANEL) {
                         continue; // Don't count self because it's assumed and already counted.
                     }
-
                     int day = pl.getVenueTime().getDay();
                     if (day == venueTime.getDay()) {
                         counter++;
@@ -62,7 +59,6 @@ public class MaxPanelistConstraint extends Constraint {
     /**
      * @return String of the violation message
      */
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

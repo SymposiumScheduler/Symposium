@@ -2,24 +2,24 @@ package symposium.model;
 import java.util.*;
 
 /**
- * The class SpecificTimeFilter inherits from Filter, @see Filter for documentation.
- * SpecificTimeFilter is a Filter removing all venueTime's not matching the time
- * given in the constructor.
+ * SpecificTimeFilter inherits from Filter, @see Filter for documentation.
+ * SpecificTimeFilter is a Filter removing all venueTime's not matching the time given in the constructor.
  *
  */
 
 public class SpecificTimeFilter extends Filter {
     public final int TIME;
+
     /**
     * Constructs for the SpecificTimeFilter class.
     *
     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
-    * @param p    The Panel that the constraint is part of.
-    * @param t The wanted time
+    * @param panel    The Panel that the constraint is part of.
+    * @param time     The wanted time
     */
-    public SpecificTimeFilter(ConstraintPriority priority, Panel p, int t) {
-        super(priority, p);
-        TIME = t;
+    public SpecificTimeFilter(ConstraintPriority priority, Panel panel, int time) {
+        super(priority, panel);
+        TIME = time;
     }
 
     /**
@@ -52,6 +52,10 @@ public class SpecificTimeFilter extends Filter {
     public boolean isConstraintViolated(VenueTime venueTime) {
         return (!TimeFormat.withinError(venueTime.TIME.getStart(), TIME, 1));
     }
+
+    /**
+     * @return String of the violation message and the PRIORITY
+     */
     @Override
     public String toString() {
         return "SpecificTimeFilter (Panel must be scheduled at specific time)";

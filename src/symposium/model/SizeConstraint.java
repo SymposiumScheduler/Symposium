@@ -6,7 +6,6 @@ package symposium.model;
  * in other words when the venue does not fit the panel.
  *
  */
-
 public class SizeConstraint extends Constraint {
 
     int minSize;
@@ -19,7 +18,6 @@ public class SizeConstraint extends Constraint {
      * @param panel    The Panel that the constraint is part of.
      * @param mSize    The minimum size necessary for the panel to fit in.
      */
-
     public SizeConstraint(ConstraintPriority priority, Panel panel, int mSize) {
         super(priority, panel);
         minSize = mSize;
@@ -36,7 +34,6 @@ public class SizeConstraint extends Constraint {
      * @param venueTime The time being checked
      * @return boolean; True if the size is smaller than the minimum size required, otherwise, false.
      */
-
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
         boolean violated;
@@ -55,16 +52,13 @@ public class SizeConstraint extends Constraint {
      *
      * @return the minSize of the given panel
      */
-
     public int getMinSize() {
-
         return this.minSize;
     }
 
     /**
      * @return String of the violation message
      */
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

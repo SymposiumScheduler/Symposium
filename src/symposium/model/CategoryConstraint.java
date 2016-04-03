@@ -5,7 +5,6 @@ package symposium.model;
  * Category Constraint is violated when two panels of same category are scheduled at same time.
  *
  */
-
 public class CategoryConstraint extends NoOverlapConstraint {
 
     /**
@@ -14,7 +13,6 @@ public class CategoryConstraint extends NoOverlapConstraint {
      * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
      * @param panel    The Panel that the constraint is part of.
      */
-
     public CategoryConstraint(ConstraintPriority priority, Panel panel) {
         super(priority, panel);
     }
@@ -29,7 +27,6 @@ public class CategoryConstraint extends NoOverlapConstraint {
      * @return boolean; If any other panel with the same category is scheduled at the same time as venueTime, return true,  otherwise, return false.
      *
      */
-
     @Override
     boolean doesOverlap(VenueTime venueTime) {
         if (ScheduleData.instance().isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
@@ -43,7 +40,6 @@ public class CategoryConstraint extends NoOverlapConstraint {
     /**
      * @return String of the violation message
      */
-
     @Override
     public String toString() {
         return "Category Constraint is violated (Two panels of same category can't be scheduled at same time)";

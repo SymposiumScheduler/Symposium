@@ -50,31 +50,7 @@ public class CategoryConstraintTest {
 
         CategoryConstraint cc = new CategoryConstraint(priority, p1);
 
-        assert(cc.PRIORITY == ConstraintPriority.VERY_IMPORTANT);
-
-        String name2 = "new";
-        List<String> panelists2 = new ArrayList<>(3);
-        panelists2.add("Trey Lyons");
-        panelists2.add("Jurek Martin");
-        panelists2.add("Patrick Boel");
-        List<TimeRange> avaliability2 = new ArrayList<>(5);
-        avaliability2.add(new TimeRange(360, 1080));
-        avaliability2.add(new TimeRange(1800, 2520));
-        avaliability2.add(new TimeRange(3240, 3960));
-        avaliability2.add(new TimeRange(4680, 5400));
-        avaliability2.add(new TimeRange(6120, 6840));
-        TimeRangeSeries range2 = new TimeRangeSeries(avaliability2);
-        List<String> constraints2 = new ArrayList<>(6);
-        constraints2.add("New-Panelist:2");
-        constraints2.add("Paired-Panelists:3");
-        constraints2.add("Single-Category:2");
-        constraints2.add("Max-Panels(3):1");
-        constraints2.add("Min-Panels(1):1");
-        constraints2.add("Minimum-Capacity(2):2");
-        List<String> category2 = new ArrayList<>(1);
-        category2.add("IA");
-
-        Panel p2 = new Panel(name2, panelists2, range2, category2, constraints2);
+        assertTrue(cc.PRIORITY == ConstraintPriority.VERY_IMPORTANT);
 
     }
 

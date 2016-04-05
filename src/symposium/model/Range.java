@@ -11,6 +11,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * Gets earliest point in the range
+     *
      * @return int; the earliest point in the range.
      */
     int getStart();
@@ -19,12 +20,14 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
      * Gets the latest point in the range
      * It's not guaranteed that every point between getStart() and getEnd() are inside the range because
      * it can be TimeRangeSeries.
+     *
      * @return int; the latest point in the range
      */
     int getEnd();
 
     /**
      * calculates the intersections between this range and other range/s.
+     *
      * @param other other range/s to intersect
      * @return Range; New range with result, null if there is no intersection.
      */
@@ -33,6 +36,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * calculates the union between this range and other range/s.
+     *
      * @param other other range/s to union
      * @return RAnge; New range with the result.
      *      The union of two TimeRange objects can be a TimeRangeSeries object. example [1,2]U[3,4]
@@ -42,6 +46,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * check if two ranges intersect
+     *
      * @param other other range to intersect
      * @return boolean; true if they intersect in at least one point, false otherwise
      */
@@ -49,6 +54,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * check if a point is in a range
+     *
      * @param point point in absolute time to check
      * @return boolean; true if the point is in the range, otherwise false
      */
@@ -75,6 +81,7 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * check if two ranges are equal
+     *
      * @param other range to check
      * @return boolean; true if all starts and ends are identical, otherwise false.
      */
@@ -82,12 +89,14 @@ public interface Range extends Comparable<Range>, Iterable<TimeRange> {
 
     /**
      * get the length of the included points in the length
+     *
      * @return int; the length of the range. Min is 1
      */
     int length();
 
     /**
      * check if a range encloses another one
+     *
      * @param range
      * @return boolean; true if it encloses it, otherwise false.
      */

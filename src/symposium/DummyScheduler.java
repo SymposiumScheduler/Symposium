@@ -5,8 +5,23 @@ import static symposium.model.ConstraintPriority.*;
 import java.util.*;
 
 /**
- * This is the core of the algorithm. This is where all of the actual scheduling takes place once the parser reads the information
- * and the data structure is built
+ * DummyScheduler is the core of the algorithm. Here is where all of the actual scheduling takes place once the parser reads the information
+ * and the data structure is built.
+ *
+ * Our Algorithm: best fit, greedy approach.
+ * First we take each panel and calculate it's difficulty, the difficulty values can be decided on by the user.
+ * The choose difficulty values are explained @see setDifficulties(). after each panel has a difficulty value, order the panels by the most difficult.
+ * Once the panels are sorted by difficulty, we go into the venues and venueTimes. Each Venue and VenueTimes will be filtered out using scores.
+ * Scores are based on each filter for each panel please @see Filter to understand how each venue and venueTime is scored.
+ * After each Venue and VenueTimes is scored, order them based on best fit greedy approach for each panel.
+ * Now that we have a list of Venue and VenueTimes for each panel take the top one (greedy part).
+ * Now the panel is scheduled and the messages for it will be assigned.
+ *
+ * * If a panel can not be scheduled it will be removed from the que and assign why it was not scheduled with its messages.
+ * * As well as added to the unschedulablePanels list.
+ *
+ * @see ScheduleData for lists.
+ *
  */
 public class DummyScheduler {
     private final int SIZE_CONSTRAINT_VALUE;
@@ -24,7 +39,8 @@ public class DummyScheduler {
     }
 
     /**
-     * A container for the venueTime proposed by the algorithm to place a panel in
+     * A container, a struct, for the venueTime proposed by the algorithm to place a panel in.
+     *
      */
     private class SearchResult {
         public final VenueTime VENUETIME;
@@ -48,9 +64,11 @@ public class DummyScheduler {
 
 
     /**
-     * Calls searchForVenueTime. If an open venueTime is found, assign this panel to that venueTime.
+     * Calls @see searchForVenueTime. If an open venueTime is found using the algorithm, assign this panel to that venueTime.
      * Otherwise, add the panel to a list of unscheduled panels
-     * @param panel
+     *
+     * @param panel Panel to be scheduled
+     *
      */
     private void schedule(Panel panel) {
         SearchResult sr = searchForVenueTime(panel);
@@ -63,8 +81,9 @@ public class DummyScheduler {
     }
 
     /**
-     * Calls setDifficulty to assign a difficulty rating to each panel
+     * Calls @see setDifficulty() to assign a difficulty rating to each panel
      * Then loops through the panels and attempts to schedule them (calls schedule)
+     *
      */
     public void makeSchedule() {
         setDifficulties();
@@ -76,8 +95,10 @@ public class DummyScheduler {
     }
 
     /**
-     * For each panel that has been scheduled, generate output messages based on what, if any,
-     * unrequired constraints it has violated
+     * For each panel that has been scheduled, generate output messages, which is:
+     *  a string given during the scheduling process that will be printed in Report
+     *  Each message hold what happened in the process of scheduling a panel, including what violations a panel might have
+     *
      */
     public void setAssignedPanelsMessages() {
         for (Panel panel : ScheduleData.instance().getAssignedPanels()) {
@@ -90,18 +111,21 @@ public class DummyScheduler {
     }
 
     /**
-     * For each unscheduled panel, determine why it wasn't scheduled and generate output pertaining to those reasons
-     * @param p is the panel in question
-     * @param m a map of constraints to the number of times the panel violated that constraint
+     * For each unscheduled panel, determine why it wasn't scheduled and generate output pertaining to those reasons,
+     * the amount of times each constraint or filter was violated. For the locked panels the method gives what, venue and time was violated.
+     * As well as, create a message for the panel.
+     *
+     * @param panel is the panel in question
+     * @param map a map of constraints to the number of times the panel violated that constraint
      */
-    public void setUnschedulablePanelMessages(Panel p, Map<Constraint, Integer> m) {
-        for (Constraint key : m.keySet()) {
-            p.addMessage(key + " violated " + m.get(key) + " times");
+    public void setUnschedulablePanelMessages(Panel panel, Map<Constraint, Integer> map) {
+        for (Constraint key : map.keySet()) {
+            panel.addMessage(key + " violated " + map.get(key) + " times");
         }
-        if(p.LOCKED && p.getVenueTime() == null){
+        if(panel.LOCKED && panel.getVenueTime() == null){
             Venue venue = null;
             int time = -1;
-            for(Constraint c : p.CONSTRAINTS){
+            for(Constraint c : panel.CONSTRAINTS){
                 if(c instanceof VenueFilter){
                     venue = ((VenueFilter)c).VENUE;
                 } else if(c instanceof SpecificTimeFilter){
@@ -110,7 +134,7 @@ public class DummyScheduler {
             }
             for(VenueTime vt : venue.getAssignedVenueTimes()){
                 if(TimeFormat.withinError(vt.TIME.getStart(), time, 1)){
-                    p.addMessage("Cannot schedule, because panel \"" + vt.getAssignedPanel().NAME +
+                    panel.addMessage("Cannot schedule, because panel \"" + vt.getAssignedPanel().NAME +
                             "\" is scheduled at the requested venue and time");
                     break;
                 }
@@ -119,7 +143,9 @@ public class DummyScheduler {
     }
 
     /**
-     * A data structure that contains a VenueTime and its score. It is used in searchForVenueTime to order the venueTimes by their scores
+     * A data structure that contains a VenueTime and its score.
+     * It is used in @see searchForVenueTime() to order the venueTimes by their scores using the filters @see Filter
+     *
      */
     private class VenueTimeWithScore implements Comparable<VenueTimeWithScore> {
         public final VenueTime VENUETIME;
@@ -130,9 +156,12 @@ public class DummyScheduler {
         }
 
         /**
+         * <I>Helper Method:</I>
          * If this is larger than other return negative number.
-         * @param otherVt
+         *
+         * @param otherVt the other venueTime to be compared.
          * @return negative if this is first, 0 if equal, and positive if other is first.
+         *
          */
         @Override
         public int compareTo(VenueTimeWithScore otherVt) {
@@ -147,10 +176,11 @@ public class DummyScheduler {
     }
 
     /**
-     * Given a panel,find the best (through greed) venueTime and venue for it.
-     * This entails running filters on the venueTimes to produce only ones that are applicable to the panel,
-     * and sort those based on best fit.
-     * @param panel
+     * Given a panel, find the best (through greed) venueTime and venue for it.
+     * This entails running filters (@see Filter) on the venueTimes given a panel to produce only ones that are applicable to the panel.
+     * Then sort those based on best fit.
+     *
+     * @param panel panel to be scheduled
      * @return a searchResult object of the proposed venueTime
      */
     private SearchResult searchForVenueTime(Panel panel) {
@@ -215,27 +245,29 @@ public class DummyScheduler {
     }
 
         /**
-         * Each panel is assigned a difficulty value so that we can schedule the most difficult first
-         * Difficulty is determined by:
-         * 1 : overlap and length of availability
-         * 2 : panelists overlap
-         * 3 : category overlap
-         * 4 : min size of venue
-         * 5 : venue constraint
-         * 6 : time constraint
-         * 7 : number and priority of constraint
+         * Each panel is assigned a difficulty value, these difficulty values can be changed by the user.
+         * The default values are choosen based on which holds more prioirty.
          *
-         * And these are the multipliers:
-         * 1: Required * 100
-         * 2: Very important * 10
-         * 3: Desirable * 1
+         * Difficulty is determined by:
+         *
+         * 1 AVAILABILITY_CONSTRAINT_VALUE: overlap and length of availability
+         * 2 PANELISTS_CONSTRAINT_VALUE: count panelists overlap and multiple by the
+         * 3 <I>No value</I>: count category overlap using the map
+         * 4 SIZE_CONSTRAINT_VALUE: min size of venue
+         * 5 VENUE_CONSTRAINT_VALUE: venue constraint, for locked panels
+         * 6 TIME_CONSTRAINT_VALUE: time constraint
+         *
+         *
+         * To make sure the locked panels are always at the top the method take them out of the que then add them again on top
          */
         public void setDifficulties() {
-            /**
-             * Runs the multiple difficulty determining methods and sums them to find the difficulty for each panel
-             */
+
             List<Panel> freePanels = ScheduleData.instance().getFreePanels();
             List<Panel> lockedPanels = new ArrayList<>();
+            /**
+             * Runs the methods @see panelistDifficultyMap and @see categoryDifficultyMap
+             * Then assign them to HashMap's, each HashMap will be iterated through to calculate the difficulty for each panel
+             */
             HashMap<String, Integer> panelistDifficulty = panelistDifficultyMap(freePanels);
             HashMap<String, Integer> categoryDifficulty = categoryDifficultyMap(freePanels);
             int panelDifficulty;
@@ -256,10 +288,12 @@ public class DummyScheduler {
                     lockedPanels.add(p);
                 }
             }
+
             // remove from freePanels
             freePanels.removeAll(lockedPanels);
             //////////////////////////////
 
+            // iterated through to calculate the difficulty for each panel
             for (Panel p : freePanels) {
                 panelDifficulty = 0; // reset  for every panel
                 for (String x : p.PANELISTS) {
@@ -273,14 +307,16 @@ public class DummyScheduler {
             }
             Collections.sort(freePanels);
             Collections.reverse(freePanels);
+
             // add locked to the begainning
             freePanels.addAll(0, lockedPanels);
         }
 
     /**
-     * Bases difficulty on the amount of times the panel can be scheduled
-     * @param panel
-     * @return a float; the larger the number indicates less times the panel can be placed in
+     * Bases difficulty on the amount of times the panel can be scheduled on
+     *
+     * @param panel calculating difficulty for
+     * @return float; the larger the number indicates less times the panel can be placed in
      */
         private int availabilityDifficulty(Panel panel) {
             Range range = panel.getAvailability();
@@ -288,9 +324,10 @@ public class DummyScheduler {
         }
 
     /**
-     * Adds a large difficulty if the panel is contrainted to a specific venue
-     * @param panel
-     * @return an int
+     * Adds a the difficulty value VENUE_CONSTRAINT_VALUE if the panel is assigned to a specific Venue.
+     *
+     * @param panel calculating difficulty for
+     * @return int; VENUE_CONSTRAINT_VALUE or 0 if the panel has no Venue constraint.
      */
         private int venueConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
@@ -302,9 +339,10 @@ public class DummyScheduler {
         }
 
     /**
-     * Adds a large difficulty is the panel is forced to be scheduled at a specific time
-     * @param panel
-     * @return an int
+     * AAdds a the difficulty value TIME_CONSTRAINT_VALUE if the panel is assigned to a specific Time.
+     *
+     * @param panel calculating difficulty for
+     * @return int; TIME_CONSTRAINT_VALUE or 0 if the panel has no Time constraint.
      */
         private int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
@@ -317,8 +355,9 @@ public class DummyScheduler {
 
     /**
      * Determines difficulty based on how large of a venue is needed; the larger, the more difficult
-     * @param panel
-     * @return an int
+     *
+     * @param panel calculating difficulty for
+     * @return int; SIZE_CONSTRAINT_VALUE or 0 if the panel has no Size constraint.
      */
         private int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
@@ -332,40 +371,41 @@ public class DummyScheduler {
 
     /**
      * Adds difficulty based on how many other panels share a category with this one
-     * @param panels
-     * @return an int
+     *
+     * @param panels calculating difficulty for
+     * @return HashMap<String, Integer>; overlapping categories to be counted in setDifficulties()
      */
         private HashMap<String, Integer> categoryDifficultyMap(List<Panel> panels) {
-            HashMap<String, Integer> m = new HashMap<>();
+            HashMap<String, Integer> map = new HashMap<>();
             for (Panel panel : panels) {
                 for (String category : panel.CATEGORIES) {
-                    if (m.containsKey(category)) {
-                        m.put(category, m.get(category) + 1);
+                    if (map.containsKey(category)) {
+                        map.put(category, map.get(category) + 1);
                     } else {
-                        m.put(category, 1);
+                        map.put(category, 1);
                     }
                 }
             }
-            return m;
+            return map;
         }
 
     /**
      * Adds difficulty based on how many times the panel's panelists appear in other panels.
-     * @param panels
-     * @return an int
-     * @return an int
+     *
+     * @param panels calculating difficulty for
+     * @return HashMap<String, Integer>; overlapping panelists to be counted in setDifficulties()
      */
         private HashMap<String, Integer> panelistDifficultyMap(List<Panel> panels) {
-            HashMap<String, Integer> m = new HashMap<>();
+            HashMap<String, Integer> map = new HashMap<>();
             for (Panel panel : panels) {
                 for (String panelist : panel.PANELISTS) {
-                    if (m.containsKey(panelist)) {
-                        m.put(panelist, m.get(panelist) + 1);
+                    if (map.containsKey(panelist)) {
+                        map.put(panelist, map.get(panelist) + 1);
                     } else {
-                        m.put(panelist, 1);
+                        map.put(panelist, 1);
                     }
                 }
             }
-            return m;
+            return map;
         }
 }

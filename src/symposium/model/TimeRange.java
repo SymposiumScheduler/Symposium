@@ -5,6 +5,11 @@ import java.util.*;
 
 /**
  * A single range of absolute time.
+ *
+ * This class documentation is well and better explained @see Range
+ *
+ * The methods don't have a documentation since they will be reiterating the same thing @see Range
+ *
  */
 public class TimeRange implements Range {
     public final int START;

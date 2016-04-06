@@ -6,13 +6,22 @@ import sun.net.TelnetInputStream;
 import javax.rmi.CORBA.Tie;
 import java.util.*;
 
+/**
+ * A Series of range of absolute time.
+ *
+ * This class documentation is well and better explained @see Range
+ *
+ * The methods don't have a documentation since they will be reiterating the same thing @see Range
+ */
+
 public class TimeRangeSeries implements Range {
     private final SortedSet<TimeRange> ranges;
 
     /**
      * The ranges should be checked using isSimple and call simplify if necessary. Also ranges.size() should be > 1
      * before calling constructor, because if there is only 1 TimeRange, there is no need for TimeRangeSeries.
-     * @param ranges
+     *
+     * @param ranges to be used and updated.
      */
     public TimeRangeSeries(Collection<TimeRange> ranges) {
         if (ranges == null){
@@ -193,7 +202,7 @@ public class TimeRangeSeries implements Range {
     /**
      * simplify a list of TimeRange objects. simplifying means replace intersectiong timeranges with the union of them.
      *
-     * @param timeRanges
+     * @param timeRanges to be used and updated.
      * @return a list of disjoint timeRanges that is equivalent to the passed timeRanges
      */
     public static SortedSet<TimeRange> simplify(Collection<TimeRange> timeRanges) {
@@ -233,7 +242,8 @@ public class TimeRangeSeries implements Range {
     /**
      * isSimple check a list of TimeRange objects if simple. Simple Range means it is disjoint and
      * cases like [0, 5][6, 10] do not exist. Because case like [0, 5][6, 10] should equal [0, 10]
-     * @param timeRanges
+     *
+     * @param timeRanges to be used and updated.
      * @return true if conditions above are met, false otherwise
      */
     public static boolean isSimple(Collection<TimeRange> timeRanges) {

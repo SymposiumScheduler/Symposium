@@ -3,30 +3,37 @@ package symposium.model;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The class Constraints is an abstract class and the main parent for all constraint classes.
+ * Each Constraint has a given priority (enum), which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+ * Each child of the Constraint class will be testing if the constraint is violated or not.
+ * Please refer to each constraint class for their documentation.
+ */
+
 public abstract class Constraint {
     public final ConstraintPriority PRIORITY;
     public final Panel PANEL;
     Map<VenueTime, Boolean> cache = new HashMap<VenueTime, Boolean>();
 
     /**
-     * Constructs constraint.
-     * Dependencies: Panel class, Parser class
+     * Constructs for the Constraint class.
      *
-     * @param priority enum determining whether constraint is required, important, or desirable.
-     * @param p        the Panel that the constraint is part of.
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
      */
-    public Constraint(ConstraintPriority priority, Panel p) {  //Refering to ScheduleData globally?
+    public Constraint(ConstraintPriority priority, Panel panel) {  //Refering to ScheduleData globally?
         this.PRIORITY = priority;
-        this.PANEL = p;
+        this.PANEL = panel;
     }
 
     /**
-     * Checks cach to see if bool stored for particular venue time for this constraint
-     * If not, runs isConstraintViolated on prospective venueTime
-     * If stored, returns cached bool.
-     * Dependencies: isConstraintViolated method, VenueTime class
-     * @param venueTime
-     * @return True is constraint is violated at prospective venueTime, false otherwise.
+     * <b>Dependencies:</b>  isConstraintViolated method, VenueTime class
+     *
+     * The method checks the cache for each VenueTime and returns the violation
+     * If the cache is empty populate it with the violation through isConstraintViolated()
+     *
+     * @param venueTime The time being checked
+     * @return boolean; The violation value for the venueTime. True if constraint is violated at prospective venueTime, false otherwise.
      */
     public boolean checkViolationCache(VenueTime venueTime) {
         if (cache.get(venueTime) == null) {
@@ -39,14 +46,18 @@ public abstract class Constraint {
         }
     }
 
+    //ToDo: This method needs to be refactored!
+
     /**
-     * Checks cache to see if bool stored for particular venue time for this constraint
-     * If not stored, runs isConstraintViolated on PANEL's current venueTime
-     * If stored, returns the cached bool.
-     * Dependencies: isConstraintViolated method, VenueTime class, PANEL.getVenueTime method
      *
-     * @return True if constraint is violated at current venueTime, false otherwise.
+     * <b>Dependencies:</b>  isConstraintViolated method, VenueTime class
+     *
+     * The method checks the cache for each VenueTime and returns the violation
+     * If the cache is empty populate it with the violation through isConstraintViolated()
+     *
+     * @return boolean; The violation value for the venueTime. True if constraint is violated at prospective venueTime, false otherwise.
      */
+
     public boolean checkViolationCache() {
         VenueTime venueTime = PANEL.getVenueTime();
         if (cache.get(venueTime) == null) {
@@ -58,12 +69,23 @@ public abstract class Constraint {
     }
 
     /**
-     * Dependencies: VenueTime class
+     * <b>Dependencies:</b> VenueTime class
+     * Method to be implemented in the child classes.
      *
-     * @param venueTime
-     * @return True if costraint is violated at prospective venueTime, false otherwise.
+     * Depending on the constraint this method implementation will change. The general idea is to test if the constraint is violated or not
+     * @param venueTime The time being checked
+     * @return boolean; If the constraint is violated returns true, otherwise, returns false.
      */
     public abstract boolean isConstraintViolated(VenueTime venueTime);
+
+
+    /**
+     * <b>Dependencies:</b> VenueTime class
+     * Similar to isConstraintViolated it tests a specific panel constraint.
+     *
+     * The method test the comparison of the venueTime for the given panel with all the other panels scheduled at that time.
+     * @return boolean; If the constraint is violated returns true, otherwise, returns false.
+     */
 
     public boolean isConstraintViolated() {
         if (PANEL.getVenueTime() == null) {
@@ -76,16 +98,29 @@ public abstract class Constraint {
 
     /**
      * Removes the cached bool for the specified venueTime.
-     * @param venueTime
+     * @param venueTime The time being checked
      */
     public void removeCachedValue(VenueTime venueTime) {
+
         cache.remove(venueTime);
     }
 
     /**
-     * Clears the entire cache, starts anew.
+     * Clears the entire cache, starts anew cache.
      */
     public void clearCache() {
         cache = new HashMap<VenueTime, Boolean>();
+    }
+
+    /**
+     * The toString method will differ for each constraint.
+     * The method specifies what is meant when a constraint is violated
+     * Each constraint will return the message associated with it when it is violated.
+     *
+     * @return String message of the violation.
+     */
+
+    public String toString() {
+        return "Constraint is violated";
     }
 }

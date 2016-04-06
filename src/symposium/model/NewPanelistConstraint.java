@@ -2,16 +2,32 @@ package symposium.model;
 
 import java.util.List;
 
+/**
+ * The class New Panelist Constraint inherits from TimeConstraint, @see TimeConstraint for documentation.
+ * New Panelist constraint is violated when on Monday (or the first day, day 0) all of the panelists of the panel are new
+ *
+ */
 public class NewPanelistConstraint extends TimeConstraint { //Ask team members
-    public static List<String> panelist;
+    public static List<String> panelistsViolating;
 
-    public NewPanelistConstraint(ConstraintPriority priority, Panel p) {
-        super(priority, p);
+    /**
+     * Constructs for the NewPanelistConstraint class.
+     *
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
+     */
+    public NewPanelistConstraint(ConstraintPriority priority, Panel panel) {
+        super(priority, panel);
     }
 
     /**
-     * Dependencies: Range interface, TimeRange class, Panel class, Panel.PANELIST variable
-     * @return true if panel doesn't fall on monday OR there is one new panelist or for fewer, otherwise returns false
+     * <b>Dependencies:</b> Range interface, TimeRange class, Panel class, Panel.PANELIST variable
+     *
+     * The method tests if a panel has all new panelist on the first day.
+     * When the method finds the panelists violating it, record the panelists and assign it to panelistsViolating.
+     *
+     * @param venueTime The time being checked
+     * @return boolean; False if panel falls on Monday and all panelists are new, otherwise returns true
      */
     @Override
     boolean checkTime(VenueTime venueTime) {
@@ -21,16 +37,22 @@ public class NewPanelistConstraint extends TimeConstraint { //Ask team members
             return true;
         }
         else {
-            panelist = this.PANEL.PANELISTS;
+            panelistsViolating = this.PANEL.PANELISTS;
             return false;
         }
     }
 
+    /**
+     * ToString method for the New Panelist Constraint to be returned when violated.
+     * The method specifies what is told when a constraint is violated.
+     *
+     * @return String of the violation message
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("New Panelist Constraint Violated: (Not all New Panelists on Monday)").append("\n");
-        sb.append("\t\t\t").append("Panelists are: ").append(panelist);
+        sb.append("\t\t\t").append("Panelists are: ").append(panelistsViolating);
 
         return sb.toString();
     }

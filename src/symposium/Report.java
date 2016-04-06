@@ -5,9 +5,25 @@ import org.json.simple.JSONObject;
 import symposium.model.*;
 import java.util.*;
 
+/**
+ * The class Report is the class responsible for printing a report about the schedule.
+ * The class includes two methods toString() and toJson() each printing the report in a specific format.
+ */
 public class Report {
     public static final Report INSTANCE = new Report();
 
+    /**
+     * This method is used to print a full report of the schedule. The report includes the Scheduled panels, the Unscheduled panels,
+     * a full list of Underutilized Panelists, which are panelists not scheduled in certain days. As well as the messages of the schedule.
+     * The messages could be understood as errors, which include, but are not limited to, anything that went wrong or needs to be reported to the user,
+     * for example, a panel that had no Panelists will be skipped in the scheduling process and the user will be told of that panel.
+     *
+     * The method uses a String Builder in order to set the objects in heaps, each heap will contain the corresponding segment of the report.
+     *
+     * The method takes no parameters. However it uses the panels and panelists.
+     *
+     * @return String report of the schedule.
+     */
     public String toString() {
         StringBuilder result = new StringBuilder();
 
@@ -41,6 +57,18 @@ public class Report {
         return result.toString();
     }
 
+    /**
+     * Similar to the previous method. This method is used to print a full report of the schedule. The report includes the Scheduled panels, the Unscheduled panels,
+     * a full list of Underutilized Panelists, which are panelists not scheduled in certain days. As well as, the messages of the schedule.
+     * The messages could be understood as errors, which include, but are not limited to, anything that went wrong or needs to be reported to the user,
+     * for example, a panel that had no Panelists will be skipped in the scheduling process and the user will be told of that panel.
+     *
+     * The difference is this method uses JSONObject to report instead of string, it creates arrays each holding the corresponding segment.
+     *
+     * The method takes no parameters. However it uses the panels and panelists.
+     *
+     * @return JSONObject report of the schedule.
+     */
     public JSONObject toJson(){
         JSONObject root = new JSONObject();
         // scheduled Panels

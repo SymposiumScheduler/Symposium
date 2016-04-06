@@ -2,18 +2,37 @@ package symposium.model;
 
 import java.util.*;
 
+/**
+ * The class ConsecutivePanelsConstraint inherits from Constraints, @see Constraint for documentation.
+ * Consecutive Panels is violated when two panelists on some panel have 3 or more panels Consecutively
+ */
+
 public class ConsecutivePanelsConstraint extends Constraint {
 
-    public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel p) {
-        super(priority,p);
-    }
     /**
-     * @param venueTime The time being checked by doesOverlap
-     * @return If there is more than 2 consecutive panels that a panelist is in (including the given venueTime) return true.
+     * Constructs for the ConsecutivePanelsConstraint class.
+     *
+     * @param priority enum which determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The Panel that the constraint is part of.
      */
+
+
+    public ConsecutivePanelsConstraint(ConstraintPriority priority, Panel panel) {
+        super(priority,panel);
+    }
+
+    /**
+     *
+     * The method loops through each panel panelists and for each it takes the unique days the panelists appears in and then
+     * it counts the number of panels within the specified time difference between one panel and the next one in each of these days.
+     * Doing that will count if the panelists is showing up for consecutive panels in a day.
+     *
+     * @param venueTime The time being checked by doesOverlap
+     * @return boolean; If there is more than 2 consecutive panels that a panelist is in (including the given venueTime) return true.
+     */
+
     public boolean isConstraintViolated(VenueTime venueTime) {
-        //time difference between two panels to be considered consecutive
-        int difference = 80;
+        int difference = 80; //time difference between two panels to be considered consecutive
         for(String pist: PANEL.PANELISTS){
             List<Range> panelsSameDay = new ArrayList<>();
             panelsSameDay.add(venueTime.TIME);
@@ -54,6 +73,11 @@ public class ConsecutivePanelsConstraint extends Constraint {
         }
         return false;
     }
+
+    /**
+     * @return String of the violation message
+     */
+
     @Override
     public String toString() {
         return "Consecutive Panels Constraint is violated: priority = "+ PRIORITY;

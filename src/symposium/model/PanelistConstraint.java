@@ -2,23 +2,33 @@ package symposium.model;
 
 import java.util.List;
 
+/**
+ * PanelistConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
+ * Panelist Constraint is violated when a panelist belonging to this panel is on another panel that has an overlapping schedule.
+ */
 public class PanelistConstraint extends NoOverlapConstraint {
     public static List<String> panelistsViolating;
 
-    public PanelistConstraint(ConstraintPriority priority, Panel p) {
-        super(priority,p);
+    /**
+     * Constructs for the PanelistConstraint class.
+     *
+     * @param priority enum that determines if a constraint is REQUIRED, VERY_IMPORTANT, or DESIRED.
+     * @param panel    The panel the constraint belongs to.
+     */
+    public PanelistConstraint(ConstraintPriority priority, Panel panel) {
+        super(priority,panel);
     }
     /**
-     * There's a (potential) logic error in the way this CURRENTLY works with checkViolationCache,
-     * in that panelists will be assigned to the current venueTime
-     * so it may return true instead of false if ScheduleData.isAssigned isn't written to take this into account.
-     * Dependencies: ScheduleData class, ScheduleData.isAssigned method, Panel.PANELIST variable
+     * <b>Dependencies:</b> ScheduleData class, ScheduleData.isAssignedPanelists method, Panel.PANELIST variable
+     *
+     * The method compares all panelists assigned to this panel to all other panels they are assigned to.
+     *
      * @param venueTime The venueTime to check Panelists against
-     * @return If at least one panelist is scheduled at the same time as venueTime, return true.  Otherwise, return false.
+     * @return boolean; If at least one panelist is scheduled at the same time as venueTime, return true.  Otherwise, return false.
      */
     @Override
     boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
-        if( ScheduleData.instance().isAssignedPanelists(venueTime, PANEL.PANELISTS)) { //Unwritten function in ScheduleData, checks if any of the panelists are assigned at any overlapping time slot
+        if( ScheduleData.instance().isAssignedPanelists(venueTime, PANEL.PANELISTS)) {
             panelistsViolating = PANEL.PANELISTS;
             return true;
         }
@@ -27,6 +37,9 @@ public class PanelistConstraint extends NoOverlapConstraint {
         }
     }
 
+    /**
+     * @return String of the violation message
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

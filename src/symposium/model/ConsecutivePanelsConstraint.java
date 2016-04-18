@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * The class ConsecutivePanelsConstraint inherits from Constraints, @see Constraint for documentation.
+ * The class ConsecutivePanelsConstraint inherits from {@link symposium.model.Constraint}.
  * Consecutive Panels is violated when two panelists on some panel have 3 or more panels Consecutively
  */
 

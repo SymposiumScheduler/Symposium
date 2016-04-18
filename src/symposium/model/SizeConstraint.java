@@ -1,7 +1,7 @@
 package symposium.model;
 
 /**
- * The class SizeConstraint inherits from Constraints, @see Constraint for documentation.
+ * The class SizeConstraint inherits from {@link symposium.model.Constraint Constraint}.
  * Size Constraint is violated when a panel is given a venue smaller than the minimum size required,
  * in other words when the venue does not fit the panel.
  *

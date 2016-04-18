@@ -6,9 +6,9 @@ import java.util.*;
 /**
  * A single range of absolute time.
  *
- * This class documentation is well and better explained @see Range
+ * This class documentation is well and better explained {@link symposium.model.Range Range}
  *
- * The methods don't have a documentation since they will be reiterating the same thing @see Range
+ * The methods don't have a documentation since they will be reiterating the same thing as {@link symposium.model.Range Range}
  *
  */
 public class TimeRange implements Range {

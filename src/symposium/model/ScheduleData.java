@@ -102,7 +102,7 @@ public class ScheduleData {
     }
 
     /**
-     * Unused
+     * Unused;
      *
      * change a panel status from assigned to free.
      * @param panel panel to be changed to free status
@@ -131,7 +131,7 @@ public class ScheduleData {
      *
      * @param venueTime The venueTime all panelists are assumed to be scheduled at.
      * @param panelists A list of all panelists whose availability needs to be checked.
-     * @return boolean; returns true if there is any panelist that is scheduled for a venueTime that overlaps with vt.
+     * @return boolean; returns true if there is any panelist that is scheduled for a venueTime that overlaps with the given venueTime.
      */
     public boolean isAssignedPanelists(VenueTime venueTime, List<String> panelists) {
         boolean panelistOverlap = false;
@@ -161,7 +161,7 @@ public class ScheduleData {
      *
      * @param venueTime The venueTime to be checked.
      * @param categories The category to check for avaliability.
-     * @return boolean; returns true if the category is scheduled for a venueTime that overlaps with vt.
+     * @return boolean; returns true if the category is scheduled for a venueTime that overlaps with the given venueTime.
      */
     public boolean isAssignedCategories(VenueTime venueTime, List<String> categories) {
         boolean categoryOverlap = false;

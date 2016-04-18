@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * VenueFilter inherits from Filter, @see Filter for documentation.
+ * VenueFilter inherits from {@link symposium.model.Filter Filter}.
  * VenueFilter fillers out any venues that are not the required Venues for the particular panel
  */
 public class VenueFilter extends Filter {

@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * PreferredVenuesFilter inherits from Filter, @see Filter for documentation.
+ * PreferredVenuesFilter inherits from {@link symposium.model.Filter Filter}.
  * PreferredVenuesFilter orders the venues based on the priority value given in the input file
  */
 public class PreferredVenuesFilter extends Filter {

@@ -2,7 +2,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * SpecificTimeFilter inherits from Filter, @see Filter for documentation.
+ * SpecificTimeFilter inherits from {@link symposium.model.Filter Filter}.
  * SpecificTimeFilter is a Filter removing all venueTime's not matching the time given in the constructor.
  *
  */

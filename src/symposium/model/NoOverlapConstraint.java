@@ -1,7 +1,7 @@
 package symposium.model;
 
 /**
- * The class NoOverlapConstraint is an abstract class which inherits from Constraints, @see Constraint for documentation.
+ * The class NoOverlapConstraint is an abstract class which inherits from {@link symposium.model.Constraint Constraint}.
  * The class is the parent class, which represents any constraints that tests the overlap of any panels constraints.
  * For example, the category constraints is an overlapping constraint, such as we compare whether two panels overlap or not on their category.
  * Constraint is violated when two panels are scheduled at the same time and have an overlap of a certain constraint.

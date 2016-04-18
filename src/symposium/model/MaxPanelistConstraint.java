@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * The class MaxPanelistConstraint inherits from Constraints, @see Constraint for documentation.
+ * The class MaxPanelistConstraint inherits from {@link symposium.model.Constraint Constraint}.
  * Max number of Panelists is violated when a panelist appears more than the set maximum number of times per day.
  *
  */

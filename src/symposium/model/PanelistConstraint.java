@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.List;
 
 /**
- * PanelistConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
+ * PanelistConstraint inherits from {@link symposium.model.NoOverlapConstraint NoOverlapConstraint}.
  * Panelist Constraint is violated when a panelist belonging to this panel is on another panel that has an overlapping schedule.
  */
 public class PanelistConstraint extends NoOverlapConstraint {

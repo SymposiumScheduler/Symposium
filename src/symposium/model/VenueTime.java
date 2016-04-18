@@ -4,8 +4,6 @@ package symposium.model;
  * VenueTime is used to encapsulate time range information for venues, where each Venue object will have multiple
  * VenueTime objects assigned to it.
  * When a panel is assigned to a time slot, the information about it is kept here.
- *
- * VenueTime implements Comparable<VenueTime> because we have many VenueTime objects that needs to be compared constantly
  */
 public class VenueTime implements Comparable<VenueTime>{
 

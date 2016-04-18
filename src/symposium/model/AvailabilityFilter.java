@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * AvailabilityFilter inherits from Filter, @see Filter for documentation.
+ * AvailabilityFilter inherits from Filter, {@link symposium.model.Filter Filter} for documentation.
  * AvailabilityFilter checks the availability of the panel and keep only the times accepted by the panel
  *
  */

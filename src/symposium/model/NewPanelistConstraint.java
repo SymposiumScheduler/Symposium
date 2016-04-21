@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.List;
 
 /**
- * The class New Panelist Constraint inherits from TimeConstraint, @see TimeConstraint for documentation.
+ * The class New Panelist Constraint inherits from {@link symposium.model.TimeConstraint TimeConstraint}.
  * New Panelist constraint is violated when on Monday (or the first day, day 0) all of the panelists of the panel are new
  *
  */

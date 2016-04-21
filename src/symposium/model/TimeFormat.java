@@ -1,24 +1,26 @@
 package symposium.model;
 
-/**
- * # AbsoluteTime
- * an int that donates minute count from midnight of day 0.
- * int is more than enough to donate minutes, it gives us about 4000 years.
- *
- * # NormalTime
- * a string of the format
- * "<number of day>, <hr>:<mnt>-<hr>:<mnt>" or multiple lines of the same format.
- * hr is in 24 hour format and days starts with day 0
- * normal time does not have to be simple (see TimeRangeSeries.isSimple()), it will be simplified if necessary.
- *
- * Regex for valid normalTime "^(?: *\d+ *, *\d+:\d+-\d+:\d+ *)(?:\n+ *\d+ *, *\d+:\d+-\d+:\d+ *)*\s*$"
- */
-
 import java.util.*;
 import java.util.regex.Pattern;
 
 /**
  * TimeFormat is a utility class for operations about the formating of time.
+ * <p>
+ * <b>Definitions:</b>
+ * <p>
+ * <i>AbsoluteTime:</i>
+ * <br>
+ * &nbsp;&nbsp;&nbsp; an int that donates minute count from midnight of day 0.
+ * int is more than enough to donate minutes, it gives us about 4000 years.
+ * <p>
+ * <i>NormalTime:</i>
+ * <br>
+ * &nbsp;&nbsp;&nbsp; a string of the format
+ * "&lt;number of day&gt;, &lt;hr&gt;:&lt;mnt&gt;-&lt;hr&gt;:&lt;mnt&gt;" or multiple lines of the same format.
+ * hr is in 24 hour format and days starts with day 0
+ * normal time does not have to be simple (see TimeRangeSeries.isSimple()), it will be simplified if necessary.
+ * <br>
+ * Regex for valid normalTime "^(?: *\d+ *, *\d+:\d+-\d+:\d+ *)(?:\n+ *\d+ *, *\d+:\d+-\d+:\d+ *)*\s*$"
  */
 public final class TimeFormat {
     private TimeFormat() {} // TimeFormat should be static, no instances should be created

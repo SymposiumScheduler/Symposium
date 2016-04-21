@@ -7,8 +7,6 @@ import java.util.Collection;
 
 /**
  * Venue stores its own object, its name, size, priority, and VenueTimes
- *
- * Venue implements Comparable<Venue> because we have many Venue objects that needs to be compared constantly
  */
 public class Venue implements Comparable<Venue>{
 

@@ -1,7 +1,7 @@
 package symposium.model;
 
 /**
- * The class CategoryConstraint inherits from NoOverlapConstraint, @see NoOverlapConstraint for documentation.
+ * The class CategoryConstraint inherits from {@link symposium.model.Constraint}.
  * Category Constraint is violated when two panels of same category are scheduled at same time.
  *
  */

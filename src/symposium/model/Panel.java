@@ -5,8 +5,6 @@ import java.util.*;
 /**
  * Panel stores information about Panels, such as name, constraints, category, the panel's availability based on
  * the panelists, and messages of the violations a panel might have.
- *
- * Panel implements Comparable<Panel> because we have many panel objects that needs to be compared constantly
  */
 public class Panel implements Comparable<Panel> {
     public final String NAME;

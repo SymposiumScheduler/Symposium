@@ -3,7 +3,7 @@ package symposium.model;
 import java.util.*;
 
 /**
- * VenueTimeDurationFilter inherits from Filter, @see Filter for documentation.
+ * VenueTimeDurationFilter inherits from {@link symposium.model.Filter Filter}.
  * VenueTimeDurationFilter checks the venue times and increase score based on the length of the venue time.
  * If the number of panelists on a panel is 1 or 2, it prefer a short venue time.
  * If it has more than that it prefer a long venue time.

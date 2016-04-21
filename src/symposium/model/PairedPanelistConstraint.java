@@ -1,7 +1,7 @@
 package symposium.model;
 
 /**
- * The class PairedPanelistConstraint inherits from Constraints, @see Constraint for documentation.
+ * The class PairedPanelistConstraint inherits from {@link symposium.model.Constraint Constraint}.
  * Paired Panelist Constraint is violated when two panelists appear together twice or more in a single day
  */
 public class PairedPanelistConstraint extends Constraint {

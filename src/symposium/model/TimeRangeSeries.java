@@ -9,16 +9,16 @@ import java.util.*;
 /**
  * A Series of range of absolute time.
  *
- * This class documentation is well and better explained @see Range
+ * This class documentation is well and better explained in {@link symposium.model.Range Range}
  *
- * The methods don't have a documentation since they will be reiterating the same thing @see Range
+ * The methods don't have a documentation since they will be reiterating the same thing as {@link symposium.model.Range Range}
  */
 
 public class TimeRangeSeries implements Range {
     private final SortedSet<TimeRange> ranges;
 
     /**
-     * The ranges should be checked using isSimple and call simplify if necessary. Also ranges.size() should be > 1
+     * The ranges should be checked using isSimple and call simplify if necessary. Also ranges.size() should be greater than 1
      * before calling constructor, because if there is only 1 TimeRange, there is no need for TimeRangeSeries.
      *
      * @param ranges to be used and updated.

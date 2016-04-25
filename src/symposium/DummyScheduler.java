@@ -318,7 +318,7 @@ public class DummyScheduler {
      * @param panel calculating difficulty for
      * @return float; the larger the number indicates less times the panel can be placed in
      */
-        private int availabilityDifficulty(Panel panel) {
+        protected int availabilityDifficulty(Panel panel) {
             Range range = panel.getAvailability();
             return AVAILABILITY_CONSTRAINT_VALUE / range.length();
         }
@@ -329,7 +329,7 @@ public class DummyScheduler {
      * @param panel calculating difficulty for
      * @return int; VENUE_CONSTRAINT_VALUE or 0 if the panel has no Venue constraint.
      */
-        private int venueConstraintDifficulty(Panel panel) {
+        protected int venueConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof VenueFilter) {
                     return VENUE_CONSTRAINT_VALUE;
@@ -344,7 +344,7 @@ public class DummyScheduler {
      * @param panel calculating difficulty for
      * @return int; TIME_CONSTRAINT_VALUE or 0 if the panel has no Time constraint.
      */
-        private int TimeConstraintDifficulty(Panel panel) {
+        protected int TimeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof SpecificTimeFilter) {
                     return TIME_CONSTRAINT_VALUE;
@@ -359,7 +359,7 @@ public class DummyScheduler {
      * @param panel calculating difficulty for
      * @return int; SIZE_CONSTRAINT_VALUE or 0 if the panel has no Size constraint.
      */
-        private int sizeConstraintDifficulty(Panel panel) {
+        protected int sizeConstraintDifficulty(Panel panel) {
             for (Constraint c : panel.CONSTRAINTS) {
                 if (c instanceof SizeConstraint) {
                     return SIZE_CONSTRAINT_VALUE * ((SizeConstraint) c).getMinSize();

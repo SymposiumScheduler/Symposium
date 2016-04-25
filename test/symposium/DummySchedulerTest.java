@@ -41,7 +41,6 @@ public class DummySchedulerTest {
         DummyScheduler bs = new DummyScheduler(diffValues);
         bs.makeSchedule();
 
-
         for (Panel p: ScheduleData.instance().getAssignedPanels()) {
             assertTrue(p.getDifficulty() == 0);
         }
@@ -66,6 +65,42 @@ public class DummySchedulerTest {
 
         for (Panel p: ScheduleData.instance().getAssignedPanels()) {
             assertTrue(p.getDifficulty() == 0 || p.getDifficulty() > 2000);
+        }
+
+        ScheduleData.deleteScheduleData();
+    }
+
+    @Test
+    public void testIndividualDifficultyFactors() {
+        String inputFilePath = "datas/dataLargeTest.json";
+        int[] diffValues = new int[5];
+        diffValues[0] = 10;
+        diffValues[1] = 100000;
+        diffValues[2] = 100000;
+        diffValues[3] = 10000000;
+        diffValues[4] = 100;
+
+        Parser.parse(inputFilePath);
+
+        DummyScheduler bs = new DummyScheduler(diffValues);
+        bs.makeSchedule();
+
+        for (Panel p: ScheduleData.instance().getAssignedPanels()) {
+            assertTrue(p.getDifficulty() == 0 || p.getDifficulty() > 2000);
+            if (p.toString().contains("SO MANY GUITARS")) {
+                assertTrue(p.getDifficulty() > 2000);
+                assertTrue(bs.availabilityDifficulty(p) > 6000);
+                assertTrue(bs.sizeConstraintDifficulty(p) == 10);
+                assertTrue(bs.TimeConstraintDifficulty(p) == 0);
+                assertTrue(bs.venueConstraintDifficulty(p) > 10000 );
+            } else if (p.toString().contains("Performance - Rene")) {
+                assertTrue(p.getDifficulty() > 2000);
+                System.out.println(bs.sizeConstraintDifficulty(p));
+                assertTrue(bs.availabilityDifficulty(p) > 5000);
+                assertTrue(bs.sizeConstraintDifficulty(p) == 10);
+                assertTrue(bs.TimeConstraintDifficulty(p) == 0);
+                assertTrue(bs.venueConstraintDifficulty(p) > 10000);
+            }
         }
 
         ScheduleData.deleteScheduleData();

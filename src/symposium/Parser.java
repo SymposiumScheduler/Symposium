@@ -36,7 +36,6 @@ public class Parser {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println(inputFile);
         initVenues(root);
         initPanels(root);
     }

@@ -42,7 +42,7 @@ public class DummyScheduler {
      * A container, a struct, for the venueTime proposed by the algorithm to place a panel in.
      *
      */
-    private class SearchResult {
+    protected class SearchResult {
         public final VenueTime VENUETIME;
         public final Map<Constraint, Integer> CAUSE_OF_FAIL_MAP;
 
@@ -183,7 +183,7 @@ public class DummyScheduler {
      * @param panel panel to be scheduled
      * @return a searchResult object of the proposed venueTime
      */
-    private SearchResult searchForVenueTime(Panel panel) {
+    protected SearchResult searchForVenueTime(Panel panel) {
         Map<Constraint, Integer> requiredViolationMap = new HashMap<>();
         // prepare venueTime map, should be done in schedule data. TODO this is fine for now.
         Map<VenueTime, Integer> vtScoreMap = new HashMap<>();

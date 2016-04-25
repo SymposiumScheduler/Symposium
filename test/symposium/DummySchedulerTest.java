@@ -148,4 +148,29 @@ public class DummySchedulerTest {
 
         ScheduleData.deleteScheduleData();
     }
+
+    @Test
+    public void testSearchForVenueTime() throws Exception {
+        String inputFilePath = "datas/dataTest.json";
+        int[] diffValues = new int[5];
+        diffValues[0] = 10;
+        diffValues[1] = 100000;
+        diffValues[2] = 100000;
+        diffValues[3] = 10000000;
+        diffValues[4] = 100;
+
+        Parser.parse(inputFilePath);
+
+        DummyScheduler bs = new DummyScheduler(diffValues);
+        bs.makeSchedule();
+
+        DummyScheduler.SearchResult sr = bs.searchForVenueTime(ScheduleData.instance().getUnschedulablePanels().get(0));
+
+        assertFalse(sr.isSuccess());
+        assertTrue(sr.CAUSE_OF_FAIL_MAP.toString().contains("Venue Time Duration Filter"));
+        assertTrue(sr.CAUSE_OF_FAIL_MAP.toString().contains("SpecificTimeFilter"));
+        assertTrue(sr.VENUETIME == null);
+
+        ScheduleData.deleteScheduleData();
+    }
 }

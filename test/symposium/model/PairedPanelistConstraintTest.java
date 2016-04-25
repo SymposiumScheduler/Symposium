@@ -347,7 +347,6 @@ public class PairedPanelistConstraintTest {
 
     @Test
     public void test_isConstraintViolated_predictive_true() {
-
         List<TimeRange> vt1 = new ArrayList<TimeRange>();
         List<TimeRange> vt2 = new ArrayList<TimeRange>();
 

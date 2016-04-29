@@ -11,7 +11,7 @@ REQUIREMENTS
 ------------
 
 	In order to run the scheduler, you will need 
-	1) Symposium.exe
+	1) Symposium
 	2) A properly formatted JSON file containing the necessary information
 		(More on this under Input Formatting)
 
@@ -19,9 +19,16 @@ REQUIREMENTS
 INSTALLATION
 ------------
 	
-	Simply double click Symposium.exe to run the algorithm after ensuring 
+	Simply double click Symposium to run the algorithm after ensuring 
 	all requirements have been met.
-
+	
+RUN
+------------
+	There is a three options to running the application. The first one is double
+	click Symposium.jar to get a user interface. The other two options are using the command line as follows:
+	$ Symposium input.json
+	$ Symposium input.json output.json
+ 
 
 INPUT FORMATTING
 ----------------

@@ -25,8 +25,8 @@ public class MainWin extends javax.swing.JFrame {
         //
         resultWindow = new ResultWin(this, true);
         resultWindow.setLocationRelativeTo(this);
-        optimizeWindow = new OptimizeWin(this, true);
-        optimizeWindow.setLocationRelativeTo(this);
+        //optimizeWindow = new OptimizeWin(this, true);
+       // optimizeWindow.setLocationRelativeTo(this);
     }
 
     /**
@@ -43,7 +43,6 @@ public class MainWin extends javax.swing.JFrame {
         inputPathTxt = new javax.swing.JTextField();
         chooseInputBtn = new javax.swing.JButton();
         scheduleBtn = new javax.swing.JButton();
-        optimizeBtn = new javax.swing.JButton();
         helpBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,13 +69,6 @@ public class MainWin extends javax.swing.JFrame {
             }
         });
 
-        optimizeBtn.setText("Optimize");
-        optimizeBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                optimizeBtnActionPerformed(evt);
-            }
-        });
-
         helpBtn.setText("Help");
         helpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,13 +89,10 @@ public class MainWin extends javax.swing.JFrame {
                         .addComponent(inputPathTxt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(chooseInputBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(scheduleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
-                        .addComponent(optimizeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(helpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
+                        .addComponent(helpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -116,11 +105,9 @@ public class MainWin extends javax.swing.JFrame {
                         .addComponent(inputPathTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(chooseInputBtn)))
                 .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(scheduleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(optimizeBtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(helpBtn)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(helpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scheduleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -167,12 +154,13 @@ public class MainWin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_scheduleBtnActionPerformed
 
-    private void optimizeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optimizeBtnActionPerformed
-        this.optimizeWindow.setVisible(true);
-    }//GEN-LAST:event_optimizeBtnActionPerformed
-
     private void helpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpBtnActionPerformed
         System.err.print("Help!!!!!!!!!!!!!!!!!!!");
+        JOptionPane.showMessageDialog(this, "Input should have the location of the input json file.\n" +
+                "\n" +
+                "The three dots button will give you an interactive window to choose the input file. \n" +
+                "\n" +
+                "Schedule button when pressed will schedule.", "Help", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_helpBtnActionPerformed
 
     public static void saveFile(Component parent, File f, String str) {
@@ -265,9 +253,8 @@ public class MainWin extends javax.swing.JFrame {
     private javax.swing.JFileChooser inputChooser;
     private javax.swing.JLabel inputLabel;
     private javax.swing.JTextField inputPathTxt;
-    private javax.swing.JButton optimizeBtn;
     private javax.swing.JButton scheduleBtn;
     // End of variables declaration//GEN-END:variables
     private final ResultWin resultWindow;
-    private final OptimizeWin optimizeWindow;
+    //private final OptimizeWin optimizeWindow;
 }

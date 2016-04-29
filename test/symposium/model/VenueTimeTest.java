@@ -18,7 +18,6 @@ public class VenueTimeTest {
 
     @Test
     public void testConstructor() throws Exception {
-
         List<TimeRange> ranges = new ArrayList<>(3);
         ranges.add(new TimeRange(10,20));
         ranges.add(new TimeRange(30,40));
@@ -36,14 +35,11 @@ public class VenueTimeTest {
             assertTrue(venueTimes.get(i).TIME.equals(ranges.get(i)));
             assertTrue(venueTimes.get(i).getAssignedPanel() == null);
         }
-
-
     }
 
 
     @Test
     public void testAssignPanel() throws Exception {
-
         List<TimeRange> ranges = new ArrayList<>(3);
         ranges.add(new TimeRange(10,20));
         ranges.add(new TimeRange(30,40));
@@ -60,16 +56,11 @@ public class VenueTimeTest {
         panelists.add("Joey");
         panelists.add("Yousef");
 
-
         Range range = new TimeRange(10, 20);
 
         Panel panel = new Panel(panelName, panelists, range, newCategory, constraints);
 
         VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
-
-
-   //     assertFalse(vt.getAssignedPanel().equals(panel));
-    //    assertFalse(vt.isAssigned());
 
         vt.assignPanel(panel);
 
@@ -81,7 +72,6 @@ public class VenueTimeTest {
 
     @Test
     public void testIsAssigned() throws Exception {
-
         List<TimeRange> ranges = new ArrayList<>(3);
         ranges.add(new TimeRange(10,20));
         ranges.add(new TimeRange(30,40));
@@ -108,8 +98,6 @@ public class VenueTimeTest {
         assertFalse(vt.isAssigned());
         vt.assignPanel(panel);
         assertTrue(vt.isAssigned());
-
-
     }
 
     @Test
@@ -138,9 +126,28 @@ public class VenueTimeTest {
 
         VenueTime vt = new VenueTime(new TimeRange(10, 20), venue);
 
-//        assertFalse(vt.getAssignedPanel().equals(panel));
         vt.assignPanel(panel);
         assertTrue(vt.getAssignedPanel().equals(panel));
+    }
 
+    @Test
+    public void testCompareTo() throws Exception {
+        List<TimeRange> ranges = new ArrayList<>(3);
+        ranges.add(new TimeRange(10,20));
+        ranges.add(new TimeRange(30,40));
+        ranges.add(new TimeRange(50,60));
+
+        Venue venue = new Venue("NewVenue", 5, 2,ranges);
+
+        assertTrue(venue.NAME.equals("NewVenue"));
+        assertTrue(venue.SIZE == 5);
+        assertTrue(venue.getAssignedVenueTimes().isEmpty());
+
+        List<VenueTime> venueTimes = venue.getFreeVenueTimes();
+
+        assertTrue(venueTimes.get(1).compareTo(venueTimes.get(0)) == 20);
+        assertTrue(venueTimes.get(1).compareTo(venueTimes.get(1)) == 0);
+        assertTrue(venueTimes.get(2).compareTo(venueTimes.get(1)) == 20);
+        assertTrue(venueTimes.get(2).compareTo(venueTimes.get(0)) == 40);
     }
 }

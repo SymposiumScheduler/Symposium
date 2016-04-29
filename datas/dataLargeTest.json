@@ -1,0 +1,5868 @@
+{
+  "Venues": [
+	{ "name": "Macky Auditorium [1]", "size": 3, "priority": 1 },
+	{ "name": "UMC Center Ballroom [101]", "size": 3, "priority": 2 },
+	{ "name": "UMC 235 [108]", "size": 2, "priority": 3 },
+	{ "name": "UMC East Ballroom [104]", "size": 2, "priority": 4 },
+	{ "name": "UMC West Ballroom [102]", "size": 2, "priority": 5 },
+	{ "name": "Old Main Chapel [6]", "size": 2, "priority": 6 },
+	{ "name": "ATLAS Black Box [182]", "size": 1, "priority": 7 },
+	{ "name": "Muenzinger Auditorium [103]", "size": 3, "priority": 8 },
+	{ "name": "Benson 180 [200]", "size": 1, "priority": 999 },
+	{ "name": "Boulder High School [125]", "size": 3, "priority": 999 },
+	{ "name": "Chemistry 140 [7]", "size": 3, "priority": 999 },
+	{ "name": "Chemistry 142 [74]", "size": 2, "priority": 999 },
+	{ "name": "Classroom Visits [361]", "size": 1, "priority": 999 },
+	{ "name": "Classroom Visits 2 [362]", "size": 1, "priority": 999 },
+	{ "name": "Duane Physics G130 [358]", "size": 1, "priority": 999 },
+	{ "name": "Duane Physics G1B20 [150]", "size": 2, "priority": 999 },
+	{ "name": "Duane Physics G1B30 [175]", "size": 2, "priority": 999 },
+	{ "name": "Eaton Humanities 150 [195]", "size": 1, "priority": 999 },
+	{ "name": "Eaton Humanities 1B50 [167]", "size": 2, "priority": 999 },
+	{ "name": "Education 220 [35]", "size": 1, "priority": 999 },
+	{ "name": "Ekeley E1B20 [77]", "size": 1, "priority": 999 },
+	{ "name": "Engineering 1B40 [149]", "size": 1, "priority": 999 },
+	{ "name": "Engineering 200 [199]", "size": 1, "priority": 999 },
+	{ "name": "Engineering 245 [158]", "size": 1, "priority": 999 },
+	{ "name": "Engineering 265 [157]", "size": 1, "priority": 999 },
+	{ "name": "Fiske Auditorium [363]", "size": 1, "priority": 999 },
+	{ "name": "Fleming 155 [198]", "size": 2, "priority": 999 },
+	{ "name": "Gold Biosciences A2B70 [359]", "size": 2, "priority": 999 },
+	{ "name": "Hale 270 [106]", "size": 2, "priority": 999 },
+	{ "name": "Hellems 252 [22]", "size": 1, "priority": 999 },
+	{ "name": "Koelbel 210 [201]", "size": 1, "priority": 999 },
+	{ "name": "Math 100 [107]", "size": 3, "priority": 999 },
+	{ "name": "Muenzinger E0046 [184]", "size": 1, "priority": 999 },
+	{ "name": "Museum Collections W100 [174]", "size": 1, "priority": 999 },
+	{ "name": "none [357]", "size": 1, "priority": 999 },
+	{ "name": "Ramaley C250 [49]", "size": 2, "priority": 999 },
+	{ "name": "UMC Gallery [134]", "size": 1, "priority": 999 },
+	{ "name": "Visual Arts Complex 1B20 [189]", "size": 2, "priority": 999 },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "size": 2, "priority": 999 },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "size": 1, "priority": 1200 }
+  ],
+  "Venue-Times": [
+	{ "name": "Macky Auditorium [1]", "time": "0, 09:30-10:50" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 10:30-11:20" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 11:30-12:20" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 12:30-13:20" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 13:30-14:50" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 15:00-18:00" },
+	{ "name": "Macky Auditorium [1]", "time": "0, 19:00-20:00" },
+	{ "name": "Macky Auditorium [1]", "time": "1, 16:00-18:00" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 09:00-10:20" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 10:30-11:20" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 11:30-12:20" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 12:30-13:20" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 13:30-14:50" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 15:00-15:50" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 16:00-18:00" },
+	{ "name": "Macky Auditorium [1]", "time": "2, 19:00-20:00" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 09:30-10:50" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 11:00-12:20" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 12:30-13:50" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 14:00-15:50" },
+	{ "name": "Macky Auditorium [1]", "time": "3, 16:00-18:00" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 09:00-10:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 10:30-11:50" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 12:00-13:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 13:30-14:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 14:30-15:20" },
+	{ "name": "Macky Auditorium [1]", "time": "4, 15:30-18:00" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 09:00-10:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 10:30-11:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 12:00-13:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 13:30-14:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 15:00-16:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 09:30-10:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 11:00-12:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 12:30-13:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 14:00-15:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "1, 16:00-17:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 09:00-10:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 10:30-11:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 12:00-13:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 13:30-14:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 15:00-16:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 17:00-17:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 09:30-10:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 11:00-12:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 12:30-13:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 14:00-15:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 16:00-17:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "3, 18:00-19:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 09:00-10:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 11:00-12:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 12:00-13:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 13:30-14:50" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 15:00-16:20" },
+	{ "name": "UMC Center Ballroom [101]", "time": "4, 17:00-18:20" },
+	{ "name": "UMC 235 [108]", "time": "0, 09:00-10:20" },
+	{ "name": "UMC 235 [108]", "time": "0, 10:30-11:50" },
+	{ "name": "UMC 235 [108]", "time": "0, 12:00-13:20" },
+	{ "name": "UMC 235 [108]", "time": "0, 13:30-14:50" },
+	{ "name": "UMC 235 [108]", "time": "0, 15:00-16:20" },
+	{ "name": "UMC 235 [108]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC 235 [108]", "time": "1, 09:30-10:50" },
+	{ "name": "UMC 235 [108]", "time": "1, 11:00-12:20" },
+	{ "name": "UMC 235 [108]", "time": "1, 12:30-13:50" },
+	{ "name": "UMC 235 [108]", "time": "1, 14:00-15:50" },
+	{ "name": "UMC 235 [108]", "time": "1, 16:00-17:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 08:30-09:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 10:00-10:20" },
+	{ "name": "UMC 235 [108]", "time": "2, 10:30-11:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 12:00-13:20" },
+	{ "name": "UMC 235 [108]", "time": "2, 13:30-14:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 15:00-16:20" },
+	{ "name": "UMC 235 [108]", "time": "2, 17:00-17:50" },
+	{ "name": "UMC 235 [108]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC 235 [108]", "time": "3, 09:30-10:50" },
+	{ "name": "UMC 235 [108]", "time": "3, 11:00-12:20" },
+	{ "name": "UMC 235 [108]", "time": "3, 12:30-13:50" },
+	{ "name": "UMC 235 [108]", "time": "3, 14:00-15:20" },
+	{ "name": "UMC 235 [108]", "time": "3, 16:00-17:50" },
+	{ "name": "UMC 235 [108]", "time": "3, 18:00-19:20" },
+	{ "name": "UMC 235 [108]", "time": "4, 09:00-10:20" },
+	{ "name": "UMC 235 [108]", "time": "4, 10:30-12:20" },
+	{ "name": "UMC 235 [108]", "time": "4, 12:30-13:50" },
+	{ "name": "UMC 235 [108]", "time": "4, 13:30-14:50" },
+	{ "name": "UMC 235 [108]", "time": "4, 15:00-16:20" },
+	{ "name": "UMC 235 [108]", "time": "4, 17:00-18:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 09:00-10:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 10:30-11:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 12:00-13:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 13:30-14:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 15:00-16:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 09:30-10:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 11:00-12:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 12:30-13:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 14:00-15:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "1, 16:00-17:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 09:00-10:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 10:30-11:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 12:00-13:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 13:30-14:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 15:00-16:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 17:00-17:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 09:30-10:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 11:00-12:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 12:30-13:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 14:00-15:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 16:00-17:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "3, 18:00-19:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 09:00-10:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 10:30-11:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 12:00-13:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 13:30-14:50" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 15:00-16:20" },
+	{ "name": "UMC East Ballroom [104]", "time": "4, 17:00-18:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 09:00-10:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 10:30-11:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 12:00-13:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 13:30-14:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 15:00-16:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "0, 17:00-18:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 09:30-10:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 11:00-12:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 12:30-13:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 14:00-15:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "1, 16:00-17:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 09:00-10:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 10:30-11:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 12:00-13:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 13:30-14:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 15:00-16:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 17:00-17:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "2, 18:00-19:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 09:30-10:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 11:00-12:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 12:30-13:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 14:00-15:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 16:00-17:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "3, 18:00-19:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 09:00-10:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 10:30-11:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 12:00-13:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 13:30-14:50" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 15:00-16:20" },
+	{ "name": "UMC West Ballroom [102]", "time": "4, 17:00-18:20" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 09:00-10:20" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 10:30-11:50" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 12:00-13:20" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 13:30-14:50" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 15:00-16:20" },
+	{ "name": "Old Main Chapel [6]", "time": "0, 17:00-18:20" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 09:30-10:50" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 11:00-12:20" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 12:30-13:50" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 14:00-15:50" },
+	{ "name": "Old Main Chapel [6]", "time": "1, 16:00-17:50" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 09:00-10:20" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 10:30-11:50" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 12:00-13:20" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 13:30-14:50" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 15:00-16:20" },
+	{ "name": "Old Main Chapel [6]", "time": "2, 17:00-17:50" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 09:30-10:50" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 11:00-12:20" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 12:30-13:50" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 14:00-15:50" },
+	{ "name": "Old Main Chapel [6]", "time": "3, 16:00-17:50" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 09:00-10:20" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 10:30-11:50" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 12:00-13:20" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 13:30-14:50" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 15:00-16:20" },
+	{ "name": "Old Main Chapel [6]", "time": "4, 17:00-18:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 09:00-10:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 10:30-11:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 12:00-13:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 13:30-14:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "0, 15:00-16:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 09:30-10:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 11:00-12:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 12:30-13:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 14:00-15:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "1, 16:00-16:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 09:00-10:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 10:30-11:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 12:00-13:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 13:30-14:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "2, 15:00-16:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 09:30-10:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 11:00-12:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 12:30-13:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 14:00-15:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "3, 16:00-16:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 09:00-10:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 10:30-11:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 12:00-13:20" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 13:30-14:50" },
+	{ "name": "ATLAS Black Box [182]", "time": "4, 15:00-16:20" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "0, 16:30-17:20" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "1, 15:00-15:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "1, 16:00-17:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "2, 16:30-17:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "3, 15:00-15:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "3, 16:00-17:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "4, 11:00-11:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "4, 14:00-15:50" },
+	{ "name": "Muenzinger Auditorium [103]", "time": "4, 16:00-17:50" },
+	{ "name": "Benson 180 [200]", "time": "0, 10:00-10:50" },
+	{ "name": "Benson 180 [200]", "time": "2, 10:00-10:50" },
+	{ "name": "Benson 180 [200]", "time": "2, 15:00-15:50" },
+	{ "name": "Benson 180 [200]", "time": "4, 09:00-10:20" },
+	{ "name": "Benson 180 [200]", "time": "4, 15:00-16:20" },
+	{ "name": "Benson 180 [200]", "time": "4, 16:30-17:50" },
+	{ "name": "Boulder High School [125]", "time": "2, 09:45-11:05" },
+	{ "name": "Boulder High School [125]", "time": "2, 13:30-14:50" },
+	{ "name": "Boulder High School [125]", "time": "3, 09:10-10:40" },
+	{ "name": "Boulder High School [125]", "time": "3, 13:05-14:25" },
+	{ "name": "Chemistry 140 [7]", "time": "0, 16:00-17:20" },
+	{ "name": "Chemistry 140 [7]", "time": "1, 09:00-10:20" },
+	{ "name": "Chemistry 140 [7]", "time": "1, 17:00-17:50" },
+	{ "name": "Chemistry 140 [7]", "time": "2, 14:00-14:50" },
+	{ "name": "Chemistry 140 [7]", "time": "2, 16:00-17:20" },
+	{ "name": "Chemistry 140 [7]", "time": "3, 09:00-10:20" },
+	{ "name": "Chemistry 140 [7]", "time": "3, 17:00-17:50" },
+	{ "name": "Chemistry 140 [7]", "time": "4, 16:00-16:50" },
+	{ "name": "Chemistry 142 [74]", "time": "1, 15:00-15:50" },
+	{ "name": "Chemistry 142 [74]", "time": "2, 15:00-15:50" },
+	{ "name": "Chemistry 142 [74]", "time": "3, 15:00-15:50" },
+	{ "name": "Chemistry 142 [74]", "time": "4, 12:00-12:50" },
+	{ "name": "Chemistry 142 [74]", "time": "4, 14:00-15:20" },
+	{ "name": "Classroom Visits [361]", "time": "0, 10:00-10:50" },
+	{ "name": "Classroom Visits [361]", "time": "0, 13:00-13:50" },
+	{ "name": "Classroom Visits [361]", "time": "1, 9:30-12:00" },
+	{ "name": "Classroom Visits [361]", "time": "1, 11:00-12:15" },
+	{ "name": "Classroom Visits [361]", "time": "1, 12:30-13:45" },
+	{ "name": "Classroom Visits [361]", "time": "1, 14:00-15:15" },
+	{ "name": "Classroom Visits [361]", "time": "1, 15:30-16:45" },
+	{ "name": "Classroom Visits [361]", "time": "1, 18:00-18:50" },
+	{ "name": "Classroom Visits [361]", "time": "2, 10:00-10:50" },
+	{ "name": "Classroom Visits [361]", "time": "2, 11:00-11:50" },
+	{ "name": "Classroom Visits [361]", "time": "2, 13:00-13:50" },
+	{ "name": "Classroom Visits [361]", "time": "2, 14:00-14:50" },
+	{ "name": "Classroom Visits [361]", "time": "3, 11:00-12:15" },
+	{ "name": "Classroom Visits [361]", "time": "3, 12:30-13:45" },
+	{ "name": "Classroom Visits [361]", "time": "3, 14:00-15:15" },
+	{ "name": "Classroom Visits [361]", "time": "3, 15:30-16:45" },
+	{ "name": "Classroom Visits [361]", "time": "4, 10:00-10:50" },
+	{ "name": "Classroom Visits [361]", "time": "4, 13:00-13:50" },
+	{ "name": "Classroom Visits [361]", "time": "4, 14:00-14:50" },
+	{ "name": "Classroom Visits 2 [362]", "time": "0, 14:00-14:50" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 09:30-10:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 10:30-11:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 12:30-13:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 14:00-15:15" },
+	{ "name": "Classroom Visits 2 [362]", "time": "1, 15:30-17:20" },
+	{ "name": "Classroom Visits 2 [362]", "time": "2, 14:00-14:50" },
+	{ "name": "Classroom Visits 2 [362]", "time": "3, 09:30-10:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "3, 10:30-11:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "3, 12:30-13:30" },
+	{ "name": "Classroom Visits 2 [362]", "time": "3, 14:00-15:15" },
+	{ "name": "Classroom Visits 2 [362]", "time": "3, 15:30-17:20" },
+	{ "name": "Classroom Visits 2 [362]", "time": "4, 14:00-14:50" },
+	{ "name": "Duane Physics G130 [358]", "time": "0, 12:00-12:50" },
+	{ "name": "Duane Physics G130 [358]", "time": "0, 16:00-17:20" },
+	{ "name": "Duane Physics G130 [358]", "time": "1, 17:00-17:50" },
+	{ "name": "Duane Physics G130 [358]", "time": "2, 12:00-12:50" },
+	{ "name": "Duane Physics G130 [358]", "time": "2, 16:00-17:20" },
+	{ "name": "Duane Physics G130 [358]", "time": "3, 15:30-16:50" },
+	{ "name": "Duane Physics G130 [358]", "time": "4, 16:00-17:20" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "0, 15:00-16:20" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "0, 16:30-17:50" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "1, 17:00-17:50" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "2, 11:00-11:50" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "2, 15:00-15:50" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "3, 17:00-17:50" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "4, 12:00-13:20" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "4, 15:00-16:20" },
+	{ "name": "Duane Physics G1B20 [150]", "time": "4, 16:30-17:50" },
+	{ "name": "Duane Physics G1B30 [175]", "time": "1, 17:00-17:50" },
+	{ "name": "Duane Physics G1B30 [175]", "time": "2, 16:00-16:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "0, 11:00-11:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "2, 09:00-10:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "2, 11:00-11:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "2, 15:00-15:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "3, 17:00-17:50" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "4, 11:00-12:20" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "4, 14:00-15:20" },
+	{ "name": "Eaton Humanities 150 [195]", "time": "4, 15:30-16:20" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "0, 16:00-17:20" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "1, 17:00-17:50" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "2, 14:00-14:50" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "3, 17:00-17:50" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 09:00-10:20" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 14:00-15:20" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 15:30-16:50" },
+	{ "name": "Eaton Humanities 1B50 [167]", "time": "4, 17:00-17:50" },
+	{ "name": "Education 220 [35]", "time": "0, 16:00-17:50" },
+	{ "name": "Education 220 [35]", "time": "1, 17:00-17:50" },
+	{ "name": "Education 220 [35]", "time": "2, 16:00-16:50" },
+	{ "name": "Education 220 [35]", "time": "3, 17:00-17:50" },
+	{ "name": "Education 220 [35]", "time": "4, 12:00-12:50" },
+	{ "name": "Education 220 [35]", "time": "4, 16:00-17:50" },
+	{ "name": "Ekeley E1B20 [77]", "time": "0, 15:00-16:20" },
+	{ "name": "Ekeley E1B20 [77]", "time": "1, 15:30-16:50" },
+	{ "name": "Ekeley E1B20 [77]", "time": "2, 15:00-16:20" },
+	{ "name": "Ekeley E1B20 [77]", "time": "3, 15:30-16:50" },
+	{ "name": "Ekeley E1B20 [77]", "time": "4, 14:00-15:20" },
+	{ "name": "Ekeley E1B20 [77]", "time": "4, 15:30-16:20" },
+	{ "name": "Engineering 1B40 [149]", "time": "1, 12:30-13:20" },
+	{ "name": "Engineering 1B40 [149]", "time": "2, 16:00-17:20" },
+	{ "name": "Engineering 1B40 [149]", "time": "3, 12:30-13:50" },
+	{ "name": "Engineering 1B40 [149]", "time": "3, 17:00-17:50" },
+	{ "name": "Engineering 1B40 [149]", "time": "4, 16:00-17:20" },
+	{ "name": "Engineering 200 [199]", "time": "0, 17:00-17:50" },
+	{ "name": "Engineering 200 [199]", "time": "2, 11:00-11:50" },
+	{ "name": "Engineering 200 [199]", "time": "2, 17:00-17:50" },
+	{ "name": "Engineering 200 [199]", "time": "3, 17:00-17:50" },
+	{ "name": "Engineering 200 [199]", "time": "4, 11:00-11:50" },
+	{ "name": "Engineering 200 [199]", "time": "4, 16:30-17:50" },
+	{ "name": "Engineering 245 [158]", "time": "1, 14:00-15:20" },
+	{ "name": "Engineering 245 [158]", "time": "2, 15:00-15:50" },
+	{ "name": "Engineering 245 [158]", "time": "4, 11:00-11:50" },
+	{ "name": "Engineering 245 [158]", "time": "4, 15:00-16:20" },
+	{ "name": "Engineering 245 [158]", "time": "4, 16:30-17:50" },
+	{ "name": "Engineering 265 [157]", "time": "1, 17:00-17:50" },
+	{ "name": "Engineering 265 [157]", "time": "2, 12:00-12:50" },
+	{ "name": "Engineering 265 [157]", "time": "2, 15:00-15:50" },
+	{ "name": "Fleming 155 [198]", "time": "0, 12:00-12:50" },
+	{ "name": "Fleming 155 [198]", "time": "1, 13:00-13:50" },
+	{ "name": "Fleming 155 [198]", "time": "1, 15:30-16:50" },
+	{ "name": "Fleming 155 [198]", "time": "1, 17:00-17:50" },
+	{ "name": "Fleming 155 [198]", "time": "1, 15:30-16:50" },
+	{ "name": "Fleming 155 [198]", "time": "1, 17:00-17:50" },
+	{ "name": "Fleming 155 [198]", "time": "2, 12:00-12:50" },
+	{ "name": "Fleming 155 [198]", "time": "2, 17:00-17:50" },
+	{ "name": "Fleming 155 [198]", "time": "4, 10:30-11:50" },
+	{ "name": "Fleming 155 [198]", "time": "4, 12:00-13:20" },
+	{ "name": "Fleming 155 [198]", "time": "4, 13:30-14:50" },
+	{ "name": "Fleming 155 [198]", "time": "4, 15:00-16:20" },
+	{ "name": "Fleming 155 [198]", "time": "4, 16:30-17:50" },
+	{ "name": "Gold Biosciences A2B70 [359]", "time": "0, 09:00-09:50" },
+	{ "name": "Gold Biosciences A2B70 [359]", "time": "2, 09:00-09:50" },
+	{ "name": "Gold Biosciences A2B70 [359]", "time": "2, 15:00-15:50" },
+	{ "name": "Gold Biosciences A2B70 [359]", "time": "4, 13:00-13:50" },
+	{ "name": "Hale 270 [106]", "time": "0, 16:30-17:50" },
+	{ "name": "Hale 270 [106]", "time": "2, 13:00-13:50" },
+	{ "name": "Hale 270 [106]", "time": "2, 16:30-17:50" },
+	{ "name": "Hale 270 [106]", "time": "3, 17:00-17:50" },
+	{ "name": "Hale 270 [106]", "time": "4, 09:00-09:50" },
+	{ "name": "Hale 270 [106]", "time": "4, 14:00-15:20" },
+	{ "name": "Hale 270 [106]", "time": "4, 15:30-16:50" },
+	{ "name": "Hale 270 [106]", "time": "4, 17:00-17:50" },
+	{ "name": "Hellems 252 [22]", "time": "0, 15:00-16:20" },
+	{ "name": "Hellems 252 [22]", "time": "1, 17:00-17:50" },
+	{ "name": "Hellems 252 [22]", "time": "2, 15:00-18:00" },
+	{ "name": "Hellems 252 [22]", "time": "4, 09:00-09:50" },
+	{ "name": "Hellems 252 [22]", "time": "4, 15:00-16:20" },
+	{ "name": "Hellems 252 [22]", "time": "4, 16:30-17:50" },
+	{ "name": "Koelbel 210 [201]", "time": "4, 09:00-09:50" },
+	{ "name": "Koelbel 210 [201]", "time": "4, 15:00-16:20" },
+	{ "name": "Koelbel 210 [201]", "time": "4, 16:30-17:50" },
+	{ "name": "Math 100 [107]", "time": "0, 16:30-17:20" },
+	{ "name": "Math 100 [107]", "time": "1, 15:30-16:50" },
+	{ "name": "Math 100 [107]", "time": "4, 09:00-10:20" },
+	{ "name": "Math 100 [107]", "time": "4, 10:30-11:50" },
+	{ "name": "Math 100 [107]", "time": "4, 15:00-16:20" },
+	{ "name": "Math 100 [107]", "time": "4, 16:30-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 13:00-14:20" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 14:30-15:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "0, 16:00-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "1, 15:30-16:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "1, 17:00-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 13:00-14:20" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 14:30-15:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "2, 16:00-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "3, 15:30-16:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "3, 17:00-17:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 13:00-14:20" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 14:30-15:50" },
+	{ "name": "Muenzinger E0046 [184]", "time": "4, 16:00-17:50" },
+	{ "name": "Museum Collections W100 [174]", "time": "0, 15:00-16:20" },
+	{ "name": "Museum Collections W100 [174]", "time": "2, 15:00-16:20" },
+	{ "name": "Museum Collections W100 [174]", "time": "4, 09:00-10:20" },
+	{ "name": "Museum Collections W100 [174]", "time": "4, 10:30-11:50" },
+	{ "name": "Museum Collections W100 [174]", "time": "4, 15:00-16:20" },
+	{ "name": "Ramaley C250 [49]", "time": "0, 09:00-09:50" },
+	{ "name": "Ramaley C250 [49]", "time": "0, 16:00-17:20" },
+	{ "name": "Ramaley C250 [49]", "time": "1, 15:30-16:20" },
+	{ "name": "Ramaley C250 [49]", "time": "2, 09:00-09:50" },
+	{ "name": "Ramaley C250 [49]", "time": "2, 12:00-12:50" },
+	{ "name": "Ramaley C250 [49]", "time": "2, 16:00-16:50" },
+	{ "name": "Ramaley C250 [49]", "time": "3, 15:30-16:50" },
+	{ "name": "Ramaley C250 [49]", "time": "4, 09:00-09:50" },
+	{ "name": "Ramaley C250 [49]", "time": "4, 12:00-12:50" },
+	{ "name": "Ramaley C250 [49]", "time": "4, 16:00-17:20" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 12:00-13:20" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 15:00-16:20" },
+	{ "name": "Visual Arts Complex 1B20 [189]", "time": "4, 16:30-17:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 09:00-10:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 10:30-11:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 12:00-13:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 13:30-14:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "0, 15:00-16:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 09:00-10:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 10:30-11:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 12:00-13:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 13:30-14:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "1, 15:00-16:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 09:00-10:20" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 10:30-11:50" },
+	{ "name": "Wolf Law Wittemyer Courtroom [180]", "time": "2, 12:00-12:50" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "0, 08:30-09:30" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "0, 18:30-19:00" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "1, 08:30-09:30" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "1, 18:00-19:00" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "2, 08:30-09:30" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "3, 08:30-09:30" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "4, 08:30-09:30" },
+	{ "name": "KGNU 88.5 FM/1390 AM [168]", "time": "4, 10:30-11:30" }
+  ],
+  "Panelists": [
+	{
+	  "name": "Kathleen Adams [14608]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Maria Mercedes Alvarez [14616]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Arturo Ardila-Gomez [6623]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Aaron Balick [14628]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Rony Barrak (Jazz) [6334]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Alex B. Berezow [14627]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Pablo Better [14538]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Liz Blake [13590]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Gregory Bowles [14618]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Bonnie Burton [14561]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Joseph Byrum [14540]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Douglas Carlston [14713]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Bobbie Carlton [14612]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Jamais Cascio [13576]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Morrow Cater [13606]",
+	  "times": [
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-12:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Bwire Chirangi [14591]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Jorge Chojol&aacute;n [14703]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Sam J. Cook [7545]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Mike Cordano [14611]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Anna Therese Day [14527]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Chuck Dietzen [6792]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Athena Edmonds [14624]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Andr&eacute;s Edwards [14592]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Ismail Elfath [14600]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Michael Elliott [4532]",
+	  "times": [
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "G. Kelly Eplee [14086]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Mark Fallon [14599]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Michael Franc [6171]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Peter Frumhoff [14567]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Marilinda Garcia [14705]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Antoinette Gawin [14594]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Marshall Gilkes (Jazz) [14556]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Gooding [7011]",
+	  "times": [
+		"0, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 12:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Martha Clark Goss [14613]",
+	  "times": [
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "C. Lawrence Greenwood Jr. [10769]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Francesca Grifo [7606]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "David H. Grinspoon [6247]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Damaris Maria Grossmann [14560]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Don Grusin (Jazz) [4660]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Ellie Boldman Hill [10724]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Alexandra Huddleston [14706]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Vicki J. Huddleston [6532]",
+	  "times": [
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Heather Hurlburt [7128]",
+	  "times": [
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Joanne Grady Huskey [13622]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Janelle Iglesias [14564]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Robert Inglis Sr. [14544]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Malou Innocent [6865]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Aruna Kalyanam [14541]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Sofie Karasek [14593]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Robert G. Kaufman [6591]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Zainab Zeb Khan [14625]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Cynthia Koenig [14557]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Jeff Lieberman [7003]",
+	  "times": [
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Peter Lighte [7578]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Eric Lindstrom [14621]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Wendy Lustbader [14537]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Ren&eacute; Marie [14716]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "William (Bill) C. Martin [14533]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-12:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Kate Reynolds McLeod [14543]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Charles A. Menzie [14534]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Paul &quot;DJ Spooky&quot; Miller [14610]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Scott Miller [14558]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Judith Morrison [6510]",
+	  "times": [
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Oliver Morton [14553]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Max Nanis [14562]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Matthew Nelson [14609]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Vivian Nixon [14531]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Vivian Onano [10756]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Sonja Perkins [14596]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Sidney Perkowitz [6576]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Andrea Polli [14528]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Srdja Popovic [14606]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Reza Ramazani [6994]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "George Record [14727]",
+	  "times": [
+		"3, 08:00-12:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Joshua Roman [14547]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-12:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Thom Rotella (Jazz) [14555]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Steven Rubin [14550]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-12:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Adam J. Schrager [14598]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Matt Zoller Seitz [14549]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Eugene Sepulveda [14568]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Joseph Sexton [14571]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Frank Shafroth [13570]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Seth Shostak [6132]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Diane Singerman [14702]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Jeffrey Smith [11411]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Daniel Stid [14620]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Ellen Sweets [14572]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "James Tanabe [7039]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Rulan Tangen [14603]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Ty Tashiro [14526]",
+	  "times": [
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Mary Reynolds Thompson [14551]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "William A. Thorne Jr. [6605]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Hoi Trinh [14590]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Charles van der Horst [13502]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Jose Antonio Vargas [14566]",
+	  "times": [
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "James E. Viator [14535]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Paul Wapner [14622]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Rob Warden [14732]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Ernie Watts (Jazz) [10448]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "B.J. Whetstine [14704]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "David Wilcox [13572]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "no"
+	},
+	{
+	  "name": "Kenji Williams [14731]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Mary G. Wilson [5469]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Tim Wirth [14730]",
+	  "times": [
+		"2, 12:00-20:00",
+		"3, 08:00-12:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "Korey Wise [14707]",
+	  "times": [
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00"
+	  ],
+	  "new": "yes"
+	},
+	{
+	  "name": "[Guest Speaker] [14729]",
+	  "times": [
+		"6, 08:00-20:00",
+		"0, 08:00-20:00",
+		"1, 08:00-20:00",
+		"2, 08:00-20:00",
+		"3, 08:00-20:00",
+		"4, 08:00-17:00"
+	  ],
+	  "new": "yes"
+	}
+  ],
+  "Panels": [
+	{
+	  "name": "541: Performance - Poetry Slam [15159]",
+	  "panelists": [
+		"Sam J. Cook [7545]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "336: Pay It Forward: The Value of giving back [15239]",
+	  "panelists": [
+		"G. Kelly Eplee [14086]",
+		"William (Bill) C. Martin [14533]",
+		"Sonja Perkins [14596]",
+		"Martha Clark Goss [14613]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "719: Film - I Am Malala [15264]",
+	  "panelists": [
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "FLTR"
+	},
+	{
+	  "name": "733: KNGU - Thursday Evening [15277]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Eugene Sepulveda [14568]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "FLTR"
+	},
+	{
+	  "name": "524: CU MFA Students - Master Class [15085]",
+	  "panelists": [
+		"Jeff Lieberman [7003]",
+		"Steven Rubin [14550]",
+		"Max Nanis [14562]",
+		"Janelle Iglesias [14564]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "479: US Foreign Policy: The World's Policeman [15104]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]",
+		"Robert G. Kaufman [6591]",
+		"Heather Hurlburt [7128]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "563: Full Court Press: 2016 Supreme Court Docket [15105]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"William A. Thorne Jr. [6605]",
+		"Ellie Boldman Hill [10724]",
+		"James E. Viator [14535]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "469: Issues that Matter in this Election [15106]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Scott Miller [14558]",
+		"Daniel Stid [14620]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "456: How Would You Define A Conservative Today? (Repub. panel) [15107]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Robert G. Kaufman [6591]",
+		"Robert Inglis Sr. [14544]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "471: How Would You Define a Liberal Today? (Dem. Panel) [15108]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Ellie Boldman Hill [10724]",
+		"Eugene Sepulveda [14568]",
+		"Joseph Sexton [14571]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "470: What We Need in a President [15109]",
+	  "panelists": [
+		"Malou Innocent [6865]",
+		"Aruna Kalyanam [14541]",
+		"Mark Fallon [14599]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "572: The 27 Words in the Second Amendment [15110]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Robert G. Kaufman [6591]",
+		"James E. Viator [14535]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "583: Terrorism and the Role of Media [15111]",
+	  "panelists": [
+		"Heather Hurlburt [7128]",
+		"Anna Therese Day [14527]",
+		"Mark Fallon [14599]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "582: Views and Voices of Islam [15112]",
+	  "panelists": [
+		"Anna Therese Day [14527]",
+		"Ismail Elfath [14600]",
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "480: Moving Beyond Stereotypes [15113]",
+	  "panelists": [
+		"Rulan Tangen [14603]",
+		"Kathleen Adams [14608]",
+		"Zainab Zeb Khan [14625]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "485: The Economics of Hunger: Poverty in America [15114]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"Scott Miller [14558]",
+		"Joseph Sexton [14571]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "624: The Importance of Mindfulness [15115]",
+	  "panelists": [
+		"Ernie Watts (Jazz) [10448]",
+		"David Wilcox [13572]",
+		"Damaris Maria Grossmann [14560]",
+		"Andr&eacute;s Edwards [14592]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "642: Disability or Ability? [15116]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Sam J. Cook [7545]",
+		"Damaris Maria Grossmann [14560]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "650: Reality Check of Womens Rights Across Cultures [15117]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Gregory Bowles [14618]",
+		"Zainab Zeb Khan [14625]",
+		"Diane Singerman [14702]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "646: Is Putin willing to risk WWIII? [15118]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Robert G. Kaufman [6591]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Srdja Popovic [14606]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "648: After Assad: Chaos or Reconciliation? [15120]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"Anna Therese Day [14527]",
+		"Diane Singerman [14702]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "320: Privatization of Public Services and the Public Interest [15121]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Chuck Dietzen [6792]",
+		"Daniel Stid [14620]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "331: Employment in the 21st Century [15122]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Reza Ramazani [6994]",
+		"James Tanabe [7039]",
+		"Jamais Cascio [13576]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "333: Urban Challenges - the future of big cities [15123]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Frank Shafroth [13570]",
+		"William (Bill) C. Martin [14533]",
+		"Diane Singerman [14702]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "362: The Sharing Economy [15124]",
+	  "panelists": [
+		"James Tanabe [7039]",
+		"Frank Shafroth [13570]",
+		"David Wilcox [13572]",
+		"Kate Reynolds McLeod [14543]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "509: Art and Healing - Words That Hurt, Words That Heal [15125]",
+	  "panelists": [
+		"Sam J. Cook [7545]",
+		"Mary Reynolds Thompson [14551]",
+		"Antoinette Gawin [14594]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "545: Happy Places, Creative Spaces [15126]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Andrea Polli [14528]",
+		"Mary Reynolds Thompson [14551]",
+		"Matthew Nelson [14609]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "528: Fall Down Nine Times, Stand Up Ten [15127]",
+	  "panelists": [
+		"James Tanabe [7039]",
+		"Kate Reynolds McLeod [14543]",
+		"Ismail Elfath [14600]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "547: What Story are you Living? [15129]",
+	  "panelists": [
+		"Vivian Nixon [14531]",
+		"Mary Reynolds Thompson [14551]",
+		"Bobbie Carlton [14612]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "396: IN A WORLD WHERE... movies get the science right [15130]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Sidney Perkowitz [6576]",
+		"Oliver Morton [14553]",
+		"Bonnie Burton [14561]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Fiske Auditorium [363]):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "374: Your Self-Driving Car Hit Mine! [15131]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Arturo Ardila-Gomez [6623]",
+		"Frank Shafroth [13570]",
+		"Max Nanis [14562]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "423: Gender Discrimination in Science and Engineering [15132]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Francesca Grifo [7606]",
+		"Andrea Polli [14528]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "384: CLIMATE SERIES: Global Warming or Cyclical Climate Change (TUESDAY) [15133]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Peter Frumhoff [14567]",
+		"Eric Lindstrom [14621]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "368: Technological Singularity: When The Machines Take Over [15134]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Jamais Cascio [13576]",
+		"Joanne Grady Huskey [13622]",
+		"Ty Tashiro [14526]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "614: Tough Love for Aspiring Writers [15135]",
+	  "panelists": [
+		"Bonnie Burton [14561]",
+		"Ellen Sweets [14572]",
+		"Adam J. Schrager [14598]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "686: Why I've Lived Where I've Lived [15136]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]",
+		"Cynthia Koenig [14557]",
+		"Matthew Nelson [14609]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "685: The Lost Art of Conversation [15137]",
+	  "panelists": [
+		"Gooding [7011]",
+		"Sam J. Cook [7545]",
+		"David Wilcox [13572]",
+		"Ellen Sweets [14572]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "698: Banking: A Force for Good or Evil [15138]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Peter Lighte [7578]",
+		"Pablo Better [14538]",
+		"Martha Clark Goss [14613]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "699: Think Tanks Can't Think Straight [15139]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Judith Morrison [6510]",
+		"Malou Innocent [6865]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "700: Modern Corruption [15140]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"Jeffrey Smith [11411]",
+		"Adam J. Schrager [14598]",
+		"Ismail Elfath [14600]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "701: Global Trade-Offs [15141]",
+	  "panelists": [
+		"Michael Elliott [4532]",
+		"Reza Ramazani [6994]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Pablo Better [14538]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "691: 'Those give who give up their liberty for security, deserve neither' -Benjamin Franklin [15142]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"James Tanabe [7039]",
+		"C. Lawrence Greenwood Jr. [10769]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "693: Trigger Warning: This is a Political Correctness Panel [15143]",
+	  "panelists": [
+		"Malou Innocent [6865]",
+		"William (Bill) C. Martin [14533]",
+		"Sofie Karasek [14593]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "418: (In Spanish) Role of Gender (women) to change the balance of world poverty [15144]",
+	  "panelists": [
+		"Judith Morrison [6510]",
+		"Maria Mercedes Alvarez [14616]",
+		"Gregory Bowles [14618]",
+		"Jorge Chojol&aacute;n [14703]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "420: (Spanish) Gringos in Charge: Influence of foreign intervention on the cycle of poverty [15145]",
+	  "panelists": [
+		"Pablo Better [14538]",
+		"Gregory Bowles [14618]",
+		"Jorge Chojol&aacute;n [14703]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "412: (Spanish) Aria: CHANGE TO SPANISH: How Education Improves the Future of Poor Children in Guatemala [15146]",
+	  "panelists": [
+		"Jorge Chojol&aacute;n [14703]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "519: Can Books Still Change the World? [15149]",
+	  "panelists": [
+		"Peter Lighte [7578]",
+		"Vivian Onano [10756]",
+		"Mary Reynolds Thompson [14551]",
+		"Ellen Sweets [14572]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "587: The Anti-Scientific Right (paired with 395) [15150]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Sidney Perkowitz [6576]",
+		"Peter Frumhoff [14567]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "395: The Anti-Scientific Left (paired with 587) [15151]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Joseph Byrum [14540]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "370: Balancing Health and Environment [15152]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"Charles A. Menzie [14534]",
+		"Joseph Byrum [14540]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "376: REALLY Long-Term Thinking [15153]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Sidney Perkowitz [6576]",
+		"Jamais Cascio [13576]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "538: Performance - Tell Me Your Story, I'll Write Your Song [15157]",
+	  "panelists": [
+		"David Wilcox [13572]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "539: Performance - Together Again [15158]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "295: High-Powered Women Share Their Secrets [15161]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Antoinette Gawin [14594]",
+		"Bobbie Carlton [14612]",
+		"Martha Clark Goss [14613]",
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "313: Work-life Balance and Other Fairytales [15162]",
+	  "panelists": [
+		"Heather Hurlburt [7128]",
+		"Kate Reynolds McLeod [14543]",
+		"Mike Cordano [14611]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "322: Business and Ethics in Sports [15163]",
+	  "panelists": [
+		"William (Bill) C. Martin [14533]",
+		"Joseph Sexton [14571]",
+		"Adam J. Schrager [14598]",
+		"Ismail Elfath [14600]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "350: Leadership is Harder Than I Thought [15164]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Pablo Better [14538]",
+		"Ismail Elfath [14600]",
+		"Martha Clark Goss [14613]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "649: EU Sings 'Breaking up is Hard to Do' [15165]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Oliver Morton [14553]",
+		"Srdja Popovic [14606]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "660: International Disaster Response [15166]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]",
+		"Liz Blake [13590]",
+		"G. Kelly Eplee [14086]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "658: TABLE: Foreign Hackers will 'PWN' our Country [15167]",
+	  "panelists": [
+		"Mark Fallon [14599]",
+		"Mike Cordano [14611]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "630: Millennial Culture is an Oxymoron [15168]",
+	  "panelists": [
+		"Ty Tashiro [14526]",
+		"Max Nanis [14562]",
+		"Sofie Karasek [14593]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "637: We Are All Capable of Being Addicts [15169]",
+	  "panelists": [
+		"Morrow Cater [13606]",
+		"Wendy Lustbader [14537]",
+		"Mary Reynolds Thompson [14551]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "298: Rethinking Attitudes towards Sustainability [15170]",
+	  "panelists": [
+		"Peter Frumhoff [14567]",
+		"Andr&eacute;s Edwards [14592]",
+		"Matthew Nelson [14609]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "443: Second Acts: Encore Careers [15172]",
+	  "panelists": [
+		"Charles van der Horst [13502]",
+		"Joanne Grady Huskey [13622]",
+		"Athena Edmonds [14624]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "484:America's Vets: Caring for Those Who Served [15173]",
+	  "panelists": [
+		"Scott Miller [14558]",
+		"Damaris Maria Grossmann [14560]",
+		"[Guest Speaker] [14729]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "560: Terrorism in America: The New Normal [15175]",
+	  "panelists": [
+		"Heather Hurlburt [7128]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Mark Fallon [14599]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "454: 2016: Making Sense of the Election [15176]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Michael Franc [6171]",
+		"Robert Inglis Sr. [14544]",
+		"Thom Rotella (Jazz) [14555]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "463: Keep Your Theocracy Out of My Democracy [15177]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"G. Kelly Eplee [14086]",
+		"Vivian Nixon [14531]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "455: Money is Speech but is Anyone Buying? [15178]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Ellie Boldman Hill [10724]",
+		"Aruna Kalyanam [14541]",
+		"Robert Inglis Sr. [14544]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "475: TABLE: Cut Spending, Raise Taxes, or Both? [15179]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Malou Innocent [6865]",
+		"Frank Shafroth [13570]",
+		"Aruna Kalyanam [14541]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "453: How Media and Politics Generate Hate and Fear [15180]",
+	  "panelists": [
+		"Ellen Sweets [14572]",
+		"Adam J. Schrager [14598]",
+		"Mark Fallon [14599]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "457: What Would the Founding Fathers Do? [15182]",
+	  "panelists": [
+		"James E. Viator [14535]",
+		"Joseph Byrum [14540]",
+		"Sonja Perkins [14596]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "552: Reinventing the Newspaper [15183]",
+	  "panelists": [
+		"Michael Elliott [4532]",
+		"Bonnie Burton [14561]",
+		"Ellen Sweets [14572]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "707: Scalia [15184]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"James E. Viator [14535]",
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "476: Do Something: Become an Activist [15185]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"Sofie Karasek [14593]",
+		"Srdja Popovic [14606]",
+		"Kathleen Adams [14608]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "574: The Politics of Eating: Food Security and the Transformation of Rural America [15186]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"James E. Viator [14535]",
+		"Ellen Sweets [14572]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "438: Educating Students to be Global Citizens [15187]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Andrea Polli [14528]",
+		"Andr&eacute;s Edwards [14592]",
+		"Mike Cordano [14611]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "431: Male Socialization: A Key to Reducing Violence [15188]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"Sofie Karasek [14593]",
+		"Adam J. Schrager [14598]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "435: Water, Water...Not Everywhere [15189]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Charles A. Menzie [14534]",
+		"Cynthia Koenig [14557]",
+		"Bwire Chirangi [14591]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "689: Alternative Medicine: How We Heal Ourselves [15190]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"Damaris Maria Grossmann [14560]",
+		"Matthew Nelson [14609]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "672: ARIA: US/Cuba: Can the best of enemies kiss and make up? [15191]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "684: Democracy is Winning the World--or Not [15193]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]",
+		"Malou Innocent [6865]",
+		"Joanne Grady Huskey [13622]",
+		"Srdja Popovic [14606]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "308: Food & Wine: What's New on your Table? [15194]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]",
+		"Francesca Grifo [7606]",
+		"Ellen Sweets [14572]",
+		"Martha Clark Goss [14613]",
+		"Eric Lindstrom [14621]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "317: Creating Cultural Change in Business [15195]",
+	  "panelists": [
+		"Liz Blake [13590]",
+		"Antoinette Gawin [14594]",
+		"Mike Cordano [14611]",
+		"Martha Clark Goss [14613]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "323: How to raise money for your brilliant idea [15196]",
+	  "panelists": [
+		"Cynthia Koenig [14557]",
+		"Sonja Perkins [14596]",
+		"Bobbie Carlton [14612]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "337: Millennials in the Workplace [15198]",
+	  "panelists": [
+		"Peter Lighte [7578]",
+		"Cynthia Koenig [14557]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "511: Art and Humanity - Bridging the Empathy Gap [15199]",
+	  "panelists": [
+		"Steven Rubin [14550]",
+		"Antoinette Gawin [14594]",
+		"Zainab Zeb Khan [14625]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "525: Retro or Modern? (D)Evolving Style and Culture [15200]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Jeff Lieberman [7003]",
+		"Bonnie Burton [14561]",
+		"Max Nanis [14562]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "527: Saying Something Without Words [15201]",
+	  "panelists": [
+		"Steven Rubin [14550]",
+		"Rulan Tangen [14603]",
+		"Matthew Nelson [14609]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "526: Digital Piracy - Helping Arrrtists Starrrve [15203]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Gooding [7011]",
+		"Marshall Gilkes (Jazz) [14556]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "382: CLIMATE SERIES: Risky Climate, Risky Solutions (Wednesday) [15204]",
+	  "panelists": [
+		"Jamais Cascio [13576]",
+		"Morrow Cater [13606]",
+		"Oliver Morton [14553]",
+		"Peter Frumhoff [14567]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "380: TWEAKING: Modeling Computational Biology: Visualizing Artificial Life [15205]",
+	  "panelists": [
+		"Andrea Polli [14528]",
+		"Joseph Byrum [14540]",
+		"Oliver Morton [14553]",
+		"Max Nanis [14562]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "451: Online Revolution: Social Media and Political Upheaval [15206]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Sofie Karasek [14593]",
+		"Srdja Popovic [14606]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "403: My Future according to Science and Technology [15207]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Jamais Cascio [13576]",
+		"Eric Lindstrom [14621]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "324: US Income Inequality and the American Dream [15208]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Arturo Ardila-Gomez [6623]",
+		"Reza Ramazani [6994]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "303: Tackling Global Poverty [15209]",
+	  "panelists": [
+		"Michael Elliott [4532]",
+		"Liz Blake [13590]",
+		"Cynthia Koenig [14557]",
+		"Maria Mercedes Alvarez [14616]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "654: International Migration [15211]",
+	  "panelists": [
+		"Joanne Grady Huskey [13622]",
+		"Steven Rubin [14550]",
+		"Hoi Trinh [14590]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "429: Door Open/Door Closed: The Immigrant Experience in America [15212]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Charles van der Horst [13502]",
+		"Mary Reynolds Thompson [14551]",
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "445: Fighting Global Pandemics from Avian Flu to Zika [15213]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"Charles van der Horst [13502]",
+		"Bwire Chirangi [14591]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "301: Intelligent Dating & Mating [15214]",
+	  "panelists": [
+		"Ty Tashiro [14526]",
+		"Kathleen Adams [14608]",
+		"Matthew Nelson [14609]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "446: I'm Uber-whelmed by the Gig Economy [15215]",
+	  "panelists": [
+		"Ty Tashiro [14526]",
+		"Max Nanis [14562]",
+		"Bobbie Carlton [14612]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "657: Sustainable Development is not a Pipe Dream [15217]",
+	  "panelists": [
+		"Michael Elliott [4532]",
+		"Judith Morrison [6510]",
+		"Andr&eacute;s Edwards [14592]",
+		"Gregory Bowles [14618]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "392: CLIMATE SERIES: DUET - Climate Change, Inequality and Economic Growth (Thursday AM) [15218]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Tim Wirth [14730]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "653: TABLE: Global Health Challenges [15219]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"Charles van der Horst [13502]",
+		"Bwire Chirangi [14591]",
+		"George Record [14727]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "692: Help! I'm Drowning in Information [15220]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Joseph Sexton [14571]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "373: Technological Solutions to World Hunger [15221]",
+	  "panelists": [
+		"Joseph Byrum [14540]",
+		"Maria Mercedes Alvarez [14616]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "353: Girl Geeks Unite! [15222]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"Bonnie Burton [14561]",
+		"Sonja Perkins [14596]",
+		"Bobbie Carlton [14612]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "473: Open Mouth, Remove Foot: Social Awkwardness and Misreading Cues [15223]",
+	  "panelists": [
+		"Jeff Lieberman [7003]",
+		"Ty Tashiro [14526]",
+		"Bonnie Burton [14561]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "481: Gender Fluidity [15224]",
+	  "panelists": [
+		"Antoinette Gawin [14594]",
+		"Athena Edmonds [14624]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "704: Things You Should Know Before Volunteering Abroad [15225]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"G. Kelly Eplee [14086]",
+		"Gregory Bowles [14618]",
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "450: Traditional Families: Going, Going, Gone [15226]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"Peter Lighte [7578]",
+		"Wendy Lustbader [14537]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "491: The Age of Big Data [15228]",
+	  "panelists": [
+		"Sidney Perkowitz [6576]",
+		"James Tanabe [7039]",
+		"Joseph Byrum [14540]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "662: TABLE Near Misses [15230]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]",
+		"Heather Hurlburt [7128]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Srdja Popovic [14606]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "683: Our relationships with Israel and Palestine [15231]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"Anna Therese Day [14527]",
+		"Pablo Better [14538]",
+		"Diane Singerman [14702]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "369: CLIMATE SERIES - When the Oceans Rise (Monday) [15232]",
+	  "panelists": [
+		"Charles A. Menzie [14534]",
+		"Andr&eacute;s Edwards [14592]",
+		"Eric Lindstrom [14621]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "391: Irreproducible Scientific Results [15233]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"Peter Frumhoff [14567]",
+		"Eric Lindstrom [14621]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "399: Performance & Panel: Whats the point of looking for life beyond Earth anyway? (Monday 9 AM) [15234]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"David H. Grinspoon [6247]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "352: Keeping Kids Safe in the Media Age [15235]",
+	  "panelists": [
+		"Chuck Dietzen [6792]",
+		"Peter Lighte [7578]",
+		"Morrow Cater [13606]",
+		"Bobbie Carlton [14612]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "314: Corporations have Mentors; Startups have Heroes [15236]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Eugene Sepulveda [14568]",
+		"Antoinette Gawin [14594]",
+		"Sonja Perkins [14596]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "327: How Business and Government Work Together [15237]",
+	  "panelists": [
+		"Liz Blake [13590]",
+		"G. Kelly Eplee [14086]",
+		"Scott Miller [14558]",
+		"Eugene Sepulveda [14568]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "442: Navigating End of Life Choices in America [15240]",
+	  "panelists": [
+		"Charles van der Horst [13502]",
+		"Wendy Lustbader [14537]",
+		"Damaris Maria Grossmann [14560]",
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "433: Civil Disobedience for Change [15241]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"Charles van der Horst [13502]",
+		"James E. Viator [14535]",
+		"Srdja Popovic [14606]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "434: TABLE: From 'Dragnet' to 'Making a Murderer': Media's Impact on Criminal Justice [15242]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"Matt Zoller Seitz [14549]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "393: Religion and Spirituality in the 21st Century [15243]",
+	  "panelists": [
+		"G. Kelly Eplee [14086]",
+		"Vivian Nixon [14531]",
+		"Eugene Sepulveda [14568]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "447: Happiness [15244]",
+	  "panelists": [
+		"Ernie Watts (Jazz) [10448]",
+		"Ty Tashiro [14526]",
+		"Wendy Lustbader [14537]",
+		"Andr&eacute;s Edwards [14592]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "530: Thumbs Up: The Future of Film & Media [15245]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Matt Zoller Seitz [14549]",
+		"Bonnie Burton [14561]",
+		"Mike Cordano [14611]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "542: Performance - Strings & Circuits [15246]",
+	  "panelists": [
+		"Joshua Roman [14547]",
+		"Paul &quot;DJ Spooky&quot; Miller [14610]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(ATLAS Black Box [182]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "543: Performance & Panel - Our Native Land [15247]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Rulan Tangen [14603]",
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Fiske Auditorium [363]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "548: Creating a Life of Meaning [15248]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"Steven Rubin [14550]",
+		"Cynthia Koenig [14557]",
+		"Rulan Tangen [14603]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "522: Creativity - Breaking the Blocks and Keeping the Flow [15249]",
+	  "panelists": [
+		"Jeff Lieberman [7003]",
+		"Ernie Watts (Jazz) [10448]",
+		"Mary Reynolds Thompson [14551]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "606: States: The Underappreciated Laboratories of Democracy [15250]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"Frank Shafroth [13570]",
+		"Robert Inglis Sr. [14544]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "570: The Two Party System is Doomed [15251]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Michael Franc [6171]",
+		"Aruna Kalyanam [14541]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "466: Congress: How To Put 'United' Back in United States [15252]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Heather Hurlburt [7128]",
+		"Daniel Stid [14620]",
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "598: Blogging: Putting the Me in Media [15253]",
+	  "panelists": [
+		"Scott Miller [14558]",
+		"Bonnie Burton [14561]",
+		"Matthew Nelson [14609]",
+		"Daniel Stid [14620]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "474: The Myth of the Rational Voter [15254]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Robert G. Kaufman [6591]",
+		"Jeffrey Smith [11411]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "695: ABCs of LGBTQ [15255]",
+	  "panelists": [
+		"Eugene Sepulveda [14568]",
+		"Athena Edmonds [14624]",
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "709: Aria: Why I Risk My Life to Bring You the News [15256]",
+	  "panelists": [
+		"Anna Therese Day [14527]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "713: Aria - Vietnam War - 40 Years Later... And the Conflict Continues [15257]",
+	  "panelists": [
+		"Hoi Trinh [14590]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "716: Interview 1 [15260]",
+	  "panelists": [
+		"Korey Wise [14707]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "717: Interview 2 [15261]",
+	  "panelists": [
+		"Korey Wise [14707]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "711: Not Your Mother's Feminism [15262]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Vivian Nixon [14531]",
+		"Bonnie Burton [14561]",
+		"Kathleen Adams [14608]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "718: Interview 3 [15263]",
+	  "panelists": [
+		"Korey Wise [14707]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Boulder High School [125]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "726: Jazz Master Class [15270]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Rony Barrak (Jazz) [6334]",
+		"Ernie Watts (Jazz) [10448]",
+		"Thom Rotella (Jazz) [14555]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "734: DUET - Africa, a Hopeful Continent [15278]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Bwire Chirangi [14591]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "735: Disruptive Innovation Can Save the World [15279]",
+	  "panelists": [
+		"Joseph Byrum [14540]",
+		"Cynthia Koenig [14557]",
+		"Bwire Chirangi [14591]",
+		"Maria Mercedes Alvarez [14616]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "736: Performance - Rene [15280]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"Ernie Watts (Jazz) [10448]",
+		"Joshua Roman [14547]",
+		"Ren&eacute; Marie [14716]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "756: Communism Won Some Battles but Lost the War [15299]",
+	  "panelists": [
+		"Peter Lighte [7578]",
+		"Hoi Trinh [14590]",
+		"Srdja Popovic [14606]",
+		"Gregory Bowles [14618]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "757: Crowdsourcing [15300]",
+	  "panelists": [
+		"Joseph Byrum [14540]",
+		"Max Nanis [14562]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "800: ARIA: Lindstrom - TBD on Oceans [15302]",
+	  "panelists": [
+		"Eric Lindstrom [14621]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "801: CLIMATE SERIES: Political Views on Climate Change: A Widening Gap (Friday) [15303]",
+	  "panelists": [
+		"Mary G. Wilson [5469]",
+		"Ellie Boldman Hill [10724]",
+		"Morrow Cater [13606]",
+		"Peter Frumhoff [14567]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "Performance - Origin Stories [15308]",
+	  "panelists": [
+		"Kenji Williams [14731]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "377: What Science Says About GMOs [15079]",
+	  "panelists": [
+		"Charles A. Menzie [14534]",
+		"Joseph Byrum [14540]",
+		"Alex B. Berezow [14627]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "410: TITLE COMING: GMOs to Feed the World (debate) [15080]",
+	  "panelists": [
+		"Jeffrey Smith [11411]",
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "427: Gamification and Innovative Teaching [15081]",
+	  "panelists": [
+		"Mike Cordano [14611]",
+		"Alex B. Berezow [14627]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "561: TABLE: STE(A)M education, why should we care? [15082]",
+	  "panelists": [
+		"Jeff Lieberman [7003]",
+		"Francesca Grifo [7606]",
+		"Andrea Polli [14528]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "506: Art and Activism: Crayons for Humanity [15083]",
+	  "panelists": [
+		"Steven Rubin [14550]",
+		"Sofie Karasek [14593]",
+		"Rulan Tangen [14603]",
+		"Kathleen Adams [14608]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "533: Music for Social Change [15086]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Aruna Kalyanam [14541]",
+		"Kathleen Adams [14608]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "540: Performance - SO MANY GUITARS [15087]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Gooding [7011]",
+		"David Wilcox [13572]",
+		"James E. Viator [14535]",
+		"Thom Rotella (Jazz) [14555]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "339: Is Higher Education Worth a Life of Debt? [15089]",
+	  "panelists": [
+		"Sidney Perkowitz [6576]",
+		"Reza Ramazani [6994]",
+		"Marshall Gilkes (Jazz) [14556]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "340: Business Can Have a Conscience and Still Thrive [15090]",
+	  "panelists": [
+		"Liz Blake [13590]",
+		"Morrow Cater [13606]",
+		"Charles A. Menzie [14534]",
+		"Mike Cordano [14611]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "304: Launching Tomorrow's Products Today [15091]",
+	  "panelists": [
+		"Kate Reynolds McLeod [14543]",
+		"Bobbie Carlton [14612]",
+		"Maria Mercedes Alvarez [14616]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "640: US Policy Towards Iran [15094]",
+	  "panelists": [
+		"Robert G. Kaufman [6591]",
+		"Malou Innocent [6865]",
+		"Heather Hurlburt [7128]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "623: Wanderlust [15096]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]",
+		"Cynthia Koenig [14557]",
+		"Kathleen Adams [14608]",
+		"Gregory Bowles [14618]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Student"
+	},
+	{
+	  "name": "413: Justice: Shining a Light on Wrongful Convictions [15098]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Vivian Nixon [14531]",
+		"Joseph Sexton [14571]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Wolf Law Wittemyer Courtroom [180]):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "590: Lessons from Flint [15099]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"Charles van der Horst [13502]",
+		"Frank Shafroth [13570]",
+		"Robert Inglis Sr. [14544]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "430: 'No Means No': Title IX on College Campuses [15100]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"William (Bill) C. Martin [14533]",
+		"Sofie Karasek [14593]",
+		"Adam J. Schrager [14598]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "437: Educate a Girl: Change the World [15101]",
+	  "panelists": [
+		"Vivian Onano [10756]",
+		"Liz Blake [13590]",
+		"Joanne Grady Huskey [13622]",
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "458: The Politics of Immigration [15103]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"William A. Thorne Jr. [6605]",
+		"Heather Hurlburt [7128]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "688: March to the Beat of Your Own Drum (Monday 9 AM) [15147]",
+	  "panelists": [
+		"Don Grusin (Jazz) [4660]",
+		"James Tanabe [7039]",
+		"David Wilcox [13572]",
+		"Mary Reynolds Thompson [14551]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC East Ballroom [104]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "504: Apocalypse Wow! Having fun with the end of the world [15148]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"Matt Zoller Seitz [14549]",
+		"Oliver Morton [14553]",
+		"Douglas Carlston [14713]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC West Ballroom [102]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "558: Technology is a Fetish [15154]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Sidney Perkowitz [6576]",
+		"Joseph Byrum [14540]",
+		"Oliver Morton [14553]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC West Ballroom [102]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "S&T"
+	},
+	{
+	  "name": "529: Film and TV - Change the Channel, Change Your Life (Monday 9 AM) [15202]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Aruna Kalyanam [14541]",
+		"Matt Zoller Seitz [14549]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "571: Obamacare: Easy to Repeal, Hard to Replace (Monday 9 AM) [15210]",
+	  "panelists": [
+		"Michael Franc [6171]",
+		"Reza Ramazani [6994]",
+		"Charles van der Horst [13502]",
+		"Antoinette Gawin [14594]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "344: Impacts of the Aging Population (Monday 9 AM) [15092]",
+	  "panelists": [
+		"Francesca Grifo [7606]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Wendy Lustbader [14537]",
+		"Thom Rotella (Jazz) [14555]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(0;09:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "641: The Threat of ISIS (Monday 9 AM) [15095]",
+	  "panelists": [
+		"Malou Innocent [6865]",
+		"Joanne Grady Huskey [13622]",
+		"Anna Therese Day [14527]",
+		"Mark Fallon [14599]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(0;09:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "715: Plenary - How free enterprise can solve climate change [15259]",
+	  "panelists": [
+		"Robert Inglis Sr. [14544]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(0;11:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "531: Improv in Art and Music [15128]",
+	  "panelists": [
+		"Sam J. Cook [7545]",
+		"Andrea Polli [14528]",
+		"Joshua Roman [14547]",
+		"Matthew Nelson [14609]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(0;12:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "687: Film Uninterruptus / Interruptus I [15160]",
+	  "panelists": [
+		"Matt Zoller Seitz [14549]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(0;15:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "720: KGNU - Monday PM - Host: Karen Raforth [15265]",
+	  "panelists": [
+		"Athena Edmonds [14624]",
+		"Aaron Balick [14628]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(0;18:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "Keynote [15305]",
+	  "panelists": [
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(0;19:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "721: KGNU - Tuesday AM - Host: Joel Parker [15266]",
+	  "panelists": [
+		"Seth Shostak [6132]",
+		"David H. Grinspoon [6247]",
+		"Sidney Perkowitz [6576]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(1;08:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "742: #Classroom Visit - Reporting on the Environment Class [15284]",
+	  "panelists": [
+		"Oliver Morton [14553]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;09:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "754: #Classroom Visit - Design & Communication [15295]",
+	  "panelists": [
+		"Andr&eacute;s Edwards [14592]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits 2 [362]):1",
+		"Time(1;09:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "740: #Classroom Visit - Cross-Cultural Writing [15287]",
+	  "panelists": [
+		"Vivian Onano [10756]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;11:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "428: Police Shootings: When the 'Perfect Storm' is the Perfect Cop-Out [15171]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Joseph Sexton [14571]",
+		"Adam J. Schrager [14598]",
+		"Rob Warden [14732]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(1;12:30):1",
+		"Minimum-Capacity(3):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "492: Anthropology of War [15229]",
+	  "panelists": [
+		"Arturo Ardila-Gomez [6623]",
+		"Damaris Maria Grossmann [14560]",
+		"Mark Fallon [14599]",
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(1;12:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "743: #Classroom Visit - American Congress [15285]",
+	  "panelists": [
+		"Michael Franc [6171]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "745: #Classroom Visit - War Peace, Strategic Defense - Section 1 [15288]",
+	  "panelists": [
+		"C. Lawrence Greenwood Jr. [10769]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits 2 [362]):1",
+		"Time(1;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "737: #Classroom Visit - Percussion Performance [15281]",
+	  "panelists": [
+		"Rony Barrak (Jazz) [6334]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;15:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "745b: #Classroom Visit - War Peace, Strategic Defense - Section 2 [15306]",
+	  "panelists": [
+		"Diane Singerman [14702]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;15:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "728: Film Interruptus: Interruptus II [15272]",
+	  "panelists": [
+		"Matt Zoller Seitz [14549]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Muenzinger Auditorium [103]):1",
+		"Time(1;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "722: KGNU - Tuesday PM - Host: Elena Klaver [15267]",
+	  "panelists": [
+		"Maria Mercedes Alvarez [14616]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(1;18:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "749: #Classroom Visit - Entrepreneurship [15292]",
+	  "panelists": [
+		"Paul Wapner [14622]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(1;18:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "575: KGNU @ UMC: Wednesday AM: Rx For Our Political System [15181]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"Aruna Kalyanam [14541]",
+		"Daniel Stid [14620]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(2;08:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "P&M"
+	},
+	{
+	  "name": "306: China is Rattling the World's Economy [15088]",
+	  "panelists": [
+		"Reza Ramazani [6994]",
+		"Peter Lighte [7578]",
+		"C. Lawrence Greenwood Jr. [10769]",
+		"Mike Cordano [14611]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(2;09:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "617: BHS: Performance - Funding the Future [15078]",
+	  "panelists": [
+		"Gooding [7011]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Boulder High School [125]):1",
+		"Time(2;09:45):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Boulder High"
+	},
+	{
+	  "name": "747: #Classroom Visit - US Race/Ethnic Relations [15290]",
+	  "panelists": [
+		"Vivian Nixon [14531]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(2;10:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "364: Building an Innovation Economy in your Town [15238]",
+	  "panelists": [
+		"Liz Blake [13590]",
+		"Eugene Sepulveda [14568]",
+		"Kathleen Adams [14608]",
+		"Bobbie Carlton [14612]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(2;10:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Bus."
+	},
+	{
+	  "name": "750: #Classroom Visit - Sports in Cold War [15293]",
+	  "panelists": [
+		"Ismail Elfath [14600]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(2;11:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "738: #Classroom Visit #5 (Amanda Confirming Topic) [15282]",
+	  "panelists": [
+		"Jamais Cascio [13576]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(2;13:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "618: BHS: Peculiar Politics: The 2016 Presidential Race [15075]",
+	  "panelists": [
+		"Morrow Cater [13606]",
+		"Aruna Kalyanam [14541]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Boulder High School [125]):1",
+		"Time(2;13:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Boulder High"
+	},
+	{
+	  "name": "748: #Classroom Visit - Juvenile Justice, Delinquency, Inequalities within the JJS [15291]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(2;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "752: #Classroom Visit - Arabic Travel Writing [15294]",
+	  "panelists": [
+		"Alexandra Huddleston [14706]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits 2 [362]):1",
+		"Time(2;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "537: Poetry 'Words Words Words' [15156]",
+	  "panelists": [
+		"Sam J. Cook [7545]",
+		"David Wilcox [13572]",
+		"Charles A. Menzie [14534]",
+		"Joseph Sexton [14571]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(2;15:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "729: Film Interruptus: Interruptus III [15273]",
+	  "panelists": [
+		"Matt Zoller Seitz [14549]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Muenzinger Auditorium [103]):1",
+		"Time(2;16:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "758: Plenary - Antidotes to the Poison of Campaign Finance [15301]",
+	  "panelists": [
+		"Tim Wirth [14730]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(2;19:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "724: KGNU - Thursday AM - Host: Maeve Conran [15268]",
+	  "panelists": [
+		"Charles A. Menzie [14534]",
+		"Eric Lindstrom [14621]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(3;08:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "619: BHS: The Roots of Radical Extremism [15076]",
+	  "panelists": [
+		"Vicki J. Huddleston [6532]",
+		"Malou Innocent [6865]",
+		"Mark Fallon [14599]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Boulder High School [125]):1",
+		"Time(3;09:10):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Boulder High"
+	},
+	{
+	  "name": "647: What about Latin America? [15119]",
+	  "panelists": [
+		"Judith Morrison [6510]",
+		"Pablo Better [14538]",
+		"Maria Mercedes Alvarez [14616]",
+		"Gregory Bowles [14618]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(3;09:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "588: White Privilege: as American as Apple Pie [15102]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Malou Innocent [6865]",
+		"Vivian Nixon [14531]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(3;09:30):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "620: BHS: Can We Talk? The Power of Communication [15077]",
+	  "panelists": [
+		"Ty Tashiro [14526]",
+		"Ellen Sweets [14572]",
+		"Antoinette Gawin [14594]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Boulder High School [125]):1",
+		"Time(3;13:05):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Boulder High"
+	},
+	{
+	  "name": "486: Affordable Housing [15227]",
+	  "panelists": [
+		"Frank Shafroth [13570]",
+		"Liz Blake [13590]",
+		"Eugene Sepulveda [14568]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(3;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "741: #Classroom Visit - Gender, Islam, and Modernity [15283]",
+	  "panelists": [
+		"Zainab Zeb Khan [14625]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(3;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "744: #Classroom Visit - Planets & Their Atmosphere [15286]",
+	  "panelists": [
+		"David H. Grinspoon [6247]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits 2 [362]):1",
+		"Time(3;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "746: #Classroom Visit - Global Development [15289]",
+	  "panelists": [
+		"B.J. Whetstine [14704]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Classroom Visits [361]):1",
+		"Time(3;15:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "730: Film Interruptus: Interruptus IV [15274]",
+	  "panelists": [
+		"Matt Zoller Seitz [14549]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Muenzinger Auditorium [103]):1",
+		"Time(3;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "512: Hard Science, Soft Art [15084]",
+	  "panelists": [
+		"David H. Grinspoon [6247]",
+		"Jeff Lieberman [7003]",
+		"Andrea Polli [14528]",
+		"Max Nanis [14562]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(3;16:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "802: Reproductive Rights [15304]",
+	  "panelists": [
+		"Ellie Boldman Hill [10724]",
+		"Kathleen Adams [14608]",
+		"Marilinda Garcia [14705]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(3;18:00):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "725: KGNU - Friday AM - Host: Duncan Campbell [15269]",
+	  "panelists": [
+		"Bonnie Burton [14561]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(KGNU 88.5 FM/1390 AM [168]):1",
+		"Time(4;08:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "803: What I Learned About America from the Conference on World Affairs (Friday AM) [15307]",
+	  "panelists": [
+		"[Guest Speaker] [14729]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Old Main Chapel [6]):1",
+		"Time(4;10:30):1",
+		"Minimum-Capacity(2):2",
+		"Availability:1"
+	  ],
+	  "category": "none"
+	},
+	{
+	  "name": "432: The Cost of Bias to the Nation [15174]",
+	  "panelists": [
+		"William A. Thorne Jr. [6605]",
+		"Jose Antonio Vargas [14566]",
+		"Ellen Sweets [14572]",
+		"Athena Edmonds [14624]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC Center Ballroom [101]):1",
+		"Time(4;11:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "HC"
+	},
+	{
+	  "name": "536: Performance 'Ignite' 2x4: Building a Better Future [15155]",
+	  "panelists": [
+		"Andrea Polli [14528]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Visual Arts Complex 1B20 [189]):1",
+		"Time(4;12:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "Arts"
+	},
+	{
+	  "name": "681: Globalization and the Clash of Ideologies [15192]",
+	  "panelists": [
+		"Peter Lighte [7578]",
+		"Joanne Grady Huskey [13622]",
+		"Pablo Better [14538]",
+		"Srdja Popovic [14606]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(UMC 235 [108]):1",
+		"Time(4;12:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": "IA"
+	},
+	{
+	  "name": "731: Film Interruptus: Interruptus V [15275]",
+	  "panelists": [
+		"Matt Zoller Seitz [14549]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Muenzinger Auditorium [103]):1",
+		"Time(4;14:00):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	},
+	{
+	  "name": "714: Plenary - Race, Immigration, Identity and Citizenship in a Multicultural America. [15258]",
+	  "panelists": [
+		"Jose Antonio Vargas [14566]"
+	  ],
+	  "constraints": [
+		"New-Panelist:2",
+		"Paired-Panelists:3",
+		"Single-Category:2",
+		"Max-Panels(3):1",
+		"Min-Panels(1):1",
+		"Venue(Macky Auditorium [1]):1",
+		"Time(4;14:30):1",
+		"Minimum-Capacity(1):2",
+		"Availability:1"
+	  ],
+	  "category": ""
+	}
+  ]
+}

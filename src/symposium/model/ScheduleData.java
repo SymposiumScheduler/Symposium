@@ -120,7 +120,7 @@ public class ScheduleData {
             }
             // update category map
             for ( String category : panel.CATEGORIES) {
-                panelistAssigned.get(category).remove(panel);
+                categoryAssigned.get(category).remove(panel);
             }
         }
     }

@@ -34,6 +34,7 @@ public class ScheduleData {
     private final Map<String, List<Panel>> panelistAssigned;
 
     private final List<String> warningMessages;
+    private List<String> panelistsAvailabilityViolating;
 
     /**
      * sortedSets because duplication is not allowed in these collections.
@@ -64,6 +65,7 @@ public class ScheduleData {
         this.NUMBER_OF_DAYS = numberOfDays;
 
         this.warningMessages = new ArrayList<>();
+        this.panelistsAvailabilityViolating = new ArrayList<>();
 
     }
 
@@ -126,15 +128,16 @@ public class ScheduleData {
     /**
      * <b>Dependencies:</b> VenueTime class, Panel class, Panel.getVenueTime method, ScheduleData.panelistAssigned method, Range interface, Range.doesIntersect method
      *
-     * Checks a list of panelists and a venueTime; returns true if any panelists are scheduled at a venueTime that isn't the parameter vt
+     * Checks a list of panelists and a venueTime; true if any panelists are scheduled at a venueTime that isn't the parameter vt
      * and the the venueTime and vt overlap.
      *
      * @param venueTime The venueTime all panelists are assumed to be scheduled at.
      * @param panelists A list of all panelists whose availability needs to be checked.
-     * @return boolean; returns true if there is any panelist that is scheduled for a venueTime that overlaps with the given venueTime.
+     * @return boolean; true if there is any panelist that is scheduled for a venueTime that overlaps with the given venueTime.
      */
     public boolean isAssignedPanelists(VenueTime venueTime, List<String> panelists) {
         boolean panelistOverlap = false;
+        panelistsAvailabilityViolating.clear();
         for (int i = 0; i < panelists.size(); i++) {
             String panelist = panelists.get(i);
             List<Panel> p = this.panelistAssigned.get(panelist);
@@ -143,7 +146,7 @@ public class ScheduleData {
                     if (p.get(j).getVenueTime() != null && p.get(j).getVenueTime() != venueTime) {
                         if (p.get(j).getVenueTime().TIME.doesIntersect(venueTime.TIME)) {
                             panelistOverlap = true;
-                            break;
+                            panelistsAvailabilityViolating.add(panelist);
                         }
                     }
                 }
@@ -156,12 +159,12 @@ public class ScheduleData {
      * <b>Dependencies:</b> VenueTime class, Panel class, Panel.getVenueTime method,
      * Range interface, Range.doesIntersect method
      *
-     * Checks a category and a venueTime; returns true if the category is scheduled for a venueTime that isn't the parameter vt
+     * Checks a category and a venueTime; true if the category is scheduled for a venueTime that isn't the parameter vt
      * and the the venueTime and vt overlap.
      *
      * @param venueTime The venueTime to be checked.
      * @param categories The category to check for avaliability.
-     * @return boolean; returns true if the category is scheduled for a venueTime that overlaps with the given venueTime.
+     * @return boolean; true if the category is scheduled for a venueTime that overlaps with the given venueTime.
      */
     public boolean isAssignedCategories(VenueTime venueTime, List<String> categories) {
         boolean categoryOverlap = false;
@@ -311,7 +314,7 @@ public class ScheduleData {
 
                     pnstDayLoop : for(int day : daysThisPanelistIsAvailable) {
                         for(Panel dayP : this.getPanelistAssignedPanels(pnst) ){
-                            if(dayP.getVenueTime().getDay() == day) {
+                            if(dayP.getVenueTime().getDay() == day || day == 6) {
                                 continue pnstDayLoop;
                             }
                         }
@@ -404,11 +407,18 @@ public class ScheduleData {
     }
 
     /**
-     * @return Returns list of all warningMessages.
+     * @return List of all warningMessages.
      */
     public List<String> getWarningMessages() {
         return this.warningMessages;
     }
+
+    /**
+     * @return List of panelists Violating the their Availability
+     */
+    public List<String> getPanelistsAvailabilityViolating() {
+                return this.panelistsAvailabilityViolating;
+            }
 
     /**
      * <b>Dependencies:</b> Venue class

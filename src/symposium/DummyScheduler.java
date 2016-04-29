@@ -135,7 +135,7 @@ public class DummyScheduler {
             for(VenueTime vt : venue.getAssignedVenueTimes()){
                 if(TimeFormat.withinError(vt.TIME.getStart(), time, 1)){
                     panel.addMessage("Cannot schedule, because panel \"" + vt.getAssignedPanel().NAME +
-                            "\" is scheduled at the requested venue and time");
+                            "\" is scheduled at the requested venue or time");
                     break;
                 }
             }

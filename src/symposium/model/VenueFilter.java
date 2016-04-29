@@ -68,7 +68,11 @@ public class VenueFilter extends Filter {
 
     @Override
     public String toString() {
-        return "Venue Constraint Violated (Specfiic panel needed to be in this Venue but was not able to) : Venue name: " + this.VENUE.NAME;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Venue Constraint Violated: ").append("\n");
+        sb.append("\t\t\t").append("Venue Name: ").append(this.VENUE.NAME);
+
+        return sb.toString();
     }
 }
 

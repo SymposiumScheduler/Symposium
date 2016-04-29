@@ -1,11 +1,14 @@
 package symposium.model;
 
+import java.util.List;
+
 /**
  * The class CategoryConstraint inherits from {@link symposium.model.Constraint}.
  * Category Constraint is violated when two panels of same category are scheduled at same time.
  *
  */
 public class CategoryConstraint extends NoOverlapConstraint {
+    private static List<String> categoryViolating;
 
     /**
      * Constructs for the CategoryConstraint class.
@@ -30,6 +33,7 @@ public class CategoryConstraint extends NoOverlapConstraint {
     @Override
     boolean doesOverlap(VenueTime venueTime) {
         if (ScheduleData.instance().isAssignedCategories(venueTime, PANEL.CATEGORIES)) { //A variant of the above function, written to check category instead of panelists
+            categoryViolating = PANEL.CATEGORIES;
             return true;
         }
         else {
@@ -42,6 +46,12 @@ public class CategoryConstraint extends NoOverlapConstraint {
      */
     @Override
     public String toString() {
-        return "Category Constraint is violated (Two panels of same category can't be scheduled at same time)";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Category Constraint is violated (Two panels of same category can't be scheduled at same time) ").append("\n");
+        sb.append("\t\t\t").append("The Categories are: ").append(categoryViolating);
+
+
+        return sb.toString();
     }
+
 }

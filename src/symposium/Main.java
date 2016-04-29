@@ -26,11 +26,11 @@ public class Main {
 
     public static void standard(String inputFilePath) {
         int[] diffValues = new int[5];
-        diffValues[0] = 10;
-        diffValues[1] = 100000;
-        diffValues[2] = 100000;
-        diffValues[3] = 10000000;
-        diffValues[4] = 100; // panelist
+        diffValues[0] = 10; // SIZE_CONSTRAINT_VALUE
+        diffValues[1] = 100000; // VENUE_CONSTRAINT_VALUE
+        diffValues[2] = 100000; // TIME_CONSTRAINT_VALUE
+        diffValues[3] = 10000000; // AVAILABILITY_CONSTRAINT_VALUE
+        diffValues[4] = 100; // Panelist
 
         // Reading parsing json files
         Parser.parse(inputFilePath);
@@ -42,8 +42,8 @@ public class Main {
 
         // Print report
         System.out.println(Report.INSTANCE.toString());
-        System.out.println(__debugStats());
-        //System.out.println("\n\n\nTIME= " + (elapsedTime/(double)1000000000) + " ± 0.05 s");
+
+        System.out.println(_DebugStatus.__debugStats());
     }
 
     public static void evolutionary(String inputFilePath){

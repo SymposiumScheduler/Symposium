@@ -8,6 +8,7 @@ import java.util.*;
  */
 
 public class ConsecutivePanelsConstraint extends Constraint {
+    private static String panelistsViolating;
 
     /**
      * Constructs for the ConsecutivePanelsConstraint class.
@@ -62,12 +63,14 @@ public class ConsecutivePanelsConstraint extends Constraint {
                     ctr = 0;
                 }
                 if(ctr > 3 ) {
+                    panelistsViolating = pist;
                     return true;
                 }
             }
 
             // if there is more than 1 consecutive panels return true
             if(ctr > 1){
+                panelistsViolating = pist;
                 return true;
             }
         }
@@ -80,7 +83,12 @@ public class ConsecutivePanelsConstraint extends Constraint {
 
     @Override
     public String toString() {
-        return "Consecutive Panels Constraint is violated: priority = "+ PRIORITY;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Consecutive Panels Constraint is violated: A panelist is in 3 consecutive panels ").append("\n");
+        sb.append("\t\t\t").append("The Panelists is: ").append(panelistsViolating);
+
+
+        return sb.toString();
     }
 
 }

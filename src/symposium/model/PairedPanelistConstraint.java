@@ -5,8 +5,8 @@ package symposium.model;
  * Paired Panelist Constraint is violated when two panelists appear together twice or more in a single day
  */
 public class PairedPanelistConstraint extends Constraint {
-    public static String firstPanelist;
-    public static String secondPanelist;
+    private static String firstPanelist;
+    private static String secondPanelist;
 
     /**
      * Constructs for the PairedPanelistConstraint class.
@@ -58,7 +58,7 @@ public class PairedPanelistConstraint extends Constraint {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Paired Panelist Constraint Violated: (Two panelists shouldn't appear together twice or more per day)").append("\n");
-        sb.append("\t\t\t").append("Panelists are: ").append(firstPanelist).append(" , ").append(secondPanelist);
+        sb.append("\t\t\t").append("Panelists are: ").append(firstPanelist).append(", ").append(secondPanelist);
         return sb.toString();
     }
 }

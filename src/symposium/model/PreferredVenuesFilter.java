@@ -47,6 +47,6 @@ public class PreferredVenuesFilter extends Filter {
      */
     @Override
     public String toString() {
-        return "PreferredVenuesFilter (Sort the venue based on preference";
+        return "Preferred Venues Filter (Sort the venue based on preference";
     }
 }

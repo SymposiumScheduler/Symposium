@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class MaxPanelistConstraint extends Constraint {
     final int MAX;
-    public static String panelistsViolating;
+    private static String panelistsViolating;
 
     /**
      * Constructs for the MaxPanelistConstraint class.

@@ -8,7 +8,7 @@ import java.util.List;
  *
  */
 public class NewPanelistConstraint extends TimeConstraint { //Ask team members
-    public static List<String> panelistsViolating;
+    private static List<String> panelistsViolating;
 
     /**
      * Constructs for the NewPanelistConstraint class.

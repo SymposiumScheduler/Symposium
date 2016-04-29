@@ -29,7 +29,7 @@ public class PanelistConstraint extends NoOverlapConstraint {
     @Override
     boolean doesOverlap(VenueTime venueTime) {  // As written currently, assumes ScheduleData is a global singleton
         if( ScheduleData.instance().isAssignedPanelists(venueTime, PANEL.PANELISTS)) {
-            panelistsViolating = PANEL.PANELISTS;
+            panelistsViolating = ScheduleData.instance().getPanelistsAvailabilityViolating();
             return true;
         }
         else {
@@ -43,7 +43,7 @@ public class PanelistConstraint extends NoOverlapConstraint {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Panelist Constraint Violated: Panelist cannot appear outside of availability or be in two places at once)").append("\n");
+        sb.append("Panelist Constraint Violated: (Panelist cannot appear outside of availability or be in two places at once)").append("\n");
         sb.append("\t\t\t").append("Panelists are: ").append(panelistsViolating);
 
         return sb.toString();

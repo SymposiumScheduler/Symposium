@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.List;
+
 
 /**
  * AvailabilityFilter inherits from Filter, {@link symposium.model.Filter Filter} for documentation.
@@ -11,6 +13,7 @@ import java.util.Set;
  *
  */
 public class AvailabilityFilter extends Filter {
+    private static List<String> panelistsViolating;
 
     /**
      * Constructs for the AvailabilityFilter class.
@@ -50,6 +53,7 @@ public class AvailabilityFilter extends Filter {
      */
     @Override
     public boolean isConstraintViolated(VenueTime venueTime) {
+        panelistsViolating = this.PANEL.PANELISTS;
         return !this.PANEL.AVAILABILITY.doesEnclose(venueTime.TIME);
     }
 
@@ -59,6 +63,11 @@ public class AvailabilityFilter extends Filter {
 
     @Override
     public String toString() {
-        return "Availability Constraint is violated (Couldn't schedule the panels based on Availability) : priority = " + PRIORITY;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Availability Constraint violated: ").append("\n");
+        sb.append("\t\t\t").append("The Panelists are: ").append(panelistsViolating);
+
+
+        return sb.toString();
     }
 }

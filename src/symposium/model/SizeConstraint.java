@@ -8,8 +8,8 @@ package symposium.model;
  */
 public class SizeConstraint extends Constraint {
 
-    int minSize;
-    VenueTime venueTimeViolating;
+    private int minSize;
+    private VenueTime venueTimeViolating;
 
     /**
      * Constructs for the SizeConstraint class.
@@ -44,7 +44,6 @@ public class SizeConstraint extends Constraint {
             venueTimeViolating = venueTime;
             violated = true;
         }
-        cache.put(venueTime, violated);
         return violated;
     }
 
@@ -63,7 +62,7 @@ public class SizeConstraint extends Constraint {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Size Constraint Violated: (Venue must be able to fit panel)").append("\n");
-        sb.append("\t\t\tSize needed").append(minSize).append("Size Given ").append(venueTimeViolating.VENUE.SIZE);
+        sb.append("\t\t\tSize needed ").append(minSize).append(" Size Given ").append(venueTimeViolating.VENUE.SIZE);
 
         return sb.toString();
     }

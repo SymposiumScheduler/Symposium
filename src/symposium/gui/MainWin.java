@@ -69,7 +69,7 @@ public class MainWin extends javax.swing.JFrame {
             }
         });
 
-        helpBtn.setText("Help");
+        helpBtn.setText("About");
         helpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 helpBtnActionPerformed(evt);
@@ -155,12 +155,11 @@ public class MainWin extends javax.swing.JFrame {
     }//GEN-LAST:event_scheduleBtnActionPerformed
 
     private void helpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpBtnActionPerformed
-        System.err.print("Help!!!!!!!!!!!!!!!!!!!");
         JOptionPane.showMessageDialog(this, "Input should have the location of the input json file.\n" +
                 "\n" +
                 "The three dots button will give you an interactive window to choose the input file. \n" +
                 "\n" +
-                "Schedule button when pressed will schedule.", "Help", JOptionPane.INFORMATION_MESSAGE);
+                "Schedule button when pressed will schedule.", "About", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_helpBtnActionPerformed
 
     public static void saveFile(Component parent, File f, String str) {

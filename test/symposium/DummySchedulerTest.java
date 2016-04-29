@@ -142,7 +142,7 @@ public class DummySchedulerTest {
         bs.makeSchedule();
 
         assertTrue(ScheduleData.instance().getUnschedulablePanels().get(0).toString().contains("Venue Time Duration Filter"));
-        assertTrue(ScheduleData.instance().getUnschedulablePanels().get(0).toString().contains("SpecificTimeFilter"));
+        assertTrue(ScheduleData.instance().getUnschedulablePanels().get(0).toString().contains("Specific Time Constraint Violated (Panel must be scheduled at specific time)"));
         assertTrue(ScheduleData.instance().getUnschedulablePanels().get(0).toString().contains("1 times"));
         assertTrue(ScheduleData.instance().getUnschedulablePanels().get(0).toString().contains("4 times"));
 
@@ -168,7 +168,7 @@ public class DummySchedulerTest {
 
         assertFalse(sr.isSuccess());
         assertTrue(sr.CAUSE_OF_FAIL_MAP.toString().contains("Venue Time Duration Filter"));
-        assertTrue(sr.CAUSE_OF_FAIL_MAP.toString().contains("SpecificTimeFilter"));
+        assertTrue(sr.CAUSE_OF_FAIL_MAP.toString().contains("Specific Time Constraint Violated (Panel must be scheduled at specific time)"));
         assertTrue(sr.VENUETIME == null);
 
         ScheduleData.deleteScheduleData();

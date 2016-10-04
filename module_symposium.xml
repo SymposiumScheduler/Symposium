@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_symposium" default="compile.module.symposium">
+  <dirname property="module.symposium.basedir" file="${ant.file.module_symposium}"/>
+  
+  <property name="module.jdk.home.symposium" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.symposium" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.symposium" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.symposium" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="symposium.output.dir" value="${module.symposium.basedir}/out/production/Symposium"/>
+  <property name="symposium.testoutput.dir" value="${module.symposium.basedir}/out/test/Symposium"/>
+  
+  <path id="symposium.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="symposium.module.production.classpath">
+    <path refid="${module.jdk.classpath.symposium}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="symposium.runtime.production.module.classpath">
+    <pathelement location="${symposium.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="symposium.module.classpath">
+    <path refid="${module.jdk.classpath.symposium}"/>
+    <pathelement location="${symposium.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="symposium.runtime.module.classpath">
+    <pathelement location="${symposium.testoutput.dir}"/>
+    <pathelement location="${symposium.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.symposium">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.symposium">
+    <patternset refid="excluded.from.module.symposium"/>
+  </patternset>
+  
+  <path id="symposium.module.sourcepath">
+    <dirset dir="${module.symposium.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  <path id="symposium.module.test.sourcepath">
+    <dirset dir="${module.symposium.basedir}">
+      <include name="test"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.symposium" depends="compile.module.symposium.production,compile.module.symposium.tests" description="Compile module Symposium"/>
+  
+  <target name="compile.module.symposium.production" depends="register.custom.compilers" description="Compile module Symposium; production classes">
+    <mkdir dir="${symposium.output.dir}"/>
+    <javac2 destdir="${symposium.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.symposium}/javac">
+      <compilerarg line="${compiler.args.symposium}"/>
+      <bootclasspath refid="symposium.module.bootclasspath"/>
+      <classpath refid="symposium.module.production.classpath"/>
+      <src refid="symposium.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.symposium"/>
+    </javac2>
+    
+    <copy todir="${symposium.output.dir}">
+      <fileset dir="${module.symposium.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.symposium.tests" depends="register.custom.compilers,compile.module.symposium.production" description="compile module Symposium; test classes" unless="skip.tests">
+    <mkdir dir="${symposium.testoutput.dir}"/>
+    <javac2 destdir="${symposium.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.symposium}/javac">
+      <compilerarg line="${compiler.args.symposium}"/>
+      <bootclasspath refid="symposium.module.bootclasspath"/>
+      <classpath refid="symposium.module.classpath"/>
+      <src refid="symposium.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.symposium"/>
+    </javac2>
+    
+    <copy todir="${symposium.testoutput.dir}">
+      <fileset dir="${module.symposium.basedir}/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.symposium" description="cleanup module">
+    <delete dir="${symposium.output.dir}"/>
+    <delete dir="${symposium.testoutput.dir}"/>
+  </target>
+</project>

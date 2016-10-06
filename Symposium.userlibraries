@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="lib">
+    <archive path="C:/Users/Christopher/Documents/GitHub/Symposium/lib/json-simple-1.1.1.jar" />
+    <archive path="C:/Users/Christopher/Documents/GitHub/Symposium/lib/hamcrest-core-1.3.jar" />
+    <archive path="C:/Users/Christopher/Documents/GitHub/Symposium/lib/junit-4.12.jar" />
+  </library>
+</eclipse-userlibraries>
+
